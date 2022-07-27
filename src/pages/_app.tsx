@@ -1,12 +1,25 @@
 // src/pages/_app.tsx
 import { withTRPC } from "@trpc/next";
-import type { AppRouter } from "../server/router";
 import type { AppType } from "next/dist/shared/lib/utils";
 import superjson from "superjson";
-import "../styles/globals.css";
+import type { AppRouter } from "../server/router";
+
+import { ThemeProvider } from "styled-components";
+import { LayaoutContainer } from "../components/Layout/LayoutContainer";
+import { GlobalStyle } from "../styles/GlobalStyles";
+import { theme } from "../styles/theme";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <LayaoutContainer>
+          <Component {...pageProps} />
+        </LayaoutContainer>
+      </ThemeProvider>
+    </>
+  );
 };
 
 const getBaseUrl = () => {
