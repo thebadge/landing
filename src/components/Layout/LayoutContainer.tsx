@@ -1,23 +1,27 @@
-import styled from "styled-components";
+import { Box, styled } from "@mui/material";
+import React from "react";
 import { BackgroundGradient } from "./BackgroundGradient";
+import { TheBadgeLogo } from "./TheBadgeLogo";
 
-const Content = styled.div({
+const Content = styled(Box)({
   position: "absolute",
-  marginTop: "5rem",
   left: "50%",
   transform: "translateX(-50%)",
   width: "80%",
 });
 
-type LayaoutContainerProps = {
+type LayoutContainerProps = {
   children: React.ReactElement;
 };
 
-export const LayaoutContainer = ({ children }: LayaoutContainerProps) => {
+export const LayoutContainer = ({ children }: LayoutContainerProps) => {
   return (
     <div>
       <BackgroundGradient />
-      <Content>{children}</Content>
+      <Content>
+        <TheBadgeLogo />
+        {children}
+      </Content>
     </div>
   );
 };

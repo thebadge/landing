@@ -1,21 +1,37 @@
 // src/pages/_app.tsx
-import type { AppType } from "next/dist/shared/lib/utils";
+import createCache from "@emotion/cache";
+import { CacheProvider, EmotionCache } from "@emotion/react";
+import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
+import { AppProps } from "next/app";
+import { useMemo } from "react";
 
-import { ThemeProvider } from "styled-components";
-import { LayaoutContainer } from "../components/Layout/LayoutContainer";
-import { GlobalStyle } from "../styles/GlobalStyles";
-import { theme } from "../styles/theme";
+import { LayoutContainer } from "../components/Layout/LayoutContainer";
+import { getTheme } from "../styles/theme";
 
-const MyApp: AppType = ({ Component, pageProps }) => {
+// Client-side cache, shared for the whole session of the user in the browser.
+const clientSideEmotionCache = createCache({
+  key: "css",
+  prepend: true,
+}) as EmotionCache;
+
+type MyAppProps = AppProps & {
+  emotionCache?: EmotionCache;
+};
+const MyApp = ({
+  Component,
+  pageProps,
+  emotionCache = clientSideEmotionCache,
+}: MyAppProps) => {
+  const theme = useMemo(() => createTheme(getTheme()), []);
   return (
-    <>
-      <GlobalStyle />
+    <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
-        <LayaoutContainer>
+        <CssBaseline />
+        <LayoutContainer>
           <Component {...pageProps} />
-        </LayaoutContainer>
+        </LayoutContainer>
       </ThemeProvider>
-    </>
+    </CacheProvider>
   );
 };
 

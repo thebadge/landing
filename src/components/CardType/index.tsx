@@ -1,8 +1,7 @@
+import { Box, styled, Typography } from "@mui/material";
 import Image from "next/image";
-import styled from "styled-components";
-import { Box } from "../Commons/Box";
 
-const CardBadgeType = styled.div(({ theme }) => ({
+const CardBadgeType = styled(Box)(({ theme }) => ({
   border: "1px solid #66F5DF",
   borderRadius: "10px",
   //  filter: "drop-shadow(0px 0px 8px #FFFFFF)",
@@ -13,24 +12,38 @@ const CardBadgeType = styled.div(({ theme }) => ({
   flexDirection: "row",
   maxHeight: "280px",
   marginBottom: "5%",
+  [theme.breakpoints.down("md")]: {
+    maxHeight: "none",
+  },
 }));
 
-const TittleCardBadgeType = styled.p(({ theme }) => ({
+const TittleCardBadgeType = styled(Typography)(({ theme }) => ({
   margin: 0,
-  color: theme.colors.white,
+  color: theme.palette.common.white,
   fontStyle: "normal",
   fontWeight: "900",
-  fontSize: theme.sizes.l,
+  fontSize: "32px",
   lineHeight: "32.75px",
   whiteSpace: "pre-line",
+  marginBottom: theme.spacing(3),
 }));
 
-const BodyCardBadgeType = styled.p(({ theme }) => ({
-  color: theme.colors.white,
+const BodyCardBadgeType = styled(Typography)(({ theme }) => ({
+  color: theme.palette.common.white,
   fontStyle: "normal",
   fontWeight: "400",
-  fontSize: theme.sizes.m,
-  lineHeight: "32px",
+  fontSize: "16px",
+  lineHeight: "18px",
+}));
+
+const ImageContainer = styled(Box)(({ theme }) => ({
+  flex: 1,
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
 }));
 
 type BadgeTypeDescriptionPropsType = {
@@ -46,20 +59,22 @@ export const BadgeTypeDescription = ({
 }: BadgeTypeDescriptionPropsType) => {
   return (
     <CardBadgeType>
-      <Box sx={{ justifyContent: "center", flex: 1, filter: "none" }}>
-        <TittleCardBadgeType>{tittle}</TittleCardBadgeType>
-        <BodyCardBadgeType>{body}</BodyCardBadgeType>
-      </Box>
       <Box
         sx={{
-          flex: 1,
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
+          flex: 1,
+          filter: "none",
         }}
       >
-        <Image src={image} alt="Ilustration" width={350} height={350} />
+        <Box m="auto">
+          <TittleCardBadgeType>{tittle}</TittleCardBadgeType>
+          <BodyCardBadgeType>{body}</BodyCardBadgeType>
+        </Box>
       </Box>
+      <ImageContainer>
+        <Image src={image} alt="Ilustration" width={350} height={350} />
+      </ImageContainer>
     </CardBadgeType>
   );
 };

@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import { Box, styled } from "@mui/material";
 
-const Background = styled.div({
+const Background = styled(Box)({
   background:
     "linear-gradient(154.96deg, #0B3F33 9.89%, #369485 54.65%, #900D90 100.15%)",
   backgroundRepeat: "no-repeat",
