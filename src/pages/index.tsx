@@ -1,15 +1,35 @@
-import { Box, styled, Typography } from "@mui/material";
+import { Box, Divider, styled, Typography } from "@mui/material";
 import svg1 from "../assets/certif_1.svg";
 import svg2 from "../assets/certif_2.svg";
 import svg3 from "../assets/certif_3.svg";
 
+import adormentCert from "../assets/cert.svg";
+import adormentKleros from "../assets/klerosCert.svg";
+import adormentGraph from "../assets/theGraphCert.svg";
+
 import { BadgeTypeDescription } from "../components/CardType";
+
+const MainContainer = styled(Box)(({ theme }) => ({
+  position: "relative",
+  left: "50%",
+  transform: "translateX(-50%)",
+  width: "80%",
+  [theme.breakpoints.down("md")]: {
+    width: "90%",
+  },
+  [theme.breakpoints.up("xl")]: {
+    width: "70%",
+  },
+}));
 
 const TheBadgeTitle = styled(Typography)(({ theme }) => ({
   color: theme.palette.common.white,
   fontWeight: "700",
   fontSize: "100px",
   textShadow: "6px 4px 4px rgba(0, 0, 0, 0.5)",
+  [theme.breakpoints.down("md")]: {
+    fontSize: "64px",
+  },
 }));
 
 const TheBadgeSubTitle = styled(Typography)(({ theme }) => ({
@@ -18,6 +38,11 @@ const TheBadgeSubTitle = styled(Typography)(({ theme }) => ({
   fontSize: "64px",
   lineHeight: "85px",
   margin: 0,
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    fontSize: "32px",
+    lineHeight: "150%",
+  },
 }));
 
 const Paragraph = styled(Typography)(({ theme }) => ({
@@ -34,19 +59,28 @@ const Paragraph = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     width: "100%",
   },
+  [theme.breakpoints.up("xl")]: {
+    width: "65%",
+    fontSize: "24px",
+    lineHeight: "120%",
+  },
 }));
 
-const TypesTitle = styled(Typography)(({ theme }) => ({
+const SectionTitle = styled(Typography)(({ theme }) => ({
   color: theme.palette.common.white,
   textTransform: "uppercase",
   fontWeight: "800",
   fontSize: "50px",
   textAlign: "center",
   marginBottom: theme.spacing(5),
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    fontSize: "40px",
+  },
 }));
 
 const SvgDecoration = styled(Box)({
-  backgroundPositionY: "center",
+  backgroundPositionY: "bottom",
   backgroundPositionX: "right",
   backgroundRepeat: "no-repeat",
   backgroundImage: `url(./hexagonal.svg)`,
@@ -70,50 +104,83 @@ const BoxBadgeTypes = styled(Box)({
 export default function Home() {
   return (
     <Box>
-      <Box mt={8}>
-        <SvgDecoration />
-        <Box>
-          <TheBadgeTitle>The Badge,</TheBadgeTitle>
-          <TheBadgeSubTitle>
-            Information certification <br /> & profile identity
-          </TheBadgeSubTitle>
+      <SvgDecoration />
+      <MainContainer>
+        <Box mt={8}>
+          <Box>
+            <TheBadgeTitle>The Badge,</TheBadgeTitle>
+            <TheBadgeSubTitle>
+              Information certification <br /> & profile identity
+            </TheBadgeSubTitle>
+          </Box>
+          <Paragraph>
+            The Badge is a decentralized certification platform built on
+            Ethereum that allows tokenizing on any piece of information coming
+            either on-chain or off-chain under the concept of badges. These
+            badges will create an on chain identity by being issued as
+            non-transferable and verifiable NFTs.
+          </Paragraph>
         </Box>
-        <Paragraph>
-          The Badge is a decentralized certification platform built on Ethereum
-          that allows tokenizing on any piece of information coming either
-          on-chain or off-chain under the concept of badges. These badges will
-          create an on chain identity by being issued as non-transferable and
-          verifiable NFTs.
-        </Paragraph>
-      </Box>
-      <BoxBadgeTypes>
-        <TypesTitle>Types of badges</TypesTitle>
+        <BoxBadgeTypes>
+          <SectionTitle>Types of badges</SectionTitle>
 
-        <BadgeTypeDescription
-          tittle={"On-chain \n Badges"}
-          body={`These badges are created by generating a query to 
-          a subgraph from The Graph. These queries will confirm which 
-          addresses have the characteristics needed to receive a specific badge.`}
-          image={svg1}
-        />
+          <BadgeTypeDescription
+            tittle={"On-chain \n Badges"}
+            body={`These badges are generated after verifying on-chain data. Examples of on-chain data are, 
+            liquidity providing, DAO voting, large holdings, liquidation events, etc. This type of 
+            data is verified making use of The Graph.`}
+            image={svg1}
+            adorment={adormentGraph}
+          />
 
-        <BadgeTypeDescription
-          tittle={"Off-chain \n Badges"}
-          body={`These badges are the tokenization of real world information.
+          <BadgeTypeDescription
+            tittle={"Off-chain \n Badges"}
+            body={`These badges are the tokenization of real world information.
           It could be diplomas, passports, social media accounts, etc. Before the badge is 
           created, the document/ information needs to be verified by Kleros court.`}
-          image={svg2}
-        />
+            image={svg2}
+            adorment={adormentKleros}
+          />
 
-        <BadgeTypeDescription
-          tittle={"Third-party \n Badges"}
-          body={`These are badges that can be generated by a public or private entity,
+          <BadgeTypeDescription
+            tittle={"Third-party \n Badges"}
+            body={`These are badges that can be generated by a public or private entity,
            and there will be no data verification process. The third party will be able 
            to determine what is on their badge, and The Badge will distribute it to 
            pre-determined addresses.`}
-          image={svg3}
-        />
-      </BoxBadgeTypes>
+            image={svg3}
+            adorment={adormentCert}
+          />
+        </BoxBadgeTypes>
+
+        <Divider sx={{ borderColor: "#66F5DF" }} />
+
+        <Box sx={{ marginTop: 4 }}>
+          <SectionTitle>Backed By</SectionTitle>
+          <Box
+            sx={{
+              display: "flex",
+              flexFlow: "row wrap",
+              columnGap: 3,
+              rowGap: 3,
+              marginBottom: 4,
+            }}
+          >
+            {Array.from({ length: 10 }).map((v, i) => {
+              return (
+                <Box
+                  sx={{
+                    backgroundColor: "#D9D9D9",
+                    height: 150,
+                    flex: "1 1 20%",
+                  }}
+                  key={i}
+                />
+              );
+            })}
+          </Box>
+        </Box>
+      </MainContainer>
     </Box>
   );
 }

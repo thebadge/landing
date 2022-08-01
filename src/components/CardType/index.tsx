@@ -2,18 +2,21 @@ import { Box, styled, Typography } from "@mui/material";
 import Image from "next/image";
 
 const CardBadgeType = styled(Box)(({ theme }) => ({
+  position: "relative",
   border: "1px solid #66F5DF",
   borderRadius: "10px",
   //  filter: "drop-shadow(0px 0px 8px #FFFFFF)",
   padding: "33px",
-  marginLeft: "10%",
-  marginRight: "10%",
+  marginLeft: "auto",
+  marginRight: "auto",
   display: "flex",
   flexDirection: "row",
   maxHeight: "280px",
+  maxWidth: "1200px",
   marginBottom: "5%",
   [theme.breakpoints.down("md")]: {
     maxHeight: "none",
+    marginBottom: theme.spacing(3),
   },
 }));
 
@@ -26,6 +29,11 @@ const TittleCardBadgeType = styled(Typography)(({ theme }) => ({
   lineHeight: "32.75px",
   whiteSpace: "pre-line",
   marginBottom: theme.spacing(3),
+  [theme.breakpoints.up("xl")]: {
+    fontWeight: "800",
+    fontSize: "40px",
+    lineHeight: "120%",
+  },
 }));
 
 const BodyCardBadgeType = styled(Typography)(({ theme }) => ({
@@ -34,6 +42,15 @@ const BodyCardBadgeType = styled(Typography)(({ theme }) => ({
   fontWeight: "400",
   fontSize: "16px",
   lineHeight: "18px",
+  [theme.breakpoints.down("md")]: {
+    maxHeight: "none",
+    marginBottom: theme.spacing(3),
+  },
+  [theme.breakpoints.up("xl")]: {
+    fontWeight: "300",
+    fontSize: "20px",
+    lineHeight: "120%",
+  },
 }));
 
 const ImageContainer = styled(Box)(({ theme }) => ({
@@ -46,19 +63,34 @@ const ImageContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
+const LittleBadgeAdorment = styled(Box)(({ theme }) => ({
+  position: "absolute",
+  top: 0,
+  right: theme.spacing(3),
+  transform: "translateY(-30%)",
+  [theme.breakpoints.down("md")]: {
+    right: theme.spacing(1),
+  },
+}));
+
 type BadgeTypeDescriptionPropsType = {
   tittle: string;
   body: string;
   image: string;
+  adorment: string;
 };
 
 export const BadgeTypeDescription = ({
   tittle,
   body,
   image,
+  adorment,
 }: BadgeTypeDescriptionPropsType) => {
   return (
     <CardBadgeType>
+      <LittleBadgeAdorment>
+        <Image src={adorment} alt="Ilustration" width={45} height={65} />
+      </LittleBadgeAdorment>
       <Box
         sx={{
           display: "flex",
