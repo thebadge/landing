@@ -14,6 +14,7 @@ const CardBadgeType = styled(Box)(({ theme }) => ({
   maxHeight: "280px",
   maxWidth: "1200px",
   marginBottom: "5%",
+  boxShadow: "0 0 8px #f6f3f382",
   [theme.breakpoints.down("md")]: {
     maxHeight: "none",
     marginBottom: theme.spacing(3),
@@ -63,11 +64,12 @@ const ImageContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-const LittleBadgeAdorment = styled(Box)(({ theme }) => ({
+const LittleBadgeAdornment = styled(Box)(({ theme }) => ({
   position: "absolute",
   top: 0,
   right: theme.spacing(3),
   transform: "translateY(-30%)",
+  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
   [theme.breakpoints.down("md")]: {
     right: theme.spacing(1),
   },
@@ -88,9 +90,9 @@ export const BadgeTypeDescription = ({
 }: BadgeTypeDescriptionPropsType) => {
   return (
     <CardBadgeType>
-      <LittleBadgeAdorment>
+      <LittleBadgeAdornment>
         <Image src={adorment} alt="Ilustration" width={45} height={65} />
-      </LittleBadgeAdorment>
+      </LittleBadgeAdornment>
       <Box
         sx={{
           display: "flex",
