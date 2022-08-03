@@ -870,8 +870,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint1_radial_254_566"
@@ -881,8 +881,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint2_radial_254_566"
@@ -892,8 +892,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint3_radial_254_566"
@@ -903,8 +903,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint4_radial_254_566"
@@ -914,8 +914,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint5_radial_254_566"
@@ -925,8 +925,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint6_radial_254_566"
@@ -936,8 +936,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint7_radial_254_566"
@@ -947,8 +947,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint8_radial_254_566"
@@ -958,8 +958,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint9_radial_254_566"
@@ -969,8 +969,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint10_radial_254_566"
@@ -980,8 +980,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint11_radial_254_566"
@@ -991,8 +991,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint12_radial_254_566"
@@ -1002,8 +1002,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint13_radial_254_566"
@@ -1013,8 +1013,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint14_radial_254_566"
@@ -1024,8 +1024,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint15_radial_254_566"
@@ -1035,8 +1035,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint16_radial_254_566"
@@ -1046,8 +1046,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint17_radial_254_566"
@@ -1057,8 +1057,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint18_radial_254_566"
@@ -1068,8 +1068,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint19_radial_254_566"
@@ -1079,8 +1079,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint20_radial_254_566"
@@ -1090,8 +1090,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint21_radial_254_566"
@@ -1101,8 +1101,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint22_radial_254_566"
@@ -1112,8 +1112,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint23_radial_254_566"
@@ -1123,8 +1123,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint24_radial_254_566"
@@ -1134,8 +1134,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint25_radial_254_566"
@@ -1145,8 +1145,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint26_radial_254_566"
@@ -1156,8 +1156,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint27_radial_254_566"
@@ -1167,8 +1167,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint28_radial_254_566"
@@ -1178,8 +1178,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint29_radial_254_566"
@@ -1189,8 +1189,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint30_radial_254_566"
@@ -1200,8 +1200,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint31_radial_254_566"
@@ -1211,8 +1211,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint32_radial_254_566"
@@ -1222,8 +1222,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint33_radial_254_566"
@@ -1233,8 +1233,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint34_radial_254_566"
@@ -1244,8 +1244,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint35_radial_254_566"
@@ -1255,8 +1255,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint36_radial_254_566"
@@ -1266,8 +1266,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint37_radial_254_566"
@@ -1277,8 +1277,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint38_radial_254_566"
@@ -1288,8 +1288,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint39_radial_254_566"
@@ -1299,8 +1299,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint40_radial_254_566"
@@ -1310,8 +1310,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint41_radial_254_566"
@@ -1321,8 +1321,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint42_radial_254_566"
@@ -1332,8 +1332,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint43_radial_254_566"
@@ -1343,8 +1343,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint44_radial_254_566"
@@ -1354,8 +1354,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint45_radial_254_566"
@@ -1365,8 +1365,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint46_radial_254_566"
@@ -1376,8 +1376,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint47_radial_254_566"
@@ -1387,8 +1387,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint48_radial_254_566"
@@ -1398,8 +1398,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint49_radial_254_566"
@@ -1409,8 +1409,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint50_radial_254_566"
@@ -1420,8 +1420,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint51_radial_254_566"
@@ -1431,8 +1431,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint52_radial_254_566"
@@ -1442,8 +1442,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint53_radial_254_566"
@@ -1453,8 +1453,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint54_radial_254_566"
@@ -1464,8 +1464,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint55_radial_254_566"
@@ -1475,8 +1475,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint56_radial_254_566"
@@ -1486,8 +1486,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint57_radial_254_566"
@@ -1497,8 +1497,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint58_radial_254_566"
@@ -1508,8 +1508,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint59_radial_254_566"
@@ -1519,8 +1519,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint60_radial_254_566"
@@ -1530,8 +1530,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint61_radial_254_566"
@@ -1541,8 +1541,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint62_radial_254_566"
@@ -1552,8 +1552,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint63_radial_254_566"
@@ -1563,8 +1563,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint64_radial_254_566"
@@ -1574,8 +1574,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint65_radial_254_566"
@@ -1585,8 +1585,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint66_radial_254_566"
@@ -1596,8 +1596,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint67_radial_254_566"
@@ -1607,8 +1607,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint68_radial_254_566"
@@ -1618,8 +1618,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint69_radial_254_566"
@@ -1629,8 +1629,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint70_radial_254_566"
@@ -1640,8 +1640,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.839 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint71_radial_254_566"
@@ -1651,8 +1651,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint72_radial_254_566"
@@ -1662,8 +1662,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint73_radial_254_566"
@@ -1673,8 +1673,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.479 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint74_radial_254_566"
@@ -1684,8 +1684,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint75_radial_254_566"
@@ -1695,8 +1695,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint76_radial_254_566"
@@ -1706,8 +1706,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <radialGradient
           id="paint77_radial_254_566"
@@ -1717,8 +1717,8 @@ export const HexagonalDecorationMobile = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(153.84 149.961) scale(261.478 260.984)"
         >
-          <stop stop-color="#00AEEF" />
-          <stop offset="1" stop-color="#002CBF" />
+          <stop stopColor="#00AEEF" />
+          <stop offset="1" stopColor="#002CBF" />
         </radialGradient>
         <image
           id="image0_254_566"
