@@ -1,109 +1,109 @@
-import { Box, Divider, styled, Typography } from "@mui/material";
-import svg1 from "../assets/certif_1.svg";
-import svg2 from "../assets/certif_2.svg";
-import svg3 from "../assets/certif_3.svg";
+import { Box, Divider, styled, Typography } from '@mui/material';
+import svg1 from '../assets/certif_1.svg';
+import svg2 from '../assets/certif_2.svg';
+import svg3 from '../assets/certif_3.svg';
 
-import adornmentCert from "../assets/cert.svg";
-import adornmentKleros from "../assets/klerosCert.svg";
-import adornmentGraph from "../assets/theGraphCert.svg";
+import adornmentCert from '../assets/cert.svg';
+import adornmentKleros from '../assets/klerosCert.svg';
+import adornmentGraph from '../assets/theGraphCert.svg';
 
-import { BadgeTypeDescription } from "../components/CardType";
-import { HexagonalDecoration } from "../components/Commons/HexagonalDecoration";
+import { BadgeTypeDescription } from '../components/CardType';
+import { HexagonalDecoration } from '../components/Commons/HexagonalDecoration';
 
 const MainContainer = styled(Box)(({ theme }) => ({
-  position: "relative",
-  left: "50%",
-  transform: "translateX(-50%)",
-  width: "80%",
-  [theme.breakpoints.down("md")]: {
-    width: "90%",
+  position: 'relative',
+  left: '50%',
+  transform: 'translateX(-50%)',
+  width: '80%',
+  [theme.breakpoints.down('md')]: {
+    width: '90%',
     paddingTop: theme.spacing(8),
   },
-  [theme.breakpoints.up("xl")]: {
-    width: "70%",
+  [theme.breakpoints.up('xl')]: {
+    width: '70%',
   },
 }));
 
 const TheBadgeTitle = styled(Typography)(({ theme }) => ({
   color: theme.palette.common.white,
-  fontWeight: "700",
-  fontSize: "100px",
-  textShadow: "6px 4px 4px rgba(0, 0, 0, 0.5)",
-  [theme.breakpoints.down("md")]: {
-    fontSize: "64px",
+  fontWeight: '700',
+  fontSize: '100px',
+  textShadow: '6px 4px 4px rgba(0, 0, 0, 0.5)',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '64px',
   },
 }));
 
 const TheBadgeSubTitle = styled(Typography)(({ theme }) => ({
   color: theme.palette.common.white,
-  fontWeight: "700",
-  fontSize: "64px",
-  lineHeight: "85px",
+  fontWeight: '700',
+  fontSize: '64px',
+  lineHeight: '85px',
   margin: 0,
-  [theme.breakpoints.down("md")]: {
-    width: "100%",
-    fontSize: "32px",
-    lineHeight: "150%",
+  [theme.breakpoints.down('md')]: {
+    width: '100%',
+    fontSize: '32px',
+    lineHeight: '150%',
   },
 }));
 
 const Paragraph = styled(Typography)(({ theme }) => ({
-  letterSpacing: "0em",
-  textAlign: "left",
+  letterSpacing: '0em',
+  textAlign: 'left',
   color: theme.palette.common.white,
-  fontStyle: "normal",
-  fontWeight: "500",
-  fontSize: "20px",
-  lineHeight: "28px",
+  fontStyle: 'normal',
+  fontWeight: '500',
+  fontSize: '20px',
+  lineHeight: '28px',
   margin: 0,
   marginTop: theme.spacing(2),
-  width: "50%",
-  [theme.breakpoints.down("md")]: {
-    width: "100%",
+  width: '50%',
+  [theme.breakpoints.down('md')]: {
+    width: '100%',
   },
-  [theme.breakpoints.up("xl")]: {
-    width: "65%",
-    fontSize: "24px",
-    lineHeight: "120%",
+  [theme.breakpoints.up('xl')]: {
+    width: '65%',
+    fontSize: '24px',
+    lineHeight: '120%',
   },
 }));
 
 const SectionTitle = styled(Typography)(({ theme }) => ({
   color: theme.palette.common.white,
-  textTransform: "uppercase",
-  fontWeight: "800",
-  fontSize: "50px",
-  textAlign: "center",
+  textTransform: 'uppercase',
+  fontWeight: '800',
+  fontSize: '50px',
+  textAlign: 'center',
   marginBottom: theme.spacing(5),
-  [theme.breakpoints.down("md")]: {
-    width: "100%",
-    fontSize: "40px",
+  [theme.breakpoints.down('md')]: {
+    width: '100%',
+    fontSize: '40px',
   },
 }));
 
 const SvgDecoration = styled(Box)(({ theme }) => ({
-  width: "100%",
-  position: "absolute",
-  height: "10%",
-  display: "flex",
-  justifyContent: "flex-end",
-  alignItems: "center",
+  width: '100%',
+  position: 'absolute',
+  height: '10%',
+  display: 'flex',
+  justifyContent: 'flex-end',
+  alignItems: 'center',
   zIndex: -1,
-  [theme.breakpoints.down("sm")]: {
-    left: "50%",
-    transform: "scale(1.3) translateX(-50%)",
+  [theme.breakpoints.down('sm')]: {
+    left: '50%',
+    transform: 'scale(1.3) translateX(-50%)',
   },
 }));
 
 const BoxBadgeTypes = styled(Box)({
-  marginTop: "10%",
-  marginBottom: "10%",
-  padding: "5%",
-  display: "flex",
-  flexDirection: "column",
+  marginTop: '10%',
+  marginBottom: '10%',
+  padding: '5%',
+  display: 'flex',
+  flexDirection: 'column',
   flex: 1,
-  background: "rgba(0, 0, 0, 0.58)",
-  borderRadius: "10px",
+  background: 'rgba(0, 0, 0, 0.58)',
+  borderRadius: '10px',
 });
 
 export default function Home() {
@@ -132,7 +132,7 @@ export default function Home() {
           <SectionTitle>Types of badges</SectionTitle>
 
           <BadgeTypeDescription
-            tittle={"On-chain \n Badges"}
+            tittle={'On-chain \n Badges'}
             body={`These badges are generated after verifying on-chain data. Examples of on-chain data are, 
             liquidity providing, DAO voting, large holdings, liquidation events, etc. This type of 
             data is verified making use of The Graph.`}
@@ -141,7 +141,7 @@ export default function Home() {
           />
 
           <BadgeTypeDescription
-            tittle={"Off-chain \n Badges"}
+            tittle={'Off-chain \n Badges'}
             body={`These badges are the tokenization of real world information.
           It could be diplomas, passports, social media accounts, etc. Before the badge is 
           created, the document/ information needs to be verified by Kleros court.`}
@@ -150,7 +150,7 @@ export default function Home() {
           />
 
           <BadgeTypeDescription
-            tittle={"Third-party \n Badges"}
+            tittle={'Third-party \n Badges'}
             body={`These are badges that can be generated by a public or private entity,
            and there will be no data verification process. The third party will be able 
            to determine what is on their badge, and The Badge will distribute it to 
@@ -160,14 +160,14 @@ export default function Home() {
           />
         </BoxBadgeTypes>
 
-        <Divider sx={{ borderColor: "#66F5DF" }} />
+        <Divider sx={{ borderColor: '#66F5DF' }} />
 
         <Box sx={{ marginTop: 4 }}>
           <SectionTitle>Backed By</SectionTitle>
           <Box
             sx={{
-              display: "flex",
-              flexFlow: "row wrap",
+              display: 'flex',
+              flexFlow: 'row wrap',
               columnGap: 3,
               rowGap: 3,
               marginBottom: 4,
@@ -177,9 +177,9 @@ export default function Home() {
               return (
                 <Box
                   sx={{
-                    backgroundColor: "#D9D9D9",
+                    backgroundColor: '#D9D9D9',
                     height: 150,
-                    flex: "1 1 20%",
+                    flex: '1 1 20%',
                   }}
                   key={i}
                 />

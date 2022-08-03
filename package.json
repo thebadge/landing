@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier './src/**/*.{js,jsx,ts,tsx}'",
+    "prettier:fix": "yarn prettier --write"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",
@@ -27,6 +29,8 @@
     "autoprefixer": "^10.4.7",
     "eslint": "8.18.0",
     "eslint-config-next": "12.2.3",
-    "typescript": "4.7.4"
+    "typescript": "4.7.4",
+    "prettier": "^2.7.1",
+    "eslint-config-prettier": "^8.5.0"
   }
 }

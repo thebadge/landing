@@ -1,34 +1,40 @@
-import createCache from "@emotion/cache";
-import { EmotionCache } from "@emotion/react";
+import createCache from '@emotion/cache';
+import { EmotionCache } from '@emotion/react';
 
 import Document, {
   DocumentContext,
   Head,
   Html,
   Main,
-  NextScript
-} from "next/document";
-import createEmotionServer from "@emotion/server/create-instance";
+  NextScript,
+} from 'next/document';
+import createEmotionServer from '@emotion/server/create-instance';
 
 class MyDocument extends Document {
   render() {
     return (
-        <Html lang="en">
-          <Head>
-            <meta name="description" content="The Badge" />
-            <link rel="icon" href="/favicon.ico" />
-            <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;600;700;800&display=swap"
-            />
-            <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-          </Head>
-          <body>
+      <Html lang="en">
+        <Head>
+          <meta name="description" content="The Badge" />
+          <link rel="icon" href="/favicon.ico" />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;600;700;800&display=swap"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          />
+        </Head>
+        <body>
           <Main />
           <NextScript />
-          </body>
-        </Html>
+        </body>
+      </Html>
     );
   }
 }
@@ -57,8 +63,8 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
   // 4. page.render
 
   const cache = createCache({
-    key: "css",
-    prepend: true
+    key: 'css',
+    prepend: true,
   }) as EmotionCache;
   const { extractCriticalToChunks } = createEmotionServer(cache);
 
@@ -73,12 +79,12 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
     // See https://github.com/mui-org/material-ui/issues/26561#issuecomment-855286153
     const emotionStyles = extractCriticalToChunks(initialProps.html);
     const emotionStyleTags = emotionStyles.styles.map((style) => (
-        <style
-            data-emotion={`${style.key} ${style.ids.join(" ")}`}
-            key={style.key}
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: style.css }}
-        />
+      <style
+        data-emotion={`${style.key} ${style.ids.join(' ')}`}
+        key={style.key}
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: style.css }}
+      />
     ));
 
     console.info(`Render Time: ${Date.now() - startTime} milliseconds.`);
@@ -86,17 +92,13 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
     return {
       ...initialProps,
       emotionStyleTags,
-      styles: (
-          <>
-            {initialProps.styles}
-          </>
-      )
+      styles: <>{initialProps.styles}</>,
     };
   } catch (error) {
     console.error(error);
     const initialProps = await Document.getInitialProps(ctx);
     return {
-      ...initialProps
+      ...initialProps,
     };
   }
 };

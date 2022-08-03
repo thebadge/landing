@@ -1,7 +1,8 @@
 export const HexagonalDecorationMobile = () => {
   return (
     <svg
-        width="375" height="259"
+      width="375"
+      height="259"
       viewBox="0 0 375 259"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

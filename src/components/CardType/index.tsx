@@ -4,30 +4,30 @@ import {
   Typography,
   useMediaQuery,
   useTheme,
-} from "@mui/material";
-import Image from "next/image";
+} from '@mui/material';
+import Image from 'next/image';
 
 const CardBadgeType = styled(Box)(({ theme }) => ({
-  position: "relative",
-  border: "1px solid #66F5DF",
-  borderRadius: "10px",
+  position: 'relative',
+  border: '1px solid #66F5DF',
+  borderRadius: '10px',
   //  filter: "drop-shadow(0px 0px 8px #FFFFFF)",
-  padding: "33px",
-  marginLeft: "auto",
-  marginRight: "auto",
-  display: "flex",
-  flexDirection: "row",
-  maxHeight: "280px",
-  maxWidth: "1200px",
-  marginBottom: "5%",
-  boxShadow: "0 0 8px #f6f3f382",
-  [theme.breakpoints.down("md")]: {
-    maxHeight: "none",
+  padding: '33px',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  display: 'flex',
+  flexDirection: 'row',
+  maxHeight: '280px',
+  maxWidth: '1200px',
+  marginBottom: '5%',
+  boxShadow: '0 0 8px #f6f3f382',
+  [theme.breakpoints.down('md')]: {
+    maxHeight: 'none',
     marginBottom: theme.spacing(3),
   },
-  [theme.breakpoints.down("sm")]: {
-    maxHeight: "450px",
-    flexDirection: "column-reverse",
+  [theme.breakpoints.down('sm')]: {
+    maxHeight: '450px',
+    flexDirection: 'column-reverse',
     marginTop: theme.spacing(5),
   },
 }));
@@ -35,53 +35,53 @@ const CardBadgeType = styled(Box)(({ theme }) => ({
 const TittleCardBadgeType = styled(Typography)(({ theme }) => ({
   margin: 0,
   color: theme.palette.common.white,
-  fontStyle: "normal",
-  fontWeight: "900",
-  fontSize: "32px",
-  lineHeight: "32.75px",
-  whiteSpace: "pre-line",
+  fontStyle: 'normal',
+  fontWeight: '900',
+  fontSize: '32px',
+  lineHeight: '32.75px',
+  whiteSpace: 'pre-line',
   marginBottom: theme.spacing(3),
-  [theme.breakpoints.up("xl")]: {
-    fontWeight: "800",
-    fontSize: "40px",
-    lineHeight: "120%",
+  [theme.breakpoints.up('xl')]: {
+    fontWeight: '800',
+    fontSize: '40px',
+    lineHeight: '120%',
   },
 }));
 
 const BodyCardBadgeType = styled(Typography)(({ theme }) => ({
   color: theme.palette.common.white,
-  fontStyle: "normal",
-  fontWeight: "400",
-  fontSize: "16px",
-  lineHeight: "18px",
-  [theme.breakpoints.down("md")]: {
-    maxHeight: "none",
+  fontStyle: 'normal',
+  fontWeight: '400',
+  fontSize: '16px',
+  lineHeight: '18px',
+  [theme.breakpoints.down('md')]: {
+    maxHeight: 'none',
     marginBottom: theme.spacing(3),
   },
-  [theme.breakpoints.up("xl")]: {
-    fontWeight: "300",
-    fontSize: "20px",
-    lineHeight: "120%",
+  [theme.breakpoints.up('xl')]: {
+    fontWeight: '300',
+    fontSize: '20px',
+    lineHeight: '120%',
   },
 }));
 
 const ImageContainer = styled(Box)(({ theme }) => ({
   flex: 1,
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  [theme.breakpoints.down("md")]: {
-    display: "flex",
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  [theme.breakpoints.down('md')]: {
+    display: 'flex',
   },
 }));
 
 const LittleBadgeAdornment = styled(Box)(({ theme }) => ({
-  position: "absolute",
+  position: 'absolute',
   top: 0,
   right: theme.spacing(3),
-  transform: "translateY(-30%)",
-  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-  [theme.breakpoints.down("md")]: {
+  transform: 'translateY(-30%)',
+  filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
+  [theme.breakpoints.down('md')]: {
     right: theme.spacing(1),
   },
 }));
@@ -100,7 +100,7 @@ export const BadgeTypeDescription = ({
   adornment,
 }: BadgeTypeDescriptionPropsType) => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <CardBadgeType>
@@ -109,10 +109,10 @@ export const BadgeTypeDescription = ({
       </LittleBadgeAdornment>
       <Box
         sx={{
-          display: "flex",
-          justifyContent: "center",
+          display: 'flex',
+          justifyContent: 'center',
           flex: 1,
-          filter: "none",
+          filter: 'none',
         }}
       >
         <Box m="auto">

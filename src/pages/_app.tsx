@@ -1,16 +1,16 @@
 // src/pages/_app.tsx
-import createCache from "@emotion/cache";
-import { CacheProvider, EmotionCache } from "@emotion/react";
-import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
-import { AppProps } from "next/app";
-import { useMemo } from "react";
+import createCache from '@emotion/cache';
+import { CacheProvider, EmotionCache } from '@emotion/react';
+import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import { AppProps } from 'next/app';
+import { useMemo } from 'react';
 
-import { LayoutContainer } from "../components/Layout/LayoutContainer";
-import { getTheme } from "../styles/theme";
+import { LayoutContainer } from '../components/Layout/LayoutContainer';
+import { getTheme } from '../styles/theme';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createCache({
-  key: "css",
+  key: 'css',
   prepend: true,
 }) as EmotionCache;
 
