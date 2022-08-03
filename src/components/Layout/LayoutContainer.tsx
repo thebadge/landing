@@ -1,11 +1,9 @@
-import { Box, styled, Typography } from '@mui/material';
-import React from 'react';
-import { DownloadPaperButton } from '../Commons/DownloadPaperButton';
-import { BackgroundGradient } from './BackgroundGradient';
-import { TheBadgeLogo } from './TheBadgeLogo';
-import { Footer } from '../Footer';
-import { HeaderContainer } from '../Commons/HeaderContainer';
+import { Box, styled } from '@mui/material';
 
+import React from 'react';
+import { BackgroundGradient } from './BackgroundGradient';
+import { Footer } from './Footer';
+import { Header } from './Header';
 const Content = styled(Box)({
   position: 'absolute',
   left: '50%',
@@ -22,14 +20,9 @@ export const LayoutContainer = ({ children }: LayoutContainerProps) => {
     <div>
       <BackgroundGradient />
       <Content>
-        <HeaderContainer>
-          <TheBadgeLogo />
-          <DownloadPaperButton />
-        </HeaderContainer>
+        <Header />
         {children}
-        <Footer>
-          <Typography>Social Media</Typography>
-        </Footer>
+        <Footer />
       </Content>
     </div>
   );

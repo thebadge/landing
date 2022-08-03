@@ -1,6 +1,6 @@
 import { styled, Typography } from '@mui/material';
 import { StyledButton } from './StyledButton';
-import { DownloadIcon } from './SVGs/DownloadIcon';
+import { ConstructionIcon } from './SVGs/ConstructionIcon';
 
 const DownloadButtonLabel = styled(Typography)(({ theme }) => ({
   whiteSpace: 'pre-line',
@@ -18,7 +18,7 @@ const DownloadButtonLabel = styled(Typography)(({ theme }) => ({
   },
 }));
 
-const StyledDownloadIcon = styled(DownloadIcon)(({ theme }) => ({
+const StyledDownloadIcon = styled(ConstructionIcon)(({ theme }) => ({
   width: 50,
   height: 50,
   [theme.breakpoints.down('md')]: {
@@ -31,13 +31,11 @@ const StyledDownloadIcon = styled(DownloadIcon)(({ theme }) => ({
   },
 }));
 
-export const DownloadPaperButton = () => {
-  const url =
-    'https://drive.google.com/file/d/1Bi0_vkyN8UuyJAfVT8OCc7qFVvTnO0yP/view?usp=sharing';
+export const GoToAppButton = () => {
   return (
-    <StyledButton onClick={() => window.open(url, '_blank')}>
+    <StyledButton disabled={true}>
       <StyledDownloadIcon />
-      <DownloadButtonLabel>{`White Paper`}</DownloadButtonLabel>
+      <DownloadButtonLabel>{`Go to App`}</DownloadButtonLabel>
     </StyledButton>
   );
 };

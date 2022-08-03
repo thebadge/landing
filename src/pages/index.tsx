@@ -1,4 +1,4 @@
-import { Box, Divider, styled, Typography } from '@mui/material';
+import { Box, Divider, styled } from '@mui/material';
 import svg1 from '../assets/certif_1.svg';
 import svg2 from '../assets/certif_2.svg';
 import svg3 from '../assets/certif_3.svg';
@@ -8,11 +8,11 @@ import adornmentKleros from '../assets/klerosCert.svg';
 import adornmentGraph from '../assets/theGraphCert.svg';
 
 import { BadgeTypeDescription } from '../components/CardType';
-import { HexagonalDecoration } from '../components/Commons/HexagonalDecoration';
 import { Paragraph } from '../components/Commons/Paragraph';
 import { SectionTitle } from '../components/Commons/SectionTitle';
-import { TheBadgeTitle } from '../components/Commons/Title';
 import { TheBadgeSubTitle } from '../components/Commons/Subtitle';
+import { HexagonalDecoration } from '../components/Commons/SVGs/HexagonalDecoration';
+import { TheBadgeTitle } from '../components/Commons/Title';
 
 const MainContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
