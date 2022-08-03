@@ -3,11 +3,12 @@ import svg1 from "../assets/certif_1.svg";
 import svg2 from "../assets/certif_2.svg";
 import svg3 from "../assets/certif_3.svg";
 
-import adormentCert from "../assets/cert.svg";
-import adormentKleros from "../assets/klerosCert.svg";
-import adormentGraph from "../assets/theGraphCert.svg";
+import adornmentCert from "../assets/cert.svg";
+import adornmentKleros from "../assets/klerosCert.svg";
+import adornmentGraph from "../assets/theGraphCert.svg";
 
 import { BadgeTypeDescription } from "../components/CardType";
+import { HexagonalDecoration } from "../components/Commons/HexagonalDecoration";
 
 const MainContainer = styled(Box)(({ theme }) => ({
   position: "relative",
@@ -16,6 +17,7 @@ const MainContainer = styled(Box)(({ theme }) => ({
   width: "80%",
   [theme.breakpoints.down("md")]: {
     width: "90%",
+    paddingTop: theme.spacing(8),
   },
   [theme.breakpoints.up("xl")]: {
     width: "70%",
@@ -79,16 +81,19 @@ const SectionTitle = styled(Typography)(({ theme }) => ({
   },
 }));
 
-const SvgDecoration = styled(Box)({
-  backgroundPositionY: "bottom",
-  backgroundPositionX: "right",
-  backgroundRepeat: "no-repeat",
-  backgroundImage: `url(./hexagonal.svg)`,
+const SvgDecoration = styled(Box)(({ theme }) => ({
   width: "100%",
   position: "absolute",
-  height: "600px",
+  height: "10%",
+  display: "flex",
+  justifyContent: "flex-end",
+  alignItems: "center",
   zIndex: -1,
-});
+  [theme.breakpoints.down("sm")]: {
+    left: "50%",
+    transform: "scale(1.3) translateX(-50%)",
+  },
+}));
 
 const BoxBadgeTypes = styled(Box)({
   marginTop: "10%",
@@ -104,7 +109,9 @@ const BoxBadgeTypes = styled(Box)({
 export default function Home() {
   return (
     <Box>
-      <SvgDecoration />
+      <SvgDecoration>
+        <HexagonalDecoration />
+      </SvgDecoration>
       <MainContainer>
         <Box mt={8}>
           <Box>
@@ -130,7 +137,7 @@ export default function Home() {
             liquidity providing, DAO voting, large holdings, liquidation events, etc. This type of 
             data is verified making use of The Graph.`}
             image={svg1}
-            adorment={adormentGraph}
+            adornment={adornmentGraph}
           />
 
           <BadgeTypeDescription
@@ -139,7 +146,7 @@ export default function Home() {
           It could be diplomas, passports, social media accounts, etc. Before the badge is 
           created, the document/ information needs to be verified by Kleros court.`}
             image={svg2}
-            adorment={adormentKleros}
+            adornment={adornmentKleros}
           />
 
           <BadgeTypeDescription
@@ -149,7 +156,7 @@ export default function Home() {
            to determine what is on their badge, and The Badge will distribute it to 
            pre-determined addresses.`}
             image={svg3}
-            adorment={adormentCert}
+            adornment={adornmentCert}
           />
         </BoxBadgeTypes>
 

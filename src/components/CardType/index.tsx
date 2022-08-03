@@ -1,4 +1,10 @@
-import { Box, styled, Typography } from "@mui/material";
+import {
+  Box,
+  styled,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import Image from "next/image";
 
 const CardBadgeType = styled(Box)(({ theme }) => ({
@@ -18,6 +24,11 @@ const CardBadgeType = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     maxHeight: "none",
     marginBottom: theme.spacing(3),
+  },
+  [theme.breakpoints.down("sm")]: {
+    maxHeight: "450px",
+    flexDirection: "column-reverse",
+    marginTop: theme.spacing(5),
   },
 }));
 
@@ -60,7 +71,7 @@ const ImageContainer = styled(Box)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   [theme.breakpoints.down("md")]: {
-    display: "none",
+    display: "flex",
   },
 }));
 
@@ -79,19 +90,22 @@ type BadgeTypeDescriptionPropsType = {
   tittle: string;
   body: string;
   image: string;
-  adorment: string;
+  adornment: string;
 };
 
 export const BadgeTypeDescription = ({
   tittle,
   body,
   image,
-  adorment,
+  adornment,
 }: BadgeTypeDescriptionPropsType) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <CardBadgeType>
       <LittleBadgeAdornment>
-        <Image src={adorment} alt="Ilustration" width={45} height={65} />
+        <Image src={adornment} alt="Ilustration" width={45} height={65} />
       </LittleBadgeAdornment>
       <Box
         sx={{
@@ -107,7 +121,12 @@ export const BadgeTypeDescription = ({
         </Box>
       </Box>
       <ImageContainer>
-        <Image src={image} alt="Ilustration" width={350} height={350} />
+        <Image
+          src={image}
+          alt="Ilustration"
+          width={isMobile ? 250 : 350}
+          height={isMobile ? 250 : 350}
+        />
       </ImageContainer>
     </CardBadgeType>
   );
