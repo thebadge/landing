@@ -1,6 +1,7 @@
 import createCache from '@emotion/cache';
 import { EmotionCache } from '@emotion/react';
 
+import createEmotionServer from '@emotion/server/create-instance';
 import Document, {
   DocumentContext,
   Head,
@@ -8,7 +9,6 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
-import createEmotionServer from '@emotion/server/create-instance';
 
 class MyDocument extends Document {
   render() {

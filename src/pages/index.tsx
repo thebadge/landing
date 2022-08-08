@@ -8,17 +8,18 @@ import adornmentKleros from '../assets/klerosCert.svg';
 import adornmentGraph from '../assets/theGraphCert.svg';
 
 import { BadgeTypeDescription } from '../components/CardType';
+
+import { BadgeSwipper } from '../components/Commons/BadgeSwiper';
 import { Paragraph } from '../components/Commons/Paragraph';
 import { SectionTitle } from '../components/Commons/SectionTitle';
 import { TheBadgeSubTitle } from '../components/Commons/Subtitle';
-import { HexagonalDecoration } from '../components/Commons/SVGs/HexagonalDecoration';
 import { TheBadgeTitle } from '../components/Commons/Title';
 
 const MainContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
   left: '50%',
   transform: 'translateX(-50%)',
-  width: '80%',
+  width: '90%',
   [theme.breakpoints.down('md')]: {
     width: '90%',
     paddingTop: theme.spacing(8),
@@ -29,10 +30,10 @@ const MainContainer = styled(Box)(({ theme }) => ({
 }));
 
 const SvgDecoration = styled(Box)(({ theme }) => ({
+  display: 'none',
   width: '100%',
   position: 'absolute',
   height: '10%',
-  display: 'flex',
   justifyContent: 'flex-end',
   alignItems: 'center',
   zIndex: -1,
@@ -53,28 +54,38 @@ const BoxBadgeTypes = styled(Box)({
   borderRadius: '10px',
 });
 
+const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'row',
+  [theme.breakpoints.down('md')]: {
+    flexDirection: 'column',
+  },
+}));
+
 export default function Home() {
   return (
     <Box>
-      <SvgDecoration>
-        <HexagonalDecoration />
-      </SvgDecoration>
       <MainContainer>
-        <Box mt={8}>
-          <Box>
-            <TheBadgeTitle>The Badge,</TheBadgeTitle>
-            <TheBadgeSubTitle>
-              Information certification <br /> & profile identity
-            </TheBadgeSubTitle>
+        <TitleAndSwiperContainer>
+          <Box mt={8} sx={{ flex: 2 }}>
+            <Box>
+              <TheBadgeTitle>The Badge,</TheBadgeTitle>
+              <TheBadgeSubTitle>
+                Information certification <br /> & profile identity
+              </TheBadgeSubTitle>
+            </Box>
+            <Paragraph>
+              The Badge is a decentralized certification platform built on
+              Ethereum that allows tokenizing on any piece of information coming
+              either on-chain or off-chain under the concept of badges. These
+              badges will create an on chain identity by being issued as
+              non-transferable and verifiable NFTs.
+            </Paragraph>
           </Box>
-          <Paragraph>
-            The Badge is a decentralized certification platform built on
-            Ethereum that allows tokenizing on any piece of information coming
-            either on-chain or off-chain under the concept of badges. These
-            badges will create an on chain identity by being issued as
-            non-transferable and verifiable NFTs.
-          </Paragraph>
-        </Box>
+          <Box sx={{ flex: 1, alignItems: 'center', display: 'flex' }}>
+            <BadgeSwipper />
+          </Box>
+        </TitleAndSwiperContainer>
         <BoxBadgeTypes>
           <SectionTitle>Types of badges</SectionTitle>
 
