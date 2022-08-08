@@ -57,7 +57,9 @@ const BoxBadgeTypes = styled(Box)({
 const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
+  marginTop: theme.spacing(8),
   [theme.breakpoints.down('md')]: {
+    marginTop: theme.spacing(2),
     flexDirection: 'column',
   },
 }));
@@ -67,7 +69,7 @@ export default function Home() {
     <Box>
       <MainContainer>
         <TitleAndSwiperContainer>
-          <Box mt={8} sx={{ flex: 2 }}>
+          <Box sx={{ flex: 2 }}>
             <Box>
               <TheBadgeTitle>The Badge,</TheBadgeTitle>
               <TheBadgeSubTitle>

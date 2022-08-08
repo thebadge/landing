@@ -80,8 +80,8 @@ export const BadgeSwipper = () => {
       <CarouserContainerInner>
         {IMAGES.map((image, i) => {
           return (
-            <Item size={isMobile ? 10 : 15} order={(indexSelected + i) % 3}>
-              <Image src={image} alt="random cat" layout="fill" />
+            <Item key={'decorative-image-' + i} size={isMobile ? 10 : 15} order={(indexSelected + i) % 3}>
+              <Image src={image} alt="decorative-image" layout="fill" />
             </Item>
           );
         })}
