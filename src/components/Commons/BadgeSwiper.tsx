@@ -1,11 +1,10 @@
 import { Box, styled, useMediaQuery, useTheme } from '@mui/material';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import offChainOne from '../../assets/cards_offchain_1.png';
-import onChainOne from '../../assets/cards_onchain_1.png';
-import thirdPartyOne from '../../assets/cards_thirdparty_1.png';
+import { CardAvee } from './SVGs/CardAvee';
+import { CardGithub } from './SVGs/CardGithub';
+import { CardThirdParty } from './SVGs/CardThirdParty';
 
-const IMAGES = [offChainOne, onChainOne, thirdPartyOne];
+const SVG_CARDS = [CardAvee, CardGithub, CardThirdParty];
 
 const CarouserContainerInner = styled(Box)({
   display: 'flex',
@@ -27,8 +26,8 @@ export const Item = styled(Box)<{
   width: `${size}rem`,
   height: `${size * (order == 1 ? 1.4 : 1.2)}rem`,
   position: 'absolute',
-  backgroundColor: 'white',
-  transition: '3s ease',
+  backgroundColor: 'transparent',
+  transition: '.9s ease',
   borderRadius: '8px',
   ...(order == 0
     ? {
@@ -78,10 +77,14 @@ export const BadgeSwipper = () => {
   return (
     <Box id="BadgeSwipper" sx={{ display: 'flex', flex: 1 }}>
       <CarouserContainerInner>
-        {IMAGES.map((image, i) => {
+        {SVG_CARDS.map((SvgCard, i) => {
           return (
-            <Item key={'decorative-image-' + i} size={isMobile ? 10 : 15} order={(indexSelected + i) % 3}>
-              <Image src={image} alt="decorative-image" layout="fill" />
+            <Item
+              key={'decorative-image-' + i}
+              size={isMobile ? 10 : 15}
+              order={(indexSelected + i) % 3}
+            >
+              <SvgCard />
             </Item>
           );
         })}
