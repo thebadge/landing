@@ -1,4 +1,4 @@
-import { Box, Divider, styled } from '@mui/material';
+import { Box, styled } from '@mui/material';
 import svg1 from '../assets/certif_1.svg';
 import svg2 from '../assets/certif_2.svg';
 import svg3 from '../assets/certif_3.svg';
@@ -112,9 +112,6 @@ export default function Home() {
             adornment={adornmentCert}
           />
         </BoxBadgeTypes>
-
-        <Divider sx={{ borderColor: '#66F5DF' }} />
-
       </MainContainer>
     </Box>
   );

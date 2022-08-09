@@ -4,6 +4,8 @@ import { SectionTitle } from '../Commons/SectionTitle';
 export const BackedBy = () => {
   return (
     <Box sx={{ marginTop: 4 }}>
+      <Divider sx={{ borderColor: '#66F5DF' }} />
+
       <SectionTitle>Backed By</SectionTitle>
       <Box
         sx={{
