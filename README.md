@@ -2,8 +2,11 @@
 
 ![license](https://img.shields.io/github/license/thebadge/thebadge-website)
 ![release](https://img.shields.io/github/v/release/thebadge/thebadge-website)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f536d6b5-9056-4403-84c7-9cc094554d68/deploy-status)](https://app.netlify.com/sites/jovial-cobbler-9aaef6/deploys)
 
 ![image](https://user-images.githubusercontent.com/21086218/183603344-7f293d72-654c-4428-be0a-788ba3efbfe3.png)
+
+For questions or request information reach out via [Discord](https://discord.gg/tVP75NqVuC).
 
 
 # Deployed environments
