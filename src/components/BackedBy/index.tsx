@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Divider } from '@mui/material';
 import { SectionTitle } from '../Commons/SectionTitle';
 
 export const BackedBy = () => {
