@@ -13,6 +13,7 @@ import { BadgeSwipper } from '../components/Commons/BadgeSwiper';
 import { Paragraph } from '../components/Commons/Paragraph';
 import { SectionTitle } from '../components/Commons/SectionTitle';
 import { TheBadgeSubTitle } from '../components/Commons/Subtitle';
+import { HexagonalDecoration } from '../components/Commons/SVGs/HexagonalDecoration';
 import { TheBadgeTitle } from '../components/Commons/Title';
 
 const MainContainer = styled(Box)(({ theme }) => ({
@@ -30,7 +31,7 @@ const MainContainer = styled(Box)(({ theme }) => ({
 }));
 
 const SvgDecoration = styled(Box)(({ theme }) => ({
-  display: 'none',
+  display: 'flex',
   width: '100%',
   position: 'absolute',
   height: '10%',
@@ -67,6 +68,9 @@ const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
 export default function Home() {
   return (
     <Box>
+      <SvgDecoration>
+        <HexagonalDecoration />
+      </SvgDecoration>
       <MainContainer>
         <TitleAndSwiperContainer>
           <Box sx={{ flex: 2 }}>

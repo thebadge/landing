@@ -27,7 +27,7 @@ export const Item = styled(Box)<{
   height: `${size * (order == 1 ? 1.4 : 1.2)}rem`,
   position: 'absolute',
   backgroundColor: 'transparent',
-  transition: '.9s ease',
+  transition: '.4s ease',
   borderRadius: '8px',
   ...(order == 0
     ? {
@@ -84,7 +84,9 @@ export const BadgeSwipper = () => {
               size={isMobile ? 10 : 15}
               order={(indexSelected + i) % 3}
             >
-              <SvgCard />
+              <SvgCard
+                sx={{ width: isMobile ? '10rem' : '15rem', height: '100%' }}
+              />
             </Item>
           );
         })}
