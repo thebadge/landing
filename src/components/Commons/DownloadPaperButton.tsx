@@ -1,6 +1,8 @@
 import { styled, Typography } from '@mui/material';
 import { StyledButton } from './StyledButton';
 import { DownloadIcon } from './SVGs/DownloadIcon';
+import { useGoogleAnalyticsBtn } from '@/src/hooks/useGoogleAnalytics';
+import { PAPER_URL } from '@/src/constants';
 
 const DownloadButtonLabel = styled(Typography)(({ theme }) => ({
   whiteSpace: 'pre-line',
@@ -32,10 +34,15 @@ const StyledDownloadIcon = styled(DownloadIcon)(({ theme }) => ({
 }));
 
 export const DownloadPaperButton = () => {
-  const url =
-    'https://drive.google.com/file/d/1Bi0_vkyN8UuyJAfVT8OCc7qFVvTnO0yP/view?usp=sharing';
+  const googleAnalyticsBtn = useGoogleAnalyticsBtn()
+
+  const openPaperHandler = () => {
+    window.open(PAPER_URL, '_blank')
+    googleAnalyticsBtn('Read Paper')
+  }
+
   return (
-    <StyledButton onClick={() => window.open(url, '_blank')}>
+    <StyledButton onClick={openPaperHandler}>
       <StyledDownloadIcon />
       <DownloadButtonLabel>{`White Paper`}</DownloadButtonLabel>
     </StyledButton>

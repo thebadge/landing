@@ -24,7 +24,7 @@ const MyApp = ({
   emotionCache = clientSideEmotionCache,
 }: MyAppProps) => {
   const theme = useMemo(() => createTheme(getTheme()), []);
-  useGoogleAnalytics()
+  useGoogleAnalytics();
   return (
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
