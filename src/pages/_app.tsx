@@ -7,6 +7,7 @@ import { useMemo } from 'react';
 
 import { LayoutContainer } from '../components/Layout/LayoutContainer';
 import { getTheme } from '../styles/theme';
+import { useGoogleAnalytics } from '@/src/hooks/useGoogleAnalytics';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createCache({
@@ -23,6 +24,7 @@ const MyApp = ({
   emotionCache = clientSideEmotionCache,
 }: MyAppProps) => {
   const theme = useMemo(() => createTheme(getTheme()), []);
+  useGoogleAnalytics()
   return (
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
