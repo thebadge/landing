@@ -10,13 +10,16 @@ export const Paragraph = styled(Typography)(({ theme }) => ({
   lineHeight: '28px',
   margin: 0,
   marginTop: theme.spacing(2),
-  width: '50%',
+  width: '90%',
   [theme.breakpoints.down('md')]: {
     width: '100%',
   },
-  [theme.breakpoints.up('xl')]: {
-    width: '65%',
+  [theme.breakpoints.up('lg')]: {
+    width: '85%',
     fontSize: '24px',
     lineHeight: '120%',
+  },
+  '@media (min-width: 1800px)': {
+    width: '75%',
   },
 }));
