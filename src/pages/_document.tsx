@@ -1,6 +1,7 @@
 import createCache from '@emotion/cache';
 import { EmotionCache } from '@emotion/react';
 
+import { GA_MEASUREMENT_ID } from '@/src/constants';
 import createEmotionServer from '@emotion/server/create-instance';
 import Document, {
   DocumentContext,
@@ -28,6 +29,23 @@ class MyDocument extends Document {
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
           />
         </Head>
         <body>
