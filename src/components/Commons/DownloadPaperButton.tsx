@@ -34,12 +34,12 @@ const StyledDownloadIcon = styled(DownloadIcon)(({ theme }) => ({
 }));
 
 export const DownloadPaperButton = () => {
-  const googleAnalyticsBtn = useGoogleAnalyticsBtn()
+  const googleAnalyticsBtn = useGoogleAnalyticsBtn();
 
   const openPaperHandler = () => {
-    window.open(PAPER_URL, '_blank')
-    googleAnalyticsBtn('Read Paper')
-  }
+    window.open(PAPER_URL, '_blank');
+    googleAnalyticsBtn('Read Paper');
+  };
 
   return (
     <StyledButton onClick={openPaperHandler}>
