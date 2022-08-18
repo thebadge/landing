@@ -1,7 +1,8 @@
-import GitHubIcon from '@mui/icons-material/GitHub';
-import TelegramIcon from '@mui/icons-material/Telegram';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import { Box, styled } from '@mui/material';
+import MediumIcon from '@/src/components/Icons/Medium';
+import DiscordIcon from '@/src/components/Icons/Discord';
+import { DISCORD_URL, GITHUB_URL, MEDIUM_URL } from '@/src/constants';
+import GithubIcon from '@/src/components/Icons/Github';
 
 export const FooterContainer = styled(Box)({
   position: 'relative',
@@ -25,9 +26,9 @@ export const Footer = () => {
   return (
     <FooterContainer>
       <SocialContainer>
-        <GitHubIcon />
-        <TwitterIcon />
-        <TelegramIcon />
+        <GithubIcon link={GITHUB_URL} />
+        <MediumIcon link={MEDIUM_URL} />
+        <DiscordIcon link={DISCORD_URL} />
       </SocialContainer>
     </FooterContainer>
   );
