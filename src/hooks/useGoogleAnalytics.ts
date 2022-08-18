@@ -51,5 +51,5 @@ export const useGoogleAnalyticsBtn = () => {
     }
   };
 
-  return btnEvent
+  return btnEvent;
 };
