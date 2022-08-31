@@ -16,7 +16,9 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="description" content="The Badge" />
+          <title>The Badge</title>
+          <meta name="description" content="The Badge is a decentralized certification platform built on Ethereum that allows tokenizing on any piece of information coming either on-chain or off-chain under the concept of badges. These badges will create an on chain identity by being issued as non-transferable and verifiable NFTs." />
+          <meta itemProp="image" content="/logo.svg"/>
           <link rel="icon" href="/favicon.ico" />
           <link
             rel="stylesheet"
