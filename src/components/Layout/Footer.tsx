@@ -1,7 +1,8 @@
+import EmailIcon from "@/src/components/Icons/Email";
 import { Box, styled } from '@mui/material';
 import MediumIcon from '@/src/components/Icons/Medium';
 import DiscordIcon from '@/src/components/Icons/Discord';
-import { DISCORD_URL, GITHUB_URL, MEDIUM_URL } from '@/src/constants';
+import { DISCORD_URL, EMAIL_URL, GITHUB_URL, MEDIUM_URL } from '@/src/constants';
 import GithubIcon from '@/src/components/Icons/Github';
 
 export const FooterContainer = styled(Box)({
@@ -28,6 +29,7 @@ export const Footer = () => {
       <SocialContainer>
         <GithubIcon link={GITHUB_URL} />
         <MediumIcon link={MEDIUM_URL} />
+        <EmailIcon link={EMAIL_URL}/>
         <DiscordIcon link={DISCORD_URL} />
       </SocialContainer>
     </FooterContainer>
