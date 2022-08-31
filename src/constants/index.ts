@@ -8,4 +8,4 @@ export const MEDIUM_URL =
 export const GITHUB_URL =
   process.env.NEXT_PUBLIC_GITHUB_URL || 'https://github.com/thebadge';
 export const EMAIL_URL =
-    process.env.NEXT_PUBLIC_DISCORD_URL || 'mailto:hello+landing@thebadge.xyz';
+    process.env.NEXT_PUBLIC_EMAIL_URL || 'mailto:hello+landing@thebadge.xyz';
