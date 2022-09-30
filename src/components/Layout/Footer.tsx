@@ -1,9 +1,16 @@
-import EmailIcon from "@/src/components/Icons/Email";
 import { Box, styled } from '@mui/material';
-import MediumIcon from '@/src/components/Icons/Medium';
-import DiscordIcon from '@/src/components/Icons/Discord';
-import { DISCORD_URL, EMAIL_URL, GITHUB_URL, MEDIUM_URL } from '@/src/constants';
+import TwitterIcon from '@/src/components/Icons/Twitter';
 import GithubIcon from '@/src/components/Icons/Github';
+import MediumIcon from '@/src/components/Icons/Medium';
+import EmailIcon from '@/src/components/Icons/Email';
+import DiscordIcon from '@/src/components/Icons/Discord';
+import {
+  TWITTER_URL,
+  DISCORD_URL,
+  EMAIL_URL,
+  GITHUB_URL,
+  MEDIUM_URL,
+} from '@/src/constants';
 
 export const FooterContainer = styled(Box)({
   position: 'relative',
@@ -27,9 +34,10 @@ export const Footer = () => {
   return (
     <FooterContainer>
       <SocialContainer>
+        <TwitterIcon link={TWITTER_URL} />
         <GithubIcon link={GITHUB_URL} />
         <MediumIcon link={MEDIUM_URL} />
-        <EmailIcon link={EMAIL_URL}/>
+        <EmailIcon link={EMAIL_URL} />
         <DiscordIcon link={DISCORD_URL} />
       </SocialContainer>
     </FooterContainer>
