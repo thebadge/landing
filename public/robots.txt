@@ -1,2 +1,7 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://www.thebadge.xyz/sitemap.xml
+Sitemap: https://thebadge.xyz/sitemap.xml
+Sitemap: http://thebadge.xyz/sitemap.xml
+Sitemap: http://www.thebadge.xyz/sitemap.xml

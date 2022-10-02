@@ -22,8 +22,8 @@ class MyDocument extends Document {
             content="The Badge is a decentralized certification platform built on Ethereum that allows tokenizing on any piece of information coming either on-chain or off-chain under the concept of badges. These badges will create an on chain identity by being issued as non-transferable and verifiable NFTs."
           />
           <meta itemProp="image" content="/logo.svg" />
-          <meta name="robots" content="noodp,noydir" />
           <link rel="icon" href="/favicon.ico" />
+          <link rel="canonical" href="https://www.thebadge.xyz/" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;600;700;800&display=swap"
