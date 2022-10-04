@@ -90,7 +90,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar:
       'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b5e7c29c-4240-4ff7-bd7f-f20dad63ff04/photo_2022-09-29_23-43-15.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221004%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221004T191036Z&X-Amz-Expires=86400&X-Amz-Signature=8843a4c2d3b204cf0b9d820421538687a7eecfd7eeda79f2f9bcb7dbc08bb898&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22photo_2022-09-29_23-43-15.jpg%22&x-id=GetObject',
-    name: 'Agustin Lombardi',
+    name: 'Agustín Lombardi',
     description: 'Community Manager, Funds Raising',
     contact: '@lombarcrypto',
     contactType: 'Twitter',
