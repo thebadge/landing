@@ -98,7 +98,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar:
       'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8e6fbe90-bb40-4c09-b06a-45041aca0dd5/EUG_7073_Original.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221004%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221004T191221Z&X-Amz-Expires=86400&X-Amz-Signature=29bef834f0b05661212840e221ee2414de9e023410504e3050cb2764e85648be&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22EUG_7073_Original.JPG.jpg%22&x-id=GetObject',
-    name: 'Nicolas Magri',
+    name: 'Nicolás Magri',
     description: 'Chief Compliance Officer',
     contact: '@monito313',
     contactType: 'Twitter',
