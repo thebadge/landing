@@ -83,7 +83,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar:
       'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8195605b-5b00-4b91-af15-4c7452241fd3/ALprofile.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221004%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221004T191231Z&X-Amz-Expires=86400&X-Amz-Signature=3c6433d892bcdc698a2d74c16dddc77e1fdd83102265724e2727ac33bf533328&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22ALprofile.jpg%22&x-id=GetObject',
-    name: 'Agustin Longoni',
+    name: 'Agustín Longoni',
     description: 'UX/UI Designer',
     contact: '@alongoni',
   },
