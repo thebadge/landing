@@ -17,6 +17,7 @@ const ContainerBox = styled(Box)(({ theme }) => ({
 type Organizations = {
   image: string | StaticImageData;
   url: string;
+  alt: string;
 };
 
 const ORGS: Organizations[] = [
@@ -27,6 +28,7 @@ const ORGS: Organizations[] = [
   {
     image: qfEthLatam,
     url: 'https://qf.ethlatam.org/#/?option=3',
+    alt: 'Quadratic Founding Eth Latam',
   },
 ];
 
@@ -54,7 +56,7 @@ export const BackedBy = () => {
               <a href={org.url}>
                 <Image
                   src={org.image}
-                  alt="Ilustration"
+                  alt={org.alt}
                   width={isMobile ? 250 : 350}
                   height={isMobile ? 100 : 150}
                 />

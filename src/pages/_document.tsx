@@ -12,15 +12,28 @@ import Document, {
 } from 'next/document';
 
 class MyDocument extends Document {
+  title = 'The Badge';
+  description =
+    'The Badge is a decentralized certification platform built on Ethereum that allows tokenizing on any piece of information coming either on-chain or off-chain under the concept of badges. These badges will create an on chain identity by being issued as non-transferable and verifiable NFTs.';
+  twitterHandle = '@';
+
   render() {
     return (
       <Html lang="en">
         <Head>
-          <title>The Badge</title>
+          <title>{this.title}</title>
+          <meta name="description" content={this.description} />
+          <meta content={this.title} property="og:title" />
           <meta
-            name="description"
-            content="The Badge is a decentralized certification platform built on Ethereum that allows tokenizing on any piece of information coming either on-chain or off-chain under the concept of badges. These badges will create an on chain identity by being issued as non-transferable and verifiable NFTs."
+            content={`https://thebadge.xyz/the_badge_icon.png`}
+            property="og:image"
           />
+          <meta content="website" property="og:type" />
+          <meta content={this.description} property="og:description" />
+          <meta content="summary_large_image" name="twitter:card" />
+          <meta content={this.title} name="twitter:site" />
+          <meta content={this.twitterHandle} name="twitter:creator" />
+
           <meta itemProp="image" content="/logo.svg" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="canonical" href="https://www.thebadge.xyz/" />
