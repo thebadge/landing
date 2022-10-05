@@ -46,28 +46,28 @@ type TeamMember = {
 const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar:
-      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/eb950806-4d0f-4d05-b222-a67c0c3cbb87/agu.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T113320Z&X-Amz-Expires=86400&X-Amz-Signature=83754b2372c223f2e4d7c7fda7822fb44e5aac44070cfa725c552b67d61e54a5&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22agu.jpeg%22&x-id=GetObject',
+      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b65c22d2-a77a-49b2-a58a-1ce41ed2d41a/agu.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T133408Z&X-Amz-Expires=86400&X-Amz-Signature=b368dd3352edec43323152f9b115739291b3c190d1958966cad24c89ccf375c6&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22agu.jpeg%22&x-id=GetObject',
     name: 'Agustín Pane',
     description: 'Co-founder \n Project Manager, Full-stack & Web3 Developer',
     contact: 'agupane',
   },
   {
     avatar:
-      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/81275c9d-6b5b-4479-b775-1d881be0bb9c/nico.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T113503Z&X-Amz-Expires=86400&X-Amz-Signature=e712279cff5b593ff849cdfde417aaaf2a4d9dba5042b6301410ff0fafb6c7db&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22nico.png%22&x-id=GetObject',
+      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5272a2e9-872f-43be-8e2a-83e8e8ba4854/nico.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T133656Z&X-Amz-Expires=86400&X-Amz-Signature=946b1a2844a2ab5dbffa7999616444730bb689ba5e6668c3f0170c9181f936b2&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22nico.png%22&x-id=GetObject',
     name: 'Nicolás Domínguez',
     description: 'Co-founder \n Sofware Architect, Web3 & Solidity Developer',
     contact: 'nicosampler',
   },
   {
     avatar:
-      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c7653521-fe0c-4ccf-8382-82ed2b6ccf9d/fede.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T113352Z&X-Amz-Expires=86400&X-Amz-Signature=c439c9291d5195054a08c1a28a546a45a1a879769f79e2e9fe14368f0a2ccb6e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22fede.png%22&x-id=GetObject',
+      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/819460d3-e352-4796-959a-ebdcaf22b75c/fede.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T133439Z&X-Amz-Expires=86400&X-Amz-Signature=eadfa1a275dc34e1e02001327c0bd91b70c559c5599819a1ec0187e5e32a8763&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22fede.png%22&x-id=GetObject',
     name: 'Federico Madoery',
     description: 'Co-founder \n UIX Expert, Full-stack & Mobile Developer',
     contact: 'fedeMadoery',
   },
   {
     avatar:
-      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/928c0a08-53f6-4ad0-b3ac-8f4c9b86374d/javi.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T113425Z&X-Amz-Expires=86400&X-Amz-Signature=af59108466a1a8533d36716c3522918447bffbccde5b9b6f10d5f64ecbf8284c&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22javi.jpeg%22&x-id=GetObject',
+      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b89948e5-404a-43fd-bc9d-0f802f817118/javi.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T132400Z&X-Amz-Expires=86400&X-Amz-Signature=44337b5974e579f69fb1be186635ae6a53837e5202b6de92dea73c4bcff14e47&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22javi.jpeg%22&x-id=GetObject',
     name: 'Javier Alba, CFA',
     description: 'Co-founder \n Chief Financial Officer',
     contact: 'JaviAlba00',
@@ -82,14 +82,14 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     avatar:
-      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e712f8ce-09c5-4e0c-a316-a3599c91b74c/Untitled.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T113334Z&X-Amz-Expires=86400&X-Amz-Signature=c75b85bbfa49d7f0d16214bcab5f38f3ba371aecbe97394591879c5173b10aec&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.jpeg%22&x-id=GetObject',
+      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c5ff4230-7ab9-415c-8fc1-8cfd021c8377/agul.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T133424Z&X-Amz-Expires=86400&X-Amz-Signature=9ede7cff13b98838f73b0782a1cd53f5fa3489524868b3f09e8234fda275ef61&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22agul.jpg%22&x-id=GetObject',
     name: 'Agustín Longoni',
     description: 'UX/UI Designer',
     contact: 'alongoni',
   },
   {
     avatar:
-      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/46a88af7-8aef-45fa-bbac-e8a428e6b369/lombardi_%281%29.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T130205Z&X-Amz-Expires=86400&X-Amz-Signature=0d4a523ca74634382d21b439e84350c8c54ca1559ac03ce3161a51a575d9d439&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22lombardi%2520%281%29.jpeg%22&x-id=GetObject',
+      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f086473e-cc5d-47da-9249-3ead6f1999df/lombardi.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T131755Z&X-Amz-Expires=86400&X-Amz-Signature=8e9c34aba110e12c7863f3cefeec1a80900a89a6ea6af0f3a746850465f7eedf&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22lombardi.jpeg%22&x-id=GetObject',
     name: 'Agustín Lombardi',
     description: 'Community Manager',
     contact: 'lombarcrypto',
