@@ -1,8 +1,9 @@
-import { Box, Divider, styled, useMediaQuery, useTheme } from '@mui/material';
+import { Box, styled, useMediaQuery, useTheme } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
 import qfEthLatam from '../../assets/qf_ethlatam.svg';
 
 import { SectionTitle } from '../Commons/SectionTitle';
+import { CustomDivider } from '@/src/components/Commons/Divider';
 
 const ContainerBox = styled(Box)(({ theme }) => ({
   flex: '1 1 20%',
@@ -12,6 +13,17 @@ const ContainerBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     flex: '1 1 100%',
   },
+}));
+
+const BoxBackedBy = styled(Box)(({ theme }) => ({
+  marginTop: theme.spacing(10),
+  marginBottom: theme.spacing(10),
+}));
+
+const CustomOrgLink = styled('a')(({ theme }) => ({
+  background: '#121212',
+  padding: '12px 16px 0 16px',
+  borderRadius: '12px',
 }));
 
 type Organizations = {
@@ -37,9 +49,8 @@ export const BackedBy = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
-    <Box sx={{ marginTop: 4 }}>
-      <Divider sx={{ borderColor: '#66F5DF' }} />
-
+    <BoxBackedBy>
+      <CustomDivider />
       <SectionTitle>Backed By</SectionTitle>
       <Box
         sx={{
@@ -53,18 +64,18 @@ export const BackedBy = () => {
         {ORGS.map((org, i) => {
           return (
             <ContainerBox key={i}>
-              <a href={org.url}>
+              <CustomOrgLink href={org.url}>
                 <Image
                   src={org.image}
                   alt={org.alt}
                   width={isMobile ? 250 : 350}
                   height={isMobile ? 100 : 150}
                 />
-              </a>
+              </CustomOrgLink>
             </ContainerBox>
           );
         })}
       </Box>
-    </Box>
+    </BoxBackedBy>
   );
 };
