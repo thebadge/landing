@@ -89,7 +89,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     avatar:
-      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0672e6f1-ed2e-404e-8d5a-78dfcd8a3f2f/lombardi.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T113446Z&X-Amz-Expires=86400&X-Amz-Signature=e867152d3daba96d4e803dcc824ba91acfe1330bbae4a9485faf5fa5c03ff81e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22lombardi.jpeg%22&x-id=GetObject',
+      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/46a88af7-8aef-45fa-bbac-e8a428e6b369/lombardi_%281%29.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T130205Z&X-Amz-Expires=86400&X-Amz-Signature=0d4a523ca74634382d21b439e84350c8c54ca1559ac03ce3161a51a575d9d439&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22lombardi%2520%281%29.jpeg%22&x-id=GetObject',
     name: 'Agustín Lombardi',
     description: 'Community Manager',
     contact: 'lombarcrypto',
@@ -97,7 +97,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     avatar:
-      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/881966e0-2fe9-435a-bfda-e470641a67c4/nicom.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T113521Z&X-Amz-Expires=86400&X-Amz-Signature=7c17fda2b25160c483ec8dbba1b8288c8262ffc2f2a02210b773df2c87f25455&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22nicom.jpg%22&x-id=GetObject',
+      'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/50d8246a-23e1-4ba6-817e-e5c2d6e701e8/nicom.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221005T131353Z&X-Amz-Expires=86400&X-Amz-Signature=e5bdcdb8374169c63f55fe97f7f859f20c3cf8477196106dc24c47dbd65cc522&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22nicom.jpg%22&x-id=GetObject',
     name: 'Nicolás Magri',
     description: 'Chief Compliance Officer',
     contact: 'monito313',
@@ -129,16 +129,6 @@ export const Team = () => {
                 sx={{
                   width: 92,
                   height: 92,
-                }}
-                imgProps={{
-                  sx:
-                    i === 6
-                      ? {
-                          height: '200%',
-                          top: '-1px',
-                          position: 'absolute',
-                        } // Agu Lomboardi picture need be diff, hardcoded fix
-                      : {},
                 }}
               />
               <MemberName>{member.name}</MemberName>
