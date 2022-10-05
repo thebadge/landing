@@ -1,6 +1,6 @@
-import { styled, Typography } from '@mui/material';
+import { styled } from '@mui/material';
 
-export const BodyCardBadgeType = styled(Typography)(({ theme }) => ({
+export const BodyCardBadgeType = styled('div')(({ theme }) => ({
   color: theme.palette.common.white,
   fontStyle: 'normal',
   fontWeight: '400',

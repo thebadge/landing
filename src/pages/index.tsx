@@ -14,6 +14,7 @@ import { SectionTitle } from '../components/Commons/SectionTitle';
 import { TheBadgeSubTitle } from '../components/Commons/Subtitle';
 import { HexagonalDecoration } from '../components/Commons/SVGs/HexagonalDecoration';
 import { Team } from '../components/Team';
+import { CustomLink } from '@/src/components/Commons/Link';
 
 const MainContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
@@ -92,17 +93,34 @@ export default function Home() {
         </TitleAndSwiperContainer>
         <BoxBadgeTypes>
           <SectionTitle>Types of badges</SectionTitle>
-
           <BadgeTypeDescription
             tittle={'Off-chain Badges'}
-            body={`Are badges generated and backed by Kleros. In order to mint these badges evidence has to be presented and pass through a curation process.`}
+            body={
+              <div>
+                Are badges generated and backed by{' '}
+                <CustomLink
+                  href={'https://kleros.gitbook.io/docs/products/curate'}
+                  target={'_blank'}
+                >
+                  Kleros
+                </CustomLink>
+                . In order to mint these badges evidence has to be presented and
+                pass through a curation process.
+              </div>
+            }
             image={svg2}
             adornment={adornmentKleros}
           />
 
           <BadgeTypeDescription
             tittle={'Third-party Badges'}
-            body={`Are badges generated and backed by a public or private entity. Entities that are willing to generate these badges will need to apply and be allowed before they can start emitting them.`}
+            body={
+              <div>
+                Are badges generated and backed by a public or private entity.
+                Entities that are willing to generate these badges will need to
+                apply and be allowed before they can start emitting them.
+              </div>
+            }
             image={svg3}
             adornment={adornmentCert}
           />
