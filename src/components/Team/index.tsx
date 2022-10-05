@@ -2,6 +2,7 @@ import TwitterMUIIcon from '@mui/icons-material/Twitter';
 import { Avatar, Box, Divider, styled, Typography } from '@mui/material';
 import { SectionTitle } from '../Commons/SectionTitle';
 import { GithubCatIcon } from '../Commons/SVGs/GithubCat';
+import { CustomDivider } from '@/src/components/Commons/Divider';
 
 const MemberBox = styled(Box)(({ theme }) => ({
   justifyContent: 'flex-start',
@@ -33,6 +34,11 @@ const MemberDescription = styled(Typography)(({ theme }) => ({
     width: '100%',
     fontSize: '14px',
   },
+}));
+
+const BoxTeam = styled(Box)(({ theme }) => ({
+  marginTop: theme.spacing(10),
+  marginBottom: theme.spacing(10),
 }));
 
 type TeamMember = {
@@ -107,9 +113,8 @@ const TEAM_MEMBERS: TeamMember[] = [
 
 export const Team = () => {
   return (
-    <Box sx={{ marginTop: 4 }}>
-      <Divider sx={{ borderColor: '#66F5DF' }} />
-
+    <BoxTeam>
+      <CustomDivider />
       <SectionTitle>Team</SectionTitle>
       <Box
         sx={{
@@ -164,6 +169,6 @@ export const Team = () => {
           );
         })}
       </Box>
-    </Box>
+    </BoxTeam>
   );
 };

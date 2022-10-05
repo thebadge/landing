@@ -44,16 +44,16 @@ const SvgDecoration = styled(Box)(({ theme }) => ({
   },
 }));
 
-const BoxBadgeTypes = styled(Box)({
-  marginTop: '7%',
-  marginBottom: '10%',
+const BoxBadgeTypes = styled(Box)(({ theme }) => ({
   padding: '5%',
   display: 'flex',
   flexDirection: 'column',
   flex: 1,
   background: 'rgba(0, 0, 0, 0.58)',
   borderRadius: '10px',
-});
+  marginTop: theme.spacing(10),
+  marginBottom: theme.spacing(10),
+}));
 
 const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
