@@ -4,6 +4,7 @@ import { CardBadgeType } from '../Commons/CardBadgeType';
 import { TittleCardBadgeType } from '../Commons/TittleCardBadgeType';
 import { BodyCardBadgeType } from '../Commons/BodyCardBadgeType';
 import { ImageContainer } from '../Commons/ImageContainer';
+import React from 'react';
 
 const LittleBadgeAdornment = styled(Box)(({ theme }) => ({
   position: 'absolute',
@@ -18,7 +19,7 @@ const LittleBadgeAdornment = styled(Box)(({ theme }) => ({
 
 type BadgeTypeDescriptionPropsType = {
   tittle: string;
-  body: string;
+  body: React.ReactNode;
   image: string;
   adornment: string;
 };
