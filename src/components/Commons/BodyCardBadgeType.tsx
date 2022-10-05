@@ -6,6 +6,7 @@ export const BodyCardBadgeType = styled(Typography)(({ theme }) => ({
   fontWeight: '400',
   fontSize: '16px',
   lineHeight: '18px',
+  textAlign: 'justify',
   [theme.breakpoints.down('md')]: {
     maxHeight: 'none',
     marginBottom: theme.spacing(3),
