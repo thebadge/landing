@@ -118,7 +118,8 @@ export default function Home() {
               <div>
                 Are badges generated and backed by a public or private entity.
                 Entities that are willing to generate these badges will need to
-                apply and be allowed before they can start emitting them.
+                be registered on the platform before they can start emitting
+                them.
               </div>
             }
             image={svg3}
