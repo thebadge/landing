@@ -22,8 +22,8 @@ const BoxBackedBy = styled(Box)(({ theme }) => ({
   marginBottom: theme.spacing(10),
 }));
 
-const CustomOrgLink = styled('a')(({ theme }) => ({
-  background: '#121212',
+const CustomOrgLink = styled('a')<{ backColor: string }>(({ theme , backColor}) => ({
+  background: `${backColor}`,
   padding: '12px 16px 0 16px',
   borderRadius: '12px',
 }));
@@ -32,6 +32,7 @@ type Organizations = {
   image: string | StaticImageData;
   url: string;
   alt: string;
+  backColor: string;
 };
 
 const ORGS: Organizations[] = [
@@ -39,11 +40,13 @@ const ORGS: Organizations[] = [
     image: klerosLogo,
     url: 'https://kleros.io/',
     alt: 'Kleros',
+    backColor: '#4d00b4',
   },
   {
     image: qfEthLatam,
     url: 'https://qf.ethlatam.org/#/?option=3',
     alt: 'Quadratic Founding ETH Latam',
+    backColor: '#121212',
   },
 ];
 
@@ -66,7 +69,7 @@ export const BackedBy = () => {
         {ORGS.map((org, i) => {
           return (
             <ContainerBox key={i}>
-              <CustomOrgLink href={org.url}>
+              <CustomOrgLink href={org.url} backColor={org.backColor}>
                 <Image
                   src={org.image}
                   alt={org.alt}
