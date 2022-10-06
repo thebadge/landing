@@ -1,9 +1,8 @@
+import { CustomDivider } from '@/src/components/Commons/Divider';
 import TwitterMUIIcon from '@mui/icons-material/Twitter';
-import { Avatar, Box, styled, Typography } from '@mui/material';
+import { Avatar, Box, styled, Typography, useTheme } from '@mui/material';
 import { SectionTitle } from '../Commons/SectionTitle';
 import { GithubCatIcon } from '../Commons/SVGs/GithubCat';
-import { CustomDivider } from '@/src/components/Commons/Divider';
-import { useCustomTheme } from '@/src/hooks/useTheme';
 
 const MemberBox = styled(Box)(({ theme }) => ({
   justifyContent: 'flex-start',
@@ -113,7 +112,7 @@ const TEAM_MEMBERS: TeamMember[] = [
 ];
 
 export const Team = () => {
-  const theme = useCustomTheme();
+  const theme = useTheme();
   return (
     <BoxTeam>
       <CustomDivider />

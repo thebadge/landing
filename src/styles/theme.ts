@@ -1,5 +1,29 @@
-import { TypographyOptions } from '@mui/material/styles/createTypography';
 import { Palette, PaletteMode, ThemeOptions } from '@mui/material';
+import { TypographyOptions } from '@mui/material/styles/createTypography';
+
+declare module '@mui/material/styles' {
+  interface CustomSizes {
+    icon: number;
+    avatar: number;
+  }
+  // Palette is used to add custom colors, inside the palette property on the theme
+  interface Palette {
+    border: string;
+    hint: string;
+  }
+  // Theme is used to add custom properties to the theme itself
+  interface Theme {
+    customSizes: CustomSizes;
+  }
+  interface ThemeOptions {
+    customSizes: CustomSizes;
+  }
+  // allow configuration using `createTheme`
+  interface PaletteOptions {
+    border?: string;
+    hint?: string;
+  }
+}
 
 const typography:
   | TypographyOptions
@@ -76,10 +100,6 @@ const typography:
 };
 
 export type CustomTheme = ThemeOptions & {
-  customSizes: {
-    icon: number;
-    avatar: number;
-  };
   components?: {
     MuiDataGrid: unknown;
   };
