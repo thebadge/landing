@@ -1,6 +1,7 @@
 import { Box, styled } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
 import qfEthLatam from '../../assets/qf_ethlatam.svg';
+import klerosLogo from '../../assets/kleros-logo.png';
 
 import { SectionTitle } from '../Commons/SectionTitle';
 import { CustomDivider } from '@/src/components/Commons/Divider';
@@ -34,14 +35,15 @@ type Organizations = {
 };
 
 const ORGS: Organizations[] = [
-  /* {
+  {
     image: klerosLogo,
     url: 'https://kleros.io/',
-  }, */
+    alt: 'Kleros',
+  },
   {
     image: qfEthLatam,
     url: 'https://qf.ethlatam.org/#/?option=3',
-    alt: 'Quadratic Founding Eth Latam',
+    alt: 'Quadratic Founding ETH Latam',
   },
 ];
 
