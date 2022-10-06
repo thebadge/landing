@@ -75,7 +75,17 @@ const typography:
   },
 };
 
-const defaultTheme: ThemeOptions = {
+export type CustomTheme = ThemeOptions & {
+  customSizes: {
+    icon: number;
+    avatar: number;
+  };
+  components?: {
+    MuiDataGrid: unknown;
+  };
+};
+
+const defaultTheme: CustomTheme = {
   typography,
   breakpoints: {
     values: {
@@ -85,6 +95,10 @@ const defaultTheme: ThemeOptions = {
       lg: 1200,
       xl: 1536,
     },
+  },
+  customSizes: {
+    icon: 21,
+    avatar: 92,
   },
   palette: {
     primary: {
@@ -117,19 +131,18 @@ const defaultTheme: ThemeOptions = {
   },
 };
 
-export const getTheme = (mode?: PaletteMode) =>
-  ({
-    ...defaultTheme,
-    components: {
-      MuiDataGrid: {
-        styleOverrides: {
-          root: {
-            borderColor: 'grey.300',
-            '& .MuiDataGrid-cell:focus-within, & .MuiDataGrid-cell:focus': {
-              outline: 'none',
-            },
+export const getTheme = (mode?: PaletteMode): CustomTheme => ({
+  ...defaultTheme,
+  components: {
+    MuiDataGrid: {
+      styleOverrides: {
+        root: {
+          borderColor: 'grey.300',
+          '& .MuiDataGrid-cell:focus-within, & .MuiDataGrid-cell:focus': {
+            outline: 'none',
           },
         },
       },
     },
-  } as ThemeOptions);
+  },
+});

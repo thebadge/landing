@@ -1,8 +1,9 @@
 import TwitterMUIIcon from '@mui/icons-material/Twitter';
-import { Avatar, Box, Divider, styled, Typography } from '@mui/material';
+import { Avatar, Box, styled, Typography } from '@mui/material';
 import { SectionTitle } from '../Commons/SectionTitle';
 import { GithubCatIcon } from '../Commons/SVGs/GithubCat';
 import { CustomDivider } from '@/src/components/Commons/Divider';
+import { useCustomTheme } from '@/src/hooks/useTheme';
 
 const MemberBox = styled(Box)(({ theme }) => ({
   justifyContent: 'flex-start',
@@ -112,6 +113,7 @@ const TEAM_MEMBERS: TeamMember[] = [
 ];
 
 export const Team = () => {
+  const theme = useCustomTheme();
   return (
     <BoxTeam>
       <CustomDivider />
@@ -132,8 +134,8 @@ export const Team = () => {
                 alt={member.name}
                 src={member.avatar}
                 sx={{
-                  width: 92,
-                  height: 92,
+                  width: theme.customSizes.avatar,
+                  height: theme.customSizes.avatar,
                 }}
               />
               <MemberName>{member.name}</MemberName>
@@ -157,7 +159,11 @@ export const Team = () => {
                 >
                   {member.contactType === 'Twitter' ? (
                     <TwitterMUIIcon
-                      sx={{ width: 21, height: 21, fill: '#FFFF' }}
+                      sx={{
+                        width: theme.customSizes.icon,
+                        height: theme.customSizes.icon,
+                        fill: '#FFFF',
+                      }}
                     />
                   ) : (
                     <GithubCatIcon />
