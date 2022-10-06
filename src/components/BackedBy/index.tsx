@@ -1,8 +1,4 @@
 import { Box, styled } from '@mui/material';
-import Image, { StaticImageData } from 'next/image';
-import qfEthLatam from '../../../public/qf_ethlatam.svg';
-import klerosLogo from '../../../public/kleros-logo.png';
-
 import { SectionTitle } from '../Commons/SectionTitle';
 import { CustomDivider } from '@/src/components/Commons/Divider';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
@@ -29,7 +25,7 @@ const CustomOrgLink = styled('a')<{ backColor: string }>(({ theme , backColor}) 
 }));
 
 type Organizations = {
-  image: string | StaticImageData;
+  image: string;
   url: string;
   alt: string;
   backColor: string;
@@ -37,13 +33,13 @@ type Organizations = {
 
 const ORGS: Organizations[] = [
   {
-    image: klerosLogo,
+    image: '/kleros-logo.png',
     url: 'https://kleros.io/',
     alt: 'Kleros',
     backColor: '#4d00b4',
   },
   {
-    image: qfEthLatam,
+    image: '/qf_ethlatam.svg',
     url: 'https://qf.ethlatam.org/#/?option=3',
     alt: 'Quadratic Founding ETH Latam',
     backColor: '#121212',
@@ -70,7 +66,7 @@ export const BackedBy = () => {
           return (
             <ContainerBox key={i}>
               <CustomOrgLink href={org.url} backColor={org.backColor}>
-                <Image
+                <img
                   src={org.image}
                   alt={org.alt}
                   width={isMobile ? 250 : 350}
