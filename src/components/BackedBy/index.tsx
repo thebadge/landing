@@ -1,8 +1,10 @@
 import { CustomDivider } from '@/src/components/Commons/Divider';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, styled } from '@mui/material';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { SectionTitle } from '../Commons/SectionTitle';
+
+import klerosLogo from '../../../public/kleros-logo.png';
 
 const ContainerBox = styled(Box)(({ theme }) => ({
   flex: '1 1 20%',
@@ -28,7 +30,7 @@ const CustomOrgLink = styled('a')<{ backColor: string }>(
 );
 
 type Organizations = {
-  image: string;
+  image: string | StaticImageData;
   url: string;
   alt: string;
   backColor: string;
@@ -36,7 +38,7 @@ type Organizations = {
 
 const ORGS: Organizations[] = [
   {
-    image: '/kleros-logo.png',
+    image: klerosLogo,
     url: 'https://kleros.io/',
     alt: 'Kleros',
     backColor: '#4d00b4',
