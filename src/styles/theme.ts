@@ -1,5 +1,29 @@
-import { TypographyOptions } from '@mui/material/styles/createTypography';
 import { Palette, PaletteMode, ThemeOptions } from '@mui/material';
+import { TypographyOptions } from '@mui/material/styles/createTypography';
+
+declare module '@mui/material/styles' {
+  interface CustomSizes {
+    icon: number;
+    avatar: number;
+  }
+  // Palette is used to add custom colors, inside the palette property on the theme
+  interface Palette {
+    border: string;
+    hint: string;
+  }
+  // Theme is used to add custom properties to the theme itself
+  interface Theme {
+    customSizes: CustomSizes;
+  }
+  interface ThemeOptions {
+    customSizes: CustomSizes;
+  }
+  // allow configuration using `createTheme`
+  interface PaletteOptions {
+    border?: string;
+    hint?: string;
+  }
+}
 
 const typography:
   | TypographyOptions
@@ -75,7 +99,13 @@ const typography:
   },
 };
 
-const defaultTheme: ThemeOptions = {
+export type CustomTheme = ThemeOptions & {
+  components?: {
+    MuiDataGrid: unknown;
+  };
+};
+
+const defaultTheme: CustomTheme = {
   typography,
   breakpoints: {
     values: {
@@ -85,6 +115,10 @@ const defaultTheme: ThemeOptions = {
       lg: 1200,
       xl: 1536,
     },
+  },
+  customSizes: {
+    icon: 21,
+    avatar: 92,
   },
   palette: {
     primary: {
@@ -117,19 +151,18 @@ const defaultTheme: ThemeOptions = {
   },
 };
 
-export const getTheme = (mode?: PaletteMode) =>
-  ({
-    ...defaultTheme,
-    components: {
-      MuiDataGrid: {
-        styleOverrides: {
-          root: {
-            borderColor: 'grey.300',
-            '& .MuiDataGrid-cell:focus-within, & .MuiDataGrid-cell:focus': {
-              outline: 'none',
-            },
+export const getTheme = (mode?: PaletteMode): CustomTheme => ({
+  ...defaultTheme,
+  components: {
+    MuiDataGrid: {
+      styleOverrides: {
+        root: {
+          borderColor: 'grey.300',
+          '& .MuiDataGrid-cell:focus-within, & .MuiDataGrid-cell:focus': {
+            outline: 'none',
           },
         },
       },
     },
-  } as ThemeOptions);
+  },
+});

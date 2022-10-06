@@ -1,8 +1,9 @@
-import { Box, styled, useMediaQuery, useTheme } from '@mui/material';
+import { Box, styled } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { CardAvee } from './SVGs/CardAvee';
 import { CardGithub } from './SVGs/CardGithub';
 import { CardThirdParty } from './SVGs/CardThirdParty';
+import { useIsMobile } from '@/src/hooks/useIsMobile';
 
 const SVG_CARDS = [CardAvee, CardGithub, CardThirdParty];
 
@@ -63,9 +64,7 @@ export const Item = styled(Box)<{
 
 export const BadgeSwipper = () => {
   const [indexSelected, setIndex] = useState(0);
-  const theme = useTheme();
-
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     const id = setInterval(() => {

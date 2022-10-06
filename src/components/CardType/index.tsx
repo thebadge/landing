@@ -1,10 +1,11 @@
-import { Box, styled, useMediaQuery, useTheme } from '@mui/material';
+import { Box, styled } from '@mui/material';
 import Image from 'next/image';
 import { CardBadgeType } from '../Commons/CardBadgeType';
 import { TittleCardBadgeType } from '../Commons/TittleCardBadgeType';
 import { BodyCardBadgeType } from '../Commons/BodyCardBadgeType';
 import { ImageContainer } from '../Commons/ImageContainer';
 import React from 'react';
+import { useIsMobile } from '@/src/hooks/useIsMobile';
 
 const LittleBadgeAdornment = styled(Box)(({ theme }) => ({
   position: 'absolute',
@@ -30,8 +31,7 @@ export const BadgeTypeDescription = ({
   image,
   adornment,
 }: BadgeTypeDescriptionPropsType) => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useIsMobile();
 
   return (
     <CardBadgeType>
