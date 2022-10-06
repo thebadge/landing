@@ -88,7 +88,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     contact: 'alongoni',
   },
   {
-    avatar: '/avatars/agul.jpeg',
+    avatar: '/avatars/agulom.jpeg',
     name: 'Agustín Lombardi',
     description: 'Community Manager',
     contact: 'lombarcrypto',
