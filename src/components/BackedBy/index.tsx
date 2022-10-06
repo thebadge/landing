@@ -1,7 +1,7 @@
 import { Box, styled } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
-import qfEthLatam from '../../assets/qf_ethlatam.svg';
-import klerosLogo from '../../assets/kleros-logo.png';
+import qfEthLatam from '../../../public/qf_ethlatam.svg';
+import klerosLogo from '../../../public/kleros-logo.png';
 
 import { SectionTitle } from '../Commons/SectionTitle';
 import { CustomDivider } from '@/src/components/Commons/Divider';
