@@ -1,9 +1,10 @@
-import { Box, styled, useMediaQuery, useTheme } from '@mui/material';
+import { Box, styled } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
 import qfEthLatam from '../../assets/qf_ethlatam.svg';
 
 import { SectionTitle } from '../Commons/SectionTitle';
 import { CustomDivider } from '@/src/components/Commons/Divider';
+import { useIsMobile } from '@/src/hooks/useIsMobile';
 
 const ContainerBox = styled(Box)(({ theme }) => ({
   flex: '1 1 20%',
@@ -45,8 +46,7 @@ const ORGS: Organizations[] = [
 ];
 
 export const BackedBy = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useIsMobile();
 
   return (
     <BoxBackedBy>
