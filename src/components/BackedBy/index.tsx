@@ -1,7 +1,8 @@
-import { Box, styled } from '@mui/material';
-import { SectionTitle } from '../Commons/SectionTitle';
 import { CustomDivider } from '@/src/components/Commons/Divider';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
+import { Box, styled } from '@mui/material';
+import Image from 'next/image';
+import { SectionTitle } from '../Commons/SectionTitle';
 
 const ContainerBox = styled(Box)(({ theme }) => ({
   flex: '1 1 20%',
@@ -68,7 +69,7 @@ export const BackedBy = () => {
           return (
             <ContainerBox key={i}>
               <CustomOrgLink href={org.url} backColor={org.backColor}>
-                <img
+                <Image
                   src={org.image}
                   alt={org.alt}
                   width={isMobile ? 250 : 350}
