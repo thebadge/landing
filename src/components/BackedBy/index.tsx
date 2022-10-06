@@ -18,11 +18,13 @@ const BoxBackedBy = styled(Box)(({ theme }) => ({
   marginBottom: theme.spacing(10),
 }));
 
-const CustomOrgLink = styled('a')<{ backColor: string }>(({ theme , backColor}) => ({
-  background: `${backColor}`,
-  padding: '12px 16px 0 16px',
-  borderRadius: '12px',
-}));
+const CustomOrgLink = styled('a')<{ backColor: string }>(
+  ({ theme, backColor }) => ({
+    background: `${backColor}`,
+    padding: '12px 16px 0 16px',
+    borderRadius: '12px',
+  }),
+);
 
 type Organizations = {
   image: string;
