@@ -4,7 +4,8 @@ import { Box, styled } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
 import { SectionTitle } from '../Commons/SectionTitle';
 
-import klerosLogo from '/public/kleros-logo.png';
+import klerosLogo from '../../assets/klerosLogo.png';
+import ethLatam from '../../assets/qf_ethlatam.svg';
 
 const ContainerBox = styled(Box)(({ theme }) => ({
   flex: '1 1 20%',
@@ -44,7 +45,7 @@ const ORGS: Organizations[] = [
     backColor: '#4d00b4',
   },
   {
-    image: '/qf_ethlatam.svg',
+    image: ethLatam,
     url: 'https://qf.ethlatam.org/#/?option=3',
     alt: 'Quadratic Founding ETH Latam',
     backColor: '#121212',
