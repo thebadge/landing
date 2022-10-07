@@ -1,7 +1,6 @@
 import { CustomDivider } from '@/src/components/Commons/Divider';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, styled } from '@mui/material';
-import Image, { StaticImageData } from 'next/image';
 import { SectionTitle } from '../Commons/SectionTitle';
 
 import klerosLogo from '../../assets/klerosLogo.png';
@@ -31,7 +30,7 @@ const CustomOrgLink = styled('a')<{ backcolor: string }>(
 );
 
 type Organizations = {
-  image: string | StaticImageData;
+  image: string;
   url: string;
   alt: string;
   backColor: string;
@@ -72,7 +71,7 @@ export const BackedBy = () => {
           return (
             <ContainerBox key={i}>
               <CustomOrgLink href={org.url} backcolor={org.backColor}>
-                <Image
+                <img
                   src={org.image}
                   alt={org.alt}
                   width={isMobile ? 250 : 350}
