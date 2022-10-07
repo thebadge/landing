@@ -7,5 +7,6 @@ export const ImageContainer = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   [theme.breakpoints.down('md')]: {
     display: 'flex',
+    marginTop: theme.spacing(-6),
   },
 }));

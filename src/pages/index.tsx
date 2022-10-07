@@ -4,9 +4,12 @@ import svg3 from '../assets/certif_3.svg';
 
 import adornmentCert from '../assets/cert.svg';
 import adornmentKleros from '../assets/klerosCert.svg';
+import offchainHowToMobile from '../assets/off-chain-how-to-mobile.svg';
+import offchainHowTo from '../assets/off-chain-how-to.svg';
 
 import { BadgeTypeDescription } from '../components/CardType';
 
+import { CustomLink } from '@/src/components/Commons/Link';
 import { BackedBy } from '../components/BackedBy';
 import { BadgeSwipper } from '../components/Commons/BadgeSwiper';
 import { Paragraph } from '../components/Commons/Paragraph';
@@ -14,7 +17,6 @@ import { SectionTitle } from '../components/Commons/SectionTitle';
 import { TheBadgeSubTitle } from '../components/Commons/Subtitle';
 import { HexagonalDecoration } from '../components/Commons/SVGs/HexagonalDecoration';
 import { Team } from '../components/Team';
-import { CustomLink } from '@/src/components/Commons/Link';
 
 const MainContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
@@ -110,6 +112,7 @@ export default function Home() {
             }
             image={svg2}
             adornment={adornmentKleros}
+            howToImage={{ desktop: offchainHowTo, mobile: offchainHowToMobile }}
           />
 
           <BadgeTypeDescription
