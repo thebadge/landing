@@ -21,9 +21,9 @@ const BoxBackedBy = styled(Box)(({ theme }) => ({
   marginBottom: theme.spacing(10),
 }));
 
-const CustomOrgLink = styled('a')<{ backColor: string }>(
-  ({ theme, backColor }) => ({
-    background: `${backColor}`,
+const CustomOrgLink = styled('a')<{ backcolor: string }>(
+  ({ theme, backcolor }) => ({
+    background: `${backcolor}`,
     padding: '12px 16px 0 16px',
     borderRadius: '12px',
   }),
@@ -70,7 +70,7 @@ export const BackedBy = () => {
         {ORGS.map((org, i) => {
           return (
             <ContainerBox key={i}>
-              <CustomOrgLink href={org.url} backColor={org.backColor}>
+              <CustomOrgLink href={org.url} backcolor={org.backColor}>
                 <Image
                   src={org.image}
                   alt={org.alt}
