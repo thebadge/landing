@@ -3,9 +3,6 @@ import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, styled } from '@mui/material';
 import { SectionTitle } from '../Commons/SectionTitle';
 
-import klerosLogo from '../../assets/klerosLogo.png';
-import ethLatam from '../../assets/qf_ethlatam.svg';
-
 const ContainerBox = styled(Box)(({ theme }) => ({
   flex: '1 1 20%',
   alignItems: 'center',
@@ -38,13 +35,13 @@ type Organizations = {
 
 const ORGS: Organizations[] = [
   {
-    image: klerosLogo,
+    image: '/assets/klerosLogo.png',
     url: 'https://kleros.io/',
     alt: 'Kleros',
     backColor: '#4d00b4',
   },
   {
-    image: ethLatam,
+    image: '/assets/qf_ethlatam.svg',
     url: 'https://qf.ethlatam.org/#/?option=3',
     alt: 'Quadratic Founding ETH Latam',
     backColor: '#121212',
