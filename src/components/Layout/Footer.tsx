@@ -60,7 +60,7 @@ export const Footer = () => {
       </SocialContainer>
       <CustomDivider sx={{ mx: '25%', marginTop: 2 }} />
       <LegalContainer>
-        <span>©{new Date().getFullYear()} The Badge</span>
+        <span>©{new Date().getFullYear()} The Badge. All rights reserved.</span>
         <Box sx={{ columnGap: 2, display: 'none' }}>
           {!isMobile && <span>|</span>}
           <Link target="_blank">Terms</Link>
