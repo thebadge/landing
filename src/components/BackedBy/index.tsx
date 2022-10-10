@@ -1,11 +1,7 @@
 import { CustomDivider } from '@/src/components/Commons/Divider';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, styled } from '@mui/material';
-import Image, { StaticImageData } from 'next/image';
 import { SectionTitle } from '../Commons/SectionTitle';
-
-import klerosLogo from '../../assets/kleros-logo.png';
-import ethLatam from '../../assets/qf_ethlatam.svg';
 
 const ContainerBox = styled(Box)(({ theme }) => ({
   flex: '1 1 20%',
@@ -22,16 +18,16 @@ const BoxBackedBy = styled(Box)(({ theme }) => ({
   marginBottom: theme.spacing(10),
 }));
 
-const CustomOrgLink = styled('a')<{ backColor: string }>(
-  ({ theme, backColor }) => ({
-    background: `${backColor}`,
+const CustomOrgLink = styled('a')<{ backcolor: string }>(
+  ({ theme, backcolor }) => ({
+    background: `${backcolor}`,
     padding: '12px 16px 0 16px',
     borderRadius: '12px',
   }),
 );
 
 type Organizations = {
-  image: string | StaticImageData;
+  image: string;
   url: string;
   alt: string;
   backColor: string;
@@ -39,13 +35,13 @@ type Organizations = {
 
 const ORGS: Organizations[] = [
   {
-    image: klerosLogo,
+    image: '/assets/klerosLogo.png',
     url: 'https://kleros.io/',
     alt: 'Kleros',
     backColor: '#4d00b4',
   },
   {
-    image: ethLatam,
+    image: '/assets/qf_ethlatam.svg',
     url: 'https://qf.ethlatam.org/#/?option=3',
     alt: 'Quadratic Founding ETH Latam',
     backColor: '#121212',
@@ -71,8 +67,8 @@ export const BackedBy = () => {
         {ORGS.map((org, i) => {
           return (
             <ContainerBox key={i}>
-              <CustomOrgLink href={org.url} backColor={org.backColor}>
-                <Image
+              <CustomOrgLink href={org.url} backcolor={org.backColor}>
+                <img
                   src={org.image}
                   alt={org.alt}
                   width={isMobile ? 250 : 350}

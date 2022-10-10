@@ -25,7 +25,7 @@ class MyDocument extends Document {
           <meta name="description" content={this.description} />
           <meta content={this.title} property="og:title" />
           <meta
-            content={`https://thebadge.xyz/the_badge_icon.png`}
+            content={`https://thebadge.xyz/favicon.ico`}
             property="og:image"
           />
           <meta content="website" property="og:type" />
