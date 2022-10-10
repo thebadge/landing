@@ -1,16 +1,8 @@
 import { Box, styled } from '@mui/material';
-import svg2 from '../assets/certif_2.svg';
-import svg3 from '../assets/certif_3.svg';
 
-import adornmentCert from '../assets/cert.svg';
-import adornmentKleros from '../assets/klerosCert.svg';
-import offchainHowToMobile from '../assets/off-chain-how-to-mobile.svg';
-import offchainHowTo from '../assets/off-chain-how-to.svg';
-
-import { BadgeTypeDescription } from '../components/CardType';
-
-import { CustomLink } from '@/src/components/Commons/Link';
 import { BackedBy } from '../components/BackedBy';
+import { OffchainCard } from '../components/CardType/OffChainCard';
+import { ThirdPartyCard } from '../components/CardType/ThirdPartyCard';
 import { BadgeSwipper } from '../components/Commons/BadgeSwiper';
 import { Paragraph } from '../components/Commons/Paragraph';
 import { SectionTitle } from '../components/Commons/SectionTitle';
@@ -95,39 +87,8 @@ export default function Home() {
         </TitleAndSwiperContainer>
         <BoxBadgeTypes>
           <SectionTitle>Types of badges</SectionTitle>
-          <BadgeTypeDescription
-            tittle={'Off-chain Badges'}
-            body={
-              <div>
-                Are badges generated and backed by{' '}
-                <CustomLink
-                  href={'https://kleros.gitbook.io/docs/products/curate'}
-                  target={'_blank'}
-                >
-                  Kleros
-                </CustomLink>
-                . In order to mint these badges evidence has to be presented and
-                pass through a curation process.
-              </div>
-            }
-            image={svg2}
-            adornment={adornmentKleros}
-            howToImage={{ desktop: offchainHowTo, mobile: offchainHowToMobile }}
-          />
-
-          <BadgeTypeDescription
-            tittle={'Third-party Badges'}
-            body={
-              <div>
-                Are badges generated and backed by a public or private entity.
-                Entities that are willing to generate these badges will need to
-                be registered on the platform before they can start emitting
-                them.
-              </div>
-            }
-            image={svg3}
-            adornment={adornmentCert}
-          />
+          <OffchainCard />
+          <ThirdPartyCard />
         </BoxBadgeTypes>
         <Team />
         <BackedBy />

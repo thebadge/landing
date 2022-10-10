@@ -23,7 +23,11 @@ type BadgeTypeDescriptionPropsType = {
   body: React.ReactNode;
   image: string;
   adornment: string;
-  howToImage?: {
+  howToImage: {
+    mobile: string;
+    desktop: string;
+  };
+  howToImageAspectRatio: {
     mobile: string;
     desktop: string;
   };
@@ -35,6 +39,7 @@ export const BadgeTypeDescription = ({
   image,
   adornment,
   howToImage,
+  howToImageAspectRatio,
 }: BadgeTypeDescriptionPropsType) => {
   const isMobile = useIsMobile();
 
@@ -73,7 +78,10 @@ export const BadgeTypeDescription = ({
               display: 'flex',
               position: 'relative',
               width: '100%',
-              aspectRatio: isMobile ? '6/13' : '10/9',
+              my: 2,
+              aspectRatio: isMobile
+                ? howToImageAspectRatio.mobile
+                : howToImageAspectRatio.desktop,
             }}
           >
             <Image
