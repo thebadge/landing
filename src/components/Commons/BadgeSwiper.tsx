@@ -1,11 +1,11 @@
+import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, styled } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { CardAvee } from './SVGs/CardAvee';
 import { CardGithub } from './SVGs/CardGithub';
 import { CardThirdParty } from './SVGs/CardThirdParty';
-import { useIsMobile } from '@/src/hooks/useIsMobile';
+import { CardTwitter } from './SVGs/CardTwitter';
 
-const SVG_CARDS = [CardAvee, CardGithub, CardThirdParty];
+const SVG_CARDS = [CardTwitter, CardGithub, CardThirdParty];
 
 const CarouserContainerInner = styled(Box)({
   display: 'flex',

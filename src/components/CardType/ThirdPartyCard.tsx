@@ -11,10 +11,10 @@ export const ThirdPartyCard = () => {
       tittle={'Third-party Badges'}
       body={
         <div>
-          Also known as "Blockchain certifications as a service". They are
-          badges generated and backed by a public or private entity. Entities
-          that are willing to generate these badges have to be registered on the
-          platform before they can start emitting them.
+          Also known as &quot;Blockchain certifications as a service&quot;. They
+          are badges generated and backed by a public or private entity.
+          Entities that are willing to generate these badges have to be
+          registered on the platform before they can start emitting them.
         </div>
       }
       image={svg3}
