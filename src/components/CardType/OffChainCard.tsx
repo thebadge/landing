@@ -27,7 +27,7 @@ export const OffchainCard = () => {
       image={svg2}
       adornment={adornmentKleros}
       howToImage={{ desktop: offchainHowTo, mobile: offchainHowToMobile }}
-      howToImageAspectRatio={{ desktop: '10/9', mobile: '6/10' }}
+      howToImageAspectRatio={{ desktop: '9/9', mobile: '6/10' }}
     />
   );
 };
