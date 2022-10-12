@@ -4,7 +4,6 @@ import svg3 from '../../assets/certif_3.svg';
 import tpHowToMobile from '../../assets/tp-how-to-mobile.svg';
 import tpHowTo from '../../assets/tp-how-to.svg';
 
-import adornmentCert from '../../assets/cert.svg';
 export const ThirdPartyCard = () => {
   return (
     <BadgeTypeDescription
@@ -18,7 +17,6 @@ export const ThirdPartyCard = () => {
         </div>
       }
       image={svg3}
-      adornment={adornmentCert}
       howToImage={{ desktop: tpHowTo, mobile: tpHowToMobile }}
       howToImageAspectRatio={{ desktop: '10/9', mobile: '6/7' }}
       howToImageAlt={`

@@ -22,7 +22,7 @@ type BadgeTypeDescriptionPropsType = {
   tittle: string;
   body: React.ReactNode;
   image: string;
-  adornment: string;
+  adornment?: string;
   howToImage: {
     mobile: string;
     desktop: string;
@@ -49,9 +49,11 @@ export const BadgeTypeDescription = ({
     <CardBadgeContainer>
       <Container maxWidth={'md'}>
         <CardBadgeType>
-          <LittleBadgeAdornment>
-            <Image src={adornment} alt="Ilustration" width={45} height={65} />
-          </LittleBadgeAdornment>
+          {adornment ? (
+            <LittleBadgeAdornment>
+              <Image src={adornment} alt="Ilustration" width={45} height={65} />
+            </LittleBadgeAdornment>
+          ) : null}
           <Box
             sx={{
               display: 'flex',

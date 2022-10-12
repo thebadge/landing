@@ -5,8 +5,6 @@ import { CustomLink } from '../Commons/Link';
 import offchainHowToMobile from '../../assets/off-chain-how-to-mobile.svg';
 import offchainHowTo from '../../assets/off-chain-how-to.svg';
 
-import adornmentKleros from '../../assets/klerosCert.svg';
-
 export const OffchainCard = () => {
   return (
     <BadgeTypeDescription
@@ -25,7 +23,6 @@ export const OffchainCard = () => {
         </div>
       }
       image={svg2}
-      adornment={adornmentKleros}
       howToImage={{ desktop: offchainHowTo, mobile: offchainHowToMobile }}
       howToImageAspectRatio={{ desktop: '9/9', mobile: '6/10' }}
       howToImageAlt={`
