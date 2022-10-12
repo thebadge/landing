@@ -27,6 +27,7 @@ type BadgeTypeDescriptionPropsType = {
     mobile: string;
     desktop: string;
   };
+  howToImageAlt: string;
   howToImageAspectRatio: {
     mobile: string;
     desktop: string;
@@ -39,6 +40,7 @@ export const BadgeTypeDescription = ({
   image,
   adornment,
   howToImage,
+  howToImageAlt,
   howToImageAspectRatio,
 }: BadgeTypeDescriptionPropsType) => {
   const isMobile = useIsMobile();
@@ -87,6 +89,7 @@ export const BadgeTypeDescription = ({
             <Image
               src={isMobile ? howToImage.mobile : howToImage.desktop}
               layout="fill"
+              alt={howToImageAlt}
             />
           </Box>
         )}
