@@ -8,7 +8,7 @@ import Document, {
   Head,
   Html,
   Main,
-  NextScript,
+  NextScript
 } from 'next/document';
 
 class MyDocument extends Document {
@@ -25,7 +25,7 @@ class MyDocument extends Document {
           <meta name="description" content={this.description} />
           <meta content={this.title} property="og:title" />
           <meta
-            content={`https://thebadge.xyz/favicon.ico`}
+            content={`https://thebadge.xyz/the_badge_icon_small.png`}
             property="og:image"
           />
           <meta content="website" property="og:type" />
