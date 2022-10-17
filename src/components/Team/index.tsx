@@ -1,6 +1,7 @@
 import { CustomDivider } from '@/src/components/Commons/Divider';
 import TwitterMUIIcon from '@mui/icons-material/Twitter';
 import { Avatar, Box, styled, Typography, useTheme } from '@mui/material';
+import Image from 'next/image';
 import { SectionTitle } from '../Commons/SectionTitle';
 import { GithubCatIcon } from '../Commons/SVGs/GithubCat';
 
@@ -51,51 +52,51 @@ type TeamMember = {
 
 const TEAM_MEMBERS: TeamMember[] = [
   {
-    avatar: '/avatars/agu.jpeg',
+    avatar: '/avatars/agu.webp',
     name: 'Agustín Pane',
     description: 'Co-founder \n Project Manager, Full-stack & Web3 Developer',
     contact: 'agupane',
   },
   {
-    avatar: '/avatars/nico.png',
+    avatar: '/avatars/nico.webp',
     name: 'Nicolás Domínguez',
     description: 'Co-founder \n Sofware Architect, Web3 & Solidity Developer',
     contact: 'nicosampler',
   },
   {
-    avatar: '/avatars/fede.png',
+    avatar: '/avatars/fede.webp',
     name: 'Federico Madoery',
     description: 'Co-founder \n UIX Expert, Full-stack & Mobile Developer',
     contact: 'fedeMadoery',
   },
   {
-    avatar: '/avatars/javi.jpeg',
+    avatar: '/avatars/javi.webp',
     name: 'Javier Alba, CFA',
     description: 'Co-founder \n Chief Financial Officer',
     contact: 'JaviAlba00',
     contactType: 'Twitter',
   },
   {
-    avatar: '/avatars/fer.jpeg',
+    avatar: '/avatars/fer.webp',
     name: 'Fernando Ramirez',
     description: 'Frontend Developer',
     contact: 'ramabit',
   },
   {
-    avatar: '/avatars/agulon.jpeg',
+    avatar: '/avatars/agulon.webp',
     name: 'Agustín Longoni',
     description: 'UX/UI Designer',
     contact: 'alongoni',
   },
   {
-    avatar: '/avatars/agulom.jpeg',
+    avatar: '/avatars/agulom.webp',
     name: 'Agustín Lombardi',
     description: 'Community Manager',
     contact: 'lombarcrypto',
     contactType: 'Twitter',
   },
   {
-    avatar: '/avatars/nicom.jpg',
+    avatar: '/avatars/nicom.webp',
     name: 'Nicolás Magri',
     description: 'Chief Compliance Officer',
     contact: 'monito313',
@@ -122,13 +123,13 @@ export const Team = () => {
           return (
             <MemberBox key={i}>
               <Avatar
-                alt={member.name}
-                src={member.avatar}
                 sx={{
                   width: theme.customSizes.avatar,
                   height: theme.customSizes.avatar,
                 }}
-              />
+              >
+                <Image src={member.avatar} alt={member.name} layout="fill" />
+              </Avatar>
               <MemberName>{member.name}</MemberName>
               <MemberDescription>{member.description}</MemberDescription>
               {member.contact && (
