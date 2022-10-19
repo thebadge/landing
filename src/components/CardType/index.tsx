@@ -1,6 +1,6 @@
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Container, styled } from '@mui/material';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import { BodyCardBadgeType } from '../Commons/BodyCardBadgeType';
 import { CardBadgeContainer, CardBadgeType } from '../Commons/CardBadgeType';
@@ -21,7 +21,7 @@ const LittleBadgeAdornment = styled(Box)(({ theme }) => ({
 type BadgeTypeDescriptionPropsType = {
   tittle: string;
   body: React.ReactNode;
-  image: string;
+  image: string | StaticImageData;
   adornment?: string;
   howToImage: {
     mobile: string;
@@ -67,10 +67,10 @@ export const BadgeTypeDescription = ({
               <BodyCardBadgeType>{body}</BodyCardBadgeType>
             </Box>
           </Box>
-          <ImageContainer>
+          <ImageContainer sx={{ position: 'relative', display: 'flex' }}>
             <Image
               src={image}
-              alt="Ilustration"
+              alt={tittle + ' Ilustration'}
               width={isMobile ? 250 : 300}
               height={isMobile ? 250 : 300}
             />

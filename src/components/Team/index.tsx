@@ -25,6 +25,14 @@ const MemberName = styled(Typography)(({ theme }) => ({
   },
 }));
 
+const StyledLink = styled('a')(() => ({
+  flexDirection: 'row',
+  display: 'flex',
+  marginTop: 'auto',
+  cursor: 'pointer',
+  textDecoration: 'none',
+}));
+
 const MemberDescription = styled(Typography)(({ theme }) => ({
   color: theme.palette.common.white,
   whiteSpace: 'break-spaces',
@@ -133,21 +141,13 @@ export const Team = () => {
               <MemberName>{member.name}</MemberName>
               <MemberDescription>{member.description}</MemberDescription>
               {member.contact && (
-                <Box
-                  sx={{
-                    flexDirection: 'row',
-                    display: 'flex',
-                    marginTop: 'auto',
-                    cursor: 'pointer',
-                  }}
-                  onClick={() => {
-                    window.open(
-                      member.contactType === 'Twitter'
-                        ? `https://twitter.com/${member.contact}`
-                        : `https://github.com/${member.contact}`,
-                      '_blank',
-                    );
-                  }}
+                <StyledLink
+                  target="_blank"
+                  href={
+                    member.contactType === 'Twitter'
+                      ? `https://twitter.com/${member.contact}`
+                      : `https://github.com/${member.contact}`
+                  }
                 >
                   {member.contactType === 'Twitter' ? (
                     <TwitterMUIIcon
@@ -161,7 +161,7 @@ export const Team = () => {
                     <GithubCatIcon />
                   )}
                   <MemberDescription>@{member.contact}</MemberDescription>
-                </Box>
+                </StyledLink>
               )}
             </MemberBox>
           );
