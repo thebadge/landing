@@ -8,7 +8,7 @@ import offchainHowTo from '../../assets/off-chain-how-to.svg';
 export const OffchainCard = () => {
   return (
     <BadgeTypeDescription
-      tittle={'Off-chain Badges'}
+      title={'Off-chain Badges'}
       body={
         <div>
           Are badges generated and backed by{' '}

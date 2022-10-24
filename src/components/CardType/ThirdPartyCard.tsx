@@ -7,7 +7,7 @@ import tpHowTo from '../../assets/tp-how-to.svg';
 export const ThirdPartyCard = () => {
   return (
     <BadgeTypeDescription
-      tittle={'Third-party Badges'}
+      title={'Third-party Badges'}
       body={
         <div>
           Also known as &quot;Blockchain certifications as a service&quot;. They
