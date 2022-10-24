@@ -19,7 +19,7 @@ const LittleBadgeAdornment = styled(Box)(({ theme }) => ({
 }));
 
 type BadgeTypeDescriptionPropsType = {
-  tittle: string;
+  title: string;
   body: React.ReactNode;
   image: string | StaticImageData;
   adornment?: string;
@@ -35,7 +35,7 @@ type BadgeTypeDescriptionPropsType = {
 };
 
 export const BadgeTypeDescription = ({
-  tittle,
+  title,
   body,
   image,
   adornment,
@@ -63,14 +63,14 @@ export const BadgeTypeDescription = ({
             }}
           >
             <Box m="auto">
-              <TittleCardBadgeType>{tittle}</TittleCardBadgeType>
+              <TittleCardBadgeType>{title}</TittleCardBadgeType>
               <BodyCardBadgeType>{body}</BodyCardBadgeType>
             </Box>
           </Box>
-          <ImageContainer sx={{ position: 'relative', display: 'flex' }}>
+          <ImageContainer>
             <Image
               src={image}
-              alt={tittle + ' Ilustration'}
+              alt={title + ' Ilustration'}
               width={isMobile ? 250 : 300}
               height={isMobile ? 250 : 300}
             />
