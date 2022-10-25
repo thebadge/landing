@@ -1,6 +1,7 @@
 import { Box, styled } from '@mui/material';
 
 export const ImageContainer = styled(Box)(({ theme }) => ({
+  position: 'relative',
   flex: 1,
   display: 'flex',
   justifyContent: 'center',

@@ -69,7 +69,7 @@ export default function Home() {
         <TitleAndSwiperContainer>
           <Box sx={{ flex: 2 }}>
             <Box>
-              <TheBadgeSubTitle>
+              <TheBadgeSubTitle as="h1">
                 Information certification <br /> & profile identity
               </TheBadgeSubTitle>
             </Box>
