@@ -1,7 +1,6 @@
-import { useIsMobile } from '@/src/hooks/useIsMobile';
-import { Box, Container, styled } from '@mui/material';
+import { Box, Container, styled, SvgIconProps } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
-import React from 'react';
+import React, { ComponentType } from 'react';
 import { BodyCardBadgeType } from '../Commons/BodyCardBadgeType';
 import { CardBadgeContainer, CardBadgeType } from '../Commons/CardBadgeType';
 import { ImageContainer } from '../Commons/ImageContainer';
@@ -21,30 +20,14 @@ const LittleBadgeAdornment = styled(Box)(({ theme }) => ({
 type BadgeTypeDescriptionPropsType = {
   title: string;
   body: React.ReactNode;
-  image: {
-    mobile: string | StaticImageData;
-    desktop: string | StaticImageData;
-  };
+  image: string | StaticImageData;
   imageSizes: {
-    mobile: {
-      width: number;
-      height: number;
-    };
-    desktop: {
-      width: number;
-      height: number;
-    };
+    width: number;
+    height: number;
   };
   adornment?: string;
-  howToImage: {
-    mobile: string;
-    desktop: string;
-  };
-  howToImageAlt: string;
-  howToImageAspectRatio: {
-    mobile: string;
-    desktop: string;
-  };
+  howToSVGComponent: ComponentType<SvgIconProps>;
+  howToAspectRatio: string;
 };
 
 export const BadgeTypeDescription = ({
@@ -53,11 +36,10 @@ export const BadgeTypeDescription = ({
   image,
   imageSizes,
   adornment,
-  howToImage,
-  howToImageAlt,
-  howToImageAspectRatio,
+  howToSVGComponent,
+  howToAspectRatio,
 }: BadgeTypeDescriptionPropsType) => {
-  const isMobile = useIsMobile();
+  const HowTo: ComponentType<SvgIconProps> | null = howToSVGComponent;
 
   return (
     <CardBadgeContainer>
@@ -82,31 +64,18 @@ export const BadgeTypeDescription = ({
             </Box>
           </Box>
           <ImageContainer>
-            <Image
-              src={image[isMobile ? 'mobile' : 'desktop']}
-              {...imageSizes[isMobile ? 'mobile' : 'desktop']}
-              alt={title + ' Ilustration'}
-            />
+            <Image src={image} {...imageSizes} alt={title + ' Ilustration'} />
           </ImageContainer>
         </CardBadgeType>
-        {howToImage && (
-          <Box
+        {HowTo && (
+          <HowTo
             sx={{
-              display: 'flex',
-              position: 'relative',
               width: '100%',
+              height: 'fit-content',
               my: 2,
-              aspectRatio: isMobile
-                ? howToImageAspectRatio.mobile
-                : howToImageAspectRatio.desktop,
+              aspectRatio: howToAspectRatio,
             }}
-          >
-            <Image
-              src={isMobile ? howToImage.mobile : howToImage.desktop}
-              layout="fill"
-              alt={howToImageAlt}
-            />
-          </Box>
+          />
         )}
       </Container>
     </CardBadgeContainer>

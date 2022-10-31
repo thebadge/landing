@@ -96,9 +96,3 @@ export default function Home() {
     </Box>
   );
 }
-
-export async function getStaticProps() {
-  return {
-    props: {}, // Used to generate static page
-  };
-}
