@@ -1,5 +1,5 @@
 import { BadgeTypeDescription } from '.';
-import svg3 from '../../assets/certif_3.svg';
+import image_desktop from '../../assets/certif_third-party.webp';
 
 import tpHowToMobile from '../../assets/tp-how-to-mobile.svg';
 import tpHowTo from '../../assets/tp-how-to.svg';
@@ -16,7 +16,20 @@ export const ThirdPartyCard = () => {
           registered on the platform before they can start emitting them.
         </div>
       }
-      image={svg3}
+      image={{
+        desktop: image_desktop,
+        mobile: image_desktop,
+      }}
+      imageSizes={{
+        desktop: {
+          width: 210,
+          height: 300,
+        },
+        mobile: {
+          width: 96,
+          height: 144,
+        },
+      }}
       howToImage={{ desktop: tpHowTo, mobile: tpHowToMobile }}
       howToImageAspectRatio={{ desktop: '10/9', mobile: '6/7' }}
       howToImageAlt={`

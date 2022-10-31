@@ -1,5 +1,5 @@
 import { BadgeTypeDescription } from '.';
-import svg2 from '../../assets/certif_2.svg';
+import image_desktop from '../../assets/certif_off-chain.webp';
 import { CustomLink } from '../Commons/Link';
 
 import offchainHowToMobile from '../../assets/off-chain-how-to-mobile.svg';
@@ -22,7 +22,20 @@ export const OffchainCard = () => {
           through a curation process.
         </div>
       }
-      image={svg2}
+      image={{
+        desktop: image_desktop,
+        mobile: image_desktop,
+      }}
+      imageSizes={{
+        desktop: {
+          width: 339,
+          height: 300,
+        },
+        mobile: {
+          width: 141,
+          height: 124,
+        },
+      }}
       howToImage={{ desktop: offchainHowTo, mobile: offchainHowToMobile }}
       howToImageAspectRatio={{ desktop: '9/9', mobile: '6/10' }}
       howToImageAlt={`
