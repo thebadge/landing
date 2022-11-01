@@ -1,20 +1,16 @@
 import { useIsMobile } from '@/src/hooks/useIsMobile';
+import { CircularProgress } from '@mui/material';
 import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
 import { BadgeTypeDescription } from '.';
 import image_desktop from '../../assets/certif_third-party.webp';
 
 const ThirdPartyHowToMobile = dynamic(
   () => import('../Commons/SVGs/ThirdPartyHowToMobile'),
-  {
-    suspense: true,
-  },
 );
 
 const ThirdPartyHowTo = dynamic(
   () => import('../Commons/SVGs/ThirdPartyHowTo'),
-  {
-    suspense: true,
-  },
 );
 
 export const ThirdPartyCard = () => {
@@ -31,7 +27,7 @@ export const ThirdPartyCard = () => {
           registered on the platform before they can start emitting them.
         </div>
       }
-      image={isMobile ? image_desktop : image_desktop}
+      image={image_desktop}
       imageSizes={
         isMobile
           ? {
@@ -43,7 +39,11 @@ export const ThirdPartyCard = () => {
               height: 300,
             }
       }
-      howToSVGComponent={isMobile ? ThirdPartyHowToMobile : ThirdPartyHowTo}
+      howToSVGComponent={
+        <Suspense fallback={<CircularProgress color="success" />}>
+          {isMobile ? <ThirdPartyHowToMobile /> : <ThirdPartyHowTo />}
+        </Suspense>
+      }
       howToAspectRatio={isMobile ? '6/7' : '10/9'}
     />
   );

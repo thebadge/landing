@@ -26,7 +26,7 @@ type BadgeTypeDescriptionPropsType = {
     height: number;
   };
   adornment?: string;
-  howToSVGComponent: ComponentType<SvgIconProps>;
+  howToSVGComponent: React.ReactNode;
   howToAspectRatio: string;
 };
 
@@ -39,7 +39,7 @@ export const BadgeTypeDescription = ({
   howToSVGComponent,
   howToAspectRatio,
 }: BadgeTypeDescriptionPropsType) => {
-  const HowTo: ComponentType<SvgIconProps> | null = howToSVGComponent;
+  // const HowTo: ComponentType<SvgIconProps> | null = howToSVGComponent;
 
   return (
     <CardBadgeContainer>
@@ -67,15 +67,19 @@ export const BadgeTypeDescription = ({
             <Image src={image} {...imageSizes} alt={title + ' Ilustration'} />
           </ImageContainer>
         </CardBadgeType>
-        {HowTo && (
-          <HowTo
+        {howToSVGComponent && (
+          <Box
             sx={{
-              width: '100%',
-              height: 'fit-content',
-              my: 2,
-              aspectRatio: howToAspectRatio,
+              '& svg': {
+                width: '100%',
+                height: 'fit-content',
+                my: 2,
+                aspectRatio: howToAspectRatio,
+              },
             }}
-          />
+          >
+            {howToSVGComponent}
+          </Box>
         )}
       </Container>
     </CardBadgeContainer>

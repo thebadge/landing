@@ -1,19 +1,16 @@
 import { useIsMobile } from '@/src/hooks/useIsMobile';
+import { CircularProgress } from '@mui/material';
 import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
 import { BadgeTypeDescription } from '.';
 import image_desktop from '../../assets/certif_off-chain.webp';
 import { CustomLink } from '../Commons/Link';
 
 const OffChainHowToMobile = dynamic(
   () => import('../Commons/SVGs/OffChainHowToMobile'),
-  {
-    suspense: true,
-  },
 );
 
-const OffChainHowTo = dynamic(() => import('../Commons/SVGs/OffChainHowTo'), {
-  suspense: true,
-});
+const OffChainHowTo = dynamic(() => import('../Commons/SVGs/OffChainHowTo'));
 
 export const OffchainCard = () => {
   const isMobile = useIsMobile();
@@ -34,11 +31,15 @@ export const OffchainCard = () => {
           through a curation process.
         </div>
       }
-      image={isMobile ? image_desktop : image_desktop}
+      image={image_desktop}
       imageSizes={
         isMobile ? { width: 141, height: 124 } : { width: 344, height: 300 }
       }
-      howToSVGComponent={isMobile ? OffChainHowToMobile : OffChainHowTo}
+      howToSVGComponent={
+        <Suspense fallback={<CircularProgress color="success" />}>
+          {isMobile ? <OffChainHowToMobile /> : <OffChainHowTo />}
+        </Suspense>
+      }
       howToAspectRatio={isMobile ? '6/10' : '9/9'}
     />
   );
