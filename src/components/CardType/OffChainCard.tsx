@@ -44,7 +44,7 @@ export const OffchainCard = () => {
         </Suspense>
       }
       howToAspectRatio={
-        isMobile ? DESKTOP_SVG_ASPECT_RATIO : MOBILE_SVG_ASPECT_RATIO
+        isMobile ? MOBILE_SVG_ASPECT_RATIO : DESKTOP_SVG_ASPECT_RATIO
       }
     />
   );
