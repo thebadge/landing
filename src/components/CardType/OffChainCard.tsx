@@ -1,11 +1,25 @@
+import { useIsMobile } from '@/src/hooks/useIsMobile';
+import { CircularProgress } from '@mui/material';
+import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
 import { BadgeTypeDescription } from '.';
-import svg2 from '../../assets/certif_2.svg';
+import image_desktop from '../../assets/certif_off-chain.webp';
 import { CustomLink } from '../Commons/Link';
 
-import offchainHowToMobile from '../../assets/off-chain-how-to-mobile.svg';
-import offchainHowTo from '../../assets/off-chain-how-to.svg';
+const OffChainHowToMobile = dynamic(
+  () => import('../Commons/SVGs/OffChainHowToMobile'),
+);
+
+const OffChainHowTo = dynamic(() => import('../Commons/SVGs/OffChainHowTo'));
+
+const MOBILE_IMAGE_SIZE = { width: 141, height: 124 };
+const DESKTOP_IMAGE_SIZE = { width: 344, height: 300 };
+const MOBILE_SVG_ASPECT_RATIO = '6/10';
+const DESKTOP_SVG_ASPECT_RATIO = '9/9';
 
 export const OffchainCard = () => {
+  const isMobile = useIsMobile();
+
   return (
     <BadgeTypeDescription
       title={'Off-chain Badges'}
@@ -22,18 +36,16 @@ export const OffchainCard = () => {
           through a curation process.
         </div>
       }
-      image={svg2}
-      howToImage={{ desktop: offchainHowTo, mobile: offchainHowToMobile }}
-      howToImageAspectRatio={{ desktop: '9/9', mobile: '6/10' }}
-      howToImageAlt={`
-      Step 1: Select the type of badge you are interested in. Each badge will require the submission of proof or evidence to certify you have the right to claim it. An example of this type of badge could be to claim a Twitter account.
-      Step 2: Prepare and submit the evidence. Each type of badge will request to accomplish some specific tasks. For example, a tweet containing your wallet address.
-      Step 3: Your submission will have to pass through Kleros's curation process. Where the community will have a few days to analyze the evidence you have submitted.
-      Step 4: Nobody has challenged your submission. The badge is minted to your address.
-      Step 4.1: Someone has challenged your submission. A Jury of Kleros will analyze your evidence and determine if it is veridic or not.
-      Step 4.2: The jury determines the evidence is veridic. The badge is minted.
-      Step 4.3: The jury determines the evidence is fraudulent. The badge is not minted.
-      `}
+      image={image_desktop}
+      imageSizes={isMobile ? MOBILE_IMAGE_SIZE : DESKTOP_IMAGE_SIZE}
+      howToSVGComponent={
+        <Suspense fallback={<CircularProgress color="success" />}>
+          {isMobile ? <OffChainHowToMobile /> : <OffChainHowTo />}
+        </Suspense>
+      }
+      howToAspectRatio={
+        isMobile ? DESKTOP_SVG_ASPECT_RATIO : MOBILE_SVG_ASPECT_RATIO
+      }
     />
   );
 };

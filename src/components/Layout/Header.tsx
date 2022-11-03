@@ -14,6 +14,7 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
   marginTop: theme.spacing(4),
   [theme.breakpoints.up('xl')]: {
     width: '70%',
+    maxWidth: '1440px',
   },
   [theme.breakpoints.down('sm')]: {
     flex: 1,

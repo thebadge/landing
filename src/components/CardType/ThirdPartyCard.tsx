@@ -1,10 +1,34 @@
+import { useIsMobile } from '@/src/hooks/useIsMobile';
+import { CircularProgress } from '@mui/material';
+import dynamic from 'next/dynamic';
+import { Suspense } from 'react';
 import { BadgeTypeDescription } from '.';
-import svg3 from '../../assets/certif_3.svg';
+import image_desktop from '../../assets/certif_third-party.webp';
 
-import tpHowToMobile from '../../assets/tp-how-to-mobile.svg';
-import tpHowTo from '../../assets/tp-how-to.svg';
+const ThirdPartyHowToMobile = dynamic(
+  () => import('../Commons/SVGs/ThirdPartyHowToMobile'),
+);
+
+const ThirdPartyHowTo = dynamic(
+  () => import('../Commons/SVGs/ThirdPartyHowTo'),
+);
+
+const MOBILE_IMAGE_SIZE = {
+  width: 96,
+  height: 144,
+};
+
+const DESKTOP_IMAGE_SIZE = {
+  width: 210,
+  height: 300,
+};
+
+const MOBILE_SVG_ASPECT_RATIO = '6/7';
+const DESKTOP_SVG_ASPECT_RATIO = '10/9';
 
 export const ThirdPartyCard = () => {
+  const isMobile = useIsMobile();
+
   return (
     <BadgeTypeDescription
       title={'Third-party Badges'}
@@ -16,15 +40,16 @@ export const ThirdPartyCard = () => {
           registered on the platform before they can start emitting them.
         </div>
       }
-      image={svg3}
-      howToImage={{ desktop: tpHowTo, mobile: tpHowToMobile }}
-      howToImageAspectRatio={{ desktop: '10/9', mobile: '6/7' }}
-      howToImageAlt={`
-      Step 1: First the entity has to register within the platform submitting information such as name, description, logo, etc.
-      Step 2: Once they are registered, they are able to mint their own custom badges according to their needs.
-      Step 3: In case they want to, they might apply as verified entities by The Badge.
-      Step 4: If they get verified, they will be able not only to whitelist addresses but also to directly mint badges for their users.
-      `}
+      image={image_desktop}
+      imageSizes={isMobile ? MOBILE_IMAGE_SIZE : DESKTOP_IMAGE_SIZE}
+      howToSVGComponent={
+        <Suspense fallback={<CircularProgress color="success" />}>
+          {isMobile ? <ThirdPartyHowToMobile /> : <ThirdPartyHowTo />}
+        </Suspense>
+      }
+      howToAspectRatio={
+        isMobile ? MOBILE_SVG_ASPECT_RATIO : DESKTOP_SVG_ASPECT_RATIO
+      }
     />
   );
 };

@@ -1,3 +1,4 @@
+import withBundleAnalyzer from '@next/bundle-analyzer';
 /**
  * Don't be scared of the generics here.
  * All they do is to give us autocompletion when using this.
@@ -9,11 +10,16 @@
 function defineNextConfig(config) {
   return config;
 }
-
-export default defineNextConfig({
-  reactStrictMode: true,
-  swcMinify: true,
-  compiler: {
-    styledComponents: true,
-  },
+const withBundleAnalyzerWrapper = withBundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
 });
+
+export default withBundleAnalyzerWrapper(
+  defineNextConfig({
+    reactStrictMode: true,
+    swcMinify: true,
+    compiler: {
+      styledComponents: true,
+    },
+  }),
+);
