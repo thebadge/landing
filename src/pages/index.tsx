@@ -21,6 +21,7 @@ const MainContainer = styled(Box)(({ theme }) => ({
   },
   [theme.breakpoints.up('xl')]: {
     width: '70%',
+    maxWidth: '1440px',
   },
 }));
 
@@ -95,10 +96,4 @@ export default function Home() {
       </MainContainer>
     </Box>
   );
-}
-
-export async function getStaticProps() {
-  return {
-    props: {}, // Used to generate static page
-  };
 }

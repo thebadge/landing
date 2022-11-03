@@ -1,4 +1,3 @@
-import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Container, styled } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
@@ -22,29 +21,24 @@ type BadgeTypeDescriptionPropsType = {
   title: string;
   body: React.ReactNode;
   image: string | StaticImageData;
+  imageSizes: {
+    width: number;
+    height: number;
+  };
   adornment?: string;
-  howToImage: {
-    mobile: string;
-    desktop: string;
-  };
-  howToImageAlt: string;
-  howToImageAspectRatio: {
-    mobile: string;
-    desktop: string;
-  };
+  howToSVGComponent: React.ReactNode;
+  howToAspectRatio: string;
 };
 
 export const BadgeTypeDescription = ({
   title,
   body,
   image,
+  imageSizes,
   adornment,
-  howToImage,
-  howToImageAlt,
-  howToImageAspectRatio,
+  howToSVGComponent,
+  howToAspectRatio,
 }: BadgeTypeDescriptionPropsType) => {
-  const isMobile = useIsMobile();
-
   return (
     <CardBadgeContainer>
       <Container maxWidth={'md'}>
@@ -68,31 +62,21 @@ export const BadgeTypeDescription = ({
             </Box>
           </Box>
           <ImageContainer>
-            <Image
-              src={image}
-              alt={title + ' Ilustration'}
-              width={isMobile ? 250 : 300}
-              height={isMobile ? 250 : 300}
-            />
+            <Image src={image} {...imageSizes} alt={title + ' Ilustration'} />
           </ImageContainer>
         </CardBadgeType>
-        {howToImage && (
+        {howToSVGComponent && (
           <Box
             sx={{
-              display: 'flex',
-              position: 'relative',
-              width: '100%',
-              my: 2,
-              aspectRatio: isMobile
-                ? howToImageAspectRatio.mobile
-                : howToImageAspectRatio.desktop,
+              '& svg': {
+                width: '100%',
+                height: 'fit-content',
+                my: 2,
+                aspectRatio: howToAspectRatio,
+              },
             }}
           >
-            <Image
-              src={isMobile ? howToImage.mobile : howToImage.desktop}
-              layout="fill"
-              alt={howToImageAlt}
-            />
+            {howToSVGComponent}
           </Box>
         )}
       </Container>
