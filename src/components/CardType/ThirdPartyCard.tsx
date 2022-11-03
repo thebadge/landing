@@ -13,6 +13,19 @@ const ThirdPartyHowTo = dynamic(
   () => import('../Commons/SVGs/ThirdPartyHowTo'),
 );
 
+const MOBILE_IMAGE_SIZE = {
+  width: 96,
+  height: 144,
+};
+
+const DESKTOP_IMAGE_SIZE = {
+  width: 210,
+  height: 300,
+};
+
+const MOBILE_SVG_ASPECT_RATIO = '6/7';
+const DESKTOP_SVG_ASPECT_RATIO = '10/9';
+
 export const ThirdPartyCard = () => {
   const isMobile = useIsMobile();
 
@@ -28,23 +41,15 @@ export const ThirdPartyCard = () => {
         </div>
       }
       image={image_desktop}
-      imageSizes={
-        isMobile
-          ? {
-              width: 96,
-              height: 144,
-            }
-          : {
-              width: 210,
-              height: 300,
-            }
-      }
+      imageSizes={isMobile ? MOBILE_IMAGE_SIZE : DESKTOP_IMAGE_SIZE}
       howToSVGComponent={
         <Suspense fallback={<CircularProgress color="success" />}>
           {isMobile ? <ThirdPartyHowToMobile /> : <ThirdPartyHowTo />}
         </Suspense>
       }
-      howToAspectRatio={isMobile ? '6/7' : '10/9'}
+      howToAspectRatio={
+        isMobile ? MOBILE_SVG_ASPECT_RATIO : DESKTOP_SVG_ASPECT_RATIO
+      }
     />
   );
 };

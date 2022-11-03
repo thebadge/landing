@@ -1,6 +1,6 @@
-import { Box, Container, styled, SvgIconProps } from '@mui/material';
+import { Box, Container, styled } from '@mui/material';
 import Image, { StaticImageData } from 'next/image';
-import React, { ComponentType } from 'react';
+import React from 'react';
 import { BodyCardBadgeType } from '../Commons/BodyCardBadgeType';
 import { CardBadgeContainer, CardBadgeType } from '../Commons/CardBadgeType';
 import { ImageContainer } from '../Commons/ImageContainer';
@@ -39,8 +39,6 @@ export const BadgeTypeDescription = ({
   howToSVGComponent,
   howToAspectRatio,
 }: BadgeTypeDescriptionPropsType) => {
-  // const HowTo: ComponentType<SvgIconProps> | null = howToSVGComponent;
-
   return (
     <CardBadgeContainer>
       <Container maxWidth={'md'}>

@@ -12,6 +12,11 @@ const OffChainHowToMobile = dynamic(
 
 const OffChainHowTo = dynamic(() => import('../Commons/SVGs/OffChainHowTo'));
 
+const MOBILE_IMAGE_SIZE = { width: 141, height: 124 };
+const DESKTOP_IMAGE_SIZE = { width: 344, height: 300 };
+const MOBILE_SVG_ASPECT_RATIO = '6/10';
+const DESKTOP_SVG_ASPECT_RATIO = '9/9';
+
 export const OffchainCard = () => {
   const isMobile = useIsMobile();
 
@@ -32,15 +37,15 @@ export const OffchainCard = () => {
         </div>
       }
       image={image_desktop}
-      imageSizes={
-        isMobile ? { width: 141, height: 124 } : { width: 344, height: 300 }
-      }
+      imageSizes={isMobile ? MOBILE_IMAGE_SIZE : DESKTOP_IMAGE_SIZE}
       howToSVGComponent={
         <Suspense fallback={<CircularProgress color="success" />}>
           {isMobile ? <OffChainHowToMobile /> : <OffChainHowTo />}
         </Suspense>
       }
-      howToAspectRatio={isMobile ? '6/10' : '9/9'}
+      howToAspectRatio={
+        isMobile ? DESKTOP_SVG_ASPECT_RATIO : MOBILE_SVG_ASPECT_RATIO
+      }
     />
   );
 };
