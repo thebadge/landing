@@ -1,8 +1,3 @@
-import DiscordIcon from '@/src/components/Icons/Discord';
-import EmailIcon from '@/src/components/Icons/Email';
-import GithubIcon from '@/src/components/Icons/Github';
-import MediumIcon from '@/src/components/Icons/Medium';
-import TwitterIcon from '@/src/components/Icons/Twitter';
 import {
   DISCORD_URL,
   EMAIL_URL,
@@ -12,7 +7,14 @@ import {
 } from '@/src/constants';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Link, styled } from '@mui/material';
+import dynamic from 'next/dynamic';
 import { CustomDivider } from '../Commons/Divider';
+
+const DiscordIcon = dynamic(() => import('@/src/components/Icons/Discord'));
+const EmailIcon = dynamic(() => import('@/src/components/Icons/Email'));
+const GithubIcon = dynamic(() => import('@/src/components/Icons/Github'));
+const MediumIcon = dynamic(() => import('@/src/components/Icons/Medium'));
+const TwitterIcon = dynamic(() => import('@/src/components/Icons/Twitter'));
 
 export const FooterContainer = styled(Box)({
   position: 'relative',
@@ -46,7 +48,7 @@ export const LegalContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const Footer = () => {
+const Footer = () => {
   const isMobile = useIsMobile();
 
   return (
@@ -75,3 +77,5 @@ export const Footer = () => {
     </FooterContainer>
   );
 };
+
+export default Footer;
