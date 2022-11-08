@@ -62,7 +62,7 @@ export const Item = styled(Box)<{
    */
 }));
 
-export const BadgeSwipper = () => {
+const BadgeSwipper = () => {
   const [indexSelected, setIndex] = useState(0);
   const isMobile = useIsMobile();
 
@@ -93,3 +93,5 @@ export const BadgeSwipper = () => {
     </Box>
   );
 };
+
+export default BadgeSwipper;

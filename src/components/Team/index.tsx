@@ -112,7 +112,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
 ];
 
-export const Team = () => {
+const Team = () => {
   const theme = useTheme();
   return (
     <BoxTeam>
@@ -170,3 +170,5 @@ export const Team = () => {
     </BoxTeam>
   );
 };
+
+export default Team;
