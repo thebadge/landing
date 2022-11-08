@@ -1,6 +1,5 @@
 import { Box, styled } from '@mui/material';
-import dynamic from 'next/dynamic';
-const Logo = dynamic(() => import('../Commons/SVGs/Logo'));
+import { Logo } from '../Commons/SVGs/Logo';
 
 const SvgContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
