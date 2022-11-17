@@ -82,7 +82,7 @@ const BadgeSwipper = () => {
           return (
             <Item
               key={'decorative-image-' + i}
-              size={isMobile ? 10 : 15}
+              size={isMobile ? 13 : 16}
               order={(indexSelected + i) % 3}
             >
               <Image src={cardSrc} layout="fill" />
