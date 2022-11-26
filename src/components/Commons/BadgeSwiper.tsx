@@ -3,11 +3,11 @@ import { Box, styled } from '@mui/material';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
-import amlTest from '../../assets/aml-test.png';
+import diplomaCert from '../../assets/diploma-cert.png';
 import howeyTest from '../../assets/howey-test.png';
 import isoCertif from '../../assets/iso-cert.png';
 
-const CARDS = [isoCertif, howeyTest, amlTest];
+const CARDS = [isoCertif, howeyTest, diplomaCert];
 
 const CarouserContainerInner = styled(Box)({
   display: 'flex',
