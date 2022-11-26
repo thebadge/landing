@@ -68,12 +68,11 @@ export const BadgeTypeDescription = ({
         {howToSVGComponent && (
           <Box
             sx={{
-              '& svg': {
-                width: '100%',
-                height: 'fit-content',
-                my: 2,
-                aspectRatio: howToAspectRatio,
-              },
+              position: 'relative',
+              width: '100%',
+              height: 'fit-content',
+              my: 2,
+              aspectRatio: howToAspectRatio,
             }}
           >
             {howToSVGComponent}

@@ -48,7 +48,7 @@ const ORGS: Organizations[] = [
   },
 ];
 
-export const BackedBy = () => {
+const BackedBy = () => {
   const isMobile = useIsMobile();
 
   return (
@@ -82,3 +82,5 @@ export const BackedBy = () => {
     </BoxBackedBy>
   );
 };
+
+export default BackedBy;

@@ -1,9 +1,12 @@
 import { Box, styled } from '@mui/material';
+import dynamic from 'next/dynamic';
 
 import React from 'react';
 import { BackgroundGradient } from './BackgroundGradient';
-import { Footer } from './Footer';
-import { Header } from './Header';
+
+const Header = dynamic(() => import('./Header'));
+const Footer = dynamic(() => import('./Footer'));
+
 const Content = styled(Box)({
   position: 'absolute',
   left: '50%',

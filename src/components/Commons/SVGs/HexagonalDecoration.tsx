@@ -1,4 +1,4 @@
-export const HexagonalDecoration = () => {
+const HexagonalDecoration = () => {
   return (
     <svg width="1239" height="873" viewBox="0 0 1239 873" fill="none">
       <g opacity="0.45">
@@ -1281,3 +1281,5 @@ export const HexagonalDecoration = () => {
     </svg>
   );
 };
+
+export default HexagonalDecoration;

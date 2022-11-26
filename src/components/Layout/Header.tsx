@@ -32,7 +32,7 @@ const ButtonsContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const Header = () => {
+const Header = () => {
   return (
     <HeaderContainer>
       <TheBadgeLogo />
@@ -43,3 +43,5 @@ export const Header = () => {
     </HeaderContainer>
   );
 };
+
+export default Header;
