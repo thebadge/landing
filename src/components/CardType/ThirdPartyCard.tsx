@@ -1,17 +1,11 @@
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { CircularProgress } from '@mui/material';
-import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import { Suspense } from 'react';
 import { BadgeTypeDescription } from '.';
 import image_desktop from '../../assets/certif_third-party.webp';
-
-const ThirdPartyHowToMobile = dynamic(
-  () => import('../Commons/SVGs/ThirdPartyHowToMobile'),
-);
-
-const ThirdPartyHowTo = dynamic(
-  () => import('../Commons/SVGs/ThirdPartyHowTo'),
-);
+import howToMobile from '../../assets/how-to-third-party-mobile.webp';
+import howTo from '../../assets/how-to-third-party.webp';
 
 const MOBILE_IMAGE_SIZE = {
   width: 96,
@@ -26,7 +20,14 @@ const DESKTOP_IMAGE_SIZE = {
 const MOBILE_SVG_ASPECT_RATIO = '6/7';
 const DESKTOP_SVG_ASPECT_RATIO = '10/9';
 
-export const ThirdPartyCard = () => {
+const ALT_TEXT = `
+Step 1: First the entity has to register within the platform submitting information such as name, description, logo, etc.
+Step 2: Once they are registered, they are able to mint their own custom badges according to their needs.
+Step 3: In case they want to, they might apply as verified entities by The Badge.
+Step 4: If they get verified, they will be able not only to whitelist addresses but also to directly mint badges for their users.
+`;
+
+const ThirdPartyCard = () => {
   const isMobile = useIsMobile();
 
   return (
@@ -44,7 +45,11 @@ export const ThirdPartyCard = () => {
       imageSizes={isMobile ? MOBILE_IMAGE_SIZE : DESKTOP_IMAGE_SIZE}
       howToSVGComponent={
         <Suspense fallback={<CircularProgress color="success" />}>
-          {isMobile ? <ThirdPartyHowToMobile /> : <ThirdPartyHowTo />}
+          {isMobile ? (
+            <Image layout="fill" src={howToMobile} alt={ALT_TEXT} />
+          ) : (
+            <Image layout="fill" src={howTo} alt={ALT_TEXT} />
+          )}
         </Suspense>
       }
       howToAspectRatio={
@@ -53,3 +58,5 @@ export const ThirdPartyCard = () => {
     />
   );
 };
+
+export default ThirdPartyCard;

@@ -1,11 +1,13 @@
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, styled } from '@mui/material';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { CardGithub } from './SVGs/CardGithub';
-import { CardThirdParty } from './SVGs/CardThirdParty';
-import { CardTwitter } from './SVGs/CardTwitter';
 
-const SVG_CARDS = [CardTwitter, CardGithub, CardThirdParty];
+import diplomaCert from '../../assets/diploma-cert.png';
+import howeyTest from '../../assets/howey-test.png';
+import isoCertif from '../../assets/iso-cert.png';
+
+const CARDS = [isoCertif, howeyTest, diplomaCert];
 
 const CarouserContainerInner = styled(Box)({
   display: 'flex',
@@ -62,7 +64,7 @@ export const Item = styled(Box)<{
    */
 }));
 
-export const BadgeSwipper = () => {
+const BadgeSwipper = () => {
   const [indexSelected, setIndex] = useState(0);
   const isMobile = useIsMobile();
 
@@ -76,16 +78,14 @@ export const BadgeSwipper = () => {
   return (
     <Box id="BadgeSwipper" sx={{ display: 'flex', flex: 1 }}>
       <CarouserContainerInner>
-        {SVG_CARDS.map((SvgCard, i) => {
+        {CARDS.map((cardSrc, i) => {
           return (
             <Item
               key={'decorative-image-' + i}
-              size={isMobile ? 10 : 15}
+              size={isMobile ? 13 : 16}
               order={(indexSelected + i) % 3}
             >
-              <SvgCard
-                sx={{ width: isMobile ? '10rem' : '15rem', height: '100%' }}
-              />
+              <Image src={cardSrc} layout="fill" />
             </Item>
           );
         })}
@@ -93,3 +93,5 @@ export const BadgeSwipper = () => {
     </Box>
   );
 };
+
+export default BadgeSwipper;

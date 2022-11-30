@@ -46,7 +46,7 @@ export const LegalContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const Footer = () => {
+const Footer = () => {
   const isMobile = useIsMobile();
 
   return (
@@ -75,3 +75,5 @@ export const Footer = () => {
     </FooterContainer>
   );
 };
+
+export default Footer;

@@ -3,6 +3,7 @@ import TwitterMUIIcon from '@mui/icons-material/Twitter';
 import { Avatar, Box, styled, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
 import { SectionTitle } from '../Commons/SectionTitle';
+import { BehanceIcon } from '../Commons/SVGs/BehanceIcon';
 import { GithubCatIcon } from '../Commons/SVGs/GithubCat';
 
 const MemberBox = styled(Box)(({ theme }) => ({
@@ -12,6 +13,15 @@ const MemberBox = styled(Box)(({ theme }) => ({
   flexDirection: 'column',
   rowGap: theme.spacing(2),
   flex: '1 1 20%',
+  ':nth-child(n+4)': {
+    flex: '1 1 18%',
+  },
+  [theme.breakpoints.down('sm')]: {
+    flex: '1 1 20%',
+    ':nth-child(n+4)': {
+      flex: '1 1 20%',
+    },
+  },
 }));
 
 const MemberName = styled(Typography)(({ theme }) => ({
@@ -39,6 +49,7 @@ const MemberDescription = styled(Typography)(({ theme }) => ({
   fontWeight: '600',
   fontSize: '16px',
   textAlign: 'center',
+  maxWidth: '270px',
   [theme.breakpoints.down('md')]: {
     width: '100%',
     fontSize: '14px',
@@ -64,18 +75,21 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: 'Agustín Pane',
     description: 'Co-founder \n Project Manager, Full-stack & Web3 Developer',
     contact: 'agupane',
+    contactType: 'Github',
   },
   {
     avatar: '/avatars/nico.webp',
     name: 'Nicolás Domínguez',
     description: 'Co-founder \n Sofware Architect, Web3 & Solidity Developer',
     contact: 'nicosampler',
+    contactType: 'Github',
   },
   {
     avatar: '/avatars/fede.webp',
     name: 'Federico Madoery',
     description: 'Co-founder \n UIX Expert, Full-stack & Mobile Developer',
     contact: 'fedeMadoery',
+    contactType: 'Github',
   },
   {
     avatar: '/avatars/javi.webp',
@@ -89,12 +103,14 @@ const TEAM_MEMBERS: TeamMember[] = [
     name: 'Fernando Ramirez',
     description: 'Frontend Developer',
     contact: 'ramabit',
+    contactType: 'Github',
   },
   {
     avatar: '/avatars/agulon.webp',
     name: 'Agustín Longoni',
-    description: 'UX/UI Designer',
+    description: 'Web Developer',
     contact: 'alongoni',
+    contactType: 'Github',
   },
   {
     avatar: '/avatars/agulom.webp',
@@ -110,10 +126,48 @@ const TEAM_MEMBERS: TeamMember[] = [
     contact: 'monito313',
     contactType: 'Twitter',
   },
+  {
+    avatar: '/avatars/luciaf.webp',
+    name: 'Lucia Fenoglio',
+    description: 'UX/UI & Graphic Designer',
+    contact: 'luciafenoglio',
+    contactType: 'Behance',
+  },
 ];
 
-export const Team = () => {
+const Team = () => {
   const theme = useTheme();
+
+  function getContactUrl(member: TeamMember) {
+    switch (member.contactType) {
+      case 'Twitter':
+        return `https://twitter.com/${member.contact}`;
+      case 'Github':
+        return `https://github.com/${member.contact}`;
+      case 'Behance':
+        return `https://www.behance.net/${member.contact}`;
+    }
+  }
+
+  function getContactIcon(member: TeamMember) {
+    switch (member.contactType) {
+      case 'Twitter':
+        return (
+          <TwitterMUIIcon
+            sx={{
+              width: theme.customSizes.icon,
+              height: theme.customSizes.icon,
+              fill: '#FFFF',
+            }}
+          />
+        );
+      case 'Github':
+        return <GithubCatIcon />;
+      case 'Behance':
+        return <BehanceIcon sx={{ mr: 1 }} />;
+    }
+  }
+
   return (
     <BoxTeam>
       <CustomDivider />
@@ -141,25 +195,8 @@ export const Team = () => {
               <MemberName>{member.name}</MemberName>
               <MemberDescription>{member.description}</MemberDescription>
               {member.contact && (
-                <StyledLink
-                  target="_blank"
-                  href={
-                    member.contactType === 'Twitter'
-                      ? `https://twitter.com/${member.contact}`
-                      : `https://github.com/${member.contact}`
-                  }
-                >
-                  {member.contactType === 'Twitter' ? (
-                    <TwitterMUIIcon
-                      sx={{
-                        width: theme.customSizes.icon,
-                        height: theme.customSizes.icon,
-                        fill: '#FFFF',
-                      }}
-                    />
-                  ) : (
-                    <GithubCatIcon />
-                  )}
+                <StyledLink target="_blank" href={getContactUrl(member)}>
+                  {getContactIcon(member)}
                   <MemberDescription>@{member.contact}</MemberDescription>
                 </StyledLink>
               )}
@@ -170,3 +207,5 @@ export const Team = () => {
     </BoxTeam>
   );
 };
+
+export default Team;

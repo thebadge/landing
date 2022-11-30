@@ -1,14 +1,24 @@
 import { Box, styled } from '@mui/material';
+import dynamic from 'next/dynamic';
 
-import { BackedBy } from '../components/BackedBy';
-import { OffchainCard } from '../components/CardType/OffChainCard';
-import { ThirdPartyCard } from '../components/CardType/ThirdPartyCard';
-import { BadgeSwipper } from '../components/Commons/BadgeSwiper';
 import { Paragraph } from '../components/Commons/Paragraph';
 import { SectionTitle } from '../components/Commons/SectionTitle';
 import { TheBadgeSubTitle } from '../components/Commons/Subtitle';
-import { HexagonalDecoration } from '../components/Commons/SVGs/HexagonalDecoration';
-import { Team } from '../components/Team';
+
+const BadgeSwipper = dynamic(() => import('../components/Commons/BadgeSwiper'));
+const HexagonalDecoration = dynamic(
+  () => import('../components/Commons/SVGs/HexagonalDecoration'),
+);
+
+const OffchainCard = dynamic(
+  () => import('../components/CardType/OffChainCard'),
+);
+const ThirdPartyCard = dynamic(
+  () => import('../components/CardType/ThirdPartyCard'),
+);
+
+const Team = dynamic(() => import('../components/Team'));
+const BackedBy = dynamic(() => import('../components/BackedBy'));
 
 const MainContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
