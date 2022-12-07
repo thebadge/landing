@@ -54,7 +54,7 @@ const BackedBy = () => {
   return (
     <BoxBackedBy>
       <CustomDivider />
-      <SectionTitle>Backed By</SectionTitle>
+      <SectionTitle as="h3">Backed By</SectionTitle>
       <Box
         sx={{
           display: 'flex',

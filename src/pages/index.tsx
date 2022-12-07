@@ -50,7 +50,7 @@ const SvgDecoration = styled(Box)(({ theme }) => ({
 }));
 
 const BoxBadgeTypes = styled(Box)(({ theme }) => ({
-  padding: '5%',
+  padding: '2% 5% 5% 5%',
   display: 'flex',
   flexDirection: 'column',
   flex: 1,
@@ -84,7 +84,7 @@ export default function Home() {
                 Information certification <br /> & profile identity
               </TheBadgeSubTitle>
             </Box>
-            <Paragraph>
+            <Paragraph as="h2">
               The Badge is a decentralized certification platform built on
               Ethereum that allows tokenizing any piece of information from the
               real world under the concept of badges. These badges will create
@@ -97,7 +97,7 @@ export default function Home() {
           </Box>
         </TitleAndSwiperContainer>
         <BoxBadgeTypes>
-          <SectionTitle>Types of badges</SectionTitle>
+          <SectionTitle as="h3">Types of badges</SectionTitle>
           <OffchainCard />
           <ThirdPartyCard />
         </BoxBadgeTypes>
