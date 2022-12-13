@@ -2,7 +2,7 @@ import { Box, styled } from '@mui/material';
 
 const Background = styled(Box)({
   background:
-    'linear-gradient(154.96deg, #0B3F33 9.89%, #369485 54.65%, #900D90 100.15%)',
+    'radial-gradient(94.86% 21.92% at 3.16% 1.15%, #420756 0%, #190321 61.46%, #000000 100%, #000000 100%)',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
   height: '100%',

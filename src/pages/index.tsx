@@ -6,9 +6,6 @@ import { SectionTitle } from '../components/Commons/SectionTitle';
 import { TheBadgeSubTitle } from '../components/Commons/Subtitle';
 
 const BadgeSwipper = dynamic(() => import('../components/Commons/BadgeSwiper'));
-const HexagonalDecoration = dynamic(
-  () => import('../components/Commons/SVGs/HexagonalDecoration'),
-);
 
 const OffchainCard = dynamic(
   () => import('../components/CardType/OffChainCard'),
@@ -73,15 +70,12 @@ const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
 export default function Home() {
   return (
     <Box>
-      <SvgDecoration>
-        <HexagonalDecoration />
-      </SvgDecoration>
       <MainContainer>
         <TitleAndSwiperContainer>
           <Box sx={{ flex: 2 }}>
             <Box>
               <TheBadgeSubTitle as="h1">
-                Information certification <br /> & profile identity
+                Decentralized <br /> certification platform
               </TheBadgeSubTitle>
             </Box>
             <Paragraph as="h2">
