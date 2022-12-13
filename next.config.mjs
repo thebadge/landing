@@ -1,4 +1,5 @@
 import withBundleAnalyzer from '@next/bundle-analyzer';
+
 /**
  * Don't be scared of the generics here.
  * All they do is to give us autocompletion when using this.
@@ -20,6 +21,10 @@ export default withBundleAnalyzerWrapper(
     swcMinify: true,
     compiler: {
       styledComponents: true,
+    },
+    i18n: {
+      defaultLocale: 'en',
+      locales: ['en'],
     },
   }),
 );

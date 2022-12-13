@@ -5,9 +5,10 @@ import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
 import { AppProps } from 'next/app';
 import { useMemo } from 'react';
 
+import { useGoogleAnalytics } from '@/src/hooks/useGoogleAnalytics';
+import { appWithTranslation } from 'next-i18next';
 import { LayoutContainer } from '../components/Layout/LayoutContainer';
 import { getTheme } from '../styles/theme';
-import { useGoogleAnalytics } from '@/src/hooks/useGoogleAnalytics';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createCache({
@@ -18,6 +19,7 @@ const clientSideEmotionCache = createCache({
 type MyAppProps = AppProps & {
   emotionCache?: EmotionCache;
 };
+
 const MyApp = ({
   Component,
   pageProps,
@@ -37,4 +39,4 @@ const MyApp = ({
   );
 };
 
-export default MyApp;
+export default appWithTranslation(MyApp);
