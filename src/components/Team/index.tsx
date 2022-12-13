@@ -171,7 +171,7 @@ const Team = () => {
   return (
     <BoxTeam>
       <CustomDivider />
-      <SectionTitle>Team</SectionTitle>
+      <SectionTitle as="h3">Team</SectionTitle>
       <Box
         sx={{
           display: 'flex',
