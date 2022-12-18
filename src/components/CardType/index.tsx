@@ -45,7 +45,12 @@ export const BadgeTypeDescription = ({
         <CardBadgeType>
           {adornment ? (
             <LittleBadgeAdornment>
-              <Image src={adornment} alt="Ilustration" width={45} height={65} />
+              <Image
+                src={adornment}
+                alt="Ilustration"
+                width={45}
+                height={65}
+              />
             </LittleBadgeAdornment>
           ) : null}
           <Box

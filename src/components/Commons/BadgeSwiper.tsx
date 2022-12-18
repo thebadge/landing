@@ -85,7 +85,7 @@ const BadgeSwipper = () => {
               size={isMobile ? 13 : 16}
               order={(indexSelected + i) % 3}
             >
-              <Image src={cardSrc} layout="fill" />
+              <Image src={cardSrc} priority alt={'decorative-image-' + i} />
             </Item>
           );
         })}
