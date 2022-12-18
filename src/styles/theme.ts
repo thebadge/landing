@@ -28,7 +28,6 @@ declare module '@mui/material/styles' {
 const typography:
   | TypographyOptions
   | ((palette: Palette) => TypographyOptions) = {
-  fontFamily: 'Mulish',
   h1: {
     fontSize: 96,
     fontStyle: 'normal',
