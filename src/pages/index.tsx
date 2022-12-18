@@ -1,14 +1,13 @@
 import { Box, styled } from '@mui/material';
+import { useTranslation } from 'next-i18next';
 import dynamic from 'next/dynamic';
 
+import { makeStaticProps } from '@/src/utils/getStatic';
 import { Paragraph } from '../components/Commons/Paragraph';
 import { SectionTitle } from '../components/Commons/SectionTitle';
 import { TheBadgeSubTitle } from '../components/Commons/Subtitle';
 
 const BadgeSwipper = dynamic(() => import('../components/Commons/BadgeSwiper'));
-const HexagonalDecoration = dynamic(
-  () => import('../components/Commons/SVGs/HexagonalDecoration'),
-);
 
 const OffchainCard = dynamic(
   () => import('../components/CardType/OffChainCard'),
@@ -70,27 +69,23 @@ const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
+const getStaticProps = makeStaticProps(['landing']);
+export { getStaticProps };
+
 export default function Home() {
+  const { t } = useTranslation('landing');
+
   return (
     <Box>
-      <SvgDecoration>
-        <HexagonalDecoration />
-      </SvgDecoration>
       <MainContainer>
         <TitleAndSwiperContainer>
           <Box sx={{ flex: 2 }}>
             <Box>
               <TheBadgeSubTitle as="h1">
-                Information certification <br /> & profile identity
+                {t('presentation.title')}
               </TheBadgeSubTitle>
             </Box>
-            <Paragraph as="h2">
-              The Badge is a decentralized certification platform built on
-              Ethereum that allows tokenizing any piece of information from the
-              real world under the concept of badges. These badges will create
-              an on-chain identity by being issued as non-transferable and
-              verifiable NFTs.
-            </Paragraph>
+            <Paragraph as="h2">{t('presentation.description')}</Paragraph>
           </Box>
           <Box sx={{ flex: 1, alignItems: 'center', display: 'flex' }}>
             <BadgeSwipper />

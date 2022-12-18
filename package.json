@@ -11,15 +11,24 @@
     "prettier": "prettier './src/**/*.{js,jsx,ts,tsx}'",
     "prettier:fix": "yarn prettier --write"
   },
+  "resolutions": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
+  },
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.9.3",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.2",
+    "i18next": "^22.4.5",
     "next": "12.2.4",
+    "next-i18next": "^13.0.1",
+    "next-language-detector": "^1.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "thebadge-ui-library": "^1.0.0",
+    "react-i18next": "^12.1.1",
     "react-query": "^3.39.2",
     "superjson": "^1.9.1",
     "zod": "^3.17.3"

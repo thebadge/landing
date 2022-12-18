@@ -1,7 +1,7 @@
 import { Box, styled } from '@mui/material';
+import { LogoTheBadgeWithText } from 'thebadge-ui-library';
 import { DownloadPaperButton } from '../Commons/DownloadPaperButton';
 import { GoToAppButton } from '../Commons/GoToAppButton';
-import { TheBadgeLogo } from './TheBadgeLogo';
 
 const HeaderContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -35,7 +35,7 @@ const ButtonsContainer = styled(Box)(({ theme }) => ({
 const Header = () => {
   return (
     <HeaderContainer>
-      <TheBadgeLogo />
+      <LogoTheBadgeWithText size={212} />
       <ButtonsContainer>
         <DownloadPaperButton />
         <GoToAppButton />

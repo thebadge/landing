@@ -13,12 +13,12 @@ const MemberBox = styled(Box)(({ theme }) => ({
   flexDirection: 'column',
   rowGap: theme.spacing(2),
   flex: '1 1 20%',
-  ':nth-child(n+4)': {
+  ':nth-of-type(n+4)': {
     flex: '1 1 18%',
   },
   [theme.breakpoints.down('sm')]: {
     flex: '1 1 20%',
-    ':nth-child(n+4)': {
+    ':nth-of-type(n+4)': {
       flex: '1 1 20%',
     },
   },
