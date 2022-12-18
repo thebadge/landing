@@ -1,4 +1,6 @@
-// src/pages/_app.tsx
+// TheBadge UI Library
+import 'node_modules/thebadge-ui-library/dist/index.css';
+
 import createCache from '@emotion/cache';
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
