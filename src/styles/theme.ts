@@ -1,6 +1,11 @@
 import { Palette, PaletteMode, ThemeOptions } from '@mui/material';
 import { TypographyOptions } from '@mui/material/styles/createTypography';
+import { Mulish } from '@next/font/google';
 
+const mulishFont = Mulish({
+  weight: ['300', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+});
 declare module '@mui/material/styles' {
   interface CustomSizes {
     icon: number;
@@ -28,6 +33,7 @@ declare module '@mui/material/styles' {
 const typography:
   | TypographyOptions
   | ((palette: Palette) => TypographyOptions) = {
+  fontFamily: mulishFont.style.fontFamily,
   h1: {
     fontSize: 96,
     fontStyle: 'normal',
