@@ -46,7 +46,7 @@ const StyledLink = styled('a')(() => ({
 const MemberDescription = styled(Typography)(({ theme }) => ({
   color: theme.palette.common.white,
   whiteSpace: 'break-spaces',
-  fontWeight: '600',
+  fontWeight: '500',
   fontSize: '16px',
   textAlign: 'center',
   maxWidth: '270px',
@@ -190,7 +190,12 @@ const Team = () => {
                   height: theme.customSizes.avatar,
                 }}
               >
-                <Image src={member.avatar} alt={member.name} layout="fill" />
+                <Image
+                  src={member.avatar}
+                  alt={member.name}
+                  height={theme.customSizes.avatar}
+                  width={theme.customSizes.avatar}
+                />
               </Avatar>
               <MemberName>{member.name}</MemberName>
               <MemberDescription>{member.description}</MemberDescription>

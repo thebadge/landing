@@ -46,9 +46,9 @@ const ThirdPartyCard = () => {
       howToSVGComponent={
         <Suspense fallback={<CircularProgress color="success" />}>
           {isMobile ? (
-            <Image layout="fill" src={howToMobile} alt={ALT_TEXT} />
+            <Image src={howToMobile} alt={ALT_TEXT} />
           ) : (
-            <Image layout="fill" src={howTo} alt={ALT_TEXT} />
+            <Image src={howTo} alt={ALT_TEXT} priority />
           )}
         </Suspense>
       }
