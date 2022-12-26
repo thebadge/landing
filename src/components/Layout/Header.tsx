@@ -31,6 +31,7 @@ const Header = () => {
         <LogoTheBadgeWithText size={212} />
       </Box>
       <NavigationHeader
+        anchorPosition="left"
         items={[
           {
             label: 'HOME',
