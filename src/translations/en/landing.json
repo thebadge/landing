@@ -4,14 +4,14 @@
     "description": "The Badge is a decentralized certification platform powered by Ethereum. It provides users with the opportunity to tokenize any piece of information from the real world in the form of badges. These badges are verified and validated by the community, who decide what should be accepted and what should not be.",
     "buttons": {
       "whitepaper": "Check our whitepaper",
-      "comunity": "Check our whitepaper"
+      "comunity": "Join our community"
     }
   },
   "whatIsTheBadge": {
-    "title": "What is the badge",
+    "title": "WHAT IS THE BADGE",
     "stepOne": "A platform that certifies information in a decentralized way.",
     "stepTwo": "Generates certifications (badges) based on evidence provided.",
-    "stepThew": "Each badge will require evidence for being issued.",
+    "stepThree": "Each badge will require evidence for being issued.",
     "stepFour": "Curators will be rewarded for auditing and flagging fraudulent badges.",
     "why": {
       "title": "Why we need decentralized certifications",
@@ -49,12 +49,12 @@
     }
   },
   "badgesCategories": {
-    "title": "Badges Categories",
+    "title": "BADGES CATEGORIES",
     "community": {
       "title": "Community Badges",
       "description": "Represent real-world information in the form of blockchain-based certifications. To obtain a badge, users must provide evidence and pass through TheBadge's curation process, where our community of curators will review and verify the authenticity of the evidence.",
       "howItWorks": {
-        "title": "Comunity How it works",
+        "title": "How it works",
         "steps": [
           {
             "title": "1. Empowering the communities",
@@ -99,7 +99,7 @@
       "title": "Third-party Badges",
       "description": "Also known as \"Blockchain certifications as a service\". They are badges generated and backed by a public or private entity. Entities that are willing to generate these badge have to be registered on the platform before they can start emitting them.",
       "howItWorks": {
-        "title": "Third-party How it works",
+        "title": "How it works",
         "steps": [
           {
             "title": "1. The Badge as a tool",

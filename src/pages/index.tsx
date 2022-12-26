@@ -1,23 +1,22 @@
 import { Box, styled } from '@mui/material';
-import { useTranslation } from 'next-i18next';
 import dynamic from 'next/dynamic';
 
 import { makeStaticProps } from '@/src/utils/getStatic';
-import { Paragraph } from '../components/Commons/Paragraph';
-import { SectionTitle } from '../components/Commons/SectionTitle';
-import { TheBadgeSubTitle } from '../components/Commons/Subtitle';
-
-const BadgeSwipper = dynamic(() => import('../components/Commons/BadgeSwiper'));
-
-const OffchainCard = dynamic(
-  () => import('../components/CardType/OffChainCard'),
-);
-const ThirdPartyCard = dynamic(
-  () => import('../components/CardType/ThirdPartyCard'),
-);
+import BadgeCategoriesContainer from '../components/BadgeCategories/BadgeCateogiresContainer';
+import { Presentation } from '../components/Presentation';
 
 const Team = dynamic(() => import('../components/Team'));
 const BackedBy = dynamic(() => import('../components/BackedBy'));
+const WhatsTheBadge = dynamic(() => import('../components/WhatsTheBadge'));
+const WhatAreCurators = dynamic(() => import('../components/WhatAre/Curators'));
+const WhatAreCreators = dynamic(() => import('../components/WhatAre/Creators'));
+
+const CommunityBadge = dynamic(
+  () => import('../components/BadgeCategories/Community'),
+);
+const ThirdPartyBadge = dynamic(
+  () => import('../components/BadgeCategories/ThridParty'),
+);
 
 const MainContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
@@ -34,68 +33,21 @@ const MainContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-const SvgDecoration = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  width: '100%',
-  position: 'absolute',
-  height: '10%',
-  justifyContent: 'flex-end',
-  alignItems: 'center',
-  zIndex: -1,
-  [theme.breakpoints.down('sm')]: {
-    left: '50%',
-    transform: 'scale(1.3) translateX(-50%)',
-  },
-}));
-
-const BoxBadgeTypes = styled(Box)(({ theme }) => ({
-  padding: '2% 5% 5% 5%',
-  display: 'flex',
-  flexDirection: 'column',
-  flex: 1,
-  background: 'rgba(0, 0, 0, 0.58)',
-  borderRadius: '10px',
-  marginTop: theme.spacing(10),
-  marginBottom: theme.spacing(10),
-}));
-
-const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'row',
-  marginTop: theme.spacing(8),
-  [theme.breakpoints.down('md')]: {
-    marginTop: theme.spacing(2),
-    flexDirection: 'column',
-  },
-}));
-
 const getStaticProps = makeStaticProps(['landing']);
 export { getStaticProps };
 
 export default function Home() {
-  const { t } = useTranslation('landing');
-
   return (
-    <Box>
+    <Box sx={{ overflowX: 'hidden' }}>
       <MainContainer>
-        <TitleAndSwiperContainer>
-          <Box sx={{ flex: 2 }}>
-            <Box>
-              <TheBadgeSubTitle as="h1">
-                {t('presentation.title')}
-              </TheBadgeSubTitle>
-            </Box>
-            <Paragraph as="h2">{t('presentation.description')}</Paragraph>
-          </Box>
-          <Box sx={{ flex: 1, alignItems: 'center', display: 'flex' }}>
-            <BadgeSwipper />
-          </Box>
-        </TitleAndSwiperContainer>
-        <BoxBadgeTypes>
-          <SectionTitle as="h3">Types of badges</SectionTitle>
-          <OffchainCard />
-          <ThirdPartyCard />
-        </BoxBadgeTypes>
+        <Presentation />
+        <WhatsTheBadge />
+        <WhatAreCurators />
+        <BadgeCategoriesContainer>
+          <CommunityBadge />
+          <ThirdPartyBadge />
+        </BadgeCategoriesContainer>
+        <WhatAreCreators />
         <Team />
         <BackedBy />
       </MainContainer>

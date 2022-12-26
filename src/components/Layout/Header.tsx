@@ -1,7 +1,5 @@
 import { Box, styled } from '@mui/material';
-import { LogoTheBadgeWithText } from 'thebadge-ui-library';
-import { DownloadPaperButton } from '../Commons/DownloadPaperButton';
-import { GoToAppButton } from '../Commons/GoToAppButton';
+import { LogoTheBadgeWithText, NavigationHeader } from 'thebadge-ui-library';
 
 const HeaderContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -16,30 +14,47 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
     width: '70%',
     maxWidth: '1440px',
   },
+  [theme.breakpoints.down('lg')]: {
+    width: '90%',
+    maxWidth: '1440px',
+  },
   [theme.breakpoints.down('sm')]: {
     flex: 1,
     flexDirection: 'column',
   },
 }));
 
-const ButtonsContainer = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'row',
-  columnGap: theme.spacing(2),
-  [theme.breakpoints.down('sm')]: {
-    flex: 1,
-    marginTop: theme.spacing(2),
-  },
-}));
-
 const Header = () => {
   return (
     <HeaderContainer>
-      <LogoTheBadgeWithText size={212} />
-      <ButtonsContainer>
-        <DownloadPaperButton />
-        <GoToAppButton />
-      </ButtonsContainer>
+      <Box sx={{ flex: 1 }}>
+        <LogoTheBadgeWithText size={212} />
+      </Box>
+      <NavigationHeader
+        items={[
+          {
+            label: 'HOME',
+          },
+          {
+            label: 'HOW IT WORKS',
+          },
+          {
+            label: 'TEAM',
+          },
+          {
+            label: 'PARTNERSHIPS',
+          },
+          {
+            label: 'CONTACT US',
+          },
+          {
+            label: 'FAQ',
+          },
+        ]}
+        callToActionItem={{
+          label: 'Open app',
+        }}
+      />
     </HeaderContainer>
   );
 };

@@ -2,7 +2,7 @@ import { CustomDivider } from '@/src/components/Commons/Divider';
 import TwitterMUIIcon from '@mui/icons-material/Twitter';
 import { Avatar, Box, styled, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
-import { SectionTitle } from '../Commons/SectionTitle';
+import { colors } from 'thebadge-web-ui-library';
 import { BehanceIcon } from '../Commons/SVGs/BehanceIcon';
 import { GithubCatIcon } from '../Commons/SVGs/GithubCat';
 
@@ -171,7 +171,14 @@ const Team = () => {
   return (
     <BoxTeam>
       <CustomDivider />
-      <SectionTitle as="h3">Team</SectionTitle>
+      <Typography
+        variant="h2"
+        component="h3"
+        textAlign="center"
+        color={colors.white}
+      >
+        TEAM
+      </Typography>
       <Box
         sx={{
           display: 'flex',
@@ -179,6 +186,7 @@ const Team = () => {
           columnGap: 3,
           rowGap: 8,
           marginBottom: 4,
+          marginTop: 4,
         }}
       >
         {TEAM_MEMBERS.map((member, i) => {
