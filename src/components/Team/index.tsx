@@ -38,6 +38,7 @@ const MemberName = styled(Typography)(({ theme }) => ({
 const StyledLink = styled('a')(() => ({
   flexDirection: 'row',
   display: 'flex',
+  alignItems: 'center',
   marginTop: 'auto',
   cursor: 'pointer',
   textDecoration: 'none',
@@ -158,13 +159,14 @@ const Team = () => {
               width: theme.customSizes.icon,
               height: theme.customSizes.icon,
               fill: '#FFFF',
+              mr: 0.5,
             }}
           />
         );
       case 'Github':
-        return <GithubCatIcon sx={{ marginTop: '5px' }} />;
+        return <GithubCatIcon sx={{ marginTop: '8px', mr: 0.5 }} />;
       case 'Behance':
-        return <BehanceIcon sx={{ mr: 1 }} />;
+        return <BehanceIcon sx={{ mr: 0.5 }} />;
     }
   }
 
