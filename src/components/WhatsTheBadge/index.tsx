@@ -14,15 +14,15 @@ const StyledStepBox = styled(Box)(({ theme }) => ({
   display: 'flex',
   justifyContent: 'space-evenly',
   marginTop: theme.spacing(4),
+  gap: theme.spacing(3),
   [theme.breakpoints.down('md')]: {
-    rowGap: theme.spacing(2),
     flexWrap: 'wrap',
   },
 }));
 
 const StyledStepStack = styled(Stack)(({ theme }) => ({
   alignItems: 'center',
-  rowGap: theme.spacing(2),
+  gap: theme.spacing(1),
   [theme.breakpoints.down('md')]: {
     width: '45%',
   },
