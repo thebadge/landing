@@ -4,7 +4,7 @@ export const PAPER_URL =
 export const TWITTER_URL =
   process.env.NEXT_PUBLIC_TWITTER_URL || 'https://twitter.com/thebadgexyz';
 export const DISCORD_URL =
-  process.env.NEXT_PUBLIC_DISCORD_URL || 'https://discord.gg/5A6mvfEvTk';
+  process.env.NEXT_PUBLIC_DISCORD_URL || 'https://discord.gg/FTxtkgbAC4';
 export const MEDIUM_URL =
   process.env.NEXT_PUBLIC_MEDIUM_URL || 'https://medium.com/@TheBadge';
 export const GITHUB_URL =
