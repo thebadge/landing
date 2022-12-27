@@ -1,6 +1,6 @@
-import { defaultTheme } from '@/../thebadge-web-ui-library/dist';
 import { PaletteMode } from '@mui/material';
 import { Mulish } from '@next/font/google';
+import { defaultTheme } from 'thebadge-ui-library';
 
 const mulishFont = Mulish({
   weight: ['300', '400', '500', '600', '700', '800', '900'],

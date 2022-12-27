@@ -8,7 +8,7 @@ import {
   IconCurator,
   IconDecentralized,
   IconEvidence,
-} from 'thebadge-web-ui-library';
+} from 'thebadge-ui-library';
 
 const StyledStepBox = styled(Box)(({ theme }) => ({
   display: 'flex',

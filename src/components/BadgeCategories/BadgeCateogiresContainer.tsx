@@ -1,7 +1,7 @@
 import { Box, styled, Typography } from '@mui/material';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { colors } from 'thebadge-web-ui-library';
+import { colors } from 'thebadge-ui-library';
 
 const StyledContainer = styled(Box)(({ theme }) => ({
   marginTop: theme.spacing(6),

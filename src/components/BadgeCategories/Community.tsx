@@ -1,7 +1,7 @@
 import { Box, Stack, styled, Typography } from '@mui/material';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
-import { colors, SectionLayout, Stepper } from 'thebadge-web-ui-library';
+import { colors, SectionLayout, Stepper } from 'thebadge-ui-library';
 import communityDecoration from '../../assets/community-decoration.webp';
 import StyledTypography from '../Commons/StyledFirstLetter';
 

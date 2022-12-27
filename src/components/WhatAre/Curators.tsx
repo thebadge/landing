@@ -1,6 +1,6 @@
 import { Box, Stack, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { colors, Stepper } from 'thebadge-web-ui-library';
+import { colors, Stepper } from 'thebadge-ui-library';
 import StyledTypography from '../Commons/StyledFirstLetter';
 import StyledContainer from './StyledContainer';
 

@@ -1,4 +1,4 @@
-import { IconDiscord } from '@/../thebadge-web-ui-library/dist';
+import { IconDiscord } from 'thebadge-ui-library';
 import EmailIcon from '@/src/components/Icons/Email';
 import GithubIcon from '@/src/components/Icons/Github';
 import MediumIcon from '@/src/components/Icons/Medium';

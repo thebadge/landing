@@ -2,7 +2,7 @@ import { DISCORD_URL, PAPER_URL } from '@/src/constants';
 import { useGoogleAnalyticsBtn } from '@/src/hooks/useGoogleAnalytics';
 import { Box, Button, Stack, styled, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { colors, IconDiscord } from 'thebadge-web-ui-library';
+import { colors, IconDiscord } from 'thebadge-ui-library';
 import { BadgesPreview } from '../Commons/BadgesPreview';
 
 const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({

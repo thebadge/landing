@@ -2,7 +2,7 @@ import { CustomDivider } from '@/src/components/Commons/Divider';
 import TwitterMUIIcon from '@mui/icons-material/Twitter';
 import { Avatar, Box, styled, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
-import { colors } from 'thebadge-web-ui-library';
+import { colors } from 'thebadge-ui-library';
 import { BehanceIcon } from '../Commons/SVGs/BehanceIcon';
 import { GithubCatIcon } from '../Commons/SVGs/GithubCat';
 

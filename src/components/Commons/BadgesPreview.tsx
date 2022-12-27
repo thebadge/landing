@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import Image from 'next/image';
-import { MultiBadgePreview } from 'thebadge-web-ui-library';
+import { MultiBadgePreview } from 'thebadge-ui-library';
 import diplomaCert from '../../assets/diploma-cert.webp';
 import howeyTest from '../../assets/howey-test.webp';
 import isoCertif from '../../assets/iso-cert.webp';
