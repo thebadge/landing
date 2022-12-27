@@ -58,7 +58,7 @@
         "steps": [
           {
             "title": "1. Empowering the communities",
-            "description": "Certify their real-world information on a decentralized way, for example a web3 company can apply to get a proof of reserve certification. People from the community can always then verify that process is transparent."
+            "description": "Certify their real-world information on a decentralized way, for example a web3 company can apply to get a proof of reserve certification. People from the community can then always verify that this process is transparent."
           },
           {
             "title": "2. Choosing a certificate",
@@ -86,7 +86,7 @@
           },
           {
             "title": "5b-1. Challenge denied",
-            "description": "The jury determines that the evidence is verific. The user recovers his guarantee deposit and the badge is granted to it's address."
+            "description": "The jury determines that the evidence is veridic. The user recovers his guarantee deposit and the badge is granted to it's address."
           },
           {
             "title": "5b-2. Challenge denied",
@@ -134,7 +134,7 @@
       "steps": [
         {
           "title": "1. Bringing your know-how on-chain",
-          "description": "Users can become a badge creators, for example, a notary knows how to verify a document needed in a compliance process on a specific country, by using TheBadge, they could use that knowledge on the Blockchain."
+          "description": "Users can become a badge creator, for example, a notary knows how to verify a document needed in a compliance process on a specific country, by using TheBadge, they could use that knowledge on the Blockchain."
         },
         {
           "title": "2. Creating new badges",
