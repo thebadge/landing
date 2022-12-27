@@ -1,6 +1,6 @@
 import { Box, styled, Typography } from '@mui/material';
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-export-i18n';
 import { colors } from 'thebadge-ui-library';
 
 const StyledContainer = styled(Box)(({ theme }) => ({
@@ -28,7 +28,7 @@ export default function BadgeCategoriesContainer({
 }: {
   children: React.ReactNode;
 }) {
-  const { t } = useTranslation('landing');
+  const { t } = useTranslation();
 
   return (
     <Box mt={10}>

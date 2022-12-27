@@ -1,7 +1,7 @@
 import { DISCORD_URL, PAPER_URL } from '@/src/constants';
 import { useGoogleAnalyticsBtn } from '@/src/hooks/useGoogleAnalytics';
 import { Box, Button, Stack, styled, Typography } from '@mui/material';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-export-i18n';
 import { colors, IconDiscord } from 'thebadge-ui-library';
 import { BadgesPreview } from '../Commons/BadgesPreview';
 
@@ -22,7 +22,7 @@ const StyledButton = styled(Button)(() => ({
 }));
 
 export const Presentation = () => {
-  const { t } = useTranslation('landing');
+  const { t } = useTranslation();
   const googleAnalyticsBtn = useGoogleAnalyticsBtn();
 
   const openPaperHandler = () => {
@@ -38,7 +38,12 @@ export const Presentation = () => {
     <TitleAndSwiperContainer>
       <Stack justifyContent="center" sx={{ flex: 2 }}>
         <Box mb={2}>
-          <Typography variant="h1" component="h1" color={colors.white} sx={{wordWrap: 'break-word'}}>
+          <Typography
+            variant="h1"
+            component="h1"
+            color={colors.white}
+            sx={{ wordWrap: 'break-word' }}
+          >
             {t('presentation.title')}
           </Typography>
         </Box>

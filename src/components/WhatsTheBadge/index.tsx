@@ -1,5 +1,5 @@
 import { Box, Stack, styled, Typography } from '@mui/material';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-export-i18n';
 import {
   BoxGradient,
   colors,
@@ -58,7 +58,7 @@ const STEPS = [
 ] as { title: string; Icon: any }[];
 
 export default function WhatsTheBadge() {
-  const { t } = useTranslation('landing');
+  const { t } = useTranslation();
 
   return (
     <Stack justifyContent="center" sx={{ mt: 10 }}>

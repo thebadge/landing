@@ -1,7 +1,6 @@
 import { Box, styled } from '@mui/material';
 import dynamic from 'next/dynamic';
 
-import { makeStaticProps } from '@/src/utils/getStatic';
 import BadgeCategoriesContainer from '../components/BadgeCategories/BadgeCateogiresContainer';
 import { Presentation } from '../components/Presentation';
 import { useSetionReferences } from '../contexts/referencesContex';
@@ -33,9 +32,6 @@ const MainContainer = styled(Box)(({ theme }) => ({
     maxWidth: '1440px',
   },
 }));
-
-const getStaticProps = makeStaticProps(['landing']);
-export { getStaticProps };
 
 export default function Home() {
   const { homeSection, howItWorksSection, teamSection, partnershipSection } =

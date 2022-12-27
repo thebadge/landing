@@ -1,11 +1,11 @@
 import { Box, Stack, Typography } from '@mui/material';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-export-i18n';
 import { colors, Stepper } from 'thebadge-ui-library';
 import StyledTypography from '../Commons/StyledFirstLetter';
 import StyledContainer from './StyledContainer';
 
 export default function WhatAreCreators() {
-  const { t } = useTranslation('landing');
+  const { t } = useTranslation();
 
   return (
     <StyledContainer>

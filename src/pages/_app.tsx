@@ -8,10 +8,9 @@ import { AppProps } from 'next/app';
 import { useMemo } from 'react';
 
 import { useGoogleAnalytics } from '@/src/hooks/useGoogleAnalytics';
-import { appWithTranslation } from 'next-i18next';
 import { LayoutContainer } from '../components/Layout/LayoutContainer';
-import { getTheme } from '../styles/theme';
 import SectionReferencesProvider from '../contexts/referencesContex';
+import { getTheme } from '../styles/theme';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createCache({
@@ -44,4 +43,4 @@ const MyApp = ({
   );
 };
 
-export default appWithTranslation(MyApp);
+export default MyApp;

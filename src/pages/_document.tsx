@@ -1,6 +1,5 @@
 import createCache from '@emotion/cache';
 import { EmotionCache } from '@emotion/react';
-import i18nextConfig from '../../next-i18next.config';
 
 import { GA_MEASUREMENT_ID } from '@/src/constants';
 import createEmotionServer from '@emotion/server/create-instance';
@@ -19,14 +18,8 @@ class MyDocument extends Document {
   twitterHandle = '@';
 
   render() {
-    let queryLocale = Array.isArray(this.props.__NEXT_DATA__.query.locale)
-      ? this.props.__NEXT_DATA__.query.locale[0]
-      : this.props.__NEXT_DATA__.query.locale;
-
-    const currentLocale = queryLocale || i18nextConfig.i18n.defaultLocale;
-
     return (
-      <Html lang={currentLocale}>
+      <Html>
         <Head>
           <title>{this.title}</title>
           <meta name="description" content={this.description} />

@@ -1,7 +1,7 @@
 import { Box, Stack, styled, Typography } from '@mui/material';
 import Image from 'next/image';
-import { useTranslation } from 'react-i18next';
-import {colors, fonts, SectionLayout, Stepper} from 'thebadge-ui-library';
+import { useTranslation } from 'next-export-i18n';
+import { colors, fonts, SectionLayout, Stepper } from 'thebadge-ui-library';
 import thirdPartyDecoration from '../../assets/thirdparty-decoration.webp';
 import StyledTypography from '../Commons/StyledFirstLetter';
 
@@ -55,7 +55,7 @@ const StyledMiddleComponentContainer = styled(Box)(({ theme }) => ({
 }));
 
 const MiddleComponent = () => {
-  const { t } = useTranslation('landing');
+  const { t } = useTranslation();
 
   return (
     <StyledMiddleComponentContainer>
@@ -81,7 +81,7 @@ const MiddleComponent = () => {
 };
 
 const BottomComponent = () => {
-  const { t } = useTranslation('landing');
+  const { t } = useTranslation();
 
   return (
     <Stepper
