@@ -13,7 +13,7 @@ import Document, {
 } from 'next/document';
 
 class MyDocument extends Document {
-  title = 'The Badge: Certifications as NFTs & On-Chain-Identity';
+  title = 'The Badge: decentralized certifications tokenized as NFTs';
   description =
     'The Badge is a decentralized certification platform built on Ethereum that allows tokenizing on any piece of information coming either on-chain or off-chain under the concept of badges. These badges will create an on chain identity by being issued as non-transferable and verifiable NFTs.';
   twitterHandle = '@';
