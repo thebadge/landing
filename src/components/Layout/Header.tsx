@@ -22,7 +22,6 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
   },
   [theme.breakpoints.down('sm')]: {
     flex: 1,
-    flexDirection: 'column',
   },
 }));
 

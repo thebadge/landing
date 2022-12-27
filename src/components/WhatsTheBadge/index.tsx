@@ -17,7 +17,6 @@ const StyledStepBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down('md')]: {
     rowGap: theme.spacing(2),
     flexWrap: 'wrap',
-    maxHeight: '300px',
   },
 }));
 
