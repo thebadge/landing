@@ -90,7 +90,7 @@ const BottomComponent = () => {
           <Stack key={i}>
             <StyledTypography
               variant="title4"
-              firstLeterColor={colors.pink}
+              firstLetterColor={colors.pink}
               color={colors.black}
               textAlign="left"
             >
@@ -109,7 +109,7 @@ const BottomComponent = () => {
           </Stack>
         );
       })}
-      minHeight={280}
+      minHeight={320}
       backgroundColor="white"
       title={
         <Typography

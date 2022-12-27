@@ -44,7 +44,7 @@ export default function WhatAreCurators() {
                 <StyledTypography
                   variant="title4"
                   color={colors.white}
-                  firstLeterColor={colors.green}
+                  firstLetterColor={colors.green}
                   textAlign="left"
                 >
                   {t(`whatAreCurators.earn.steps.${i}.title`)}
@@ -61,7 +61,7 @@ export default function WhatAreCurators() {
               </Stack>
             );
           })}
-          minHeight={280}
+          minHeight={320}
           glowTitle={true}
           border={true}
           backgroundColor="transparent"

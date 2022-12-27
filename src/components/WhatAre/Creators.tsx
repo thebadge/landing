@@ -44,7 +44,7 @@ export default function WhatAreCreators() {
                 <StyledTypography
                   variant="title4"
                   color={colors.white}
-                  firstLeterColor={colors.pink}
+                  firstLetterColor={colors.pink}
                   textAlign="left"
                 >
                   {t(`whatAreCreators.earn.steps.${i}.title`)}
@@ -61,7 +61,7 @@ export default function WhatAreCreators() {
               </Stack>
             );
           })}
-          minHeight={280}
+          minHeight={320}
           glowTitle={true}
           border={true}
           backgroundColor="transparent"
