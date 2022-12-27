@@ -38,7 +38,7 @@ export const Presentation = () => {
     <TitleAndSwiperContainer>
       <Stack justifyContent="center" sx={{ flex: 2 }}>
         <Box mb={2}>
-          <Typography variant="h1" component="h1" color={colors.white}>
+          <Typography variant="h1" component="h1" color={colors.white} sx={{wordWrap: 'break-word'}}>
             {t('presentation.title')}
           </Typography>
         </Box>
