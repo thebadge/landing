@@ -10,7 +10,7 @@ const BADGES = [isoCertif, howeyTest, diplomaCert];
 export const BadgesPreview = () => {
   return (
     <MultiBadgePreview
-      animated={true}
+      animated={false}
       badges={BADGES.map((cardSrc, i) => (
         <Box
           key={'decorative-image-' + i}
