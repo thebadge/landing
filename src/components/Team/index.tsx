@@ -88,7 +88,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/avatars/fede.webp',
     name: 'Federico Madoery',
     description: 'Co-founder \n Frontend Tech Lead',
-    contact: 'fedeMadoery',
+    contact: 'FedeMadoery',
     contactType: 'Github',
   },
   {
@@ -162,7 +162,7 @@ const Team = () => {
           />
         );
       case 'Github':
-        return <GithubCatIcon />;
+        return <GithubCatIcon sx={{ marginTop: '5px' }} />;
       case 'Behance':
         return <BehanceIcon sx={{ mr: 1 }} />;
     }
