@@ -1,7 +1,7 @@
 import { Box, Stack, styled, Typography } from '@mui/material';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
-import { colors, SectionLayout, Stepper } from 'thebadge-ui-library';
+import {colors, fonts, SectionLayout, Stepper} from 'thebadge-ui-library';
 import thirdPartyDecoration from '../../assets/thirdparty-decoration.webp';
 import StyledTypography from '../Commons/StyledFirstLetter';
 
@@ -63,7 +63,8 @@ const MiddleComponent = () => {
         color={colors.white}
         variant="h3"
         component="h4"
-        fontWeight={900}
+        fontWeight={fonts.fontWeightBlack}
+        lineHeight="42px"
       >
         {t('badgesCategories.third-party.title')}
       </Typography>
