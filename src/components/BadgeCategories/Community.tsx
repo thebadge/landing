@@ -84,13 +84,13 @@ const BottomComponent = () => {
 
   return (
     <Stepper
-      color="green"
+      color="deepPurple"
       elements={[0, 1, 2, 3, 4, 5, 6, 7, 8].map((stepNumber, i) => {
         return (
           <Stack key={i}>
             <StyledTypography
               variant="title4"
-              firstLeterColor={colors.pink}
+              firstLeterColor={colors.deepPurple}
               color={colors.black}
               textAlign="left"
             >
@@ -115,8 +115,9 @@ const BottomComponent = () => {
         <Typography
           variant="title3"
           component="p"
-          color={colors.pink}
+          color={colors.deepPurple}
           sx={{ mb: 1 }}
+          fontSize="1.1em"
           textAlign="center"
         >
           {t(`badgesCategories.community.howItWorks.title`)}

@@ -84,7 +84,7 @@ const BottomComponent = () => {
 
   return (
     <Stepper
-      color="green"
+      color="pink"
       elements={[0, 1, 2, 3, 4].map((stepNumber, i) => {
         return (
           <Stack key={i}>
