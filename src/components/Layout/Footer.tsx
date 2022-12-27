@@ -1,4 +1,4 @@
-import DiscordIcon from '@/src/components/Icons/Discord';
+import { IconDiscord } from '@/../thebadge-web-ui-library/dist';
 import EmailIcon from '@/src/components/Icons/Email';
 import GithubIcon from '@/src/components/Icons/Github';
 import MediumIcon from '@/src/components/Icons/Medium';
@@ -10,6 +10,7 @@ import {
   MEDIUM_URL,
   TWITTER_URL,
 } from '@/src/constants';
+import { useSetionReferences } from '@/src/contexts/referencesContex';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Link, styled } from '@mui/material';
 import { CustomDivider } from '../Commons/Divider';
@@ -48,15 +49,16 @@ export const LegalContainer = styled(Box)(({ theme }) => ({
 
 const Footer = () => {
   const isMobile = useIsMobile();
+  const { contactSection } = useSetionReferences();
 
   return (
-    <FooterContainer>
+    <FooterContainer ref={contactSection}>
       <SocialContainer>
         <TwitterIcon link={TWITTER_URL} />
         <GithubIcon link={GITHUB_URL} />
         <MediumIcon link={MEDIUM_URL} />
         <EmailIcon link={EMAIL_URL} />
-        <DiscordIcon link={DISCORD_URL} />
+        <IconDiscord color="white" link={DISCORD_URL} />
       </SocialContainer>
       <CustomDivider sx={{ mx: '25%', marginTop: 2 }} />
       <LegalContainer>

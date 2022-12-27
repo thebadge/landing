@@ -1,7 +1,7 @@
+import { useSetionReferences } from '@/src/contexts/referencesContex';
 import { Box, styled } from '@mui/material';
-import { LogoTheBadgeWithText } from 'thebadge-ui-library';
-import { DownloadPaperButton } from '../Commons/DownloadPaperButton';
-import { GoToAppButton } from '../Commons/GoToAppButton';
+import { RefObject } from 'react';
+import { LogoTheBadgeWithText, NavigationHeader } from 'thebadge-ui-library';
 
 const HeaderContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -16,30 +16,67 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
     width: '70%',
     maxWidth: '1440px',
   },
+  [theme.breakpoints.down('lg')]: {
+    width: '90%',
+    maxWidth: '1440px',
+  },
   [theme.breakpoints.down('sm')]: {
     flex: 1,
     flexDirection: 'column',
   },
 }));
 
-const ButtonsContainer = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'row',
-  columnGap: theme.spacing(2),
-  [theme.breakpoints.down('sm')]: {
-    flex: 1,
-    marginTop: theme.spacing(2),
-  },
-}));
-
 const Header = () => {
+  const {
+    homeSection,
+    howItWorksSection,
+    teamSection,
+    partnershipSection,
+    contactSection,
+  } = useSetionReferences();
+
+  const scrollTo = (sectionRef: RefObject<HTMLDivElement> | null) => {
+    if (!sectionRef) return;
+    window.scrollTo({
+      top: sectionRef.current?.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <HeaderContainer>
-      <LogoTheBadgeWithText size={212} />
-      <ButtonsContainer>
-        <DownloadPaperButton />
-        <GoToAppButton />
-      </ButtonsContainer>
+      <Box sx={{ flex: 1 }}>
+        <LogoTheBadgeWithText size={212} />
+      </Box>
+      <NavigationHeader
+        anchorPosition="left"
+        items={[
+          {
+            label: 'HOME',
+            onClick: () => scrollTo(homeSection),
+          },
+          {
+            label: 'HOW IT WORKS',
+            onClick: () => scrollTo(howItWorksSection),
+          },
+          {
+            label: 'TEAM',
+            onClick: () => scrollTo(teamSection),
+          },
+          {
+            label: 'PARTNERSHIPS',
+            onClick: () => scrollTo(partnershipSection),
+          },
+          {
+            label: 'CONTACT US',
+            onClick: () => scrollTo(contactSection),
+          },
+        ]}
+        callToActionItem={{
+          label: 'Open app',
+          disabled: true,
+        }}
+      />
     </HeaderContainer>
   );
 };

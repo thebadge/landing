@@ -2,7 +2,7 @@ import { CustomDivider } from '@/src/components/Commons/Divider';
 import TwitterMUIIcon from '@mui/icons-material/Twitter';
 import { Avatar, Box, styled, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
-import { SectionTitle } from '../Commons/SectionTitle';
+import { colors } from 'thebadge-web-ui-library';
 import { BehanceIcon } from '../Commons/SVGs/BehanceIcon';
 import { GithubCatIcon } from '../Commons/SVGs/GithubCat';
 
@@ -11,7 +11,7 @@ const MemberBox = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   display: 'flex',
   flexDirection: 'column',
-  rowGap: theme.spacing(2),
+  rowGap: theme.spacing(1),
   flex: '1 1 20%',
   ':nth-of-type(n+4)': {
     flex: '1 1 18%',
@@ -73,28 +73,28 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar: '/avatars/agu.webp',
     name: 'Agustín Pane',
-    description: 'Co-founder \n Project Manager, Full-stack & Web3 Developer',
+    description: 'Co-founder \n COO',
     contact: 'agupane',
     contactType: 'Github',
   },
   {
     avatar: '/avatars/nico.webp',
     name: 'Nicolás Domínguez',
-    description: 'Co-founder \n Sofware Architect, Web3 & Solidity Developer',
+    description: 'Co-founder \n CTO',
     contact: 'nicosampler',
     contactType: 'Github',
   },
   {
     avatar: '/avatars/fede.webp',
     name: 'Federico Madoery',
-    description: 'Co-founder \n UIX Expert, Full-stack & Mobile Developer',
-    contact: 'fedeMadoery',
+    description: 'Co-founder \n Frontend Tech Lead',
+    contact: 'FedeMadoery',
     contactType: 'Github',
   },
   {
     avatar: '/avatars/javi.webp',
     name: 'Javier Alba, CFA',
-    description: 'Co-founder \n Chief Financial Officer',
+    description: 'Co-founder \n CFO',
     contact: 'JaviAlba00',
     contactType: 'Twitter',
   },
@@ -122,14 +122,14 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar: '/avatars/nicom.webp',
     name: 'Nicolás Magri',
-    description: 'Chief Compliance Officer',
+    description: 'CCO',
     contact: 'monito313',
     contactType: 'Twitter',
   },
   {
     avatar: '/avatars/luciaf.webp',
     name: 'Lucia Fenoglio',
-    description: 'UX/UI & Graphic Designer',
+    description: 'Graphics Designer',
     contact: 'luciafenoglio',
     contactType: 'Behance',
   },
@@ -162,7 +162,7 @@ const Team = () => {
           />
         );
       case 'Github':
-        return <GithubCatIcon />;
+        return <GithubCatIcon sx={{ marginTop: '5px' }} />;
       case 'Behance':
         return <BehanceIcon sx={{ mr: 1 }} />;
     }
@@ -171,7 +171,14 @@ const Team = () => {
   return (
     <BoxTeam>
       <CustomDivider />
-      <SectionTitle as="h3">Team</SectionTitle>
+      <Typography
+        variant="h2"
+        component="h3"
+        textAlign="center"
+        color={colors.white}
+      >
+        TEAM
+      </Typography>
       <Box
         sx={{
           display: 'flex',
@@ -179,6 +186,7 @@ const Team = () => {
           columnGap: 3,
           rowGap: 8,
           marginBottom: 4,
+          marginTop: 4,
         }}
       >
         {TEAM_MEMBERS.map((member, i) => {

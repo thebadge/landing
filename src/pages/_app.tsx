@@ -11,6 +11,7 @@ import { useGoogleAnalytics } from '@/src/hooks/useGoogleAnalytics';
 import { appWithTranslation } from 'next-i18next';
 import { LayoutContainer } from '../components/Layout/LayoutContainer';
 import { getTheme } from '../styles/theme';
+import SectionReferencesProvider from '../contexts/referencesContex';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createCache({
@@ -33,9 +34,11 @@ const MyApp = ({
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <LayoutContainer>
-          <Component {...pageProps} />
-        </LayoutContainer>
+        <SectionReferencesProvider>
+          <LayoutContainer>
+            <Component {...pageProps} />
+          </LayoutContainer>
+        </SectionReferencesProvider>
       </ThemeProvider>
     </CacheProvider>
   );

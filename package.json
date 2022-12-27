@@ -30,9 +30,10 @@
     "react-dom": "^18.2.0",
     "react-i18next": "^12.1.1",
     "react-query": "^3.39.2",
+    "react-wrap-balancer": "^0.2.3",
     "sharp": "^0.31.2",
     "superjson": "^1.12.0",
-    "thebadge-ui-library": "^1.0.0",
+    "thebadge-ui-library": "^1.1.0",
     "zod": "^3.20.2"
   },
   "devDependencies": {

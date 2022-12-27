@@ -1,7 +1,7 @@
 import { CustomDivider } from '@/src/components/Commons/Divider';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
-import { Box, styled } from '@mui/material';
-import { SectionTitle } from '../Commons/SectionTitle';
+import { Box, styled, Typography } from '@mui/material';
+import { colors } from 'thebadge-web-ui-library';
 
 const ContainerBox = styled(Box)(({ theme }) => ({
   flex: '1 1 20%',
@@ -54,11 +54,19 @@ const BackedBy = () => {
   return (
     <BoxBackedBy>
       <CustomDivider />
-      <SectionTitle as="h3">Backed By</SectionTitle>
+      <Typography
+        variant="h2"
+        component="h2"
+        color={colors.white}
+        textAlign="center"
+      >
+        BACKED BY
+      </Typography>
       <Box
         sx={{
           display: 'flex',
           flexFlow: 'row wrap',
+          marginTop: 4,
           columnGap: 3,
           rowGap: 3,
           marginBottom: 4,
