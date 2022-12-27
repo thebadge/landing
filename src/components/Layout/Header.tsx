@@ -1,4 +1,6 @@
+import { useSetionReferences } from '@/src/contexts/referencesContex';
 import { Box, styled } from '@mui/material';
+import { RefObject } from 'react';
 import { LogoTheBadgeWithText, NavigationHeader } from 'thebadge-ui-library';
 
 const HeaderContainer = styled(Box)(({ theme }) => ({
@@ -25,6 +27,22 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
 }));
 
 const Header = () => {
+  const {
+    homeSection,
+    howItWorksSection,
+    teamSection,
+    partnershipSection,
+    contactSection,
+  } = useSetionReferences();
+
+  const scrollTo = (sectionRef: RefObject<HTMLDivElement> | null) => {
+    if (!sectionRef) return;
+    window.scrollTo({
+      top: sectionRef.current?.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <HeaderContainer>
       <Box sx={{ flex: 1 }}>
@@ -35,25 +53,28 @@ const Header = () => {
         items={[
           {
             label: 'HOME',
+            onClick: () => scrollTo(homeSection),
           },
           {
             label: 'HOW IT WORKS',
+            onClick: () => scrollTo(howItWorksSection),
           },
           {
             label: 'TEAM',
+            onClick: () => scrollTo(teamSection),
           },
           {
             label: 'PARTNERSHIPS',
+            onClick: () => scrollTo(partnershipSection),
           },
           {
             label: 'CONTACT US',
-          },
-          {
-            label: 'FAQ',
+            onClick: () => scrollTo(contactSection),
           },
         ]}
         callToActionItem={{
           label: 'Open app',
+          disabled: true,
         }}
       />
     </HeaderContainer>

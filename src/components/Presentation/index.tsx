@@ -1,4 +1,4 @@
-import { PAPER_URL } from '@/src/constants';
+import { DISCORD_URL, PAPER_URL } from '@/src/constants';
 import { useGoogleAnalyticsBtn } from '@/src/hooks/useGoogleAnalytics';
 import { Box, Button, Stack, styled, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
@@ -30,6 +30,10 @@ export const Presentation = () => {
     googleAnalyticsBtn('Read Paper');
   };
 
+  const openDiscordInvite = () => {
+    window.open(DISCORD_URL, '_blank');
+  };
+
   return (
     <TitleAndSwiperContainer>
       <Stack justifyContent="center" sx={{ flex: 2 }}>
@@ -48,6 +52,7 @@ export const Presentation = () => {
           <StyledButton
             variant="contained"
             color="secondary"
+            onClick={openDiscordInvite}
             endIcon={<IconDiscord color="white" />}
           >
             {t('presentation.buttons.comunity')}

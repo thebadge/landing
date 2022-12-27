@@ -10,6 +10,7 @@ import {
   MEDIUM_URL,
   TWITTER_URL,
 } from '@/src/constants';
+import { useSetionReferences } from '@/src/contexts/referencesContex';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Link, styled } from '@mui/material';
 import { CustomDivider } from '../Commons/Divider';
@@ -48,9 +49,10 @@ export const LegalContainer = styled(Box)(({ theme }) => ({
 
 const Footer = () => {
   const isMobile = useIsMobile();
+  const { contactSection } = useSetionReferences();
 
   return (
-    <FooterContainer>
+    <FooterContainer ref={contactSection}>
       <SocialContainer>
         <TwitterIcon link={TWITTER_URL} />
         <GithubIcon link={GITHUB_URL} />

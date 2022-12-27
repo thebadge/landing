@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import { makeStaticProps } from '@/src/utils/getStatic';
 import BadgeCategoriesContainer from '../components/BadgeCategories/BadgeCateogiresContainer';
 import { Presentation } from '../components/Presentation';
+import { useSetionReferences } from '../contexts/referencesContex';
 
 const Team = dynamic(() => import('../components/Team'));
 const BackedBy = dynamic(() => import('../components/BackedBy'));
@@ -37,19 +38,30 @@ const getStaticProps = makeStaticProps(['landing']);
 export { getStaticProps };
 
 export default function Home() {
+  const { homeSection, howItWorksSection, teamSection, partnershipSection } =
+    useSetionReferences();
+
   return (
     <Box sx={{ overflowX: 'hidden' }}>
       <MainContainer>
-        <Presentation />
+        <div ref={homeSection}>
+          <Presentation />
+        </div>
         <WhatsTheBadge />
-        <WhatAreCurators />
+        <div ref={howItWorksSection}>
+          <WhatAreCurators />
+        </div>
         <BadgeCategoriesContainer>
           <CommunityBadge />
           <ThirdPartyBadge />
         </BadgeCategoriesContainer>
         <WhatAreCreators />
-        <Team />
-        <BackedBy />
+        <div ref={teamSection}>
+          <Team />
+        </div>
+        <div ref={partnershipSection}>
+          <BackedBy />
+        </div>
       </MainContainer>
     </Box>
   );
