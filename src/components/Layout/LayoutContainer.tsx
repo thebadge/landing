@@ -8,9 +8,18 @@ import { BackgroundGradient } from './BackgroundGradient';
 const Header = dynamic(() => import('./Header'));
 const Footer = dynamic(() => import('./Footer'));
 
-const Content = styled(Box)({
+const Content = styled(Box)(({ theme }) => ({
   position: 'relative',
-});
+  '& .headroom--scrolled': {
+    // When header is sticky on scroll, we reduce the size of the padding and the logo
+    '& #header-container': {
+      paddingTop: theme.spacing(2),
+      '& #logo-container': {
+        scale: '0.8',
+      },
+    },
+  },
+}));
 
 type LayoutContainerProps = {
   children: React.ReactElement;

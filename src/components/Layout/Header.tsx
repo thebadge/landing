@@ -34,6 +34,7 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     flex: 1,
   },
+  transition: 'padding-top 0.5s cubic-bezier(0.83, 0, 0.17, 1)',
 }));
 
 const Header = () => {
@@ -54,8 +55,14 @@ const Header = () => {
   };
 
   return (
-    <HeaderContainer>
-      <Box sx={{ flex: 1 }}>
+    <HeaderContainer id="header-container">
+      <Box
+        sx={{
+          flex: 1,
+          transition: 'scale 0.5s cubic-bezier(0.83, 0, 0.17, 1)',
+        }}
+        id="logo-container"
+      >
         <LogoTheBadgeWithText size={212} />
       </Box>
       <NavigationHeader
