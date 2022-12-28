@@ -1,9 +1,9 @@
 import { Box, Stack, styled, Typography } from '@mui/material';
-import Image from 'next/image';
 import { useTranslation } from 'next-export-i18n';
-import { colors, SectionLayout, Stepper, fonts } from 'thebadge-ui-library';
+import Image from 'next/image';
+import { colors, fonts, SectionLayout, Stepper } from 'thebadge-ui-library';
 import communityDecoration from '../../assets/community-decoration.webp';
-import StyledTypography from '../Commons/StyledFirstLetter';
+import StyledFirstLetter from '../Commons/StyledFirstLetter';
 
 export default function CommunityBadge() {
   return (
@@ -89,14 +89,14 @@ const BottomComponent = () => {
       elements={[0, 1, 2, 3, 4, 5, 6, 7, 8].map((stepNumber, i) => {
         return (
           <Stack key={i}>
-            <StyledTypography
+            <StyledFirstLetter
               variant="title4"
               firstLetterColor={colors.deepPurple}
               color={colors.black}
               textAlign="left"
             >
               {t(`badgesCategories.community.howItWorks.steps.${i}.title`)}
-            </StyledTypography>
+            </StyledFirstLetter>
             <Typography
               variant="body4"
               component="p"
