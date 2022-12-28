@@ -17,4 +17,14 @@ export const getTheme = (mode?: PaletteMode) => ({
     avatar: 92,
     icon: 21,
   },
+  components: {
+    // We force to use always the same font family, if not we have our custom variants whitout the property
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          fontFamily: mulishFont.style.fontFamily,
+        },
+      },
+    },
+  },
 });
