@@ -15,7 +15,6 @@ const ContainerBox = styled(Box)(({ theme }) => ({
 
 const BoxBackedBy = styled(Box)(({ theme }) => ({
   marginTop: theme.spacing(10),
-  marginBottom: theme.spacing(10),
 }));
 
 const CustomOrgLink = styled('a')<{ backcolor: string }>(
