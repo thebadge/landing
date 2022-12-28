@@ -1,7 +1,11 @@
 import { useSetionReferences } from '@/src/contexts/referencesContex';
 import { Box, styled } from '@mui/material';
 import { RefObject } from 'react';
-import { LogoTheBadgeWithText, NavigationHeader } from 'thebadge-ui-library';
+import {
+  gradients,
+  LogoTheBadgeWithText,
+  NavigationHeader,
+} from 'thebadge-ui-library';
 
 const HeaderContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -10,8 +14,7 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
   left: '50%',
   transform: 'translateX(-50%)',
-  background:
-    'radial-gradient(94.86% 21.92% at 3.16% 1.15%, #420756 0%, #190321 61.46%, #000000 100%, #000000 100%)',
+  background: gradients.gradientBackground,
   // With this the header bacnground and page bacnground has the same match
   backgroundSize: '100vw 100vh',
   paddingTop: theme.spacing(4),
@@ -66,6 +69,7 @@ const Header = () => {
         <LogoTheBadgeWithText size={212} />
       </Box>
       <NavigationHeader
+        mobileViewMaxWidth={1000}
         anchorPosition="left"
         items={[
           {
