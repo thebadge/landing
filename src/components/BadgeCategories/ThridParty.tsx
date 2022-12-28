@@ -66,7 +66,7 @@ const MiddleComponent = () => {
         fontWeight={fonts.fontWeightBlack}
         lineHeight="42px"
       >
-        {t('badgesCategories.third-party.title')}
+        {t('badgeCategories.third-party.title')}
       </Typography>
       <Typography
         color={colors.white}
@@ -74,7 +74,7 @@ const MiddleComponent = () => {
         component="p"
         textAlign="left"
       >
-        {t('badgesCategories.third-party.description')}
+        {t('badgeCategories.third-party.description')}
       </Typography>
     </StyledMiddleComponentContainer>
   );
@@ -95,7 +95,7 @@ const BottomComponent = () => {
               color={colors.black}
               textAlign="left"
             >
-              {t(`badgesCategories.third-party.howItWorks.steps.${i}.title`)}
+              {t(`badgeCategories.third-party.howItWorks.steps.${i}.title`)}
             </StyledFirstLetter>
             <Typography
               variant="body4"
@@ -104,7 +104,7 @@ const BottomComponent = () => {
               textAlign="left"
             >
               {t(
-                `badgesCategories.third-party.howItWorks.steps.${i}.description`,
+                `badgeCategories.third-party.howItWorks.steps.${i}.description`,
               )}
             </Typography>
           </Stack>
@@ -121,7 +121,7 @@ const BottomComponent = () => {
           fontSize="1.1em"
           textAlign="center"
         >
-          {t(`badgesCategories.third-party.howItWorks.title`)}
+          {t(`badgeCategories.third-party.howItWorks.title`)}
         </Typography>
       }
     />

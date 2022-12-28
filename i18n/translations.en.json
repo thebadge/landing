@@ -48,8 +48,8 @@
       ]
     }
   },
-  "badgesCategories": {
-    "title": "BADGES CATEGORIES",
+  "badgeCategories": {
+    "title": "BADGE CATEGORIES",
     "community": {
       "title": "Community Badges",
       "description": "Represent real-world information in the form of blockchain-based certifications. To obtain a badge, users must provide evidence and pass through TheBadge's curation process, where our community of curators will review and verify the authenticity of the evidence.",

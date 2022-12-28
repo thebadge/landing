@@ -36,10 +36,9 @@ export default function BadgeCategoriesContainer({
         color={colors.white}
         variant="h2"
         component="h2"
-        fontWeight={900}
         textAlign="center"
       >
-        {t('badgesCategories.title')}
+        {t('badgeCategories.title')}
       </Typography>
       <StyledContainer>{children}</StyledContainer>
     </Box>
