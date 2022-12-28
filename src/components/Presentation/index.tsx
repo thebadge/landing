@@ -4,6 +4,7 @@ import { Box, Button, Stack, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
 import { colors, IconDiscord } from 'thebadge-ui-library';
 import { BadgesPreview } from '../Commons/BadgesPreview';
+import { useIsMobile } from "@/src/hooks/useIsMobile";
 
 const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -39,7 +40,7 @@ export const Presentation = () => {
       <Stack justifyContent="center" sx={{ flex: 2 }}>
         <Box mb={2}>
           <Typography
-            variant="h1"
+            variant={useIsMobile() ? 'h2' : 'h1'}
             component="h1"
             color={colors.white}
             sx={{ wordWrap: 'break-word' }}
