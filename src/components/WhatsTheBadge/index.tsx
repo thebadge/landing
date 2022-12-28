@@ -29,7 +29,7 @@ const StyledStepStack = styled(Stack)(({ theme }) => ({
 }));
 
 const StyledWhyStack = styled(Stack)(({ theme }) => ({
-  padding: theme.spacing(4),
+  padding: theme.spacing(6),
   rowGap: theme.spacing(2),
   [theme.breakpoints.up('xl')]: {
     paddingLeft: '10%',
@@ -87,7 +87,7 @@ export default function WhatsTheBadge() {
           );
         })}
       </StyledStepBox>
-      <Box mt={8}>
+      <Box mt={10}>
         <BoxGradient
           sx={{
             marginLeft: 'calc((-100vw + 100%) / 2)',
