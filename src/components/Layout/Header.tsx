@@ -21,12 +21,15 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
   [theme.breakpoints.up('xl')]: {
     paddingLeft: '15%',
     paddingRight: '15%',
-    maxWidth: '1440px',
   },
   [theme.breakpoints.down('lg')]: {
     paddingLeft: '5%',
     paddingRight: '5%',
     maxWidth: '1440px',
+  },
+  [theme.breakpoints.down(1040)]: {
+    paddingLeft: theme.spacing(3),
+    paddingRight: 0,
   },
   [theme.breakpoints.down('sm')]: {
     flex: 1,
