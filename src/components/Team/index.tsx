@@ -58,7 +58,7 @@ const MemberDescription = styled(Typography)(({ theme }) => ({
 }));
 
 const BoxTeam = styled(Box)(({ theme }) => ({
-  marginTop: theme.spacing(10),
+  marginTop: theme.spacing(12),
   marginBottom: theme.spacing(10),
 }));
 

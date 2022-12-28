@@ -53,7 +53,6 @@ const Footer = () => {
 
   return (
     <FooterContainer ref={contactSection}>
-      <CustomDivider sx={{ mx: '25%'}} />
       <SocialContainer>
         <TwitterIcon link={TWITTER_URL} />
         <GithubIcon link={GITHUB_URL} />

@@ -61,7 +61,7 @@ export default function WhatsTheBadge() {
   const { t } = useTranslation();
 
   return (
-    <Stack justifyContent="center" sx={{ mt: 10 }}>
+    <Stack justifyContent="center" sx={{ mt: 12 }}>
       <Typography
         variant="h2"
         component="h2"
@@ -87,7 +87,7 @@ export default function WhatsTheBadge() {
           );
         })}
       </StyledStepBox>
-      <Box mt={10}>
+      <Box mt={12}>
         <BoxGradient
           sx={{
             marginLeft: 'calc((-100vw + 100%) / 2)',

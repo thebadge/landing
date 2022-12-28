@@ -14,7 +14,7 @@ const ContainerBox = styled(Box)(({ theme }) => ({
 }));
 
 const BoxBackedBy = styled(Box)(({ theme }) => ({
-  marginTop: theme.spacing(10),
+  marginTop: theme.spacing(12),
 }));
 
 const CustomOrgLink = styled('a')<{ backcolor: string }>(
@@ -65,10 +65,10 @@ const BackedBy = () => {
         sx={{
           display: 'flex',
           flexFlow: 'row wrap',
-          marginTop: 4,
-          columnGap: 3,
-          rowGap: 3,
-          marginBottom: 4,
+          marginTop: 6,
+          columnGap: 2,
+          rowGap: 2,
+          marginBottom: 12,
         }}
       >
         {ORGS.map((org, i) => {

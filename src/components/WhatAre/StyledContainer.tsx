@@ -3,7 +3,7 @@ import { Box, styled } from '@mui/material';
 const StyledContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
-  marginTop: theme.spacing(10),
+  marginTop: theme.spacing(12),
   alignItems: 'center',
   justifyContent: 'space-between',
   '& > div': {

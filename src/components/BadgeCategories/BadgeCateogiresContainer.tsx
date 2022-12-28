@@ -31,7 +31,7 @@ export default function BadgeCategoriesContainer({
   const { t } = useTranslation();
 
   return (
-    <Box mt={10}>
+    <Box mt={12}>
       <Typography
         color={colors.white}
         variant="h2"
