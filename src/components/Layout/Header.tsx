@@ -10,14 +10,22 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
   left: '50%',
   transform: 'translateX(-50%)',
-  width: '80%',
-  marginTop: theme.spacing(4),
+  background:
+    'radial-gradient(94.86% 21.92% at 3.16% 1.15%, #420756 0%, #190321 61.46%, #000000 100%, #000000 100%)',
+  // With this the header bacnground and page bacnground has the same match
+  backgroundSize: '100vw 100vh',
+  paddingTop: theme.spacing(4),
+  paddingBottom: theme.spacing(1),
+  paddingLeft: '10%',
+  paddingRight: '10%',
   [theme.breakpoints.up('xl')]: {
-    width: '70%',
+    paddingLeft: '15%',
+    paddingRight: '15%',
     maxWidth: '1440px',
   },
   [theme.breakpoints.down('lg')]: {
-    width: '90%',
+    paddingLeft: '5%',
+    paddingRight: '5%',
     maxWidth: '1440px',
   },
   [theme.breakpoints.down('sm')]: {
