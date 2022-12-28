@@ -43,9 +43,9 @@ export default function Home() {
         <div ref={homeSection}>
           <Presentation />
           <WhatsTheBadge />
+          <WhatAreCurators />
         </div>
         <div ref={howItWorksSection}>
-          <WhatAreCurators />
           <BadgeCategoriesContainer>
             <CommunityBadge />
             <ThirdPartyBadge />
