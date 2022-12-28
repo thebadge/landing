@@ -61,7 +61,7 @@ export const Presentation = () => {
             onClick={openDiscordInvite}
             endIcon={<IconDiscord color="white" />}
           >
-            {t('presentation.buttons.comunity')}
+            {t('presentation.buttons.community')}
           </StyledButton>
         </Box>
       </Stack>
