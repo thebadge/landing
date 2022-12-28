@@ -14,7 +14,7 @@ import Document, {
 class MyDocument extends Document {
   title = 'The Badge: decentralized certifications tokenized as NFTs';
   description =
-    'The Badge is a decentralized certification platform built on Ethereum that allows tokenizing on any piece of information coming either on-chain or off-chain under the concept of badges. These badges will create an on chain identity by being issued as non-transferable and verifiable NFTs.';
+    'The Badge is a decentralized certification platform powered by Ethereum. It provides users with the opportunity to tokenize any piece of information from the real world in the form of badges. These badges are verified and validated by the community, which decides what should be accepted and what should not be.';
   twitterHandle = '@';
 
   render() {
