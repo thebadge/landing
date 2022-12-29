@@ -19,20 +19,11 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
   backgroundSize: '100vw 100vh',
   paddingTop: theme.spacing(4),
   paddingBottom: theme.spacing(1),
-  paddingLeft: '10%',
-  paddingRight: '10%',
+  paddingLeft: '5%',
+  paddingRight: '5%',
   [theme.breakpoints.up('xl')]: {
-    paddingLeft: '15%',
-    paddingRight: '15%',
-  },
-  [theme.breakpoints.down('lg')]: {
-    paddingLeft: '5%',
-    paddingRight: '5%',
-    maxWidth: '1440px',
-  },
-  [theme.breakpoints.down(1040)]: {
-    paddingLeft: theme.spacing(3),
-    paddingRight: 0,
+    paddingLeft: '10%',
+    paddingRight: '10%',
   },
   [theme.breakpoints.down('sm')]: {
     flex: 1,
@@ -62,14 +53,13 @@ const Header = () => {
       <Box
         sx={{
           flex: 1,
-          transition: 'scale 0.5s cubic-bezier(0.83, 0, 0.17, 1)',
         }}
         id="logo-container"
       >
         <LogoTheBadgeWithText size={212} />
       </Box>
       <NavigationHeader
-        mobileViewMaxWidth={1000}
+        mobileViewMaxWidth={1040}
         anchorPosition="left"
         items={[
           {

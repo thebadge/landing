@@ -16,6 +16,7 @@ const Content = styled(Box)(({ theme }) => ({
       paddingTop: theme.spacing(2),
       '& #logo-container': {
         scale: '0.8',
+        transformOrigin: 'left center',
       },
     },
   },

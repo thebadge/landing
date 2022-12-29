@@ -5,10 +5,14 @@ import { colors, fonts, SectionLayout, Stepper } from 'thebadge-ui-library';
 import thirdPartyDecoration from '../../assets/thirdparty-decoration.webp';
 import StyledFirstLetter from '../Commons/StyledFirstLetter';
 
+const StyledSectionLayout = styled(SectionLayout)(({}) => ({
+  maxWidth: 'fit-content'
+}))
+
 export default function ThirdPartyBadge() {
   return (
     <Box>
-      <SectionLayout
+      <StyledSectionLayout
         topComponent={<TopComponent />}
         middleComponent={<MiddleComponent />}
         bottomComponent={<BottomComponent />}

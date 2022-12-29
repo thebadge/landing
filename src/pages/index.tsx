@@ -1,7 +1,7 @@
 import { Box, styled } from '@mui/material';
 import dynamic from 'next/dynamic';
 
-import BadgeCategoriesContainer from '../components/BadgeCategories/BadgeCateogiresContainer';
+import BadgeCategoriesContainer from '../components/BadgeCategories/BadgeCateogriesContainer';
 import { Presentation } from '../components/Presentation';
 import { useSetionReferences } from '../contexts/referencesContex';
 
@@ -28,8 +28,7 @@ const MainContainer = styled(Box)(({ theme }) => ({
     paddingTop: theme.spacing(8),
   },
   [theme.breakpoints.up('xl')]: {
-    width: '70%',
-    maxWidth: '1440px',
+    width: '80%',
   },
 }));
 

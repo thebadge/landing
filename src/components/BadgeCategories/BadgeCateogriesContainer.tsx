@@ -16,11 +16,6 @@ const StyledContainer = styled(Box)(({ theme }) => ({
     flexDirection: 'column',
     alignItems: 'center',
   },
-  [theme.breakpoints.between(1000, 1200)]: {
-    marginLeft: 'calc((-100vw + 100%) / 2)',
-    marginRight: 'calc((-100vw + 100%) / 2)',
-    padding: theme.spacing(2),
-  },
 }));
 
 export default function BadgeCategoriesContainer({

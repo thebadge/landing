@@ -18,6 +18,7 @@ const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
 }));
 
 const StyledButton = styled(Button)(() => ({
+  height: '48px',
   textTransform: 'none',
   padding: '9px 26px 9px 26px',
 }));
