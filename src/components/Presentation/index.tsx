@@ -52,7 +52,7 @@ export const Presentation = () => {
         <Typography variant="body1" component="p" color={colors.white}>
           {t('presentation.description')}
         </Typography>
-        <Box sx={{ display: 'flex', flex: 1, mt: 4, columnGap: 2 }}>
+        <Box sx={{ display: 'flex', mt: 4, columnGap: 2 }}>
           <StyledButton variant="contained" onClick={openPaperHandler}>
             {t('presentation.buttons.whitepaper')}
           </StyledButton>
