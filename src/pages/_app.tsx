@@ -1,13 +1,16 @@
-// src/pages/_app.tsx
+// TheBadge UI Library
+import 'node_modules/thebadge-ui-library/dist/index.css';
+
 import createCache from '@emotion/cache';
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
 import { AppProps } from 'next/app';
 import { useMemo } from 'react';
 
-import { LayoutContainer } from '../components/Layout/LayoutContainer';
-import { getTheme } from '../styles/theme';
 import { useGoogleAnalytics } from '@/src/hooks/useGoogleAnalytics';
+import { LayoutContainer } from '../components/Layout/LayoutContainer';
+import SectionReferencesProvider from '../contexts/referencesContex';
+import { getTheme } from '../styles/theme';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createCache({
@@ -18,6 +21,7 @@ const clientSideEmotionCache = createCache({
 type MyAppProps = AppProps & {
   emotionCache?: EmotionCache;
 };
+
 const MyApp = ({
   Component,
   pageProps,
@@ -29,9 +33,11 @@ const MyApp = ({
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <LayoutContainer>
-          <Component {...pageProps} />
-        </LayoutContainer>
+        <SectionReferencesProvider>
+          <LayoutContainer>
+            <Component {...pageProps} />
+          </LayoutContainer>
+        </SectionReferencesProvider>
       </ThemeProvider>
     </CacheProvider>
   );

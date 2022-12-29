@@ -1,7 +1,7 @@
 import { CustomDivider } from '@/src/components/Commons/Divider';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
-import { Box, styled } from '@mui/material';
-import { SectionTitle } from '../Commons/SectionTitle';
+import { Box, styled, Typography } from '@mui/material';
+import { colors } from 'thebadge-ui-library';
 
 const ContainerBox = styled(Box)(({ theme }) => ({
   flex: '1 1 20%',
@@ -14,8 +14,7 @@ const ContainerBox = styled(Box)(({ theme }) => ({
 }));
 
 const BoxBackedBy = styled(Box)(({ theme }) => ({
-  marginTop: theme.spacing(10),
-  marginBottom: theme.spacing(10),
+  marginTop: theme.spacing(12),
 }));
 
 const CustomOrgLink = styled('a')<{ backcolor: string }>(
@@ -54,14 +53,22 @@ const BackedBy = () => {
   return (
     <BoxBackedBy>
       <CustomDivider />
-      <SectionTitle>Backed By</SectionTitle>
+      <Typography
+        variant="h2"
+        component="h2"
+        color={colors.white}
+        textAlign="center"
+      >
+        BACKED BY
+      </Typography>
       <Box
         sx={{
           display: 'flex',
           flexFlow: 'row wrap',
-          columnGap: 3,
-          rowGap: 3,
-          marginBottom: 4,
+          marginTop: 6,
+          columnGap: 2,
+          rowGap: 2,
+          marginBottom: 12,
         }}
       >
         {ORGS.map((org, i) => {

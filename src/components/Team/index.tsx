@@ -2,7 +2,7 @@ import { CustomDivider } from '@/src/components/Commons/Divider';
 import TwitterMUIIcon from '@mui/icons-material/Twitter';
 import { Avatar, Box, styled, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
-import { SectionTitle } from '../Commons/SectionTitle';
+import { colors } from 'thebadge-ui-library';
 import { BehanceIcon } from '../Commons/SVGs/BehanceIcon';
 import { GithubCatIcon } from '../Commons/SVGs/GithubCat';
 
@@ -11,14 +11,14 @@ const MemberBox = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   display: 'flex',
   flexDirection: 'column',
-  rowGap: theme.spacing(2),
+  rowGap: theme.spacing(1),
   flex: '1 1 20%',
-  ':nth-child(n+4)': {
+  ':nth-of-type(n+4)': {
     flex: '1 1 18%',
   },
   [theme.breakpoints.down('sm')]: {
     flex: '1 1 20%',
-    ':nth-child(n+4)': {
+    ':nth-of-type(n+4)': {
       flex: '1 1 20%',
     },
   },
@@ -38,6 +38,7 @@ const MemberName = styled(Typography)(({ theme }) => ({
 const StyledLink = styled('a')(() => ({
   flexDirection: 'row',
   display: 'flex',
+  alignItems: 'center',
   marginTop: 'auto',
   cursor: 'pointer',
   textDecoration: 'none',
@@ -46,7 +47,7 @@ const StyledLink = styled('a')(() => ({
 const MemberDescription = styled(Typography)(({ theme }) => ({
   color: theme.palette.common.white,
   whiteSpace: 'break-spaces',
-  fontWeight: '600',
+  fontWeight: '500',
   fontSize: '16px',
   textAlign: 'center',
   maxWidth: '270px',
@@ -57,7 +58,7 @@ const MemberDescription = styled(Typography)(({ theme }) => ({
 }));
 
 const BoxTeam = styled(Box)(({ theme }) => ({
-  marginTop: theme.spacing(10),
+  marginTop: theme.spacing(12),
   marginBottom: theme.spacing(10),
 }));
 
@@ -73,28 +74,28 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar: '/avatars/agu.webp',
     name: 'Agustín Pane',
-    description: 'Co-founder \n Project Manager, Full-stack & Web3 Developer',
+    description: 'Co-founder \n COO',
     contact: 'agupane',
     contactType: 'Github',
   },
   {
     avatar: '/avatars/nico.webp',
     name: 'Nicolás Domínguez',
-    description: 'Co-founder \n Sofware Architect, Web3 & Solidity Developer',
+    description: 'Co-founder \n CTO',
     contact: 'nicosampler',
     contactType: 'Github',
   },
   {
     avatar: '/avatars/fede.webp',
     name: 'Federico Madoery',
-    description: 'Co-founder \n UIX Expert, Full-stack & Mobile Developer',
-    contact: 'fedeMadoery',
+    description: 'Co-founder \n Frontend Tech Lead',
+    contact: 'FedeMadoery',
     contactType: 'Github',
   },
   {
     avatar: '/avatars/javi.webp',
     name: 'Javier Alba, CFA',
-    description: 'Co-founder \n Chief Financial Officer',
+    description: 'Co-founder \n CFO',
     contact: 'JaviAlba00',
     contactType: 'Twitter',
   },
@@ -122,14 +123,14 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar: '/avatars/nicom.webp',
     name: 'Nicolás Magri',
-    description: 'Chief Compliance Officer',
+    description: 'CCO',
     contact: 'monito313',
     contactType: 'Twitter',
   },
   {
     avatar: '/avatars/luciaf.webp',
-    name: 'Lucia Fenoglio',
-    description: 'UX/UI & Graphic Designer',
+    name: 'Lucía Fenoglio',
+    description: 'Graphics Designer',
     contact: 'luciafenoglio',
     contactType: 'Behance',
   },
@@ -158,20 +159,28 @@ const Team = () => {
               width: theme.customSizes.icon,
               height: theme.customSizes.icon,
               fill: '#FFFF',
+              mr: 0.5,
             }}
           />
         );
       case 'Github':
-        return <GithubCatIcon />;
+        return <GithubCatIcon sx={{ marginTop: '8px', mr: 0.5 }} />;
       case 'Behance':
-        return <BehanceIcon sx={{ mr: 1 }} />;
+        return <BehanceIcon sx={{ mr: 0.5 }} />;
     }
   }
 
   return (
     <BoxTeam>
       <CustomDivider />
-      <SectionTitle>Team</SectionTitle>
+      <Typography
+        variant="h2"
+        component="h3"
+        textAlign="center"
+        color={colors.white}
+      >
+        TEAM
+      </Typography>
       <Box
         sx={{
           display: 'flex',
@@ -179,6 +188,7 @@ const Team = () => {
           columnGap: 3,
           rowGap: 8,
           marginBottom: 4,
+          marginTop: 4,
         }}
       >
         {TEAM_MEMBERS.map((member, i) => {
@@ -190,7 +200,12 @@ const Team = () => {
                   height: theme.customSizes.avatar,
                 }}
               >
-                <Image src={member.avatar} alt={member.name} layout="fill" />
+                <Image
+                  src={member.avatar}
+                  alt={member.name}
+                  height={theme.customSizes.avatar}
+                  width={theme.customSizes.avatar}
+                />
               </Avatar>
               <MemberName>{member.name}</MemberName>
               <MemberDescription>{member.description}</MemberDescription>

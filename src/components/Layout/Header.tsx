@@ -1,7 +1,13 @@
+import { useSetionReferences } from '@/src/contexts/referencesContex';
 import { Box, styled } from '@mui/material';
-import { DownloadPaperButton } from '../Commons/DownloadPaperButton';
-import { GoToAppButton } from '../Commons/GoToAppButton';
-import { TheBadgeLogo } from './TheBadgeLogo';
+import { RefObject } from 'react';
+import {
+  gradients,
+  LogoTheBadgeWithText,
+  NavigationHeader,
+} from 'thebadge-ui-library';
+import { useTranslation } from "next-export-i18n";
+import { ConstructionOutlined } from "@mui/icons-material";
 
 const HeaderContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -10,36 +16,84 @@ const HeaderContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
   left: '50%',
   transform: 'translateX(-50%)',
-  width: '80%',
-  marginTop: theme.spacing(4),
+  background: gradients.gradientBackground,
+  // With this the header bacnground and page bacnground has the same match
+  backgroundSize: '100vw 100vh',
+  paddingTop: theme.spacing(4),
+  paddingBottom: theme.spacing(1),
+  paddingLeft: '5%',
+  paddingRight: 'calc(5% - 16px)',
   [theme.breakpoints.up('xl')]: {
-    width: '70%',
-    maxWidth: '1440px',
+    paddingLeft: '10%',
+    paddingRight: 'calc(10% - 16px)',
   },
   [theme.breakpoints.down('sm')]: {
     flex: 1,
-    flexDirection: 'column',
   },
-}));
-
-const ButtonsContainer = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  flexDirection: 'row',
-  columnGap: theme.spacing(2),
-  [theme.breakpoints.down('sm')]: {
-    flex: 1,
-    marginTop: theme.spacing(2),
-  },
+  transition: 'padding-top 0.5s cubic-bezier(0.83, 0, 0.17, 1)',
 }));
 
 const Header = () => {
+  const {
+    homeSection,
+    howItWorksSection,
+    teamSection,
+    partnershipSection,
+    contactSection,
+  } = useSetionReferences();
+
+  const { t } = useTranslation();
+
+  const scrollTo = (sectionRef: RefObject<HTMLDivElement> | null) => {
+    if (!sectionRef) return;
+    window.scrollTo({
+      top: sectionRef.current?.offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
-    <HeaderContainer>
-      <TheBadgeLogo />
-      <ButtonsContainer>
-        <DownloadPaperButton />
-        <GoToAppButton />
-      </ButtonsContainer>
+    <HeaderContainer id="header-container">
+      <Box
+        sx={{
+          flex: 1,
+        }}
+        id="logo-container"
+      >
+        <LogoTheBadgeWithText size={212} />
+      </Box>
+      <NavigationHeader
+        mobileViewMaxWidth={1040}
+        anchorPosition="left"
+        items={[
+          {
+            label: t('header.home'),
+            onClick: () => scrollTo(homeSection),
+          },
+          {
+            label: t('header.howItWorks'),
+            onClick: () => scrollTo(howItWorksSection),
+          },
+          {
+            label: t('header.team'),
+            onClick: () => scrollTo(teamSection),
+          },
+          {
+            label: t('header.partnerships'),
+            onClick: () => scrollTo(partnershipSection),
+          },
+          {
+            label: t('header.contactUs'),
+            onClick: () => scrollTo(contactSection),
+          },
+        ]}
+        callToActionItem={{
+          label: t('header.goToAppButton.label'),
+          disabled: true,
+          icon: <ConstructionOutlined></ConstructionOutlined>,
+          tooltip: t('header.goToAppButton.tooltip')
+        }}
+      />
     </HeaderContainer>
   );
 };
