@@ -1,6 +1,6 @@
 import { Box, styled } from '@mui/material';
 
-const StyledContainer = styled(Box)(({ theme }) => ({
+const WhatAreContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'row',
   marginTop: theme.spacing(12),
@@ -18,4 +18,4 @@ const StyledContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-export default StyledContainer;
+export default WhatAreContainer;

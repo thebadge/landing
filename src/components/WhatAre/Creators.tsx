@@ -2,13 +2,13 @@ import { Box, Stack, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
 import { colors, Stepper } from 'thebadge-ui-library';
 import StyledTypography from '../Commons/StyledFirstLetter';
-import StyledContainer from './StyledContainer';
+import WhatAreContainer from './WhatAreContainer';
 
 export default function WhatAreCreators() {
   const { t } = useTranslation();
 
   return (
-    <StyledContainer>
+    <WhatAreContainer>
       <Stack rowGap={3}>
         <Typography
           variant="body3"
@@ -78,6 +78,6 @@ export default function WhatAreCreators() {
           }
         />
       </Box>
-    </StyledContainer>
+    </WhatAreContainer>
   );
 }
