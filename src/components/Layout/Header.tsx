@@ -6,6 +6,8 @@ import {
   LogoTheBadgeWithText,
   NavigationHeader,
 } from 'thebadge-ui-library';
+import { useTranslation } from "next-export-i18n";
+import { ConstructionOutlined } from "@mui/icons-material";
 
 const HeaderContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -40,6 +42,8 @@ const Header = () => {
     contactSection,
   } = useSetionReferences();
 
+  const { t } = useTranslation();
+
   const scrollTo = (sectionRef: RefObject<HTMLDivElement> | null) => {
     if (!sectionRef) return;
     window.scrollTo({
@@ -63,29 +67,31 @@ const Header = () => {
         anchorPosition="left"
         items={[
           {
-            label: 'HOME',
+            label: t('header.home'),
             onClick: () => scrollTo(homeSection),
           },
           {
-            label: 'HOW IT WORKS',
+            label: t('header.howItWorks'),
             onClick: () => scrollTo(howItWorksSection),
           },
           {
-            label: 'TEAM',
+            label: t('header.team'),
             onClick: () => scrollTo(teamSection),
           },
           {
-            label: 'PARTNERSHIPS',
+            label: t('header.partnerships'),
             onClick: () => scrollTo(partnershipSection),
           },
           {
-            label: 'CONTACT US',
+            label: t('header.contactUs'),
             onClick: () => scrollTo(contactSection),
           },
         ]}
         callToActionItem={{
-          label: 'Open app',
+          label: t('header.goToAppButton.label'),
           disabled: true,
+          icon: <ConstructionOutlined></ConstructionOutlined>,
+          tooltip: t('header.goToAppButton.tooltip')
         }}
       />
     </HeaderContainer>
