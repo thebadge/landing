@@ -29,6 +29,7 @@ const MainContainer = styled(Box)(({ theme }) => ({
   },
   [theme.breakpoints.up('xl')]: {
     width: '80%',
+    maxWidth: '1440px',
   },
 }));
 

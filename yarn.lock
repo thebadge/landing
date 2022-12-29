@@ -2721,6 +2721,11 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-animate-height@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/react-animate-height/-/react-animate-height-3.1.0.tgz#f7def40acfe857f936621fe9d7bad601467d0e31"
+  integrity sha512-+0pW2OzB8PzVn10dpTB9q5jFI+GwQTnCDLbzyqPBUzKXJfpBrlWW954uud/59Mreo+laRN/fPzvckuA+WTptXA==
+
 react-dom@^17.0.0:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
@@ -3226,10 +3231,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-thebadge-ui-library@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/thebadge-ui-library/-/thebadge-ui-library-1.1.3.tgz#63edee53031da024318dc18fdff2b970ea6cce6d"
-  integrity sha512-MwKwrFHJ6mlPpPR01Zk20LHjzivDYql26kjwqRWmIhIX7KYb93TjHD4dP8Ikea5jRbFn73t3ZZK9RPCXVR99VQ==
+thebadge-ui-library@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/thebadge-ui-library/-/thebadge-ui-library-1.1.4.tgz#a91bfe8de4ba9a7a9bba197d17f46ae727a68526"
+  integrity sha512-Wp0LusW99T1uKYZF1GBH4whyiYg8PlJylkTtBzDJvNpSi9DkGgPGwfwJBLKgwEmJnsJ1iopgjtvNgG0t4TkPVA==
   dependencies:
     "@emotion/react" "^11.10.5"
     "@emotion/server" "^11.10.0"
@@ -3238,6 +3243,7 @@ thebadge-ui-library@^1.1.3:
     "@mui/material" "^5.11.0"
     next "12.2.4"
     react "^17.0.0"
+    react-animate-height "^3.1.0"
     react-dom "^17.0.0"
     react-qr-code "^2.0.8"
     react-transition-group "^4.4.5"

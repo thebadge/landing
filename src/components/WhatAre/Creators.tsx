@@ -1,3 +1,4 @@
+import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Stack, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
 import { colors, Stepper } from 'thebadge-ui-library';
@@ -6,6 +7,7 @@ import WhatAreContainer from './WhatAreContainer';
 
 export default function WhatAreCreators() {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
 
   return (
     <WhatAreContainer>
@@ -61,7 +63,7 @@ export default function WhatAreCreators() {
               </Stack>
             );
           })}
-          minHeight={320}
+          minHeight={isMobile ? 380 : 320}
           glowTitle={true}
           border={true}
           backgroundColor="transparent"
