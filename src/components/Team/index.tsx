@@ -129,7 +129,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     avatar: '/avatars/luciaf.webp',
-    name: 'Lucia Fenoglio',
+    name: 'Lucía Fenoglio',
     description: 'Graphics Designer',
     contact: 'luciafenoglio',
     contactType: 'Behance',

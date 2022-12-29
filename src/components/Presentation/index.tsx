@@ -1,10 +1,10 @@
 import { DISCORD_URL, PAPER_URL } from '@/src/constants';
 import { useGoogleAnalyticsBtn } from '@/src/hooks/useGoogleAnalytics';
+import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Button, Stack, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
 import { colors, IconDiscord } from 'thebadge-ui-library';
 import { BadgesPreview } from '../Commons/BadgesPreview';
-import { useIsMobile } from "@/src/hooks/useIsMobile";
 
 const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -20,6 +20,7 @@ const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
 const StyledButton = styled(Button)(() => ({
   textTransform: 'none',
   padding: '9px 26px 9px 26px',
+  maxHeight: '48px',
 }));
 
 export const Presentation = () => {
@@ -43,7 +44,6 @@ export const Presentation = () => {
             variant={useIsMobile() ? 'h2' : 'h1'}
             component="h1"
             color={colors.white}
-            sx={{ wordWrap: 'break-word' }}
           >
             {t('presentation.title')}
           </Typography>
