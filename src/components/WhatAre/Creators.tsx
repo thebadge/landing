@@ -36,11 +36,19 @@ export default function WhatAreCreators() {
         >
           {t('whatAreCreators.description')}
         </Typography>
+        <Typography
+          variant="body2"
+          component="p"
+          color={colors.white}
+          textAlign="left"
+        >
+          {t('whatAreCreators.example')}
+        </Typography>
       </Stack>
       <Box>
         <Stepper
           color="pink"
-          elements={[0, 1, 2, 3].map((stepNumber, i) => {
+          elements={[0, 1, 2].map((stepNumber, i) => {
             return (
               <Stack key={i} sx={{ flex: 1 }}>
                 <StyledTypography

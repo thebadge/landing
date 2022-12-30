@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { colors } from 'thebadge-ui-library';
 import { BehanceIcon } from '../Commons/SVGs/BehanceIcon';
 import { GithubCatIcon } from '../Commons/SVGs/GithubCat';
+import { useTranslation } from 'next-export-i18n';
 
 const MemberBox = styled(Box)(({ theme }) => ({
   justifyContent: 'flex-start',
@@ -138,6 +139,7 @@ const TEAM_MEMBERS: TeamMember[] = [
 
 const Team = () => {
   const theme = useTheme();
+  const { t } = useTranslation();
 
   function getContactUrl(member: TeamMember) {
     switch (member.contactType) {
@@ -179,7 +181,7 @@ const Team = () => {
         textAlign="center"
         color={colors.white}
       >
-        TEAM
+        {t('team.title')}
       </Typography>
       <Box
         sx={{

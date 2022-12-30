@@ -6,8 +6,8 @@ import communityDecoration from '../../assets/community-decoration.webp';
 import StyledFirstLetter from '../Commons/StyledFirstLetter';
 
 const StyledSectionLayout = styled(SectionLayout)(({}) => ({
-    maxWidth: 'fit-content'
-}))
+  maxWidth: 'fit-content',
+}));
 
 export default function CommunityBadge() {
   return (
@@ -81,6 +81,14 @@ const MiddleComponent = () => {
       >
         {t('badgeCategories.community.description')}
       </Typography>
+      <Typography
+        color={colors.white}
+        variant="body2"
+        component="p"
+        textAlign="left"
+      >
+        {t('badgeCategories.community.example')}
+      </Typography>
     </StyledMiddleComponentContainer>
   );
 };
@@ -91,7 +99,7 @@ const BottomComponent = () => {
   return (
     <Stepper
       color="deepPurple"
-      elements={[0, 1, 2, 3, 4, 5, 6, 7, 8].map((stepNumber, i) => {
+      elements={[0, 1, 2, 3, 4, 5, 6, 7].map((stepNumber, i) => {
         return (
           <Stack key={i}>
             <StyledFirstLetter
@@ -108,9 +116,7 @@ const BottomComponent = () => {
               color={colors.black}
               textAlign="left"
             >
-              {t(
-                `badgeCategories.community.howItWorks.steps.${i}.description`,
-              )}
+              {t(`badgeCategories.community.howItWorks.steps.${i}.description`)}
             </Typography>
           </Stack>
         );
