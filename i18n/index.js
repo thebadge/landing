@@ -5,7 +5,7 @@ var de = require('./translations.de.json');
 const i18n = {
   translations: {
     en,
-    de,
+   // de,
     es,
   },
   defaultLang: 'en',
