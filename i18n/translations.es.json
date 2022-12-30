@@ -30,7 +30,7 @@
     }
   },
   "whatAreCurators": {
-    "title": "Que son los curadores",
+    "title": "Qué son los curadores",
     "sectionName": "Convertirse en curador",
     "description": "Los curadores son miembros de la comunidad descentralizada de TheBadge que verifican la autenticidad de las certificaciones. Revisan cuidadosamente la evidencia proporcionada para cada badge y pueden solicitar la impugnacion de los mismos si detectan irregularidades. Si los curadores exponen con éxito un badge fraudulento, serán recompensados por sus esfuerzos.",
     "earn": {
@@ -137,7 +137,7 @@
     }
   },
   "whatAreCreators": {
-    "title": "Que son los creadores",
+    "title": "Qué son los creadores",
     "sectionName": "Convertirse en creador",
     "description": "Como creadores de certificados en la plataforma de TheBadge, los usuarios pueden diseñar y publicar certificaciones personalizadas que otros usuarios pueden aplicar para obtener. Los creadores pueden establecer el precio de cada certificacion y recibir una parte de dicha tarifa cuando los usuarios las utilicen.",
     "earn": {
@@ -203,9 +203,9 @@
     ]
   },
   "team": {
-    "title": "Equipo"
+    "title": "EQUIPO"
   },
   "backedBy": {
-    "title": "Apoyado por"
+    "title": "APOYADO POR"
   }
 }
