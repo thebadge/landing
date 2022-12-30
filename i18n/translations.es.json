@@ -30,7 +30,7 @@
     }
   },
   "whatAreCurators": {
-    "title": "Que son los curadores",
+    "title": "Qué son los curadores",
     "sectionName": "Convertirse en curador",
     "description": "Los curadores son miembros de la comunidad descentralizada de TheBadge que verifican la autenticidad de las certificaciones. Revisan cuidadosamente la evidencia proporcionada para cada badge y pueden solicitar la impugnación de los mismos si se detectan irregularidades. En caso de que un curador impugne con éxito un badge fraudulento, el mismo será recompensado por sus esfuerzos.",
     "example": "Brindar incentivos para que los curadores revisen la evidencia y realicen impugnaciones cuando sea necesario, ayuda a garantizar no solo que los usuarios que realmente acrediten mérito reciban su certificado, sino que también protege la reputación y la integridad de las certificaciones.",
@@ -128,7 +128,7 @@
     }
   },
   "whatAreCreators": {
-    "title": "Que son los creadores",
+    "title": "Qué son los creadores",
     "sectionName": "Convertirse en creador",
     "description": "Los creadores son miembros de la comunidad de TheBadge, los cuales diseñan y publican certificaciones personalizadas para otros usuarios que desean certificar información especifica. Los creadores pueden establecer el precio de cada certificación y recibir una parte de dicha tarifa cuando los usuarios las utilicen.",
     "example": "Por ejemplo, un escribano de un país determinado sabe cómo verificar documentos necesarios en un proceso de compliance de dicho país, al usar TheBadge, podría usar esos conocimientos para verificar dichos documentos en la Blockchain y generar ingresos por los mismos.",
@@ -159,32 +159,32 @@
         "description": "Definir los fundamentos del proyecto y encontrar necesidades reales donde se podría utilizar la plataforma y cómo."
       },
       {
-        "year": "q1 2023",
+        "year": "Q1 2023",
         "title": "Fundación de TheBadge Labs",
         "description": "TheBadge creará las primeras certificaciones las cuales nos ayudarán a comprender la mejor manera de hacer que la plataforma se adapte a diferentes escenarios."
       },
       {
-        "year": "q2 2023",
+        "year": "Q2 2023",
         "title": "Desarrollo de la Plataforma de certificaciones",
         "description": "En este período se desarrollará la primera versión de la plataforma.."
       },
       {
-        "year": "q3 2023",
+        "year": "Q3 2023",
         "title": "Desarrollo de la Plataforma de certificaciones",
         "description": "En este período se desarrollará la primera versión de la plataforma.."
       },
       {
-        "year": "q4 2023",
+        "year": "Q4 2023",
         "title": "Desarrollo de plataforma de curadores y jurados",
         "description": "Desarrollar la funcionalidad que permitirá a nuestra comunidad validar las certificaciones y generar disputas de impugnación las mismas."
       },
       {
-        "year": "q1 2024",
+        "year": "Q1 2024",
         "title": "Red de pruebas",
         "description": "Lanzar la plataforma en una red de pruebas y realizar un proceso de auditoria en los smart-contracts."
       },
       {
-        "year": "q2 2024",
+        "year": "Q2 2024",
         "title": "Puesta en vivo de la plataforma",
         "description": "Lanzamiento de la plataforma"
       }

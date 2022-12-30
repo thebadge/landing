@@ -22,7 +22,7 @@
     "title": "WHAT IS THE BADGE",
     "stepOne": "A platform that certifies information in a decentralized way.",
     "stepTwo": "Generates certifications (badges) based on evidence provided.",
-    "stepThree": "Each badge will require evidence for being issued.",
+    "stepThree": "Each badge will require evidence to be issued.",
     "stepFour": "Curators will be rewarded for auditing and flagging fraudulent badges.",
     "why": {
       "title": "Why we need decentralized certifications",
@@ -70,7 +70,7 @@
             "description": "The user selects the badge they are interested in obtaining. Each badge type will require the submission of specific proof or evidence to certify that they have the right to claim it"
           },
           {
-            "title": "2. Providing the evidence",
+            "title": "2. Providing evidence",
             "description": "Each badge type will have specific requirements for the evidence that must be submitted in order to claim the badge. An example of this type of badge could be the verification of a course completion certificate."
           },
           {
@@ -78,7 +78,7 @@
             "description": "A deposit is requested to initiate the process. It's needed to avoid fraudulent usage of the platform and ensures that badge applicants are serious about obtaining the badge. The deposit will be returned at the end of the process if the evidence provided is authentic."
           },
           {
-            "title": "4. Curation process start",
+            "title": "4. Curation process starts",
             "description": "Wait for our community of curators to review the evidence provided. They will carefully review it and could raise challenges if they have any doubts or concerns."
           },
           {
@@ -102,7 +102,7 @@
     },
     "third-party": {
       "title": "Third-party Badges",
-      "description": "Also known as \"Blockchain certifications as a service\". They are badges generated and backed by a public or private entity. Entities that are willing to generate these badges have to be registered on the platform before they can start emitting them.",
+      "description": "Also known as \"Blockchain certifications as a service\". These are badges generated and backed by a public or private entity. Entities that are willing to generate these badges have to be registered on the platform before they can start emitting them.",
       "example": "For example, an online courses platform could become a third-party entity of TheBadge, by doing so, it will be able to grant its certifications on-chain without having to develop its own mechanism.",
       "howItWorks": {
         "title": "How it works",
@@ -159,32 +159,32 @@
         "description": "Defining the fundamentals of the project and finding real necessities where this platform could be used and how."
       },
       {
-        "year": "q1 2023",
+        "year": "Q1 2023",
         "title": "TheBadge Labs foundation",
         "description": "Creating the first badges that will help us to have a better understanding of the users needs in order to make the platform adaptable to different scenarios."
       },
       {
-        "year": "q2 2023",
-        "title": "Certification Platform Development",
+        "year": "Q2 2023",
+        "title": "Certification Platform development",
         "description": "This period will be used to build the v1 of the platform."
       },
       {
-        "year": "q3 2023",
-        "title": "Certification Platform Development",
+        "year": "Q3 2023",
+        "title": "Certification Platform development",
         "description": "This period will be used to build the v1 of the platform."
       },
       {
-        "year": "q4 2023",
+        "year": "Q4 2023",
         "title": "Courts & curator platform development",
         "description": "Develop the functionality that will allow the community to create different types of badges and validate the certifications' veracity."
       },
       {
-        "year": "q1 2024",
+        "year": "Q1 2024",
         "title": "Testnet",
-        "description": "Launch the platform on the testnnet & smart-contracts audit"
+        "description": "Launch the platform on the testnet & smart-contracts audit."
       },
       {
-        "year": "q2 2024",
+        "year": "Q2 2024",
         "title": "Going live",
         "description": "We will be releasing the platform."
       }
