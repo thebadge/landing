@@ -13,9 +13,9 @@ import {
 import { useSetionReferences } from '@/src/contexts/referencesContex';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Link, styled } from '@mui/material';
-import { CustomDivider } from '../Commons/Divider';
+import { useTranslation } from 'next-export-i18n';
 
-export const FooterContainer = styled(Box)(({theme}) => ({
+export const FooterContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
   bottom: 0,
   padding: theme.spacing(3),
@@ -50,6 +50,7 @@ export const LegalContainer = styled(Box)(({ theme }) => ({
 const Footer = () => {
   const isMobile = useIsMobile();
   const { contactSection } = useSetionReferences();
+  const { t } = useTranslation();
 
   return (
     <FooterContainer ref={contactSection}>
@@ -61,7 +62,9 @@ const Footer = () => {
         <IconDiscord color="white" link={DISCORD_URL} />
       </SocialContainer>
       <LegalContainer sx={{ marginTop: 2 }}>
-        <span>©{new Date().getFullYear()} The Badge. All rights reserved.</span>
+        <span>
+          ©{new Date().getFullYear()} {t('footer.copyright')}
+        </span>
         <Box sx={{ columnGap: 2, display: 'none' }}>
           {!isMobile && <span>|</span>}
           <Link target="_blank">Terms</Link>

@@ -1,4 +1,8 @@
 import '@mui/material/styles/createPalette';
+import {
+  PaletteColorOptions,
+  SimplePaletteColorOptions,
+} from '@mui/material/styles/createPalette';
 import 'thebadge-ui-library/dist/assets/material-ui.d.ts';
 
 // TODO Do the right augmentation
@@ -67,14 +71,14 @@ declare module '@mui/material/styles/createTypography' {
 
 declare module '@mui/material/styles' {
   export interface Palette {
-    blue: Palette;
-    purple: Palette;
-    green: Palette;
-    darkGreen: Palette;
-    pink: Palette;
-    white: Palette;
-    deepPurple: Palette;
-    darkBlue: Palette;
+    blue: SimplePaletteColorOptions;
+    purple: SimplePaletteColorOptions;
+    green: SimplePaletteColorOptions;
+    darkGreen: SimplePaletteColorOptions;
+    pink: SimplePaletteColorOptions;
+    white: SimplePaletteColorOptions;
+    deepPurple: SimplePaletteColorOptions;
+    darkBlue: SimplePaletteColorOptions;
   }
 
   // allow configuration using `createTheme`

@@ -1,13 +1,14 @@
 import { useSetionReferences } from '@/src/contexts/referencesContex';
+import { ConstructionOutlined } from '@mui/icons-material';
 import { Box, styled } from '@mui/material';
-import { RefObject } from 'react';
+import { useTranslation } from 'next-export-i18n';
+import React, { RefObject } from 'react';
 import {
   gradients,
   LogoTheBadgeWithText,
   NavigationHeader,
 } from 'thebadge-ui-library';
-import { useTranslation } from "next-export-i18n";
-import { ConstructionOutlined } from "@mui/icons-material";
+import LanguageSwitchLink from '../TranslationUtils/LanguageSwitchLink';
 
 const HeaderContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -61,6 +62,13 @@ const Header = () => {
         id="logo-container"
       >
         <LogoTheBadgeWithText size={212} />
+        <Box sx={{ color: 'white.light' }}>
+          <LanguageSwitchLink locale="en" />
+          {'|'}
+          <LanguageSwitchLink locale="es" />
+          {'|'}
+          <LanguageSwitchLink locale="de" />
+        </Box>
       </Box>
       <NavigationHeader
         mobileViewMaxWidth={1040}
@@ -91,7 +99,7 @@ const Header = () => {
           label: t('header.goToAppButton.label'),
           disabled: true,
           icon: <ConstructionOutlined></ConstructionOutlined>,
-          tooltip: t('header.goToAppButton.tooltip')
+          tooltip: t('header.goToAppButton.tooltip'),
         }}
       />
     </HeaderContainer>

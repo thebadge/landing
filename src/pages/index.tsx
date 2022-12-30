@@ -15,7 +15,7 @@ const CommunityBadge = dynamic(
   () => import('../components/BadgeCategories/Community'),
 );
 const ThirdPartyBadge = dynamic(
-  () => import('../components/BadgeCategories/ThridParty'),
+  () => import('../components/BadgeCategories/ThirdParty'),
 );
 
 const MainContainer = styled(Box)(({ theme }) => ({
