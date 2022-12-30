@@ -12,7 +12,6 @@ type LanguageSwitcherInjetedProps = {
 
 const StyledButtonBase = styled(ButtonBase)<LanguageSwitcherInjetedProps>(
   ({ theme, ...props }) => {
-    console.log(props);
     return {
       borderRadius: '50%',
       paddingLeft: theme.spacing(0.5),
@@ -27,16 +26,16 @@ const StyledButtonBase = styled(ButtonBase)<LanguageSwitcherInjetedProps>(
 const getFlag = (locale: string) => {
   switch (locale) {
     case 'es': {
-      return `🇪🇸`;
+      return `ES`;
     }
     case 'de': {
-      return '🇩🇪';
+      return 'DE';
     }
     case 'en': {
-      return `🇬🇧`;
+      return `EN`;
     }
     default: {
-      return `🏳️`;
+      return `️`;
     }
   }
 };
