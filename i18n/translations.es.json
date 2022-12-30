@@ -1,0 +1,211 @@
+{
+  "header": {
+    "home": "INICIO",
+    "howItWorks": "COMO FUNCIONA",
+    "team": "EQUIPO",
+    "partnerships": "SOCIOS",
+    "contactUs": "CONTACTANOS",
+    "goToAppButton": {
+      "label": "Abrir app",
+      "tooltip": "Muy pronto"
+    }
+  },
+  "presentation": {
+    "title": "Plataforma de certificación descentralizada",
+    "description": "TheBadge es una plataforma de certificación descentralizada impulsada por Ethereum. Brinda a los usuarios la oportunidad de tokenizar cualquier información del mundo real en forma de insignias (badges). Estas insignias son verificadas y validadas por la comunidad, que decide qué se debe aceptar y qué no.",
+    "buttons": {
+      "whitepaper": "Consulte nuestro documento técnico",
+      "community": "Únete a nuestra comunidad"
+    }
+  },
+  "whatIsTheBadge": {
+    "title": "QUE ES THE BADGE",
+    "stepOne": "Una plataforma que certifica información de forma descentralizada.",
+    "stepTwo": "Genera certificaciones (badges) en base a las evidencias aportadas.",
+    "stepThree": "Cada badge requerirá evidencia para ser emitido.",
+    "stepFour": "Los curadores serán recompensados por auditar y marcar badges fraudulentos.",
+    "why": {
+      "title": "Por qué necesitamos certificaciones descentralizadas",
+      "description": "Para garantizar que nuestras iniciativas para atraer a más personas al ecosistema crypto sean fructíferas, necesitamos hacerlo confiable. Para crear un futuro descentralizado, la información precisa es esencial. Si confiamos todo el deber de verificación solo a entidades centralizadas, el ecosistema seguirá sufriendo de las acciones malos actores."
+    }
+  },
+  "whatAreCurators": {
+    "title": "Que son los curadores",
+    "sectionName": "Convertirse en curador",
+    "description": "Los curadores son miembros de la comunidad descentralizada de TheBadge que verifican la autenticidad de las certificaciones. Revisan cuidadosamente la evidencia proporcionada para cada badge y pueden solicitar la impugnacion de los mismos si detectan irregularidades. Si los curadores exponen con éxito un badge fraudulento, serán recompensados por sus esfuerzos.",
+    "earn": {
+      "title": "Ganar dinero participando como curador",
+      "steps": [
+        {
+          "title": "1. Integridad de TheBadge",
+          "description": "Brindar incentivos para que los curadores revisen la evidencia y realizen impugnaciones cuando sea necesario, ayuda a garantizar no solo que los usuarios que realmente lo merezcan reciban badges, sino que tambien protege la reputación y la integridad de las certificaciones."
+        },
+        {
+          "title": "2. Solicitud de un Badge",
+          "description": "Cada vez que se envíe una solicitud para obtener un badge, se notificará a los curadores y se les otorgará cierto tiempo para revisar la evidencia proporcionada."
+        },
+        {
+          "title": "3. Tareas de los curators",
+          "description": "Los curadores serán recompensados al detectar evidencia fraudulenta en las certificaciones y solicitar impugnaciones, los mismos estaran economicamente incentivados al recibir tokens BADGE por dicha tarea."
+        },
+        {
+          "title": "4. Solicitar una impugnacion",
+          "description": "Si un curador tiene dudas sobre la autenticidad de la evidencia, puede iniciar un desafío haciendo un depósito de dinero. Esto iniciará un proceso de arbitraje, en el que un jurado revisará la evidencia y determinará quien de los dos, el curador o el solicitante del certificado, está en lo correcto."
+        },
+        {
+          "title": "5. Siendo recompensado",
+          "description": "Después de que se complete el proceso de arbitraje, si el jurado rechaza la evidencia del certificado, el curador recibirá parte del depósito del solicitante de dicho certificado y una recompensa en tokens BADGE."
+        }
+      ]
+    }
+  },
+  "badgeCategories": {
+    "title": "CATEGORÍAS DE BADGES",
+    "community": {
+      "title": "Badges de la comunidad",
+      "description": "Son certificaciones creadas en la blockchain, las cuales representan información del mundo real. Para obtener un badge, los usuarios deben proporcionar evidencia que avale que son aptos para obtener esa certificacion y pasar por el proceso de curación de TheBadge, donde nuestra comunidad de curadores revisará y verificará la autenticidad de dicha evidencia.",
+      "howItWorks": {
+        "title": "Cómo funciona",
+        "steps": [
+          {
+            "title": "1. Empoderando a las comunidades",
+            "description": "TheBadge permite certificar información del mundo real de forma descentralizada, por ejemplo, una empresa web3 podria solicitar una certificación de prueba de reservas. En el proceso de certificacion, las personas de la comunidad siempre pueden rastrear dicho proceso y verificar que sea transparente."
+          },
+          {
+            "title": "2. Eligiendo un certificado",
+            "description": "El usuario se conecta mediante su billetera digital y elige de una lista el certificado que le interesa obtener."
+          },
+          {
+            "title": "3. Proporcionando la evidencia",
+            "description": "Cada tipo de certificado requerirá la presentación de un comprobante o prueba específica para acreditar que tiene derecho a reclamarlo. Un ejemplo podría ser la verificación de un certificado de finalización de curso."
+          },
+          {
+            "title": "4. Realizando el deposito",
+            "description": "Para iniciar el proceso es necesario realizar un depósito a modo de garantia. Dicho depósito es necesario para evitar el uso fraudulento de la plataforma y garantiza que los solicitantes del certificado tomen en serio la obtención del mismo. El depósito será devuelto al final del proceso si la prueba aportada es fehaciente."
+          },
+          {
+            "title": "5. Inicio del proceso de curación",
+            "description": "Nuestra comunidad de curadores revisará cuidadosamente la evidencia proporcionada. En el caso de tener dudas acerca de la autenticidad de las pruebas, podrian plantear la impugnacion de las mismas."
+          },
+          {
+            "title": "5a. Aprobación del certificado",
+            "description": "Si la solicitud del usuario pasa el proceso de curación, se otorgará el certificado directamente a la billetera virtual del mismo."
+          },
+          {
+            "title": "5b. Solicitud de impugnacion",
+            "description": "En caso de que un curador impugne las pruebas, un jurado descentralizado analizará el caso y determinará si la prueba es auténtica o no."
+          },
+          {
+            "title": "5b-1. Impugnacion denegada",
+            "description": "Si el jurado determina que la evidencia es verídica. El usuario recupera su depósito de garantía y se le otorga el certificado directamente a su billetera virtual."
+          },
+          {
+            "title": "5b-2. Impugnacion aceptada",
+            "description": "El jurado determina que la evidencia es fraudulenta. El certificado no es otorgado y el usuario que genero la solicitud pierde su depósito de garantía, la cual se entregará al curador como recompensa."
+          }
+        ]
+      }
+    },
+    "third-party": {
+      "title": "Badges de terceros",
+      "description": "También llamado como \"Certificaciones en Blockchain como servicio\". Son certificados generados y respaldados por una entidad pública o privada. Las entidades que estén dispuestas a emitir certificaciones deberan registrarse en la plataforma antes de poder comenzar a emitirlas.",
+      "howItWorks": {
+        "title": "Cómo funciona",
+        "steps": [
+          {
+            "title": "1. TheBadge como una herramienta",
+            "description": "Las entidades pueden usar TheBadge para convertirse en creadores de badges de terceros, al hacerlo, podrán otorgar certificaciones bajo su autoridad."
+          },
+          {
+            "title": "2. Registrarse como una entidad",
+            "description": "Primero, la entidad debe registrarse dentro de la plataforma presentando información como nombre, descripción, logotipo, etc.."
+          },
+          {
+            "title": "3. Comienza el proceso de certificacion",
+            "description": "Una vez que la entidad está registrada, puede comenzar a emitir sus propias certificaciones. Dichas certificaciones pueden luego ser reclamadas por los usuarios aceptados por la entidad.."
+          },
+          {
+            "title": "4. Solicitar verificacion",
+            "description": "La entidad puede solicitar convertirse en un emisor verificado en TheBadge. Esto permitirá una forma más personalizada y segura de emitir credenciales."
+          },
+          {
+            "title": "5. Distribuyendo certificados",
+            "description": "Una vez que la entidad haya sido verificada, podrá emitir insignias directamente a las billeteras de los miembros de su comunidad, si una entidad no esta verificada, no puede distribuir directamente los certificados a sus usuarios, sino que son los usuarios quienes deben realizar la solicitud primero a la entidad."
+          }
+        ]
+      }
+    }
+  },
+  "whatAreCreators": {
+    "title": "Que son los creadores",
+    "sectionName": "Convertirse en creador",
+    "description": "Como creadores de certificados en la plataforma de TheBadge, los usuarios pueden diseñar y publicar certificaciones personalizadas que otros usuarios pueden aplicar para obtener. Los creadores pueden establecer el precio de cada certificacion y recibir una parte de dicha tarifa cuando los usuarios las utilicen.",
+    "earn": {
+      "title": "Ganar dinero como creador",
+      "steps": [
+        {
+          "title": "1. Trae tu know-how a la red",
+          "description": "Los usuarios pueden convertirse en creadores de certificados, por ejemplo, un escribano sabe cómo verificar un documento necesario en un proceso de compliance en un país específico, al usar TheBadge, podría usar esos conocimientos en la Blockchain y generar ingresos por los mismos."
+        },
+        {
+          "title": "2. Creando nuevas certificaciones",
+          "description": "Para ganar dinero creando un certificado, el creador deberá definir la información y las pruebas que deberá proporcionar el solicitante del mismo."
+        },
+        {
+          "title": "3. Fijando un precio",
+          "description": "El creador puede establecer un precio para el certificado. Esta será la cantidad a pagar para poder solicitarlo."
+        },
+        {
+          "title": "4. Siendo recompensado",
+          "description": "Cuando los usuarios soliciten el certificado y realicen el pago por el mismo, TheBadge distribuirá esa tarifa entre la plataforma y el creador de la misma, de la cual, el creador se llevará la mayor parte."
+        }
+      ]
+    }
+  },
+  "roadmap": {
+    "title": "Hoja de ruta",
+    "steps": [
+      {
+        "year": "2022",
+        "title": "Fundamentos de TheBadge",
+        "description": "Definir los fundamentos del proyecto y encontrar necesidades reales donde se podría utilizar la plataforma y cómo."
+      },
+      {
+        "year": "q1 2023",
+        "title": "Fundación de TheBadge Labs",
+        "description": "TheBadge creará las primeras certificaciones las cuales nos ayudarán a comprender la mejor manera de hacer que la plataforma se adapte a diferentes escenarios."
+      },
+      {
+        "year": "q2 2023",
+        "title": "Desarrollo de la Plataforma de certificaciones",
+        "description": "En este período se desarrollará la primer version de la plataforma.."
+      },
+      {
+        "year": "q3 2023",
+        "title": "Desarrollo de la Plataforma de certificaciones",
+        "description": "En este período se desarrollará la primer version de la plataforma.."
+      },
+      {
+        "year": "q4 2023",
+        "title": "Desarrollo de plataforma de curadores y jurados",
+        "description": "Desarrollar la funcionalidad que permitirá a nuestra comunidad validar las certificaciones y generar disputas de impugnación las mismas."
+      },
+      {
+        "year": "q1 2024",
+        "title": "Red de pruebas",
+        "description": "Lanzar la plataforma en una red de pruebas y realizar un proceso de auditoria en los smart-contracts."
+      },
+      {
+        "year": "q2 2024",
+        "title": "Puesta en vivo de la plataforma",
+        "description": "Lanzamiento de la plataforma"
+      }
+    ]
+  },
+  "team": {
+    "title": "Team"
+  },
+  "backedBy": {
+    "title": "Backed By"
+  }
+}
