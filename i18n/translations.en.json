@@ -73,7 +73,7 @@
           },
           {
             "title": "2. Choosing a certificate",
-            "description": "The user selects the badge they are interested in obtaining. Each badge type will require the submission of specific proof or evidence to certify that you have the right to claim it"
+            "description": "The user selects the badge they are interested in obtaining. Each badge type will require the submission of specific proof or evidence to certify that they have the right to claim it"
           },
           {
             "title": "3. Providing the evidence",
@@ -81,7 +81,7 @@
           },
           {
             "title": "4. Making the deposit",
-            "description": "A deposit is requested to initiate the process. It's needed to avoid fraudulent usage of the platform and ensures that badge applicants are serious about obtaining the badge. The deposit will be returned at the end of the process if the evidence provided it's authentic."
+            "description": "A deposit is requested to initiate the process. It's needed to avoid fraudulent usage of the platform and ensures that badge applicants are serious about obtaining the badge. The deposit will be returned at the end of the process if the evidence provided is authentic."
           },
           {
             "title": "5. Curation process start",
@@ -100,7 +100,7 @@
             "description": "The jury determines that the evidence is veridic. The user recovers his guarantee deposit and the badge is granted to its address."
           },
           {
-            "title": "5b-2. Challenge denied",
+            "title": "5b-2. Challenge accepted",
             "description": "The jury determines that the evidence is fraudulent. The badge is not granted and the user losses it's guarantee deposit, which will be given to the challenger."
           }
         ]
