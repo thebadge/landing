@@ -1,12 +1,12 @@
 var en = require('./translations.en.json');
 var es = require('./translations.es.json');
-var de = require('./translations.de.json');
+var de = require('./translations.en.json'); // @todo (agustin) // Change to DE translation once translation is ready
 
 const i18n = {
   translations: {
     en,
-   // de,
     es,
+    de,
   },
   defaultLang: 'en',
   useBrowserDefault: true,

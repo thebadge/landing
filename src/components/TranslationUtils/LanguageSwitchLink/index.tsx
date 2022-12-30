@@ -25,14 +25,14 @@ const StyledButtonBase = styled(ButtonBase)<LanguageSwitcherInjetedProps>(
 
 const getFlag = (locale: string) => {
   switch (locale) {
+    case 'en': {
+      return `EN`;
+    }
     case 'es': {
       return `ES`;
     }
     case 'de': {
       return 'DE';
-    }
-    case 'en': {
-      return `EN`;
     }
     default: {
       return `️`;
