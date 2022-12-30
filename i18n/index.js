@@ -1,6 +1,6 @@
 var en = require('./translations.en.json');
-var es = require('./translations.en.json');
-var de = require('./translations.en.json');
+var es = require('./translations.es.json');
+var de = require('./translations.de.json');
 
 const i18n = {
   translations: {
