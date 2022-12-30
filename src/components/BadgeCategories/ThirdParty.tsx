@@ -6,8 +6,8 @@ import thirdPartyDecoration from '../../assets/thirdparty-decoration.webp';
 import StyledFirstLetter from '../Commons/StyledFirstLetter';
 
 const StyledSectionLayout = styled(SectionLayout)(({}) => ({
-  maxWidth: 'fit-content'
-}))
+  maxWidth: 'fit-content',
+}));
 
 export default function ThirdPartyBadge() {
   return (
@@ -80,6 +80,14 @@ const MiddleComponent = () => {
       >
         {t('badgeCategories.third-party.description')}
       </Typography>
+      <Typography
+        color={colors.white}
+        variant="body2"
+        component="p"
+        textAlign="left"
+      >
+        {t('badgeCategories.third-party.example')}
+      </Typography>
     </StyledMiddleComponentContainer>
   );
 };
@@ -90,7 +98,7 @@ const BottomComponent = () => {
   return (
     <Stepper
       color="pink"
-      elements={[0, 1, 2, 3, 4].map((stepNumber, i) => {
+      elements={[0, 1, 2, 3].map((stepNumber, i) => {
         return (
           <Stack key={i}>
             <StyledFirstLetter

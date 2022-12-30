@@ -36,11 +36,19 @@ export default function WhatAreCurators() {
         >
           {t('whatAreCurators.description')}
         </Typography>
+        <Typography
+          variant="body2"
+          component="p"
+          color={colors.white}
+          textAlign="left"
+        >
+          {t('whatAreCurators.example')}
+        </Typography>
       </Stack>
       <Box>
         <Stepper
           color="green"
-          elements={[0, 1, 2, 3, 4].map((stepNumber, i) => {
+          elements={[0, 1, 2, 3].map((stepNumber, i) => {
             return (
               <Stack key={i}>
                 <StyledTypography
