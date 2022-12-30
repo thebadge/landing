@@ -171,41 +171,41 @@
         "description": "Definir los fundamentos del proyecto y encontrar necesidades reales donde se podría utilizar la plataforma y cómo."
       },
       {
-        "year": "q1 2023",
+        "year": "Q1 2023",
         "title": "Fundación de TheBadge Labs",
         "description": "TheBadge creará las primeras certificaciones las cuales nos ayudarán a comprender la mejor manera de hacer que la plataforma se adapte a diferentes escenarios."
       },
       {
-        "year": "q2 2023",
+        "year": "Q2 2023",
         "title": "Desarrollo de la Plataforma de certificaciones",
         "description": "En este período se desarrollará la primer version de la plataforma.."
       },
       {
-        "year": "q3 2023",
+        "year": "Q3 2023",
         "title": "Desarrollo de la Plataforma de certificaciones",
         "description": "En este período se desarrollará la primer version de la plataforma.."
       },
       {
-        "year": "q4 2023",
+        "year": "Q4 2023",
         "title": "Desarrollo de plataforma de curadores y jurados",
         "description": "Desarrollar la funcionalidad que permitirá a nuestra comunidad validar las certificaciones y generar disputas de impugnación las mismas."
       },
       {
-        "year": "q1 2024",
+        "year": "Q1 2024",
         "title": "Red de pruebas",
         "description": "Lanzar la plataforma en una red de pruebas y realizar un proceso de auditoria en los smart-contracts."
       },
       {
-        "year": "q2 2024",
+        "year": "Q2 2024",
         "title": "Puesta en vivo de la plataforma",
         "description": "Lanzamiento de la plataforma"
       }
     ]
   },
   "team": {
-    "title": "Team"
+    "title": "Equipo"
   },
   "backedBy": {
-    "title": "Backed By"
+    "title": "Apoyado por"
   }
 }
