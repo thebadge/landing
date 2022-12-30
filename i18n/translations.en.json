@@ -12,7 +12,7 @@
   },
   "presentation": {
     "title": "Decentralized certification platform",
-    "description": "The Badge is a decentralized certification platform powered by Ethereum. It provides users with the opportunity to tokenize any piece of information from the real world in the form of badges. These badges are verified and validated by the community, which decides what should be accepted and what should not be.",
+    "description": "TheBadge is a decentralized certification platform powered by Ethereum. It provides users the opportunity to tokenize information from the real world in the form of badges. These badges are verified and validated by the community, which decides what should be accepted and what should not be.",
     "buttons": {
       "whitepaper": "Check our whitepaper",
       "community": "Join our community"
@@ -26,34 +26,31 @@
     "stepFour": "Curators will be rewarded for auditing and flagging fraudulent badges.",
     "why": {
       "title": "Why we need decentralized certifications",
-      "description": "To ensure our initiatives to bring more people into the crypto world are fruitful, we need a dependable ecosystem. To create a decentralized future, accurate information is essential. If we entrust all the duty of verification only to centralized entities, the ecosystem will continue to be plagued by the actions of bad actors."
+      "description": "To ensure that our initiatives to attract more people to the crypto ecosystem are fruitful, we must make the ecosystem trustworthy. To create a decentralized future, having accurate information is essential. If we as a decentralized community entrust all verification duty only to centralized entities, the entire ecosystem will suffer the consequences of bad actors' wrongdoings."
     }
   },
   "whatAreCurators": {
     "title": "What are curators",
     "sectionName": "Become a curator",
     "description": "Curators are members of TheBadge's decentralized community who verify the authenticity of certifications. They carefully review the evidence provided for each badge and can raise challenges if they detect any irregularities. If the curators successfully expose a fraudulent badge, they will be rewarded for their efforts.",
+    "example": "Providing incentives for curators to review the evidence and raise challenges when necessary carefully, helps to ensure that only deserving candidates receive badges and protects the reputation and integrity of the certifications.",
     "earn": {
       "title": "Earn by becoming a curator",
       "steps": [
         {
-          "title": "1. Integrity of The Badge",
-          "description": "Providing incentives for curators to review the evidence and raise challenges when necessary carefully, helps to ensure that only deserving candidates receive badges and protects the reputation and integrity of the certifications."
-        },
-        {
-          "title": "2. Badge request",
+          "title": "1. Badge request",
           "description": "Whenever a badge request is submitted, the curators will be notified and given a certain amount of time to review the evidence provided."
         },
         {
-          "title": "3. Curator's task",
+          "title": "2. Curator's task",
           "description": "They will be rewarded by detecting fraudulent evidence on badges, incentivized by receiving BADGE tokens for that."
         },
         {
-          "title": "4. Initiating a challenge",
-          "description": "If a curator has doubts about the authenticity of the evidence, they can initiate a challenge by making a deposit of money. This will start an arbitration process, in which a jury will review the evidence and determine whether the curator  or the badge requester is correct."
+          "title": "3. Initiating a challenge",
+          "description": "If a curator has doubts about the authenticity of the evidence, they can initiate a challenge by making a deposit of money. This will start an arbitration process, in which a jury will review the evidence and determine whether the curator or the badge requester is correct."
         },
         {
-          "title": "5. Rewards",
+          "title": "4. Rewards",
           "description": "After the arbitration process is completed, if the jury denies the badge evidence, the curator will receive part of the deposit of the badge requester and a reward in BADGE tokens."
         }
       ]
@@ -64,43 +61,40 @@
     "community": {
       "title": "Community Badges",
       "description": "Represent real-world information in the form of blockchain-based certifications. To obtain a badge, users must provide evidence and pass through TheBadge's curation process, where our community of curators will review and verify the authenticity of the evidence.",
+      "example": "For example, a web3 company can apply to get a proof of reserve certification. People from the community can then always verify that this process is transparent.",
       "howItWorks": {
         "title": "How it works",
         "steps": [
           {
-            "title": "1. Empowering the communities",
-            "description": "Certify their real-world information in a decentralized way, for example, a web3 company can apply to get a proof of reserve certification. People from the community can then always verify that this process is transparent."
-          },
-          {
-            "title": "2. Choosing a certificate",
+            "title": "1. Choosing a certificate",
             "description": "The user selects the badge they are interested in obtaining. Each badge type will require the submission of specific proof or evidence to certify that they have the right to claim it"
           },
           {
-            "title": "3. Providing the evidence",
+            "title": "2. Providing the evidence",
             "description": "Each badge type will have specific requirements for the evidence that must be submitted in order to claim the badge. An example of this type of badge could be the verification of a course completion certificate."
           },
           {
-            "title": "4. Making the deposit",
+            "title": "3. Making the deposit",
             "description": "A deposit is requested to initiate the process. It's needed to avoid fraudulent usage of the platform and ensures that badge applicants are serious about obtaining the badge. The deposit will be returned at the end of the process if the evidence provided is authentic."
           },
           {
-            "title": "5. Curation process start",
+            "title": "4. Curation process start",
             "description": "Wait for our community of curators to review the evidence provided. They will carefully review it and could raise challenges if they have any doubts or concerns."
           },
           {
-            "title": "5a. Badge approval",
+            "title": "4a. Badge approval",
             "description": "If the user submission passes the curation process, the badge will be granted to the user's address."
           },
           {
-            "title": "5b. Challenge starts",
+            "title": "4b. Challenge starts",
             "description": "In case a curator challenged the submission, a decentralized jury will analyze the case and determine whether the evidence is authentic or not."
           },
           {
-            "title": "5b-1. Challenge denied",
+            "title": "4b-1. Challenge denied",
             "description": "The jury determines that the evidence is veridic. The user recovers his guarantee deposit and the badge is granted to its address."
           },
           {
-            "title": "5b-2. Challenge accepted",
+            "title": "4b-2. Challenge accepted",
             "description": "The jury determines that the evidence is fraudulent. The badge is not granted and the user losses it's guarantee deposit, which will be given to the challenger."
           }
         ]
@@ -109,27 +103,24 @@
     "third-party": {
       "title": "Third-party Badges",
       "description": "Also known as \"Blockchain certifications as a service\". They are badges generated and backed by a public or private entity. Entities that are willing to generate these badges have to be registered on the platform before they can start emitting them.",
+      "example": "For example, an online courses platform could become a third-party entity of TheBadge, by doing so, it will be able to grant its certifications on-chain without having to develop its own mechanism.",
       "howItWorks": {
         "title": "How it works",
         "steps": [
           {
-            "title": "1. The Badge as a tool",
-            "description": "Entities can use The Badge to become third-party badge creators, by doing that, they will be able to grant certifications on their own behalf"
-          },
-          {
-            "title": "2. Becoming a third-party",
+            "title": "1. Registering as a third-party entity",
             "description": "First, the entity has to register within the platform submitting information such as name, description, logo, etc."
           },
           {
-            "title": "3. Start creating",
-            "description": "Once the entity is registered, it can start creating their own badges. These badges can be then claimed by addresses chosen by the entity."
+            "title": "2. The certification process begins",
+            "description": "Once the entity is registered, it can start creating its own badges. Users chosen by the entity can then claim these badges."
           },
           {
-            "title": "4. Being verified",
-            "description": "The entity can apply to become a verified issuer on The Badge. This will allow a more personalized and secure way of issuing badges."
+            "title": "3. Verification request",
+            "description": "The entity can apply to become a verified issuer on TheBadge. This will allow a more personalized and secure way of issuing badges, as well as issuing the badges directly to their users."
           },
           {
-            "title": "5. Start emitting",
+            "title": "4. Certifying as a verified entity",
             "description": "Once the entity’s been verified, it will be able to emit badges directly to the addresses of members of their community."
           }
         ]
@@ -140,24 +131,21 @@
     "title": "What are creators",
     "sectionName": "Become a creator",
     "description": "As a badge creator on TheBadge's platform, you can design and publish custom badges that other users can apply for to verify real-world information. Set the price for the badges you create and receive a share of the fee when users apply for and receive them.",
+    "example": "For example, a notary from a certain country knows how to verify necessary documents in a compliance process from that country, by using TheBadge, they could use that knowledge to verify those documents on the Blockchain and generate income from them.",
     "earn": {
       "title": "Earn by becoming a creator",
       "steps": [
         {
-          "title": "1. Bringing your know-how on-chain",
-          "description": "Users can become badge creators, for example, a notary knows how to verify a document needed in a compliance process in a specific country, by using TheBadge, they could use that knowledge on the Blockchain."
-        },
-        {
-          "title": "2. Creating new badges",
+          "title": "1. Creating new badges",
           "description": "To earn money by creating a badge, the creator will need to define the information and evidence that a badge requester will need to provide."
         },
         {
-          "title": "3. Setting a price",
+          "title": "2. Setting a price",
           "description": "The creator can set a price for the badge. This will be the amount needed to be paid in order to request the badge."
         },
         {
-          "title": "4. Being rewarded",
-          "description": "When users request the badge type and pay the price, The Badge will split that fee between the platform and the creator for every badge issued, with the creator taking the big share of it."
+          "title": "3. Being rewarded",
+          "description": "When users request the badge type and pay the price, TheBadge will split that fee between the platform and the creator for every badge issued, with the creator taking the big share of it."
         }
       ]
     }
@@ -167,12 +155,12 @@
     "steps": [
       {
         "year": "2022",
-        "title": "The Badge fundamentals",
+        "title": "TheBadge fundamentals",
         "description": "Defining the fundamentals of the project and finding real necessities where this platform could be used and how."
       },
       {
         "year": "q1 2023",
-        "title": "The Badge Labs foundation",
+        "title": "TheBadge Labs foundation",
         "description": "Creating the first badges that will help us to have a better understanding of the users needs in order to make the platform adaptable to different scenarios."
       },
       {
@@ -207,5 +195,8 @@
   },
   "backedBy": {
     "title": "Backed By"
+  },
+  "footer": {
+    "copyright": "TheBadge. All rights reserved."
   }
 }
