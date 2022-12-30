@@ -2,6 +2,7 @@ import { CustomDivider } from '@/src/components/Commons/Divider';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, styled, Typography } from '@mui/material';
 import { colors } from 'thebadge-ui-library';
+import { useTranslation } from 'next-export-i18n';
 
 const ContainerBox = styled(Box)(({ theme }) => ({
   flex: '1 1 20%',
@@ -49,6 +50,7 @@ const ORGS: Organizations[] = [
 
 const BackedBy = () => {
   const isMobile = useIsMobile();
+  const { t } = useTranslation();
 
   return (
     <BoxBackedBy>
@@ -59,7 +61,7 @@ const BackedBy = () => {
         color={colors.white}
         textAlign="center"
       >
-        BACKED BY
+        {t('backedBy.title')}
       </Typography>
       <Box
         sx={{
