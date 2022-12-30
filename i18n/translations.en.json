@@ -32,7 +32,7 @@
   "whatAreCurators": {
     "title": "What are curators",
     "sectionName": "Become a curator",
-    "description": "TheBadge curators are members of TheBadge's decentralized community who verify the authenticity of certifications. They carefully review the evidence provided for each badge and can raise challenges if they detect any irregularities. If the curators successfully expose a fraudulent badge, they will be rewarded for their efforts.",
+    "description": "Curators are members of TheBadge's decentralized community who verify the authenticity of certifications. They carefully review the evidence provided for each badge and can raise challenges if they detect any irregularities. If the curators successfully expose a fraudulent badge, they will be rewarded for their efforts.",
     "earn": {
       "title": "Earn by becoming a curator",
       "steps": [
@@ -173,32 +173,32 @@
       {
         "year": "q1 2023",
         "title": "The Badge Labs foundation",
-        "description": "Creating the first badges that will help us to better understand the best way to make our platform adaptable to different scenarios."
+        "description": "Creating the first badges that will help us to have a better understanding of the users needs in order to make the platform adaptable to different scenarios."
       },
       {
         "year": "q2 2023",
         "title": "Certification Platform Development",
-        "description": "This period will be used to build the v1 of our platform."
+        "description": "This period will be used to build the v1 of the platform."
       },
       {
         "year": "q3 2023",
         "title": "Certification Platform Development",
-        "description": "This period will be used to build the v1 of our platform."
+        "description": "This period will be used to build the v1 of the platform."
       },
       {
         "year": "q4 2023",
-        "title": "Testnet",
-        "description": "Develop the functionality that will allow our community to create different types of badges and to validate the veracity our our certifications."
+        "title": "Courts & curator platform development",
+        "description": "Develop the functionality that will allow the community to create different types of badges and validate the certifications' veracity."
       },
       {
         "year": "q1 2024",
         "title": "Testnet",
-        "description": "Launch our platform on testnet & smart-contracts audit."
+        "description": "Launch the platform on the testnnet & smart-contracts audit"
       },
       {
         "year": "q2 2024",
         "title": "Going live",
-        "description": "We will be releasing our platform."
+        "description": "We will be releasing the platform."
       }
     ]
   },
