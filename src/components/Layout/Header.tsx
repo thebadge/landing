@@ -63,11 +63,11 @@ const Header = () => {
       >
         <LogoTheBadgeWithText size={212} />
         <Box sx={{ color: 'white.light' }}>
+          <LanguageSwitchLink locale="en" />
+          {'|'}
           <LanguageSwitchLink locale="es" />
           {'|'}
           <LanguageSwitchLink locale="de" />
-          {'|'}
-          <LanguageSwitchLink locale="en" />
         </Box>
       </Box>
       <NavigationHeader
