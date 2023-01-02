@@ -2,7 +2,7 @@ import { Box, styled } from '@mui/material';
 import dynamic from 'next/dynamic';
 
 import React from 'react';
-// import Headroom from 'react-headroom';
+import Headroom from 'react-headroom';
 import { BackgroundGradient } from './BackgroundGradient';
 import Header from './Header';
 
@@ -31,15 +31,14 @@ export const LayoutContainer = ({ children }: LayoutContainerProps) => {
     <div>
       <BackgroundGradient />
       <Content>
-        {
-          // </Content><Headro}om
-          // </Content>  style}={{
-          // </Content>    tra}nsition: 'all .5s cubic-bezier(0.83, 0, 0.17, 1)',
-          // </Content>  }}}
-          // </Content>>
-        }
-        <Header />
-        {children}
+        <Headroom
+          style={{
+            transition: 'all .5s cubic-bezier(0.83, 0, 0.17, 1)',
+          }}
+        >
+          <Header />
+          {children}
+        </Headroom>
         <Footer />
       </Content>
     </div>
