@@ -17,11 +17,14 @@ const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-const StyledButton = styled(Button)(() => ({
+const StyledButton = styled(Button)(({theme}) => ({
   height: '48px',
   textTransform: 'none',
   padding: '9px 26px 9px 26px',
   maxHeight: 'fit-content',
+  [theme.breakpoints.down('sm')]: {
+    height: 'fit-content',
+  },
 }));
 
 export const Presentation = () => {
