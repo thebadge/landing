@@ -37,8 +37,8 @@ export const LayoutContainer = ({ children }: LayoutContainerProps) => {
           }}
         >
           <Header />
-          {children}
         </Headroom>
+        {children}
         <Footer />
       </Content>
     </div>

@@ -2,7 +2,7 @@ import { useSetionReferences } from '@/src/contexts/referencesContex';
 import { ConstructionOutlined } from '@mui/icons-material';
 import { Box, styled } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
-import React, { RefObject } from 'react';
+import { RefObject } from 'react';
 import {
   gradients,
   LogoTheBadgeWithText,
@@ -98,7 +98,7 @@ const Header = () => {
         callToActionItem={{
           label: t('header.goToAppButton.label'),
           disabled: true,
-          icon: <ConstructionOutlined></ConstructionOutlined>,
+          icon: <ConstructionOutlined />,
           tooltip: t('header.goToAppButton.tooltip'),
         }}
       />

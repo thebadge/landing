@@ -16,7 +16,7 @@ export const BadgesPreview = () => {
           key={'decorative-image-' + i}
           sx={{ filter: 'drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7))' }}
         >
-          <Image src={cardSrc} priority alt={'decorative-image-' + i} />
+          <Image src={cardSrc} alt={'decorative-image-' + i} />
         </Box>
       ))}
     />

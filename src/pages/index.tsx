@@ -43,15 +43,15 @@ export default function Home() {
         <div ref={homeSection}>
           <Presentation />
           <WhatsTheBadge />
-          <WhatAreCurators />
         </div>
+        <WhatAreCurators />
         <div ref={howItWorksSection}>
           <BadgeCategoriesContainer>
             <CommunityBadge />
             <ThirdPartyBadge />
           </BadgeCategoriesContainer>
-          <WhatAreCreators />
         </div>
+        <WhatAreCreators />
         <div ref={teamSection}>
           <Team />
         </div>
