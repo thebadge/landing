@@ -1,6 +1,5 @@
 import { ButtonBase, styled } from '@mui/material';
 import { LanguageSwitcher } from 'next-export-i18n';
-import React from 'react';
 
 type LanguageSwitchLinkProps = {
   locale: string;
@@ -41,8 +40,6 @@ const getFlag = (locale: string) => {
 };
 
 const LanguageSwitchLink = ({ locale }: LanguageSwitchLinkProps) => {
-  //const [query] = useLanguageQuery();
-
   return (
     <LanguageSwitcher lang={locale}>
       <StyledButtonBase style={{ fontSize: 'small' }}>
