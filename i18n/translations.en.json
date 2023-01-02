@@ -61,7 +61,7 @@
     "community": {
       "title": "Community Badges",
       "description": "Represent real-world information in the form of blockchain-based certifications. To obtain a badge, users must provide evidence and pass through TheBadge's curation process, where our community of curators will review and verify the authenticity of the evidence.",
-      "example": "For example, a web3 company can apply to get a proof of reserve certification. People from the community can then always verify that this process is transparent.",
+      "example": "For example, a web3 company can apply to get a proof of reserves certification. People from the community can then always verify that this process is transparent.",
       "howItWorks": {
         "title": "How it works",
         "steps": [
@@ -82,19 +82,19 @@
             "description": "Wait for our community of curators to review the evidence provided. They will carefully review it and could raise challenges if they have any doubts or concerns."
           },
           {
-            "title": "4a. Badge approval",
+            "title": "5a. Badge approval",
             "description": "If the user submission passes the curation process, the badge will be granted to the user's address."
           },
           {
-            "title": "4b. Challenge starts",
+            "title": "5b. Challenge starts",
             "description": "In case a curator challenged the submission, a decentralized jury will analyze the case and determine whether the evidence is authentic or not."
           },
           {
-            "title": "4b-1. Challenge denied",
+            "title": "5b-1. Challenge denied",
             "description": "The jury determines that the evidence is veridic. The user recovers his guarantee deposit and the badge is granted to its address."
           },
           {
-            "title": "4b-2. Challenge accepted",
+            "title": "5b-2. Challenge accepted",
             "description": "The jury determines that the evidence is fraudulent. The badge is not granted and the user losses it's guarantee deposit, which will be given to the challenger."
           }
         ]

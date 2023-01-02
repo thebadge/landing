@@ -47,8 +47,8 @@ export default function WhatAreCreators() {
       </Stack>
       <Box>
         <Stepper
-          color={colors.pink}
-          elements={[0, 1, 2].map((stepNumber, i) => {
+            color="pink"
+            elements={[0, 1, 2].map((stepNumber, i) => {
             return (
               <Stack key={i} sx={{ flex: 1 }}>
                 <StyledTypography

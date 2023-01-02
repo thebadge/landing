@@ -1,7 +1,7 @@
 {
   "header": {
     "home": "START",
-    "howItWorks": "SO FUNKTIONIERT ES",
+    "howItWorks": "WIE FUNKTIONIERT",
     "team": "TEAM",
     "partnerships": "PARTNERSHAFTEN",
     "contactUs": "KONTAKT",
@@ -14,8 +14,8 @@
     "title": "Dezentrale Zertifizierungsplattform",
     "description": "TheBadge ist eine dezentrale Zertifizierungsplattform, die von Ethereum betrieben wird. Es bietet Benutzern die Möglichkeit, jede Information aus der realen Welt in Form von Badges zu tokenisieren. Diese Badges werden von der Community verifiziert und validiert, die entscheidet, was akzeptiert werden soll und was nicht.",
     "buttons": {
-      "whitepaper": "Lesen Sie unser Whitepaper",
-      "community": "Treten Sie unserer Community bei"
+      "whitepaper": "Unser Whitepaper lesen",
+      "community": "Unserer Community beitreten"
     }
   },
   "whatIsTheBadge": {
@@ -33,27 +33,24 @@
     "title": "Was sind Kuratoren?",
     "sectionName": "Kurator werden",
     "description": "Kuratoren sind Mitglieder der dezentralen Community von TheBadge, die die Authentizität von Zertifizierungen überprüfen. Sie prüfen sorgfältig die für jedes Badge vorgelegten Nachweise und können Anfechtungen erheben, wenn sie Unregelmäßigkeiten feststellen. Wenn die Kuratoren erfolgreich ein betrügerisches Badge aufdecken, werden sie für ihre Bemühungen belohnt.",
+    "example": "Die Schaffung von Anreizen für Kuratoren, die Beweise zu überprüfen und bei Bedarf Herausforderungen vorzubringen, trägt dazu bei, dass nur verdiente Kandidaten Badges erhalten, und schützt den Ruf und die Integrität der Zertifizierungen.",
     "earn": {
       "title": "Verdienen Sie, indem Sie Kurator werden",
       "steps": [
         {
-          "title": "1. Integrität von TheBadge",
-          "description": "Die Schaffung von Anreizen für Kuratoren, die Beweise zu überprüfen und bei Bedarf Herausforderungen vorzubringen, trägt dazu bei, dass nur verdiente Kandidaten Badges erhalten, und schützt den Ruf und die Integrität der Zertifizierungen."
-        },
-        {
-          "title": "2. Badgeantrag",
+          "title": "1. Badgeantrag",
           "description": "Wann immer ein Badgeantrag eingereicht wird, werden die Kuratoren benachrichtigt und erhalten eine gewisse Zeit, um die vorgelegten Nachweise zu überprüfen."
         },
         {
-          "title": "3. Aufgabe des Kurators",
+          "title": "2. Aufgabe des Kurators",
           "description": "Sie werden belohnt, indem sie betrügerische Beweise auf Badges erkennen, die durch den Erhalt von BADGE-Tokens dafür angeregt werden."
         },
         {
-          "title": "4. Eine Anfechtung initiieren",
+          "title": "3. Eine Anfechtung initiieren",
           "description": "Wenn ein Kurator Zweifel an der Authentizität der Beweise hat, kann er eine Anfechtung einleiten, indem er Geld hinterlegt. Dadurch wird ein Schiedsverfahren eingeleitet, in dem eine Jury die Beweise überprüft und feststellt, ob der Kurator oder der Badge-Antragsteller Recht hat."
         },
         {
-          "title": "5. Belohnungen",
+          "title": "4. Belohnungen",
           "description": "Wenn die Jury nach Abschluss des Schiedsverfahrens den Badge-Beweis ablehnt, erhält der Kurator einen Teil der Hinterlegung des Badge-Antragstellers und eine Belohnung in BADGE-Tokens."
         }
       ]
@@ -64,27 +61,24 @@
     "community": {
       "title": "Community-Badges",
       "description": "Stellen Sie reale Informationen in Form von Blockchain-basierten Zertifizierungen dar. Um ein Badge zu erhalten, müssen Benutzer Nachweise vorlegen und den Kurationsprozess von TheBadge durchlaufen, bei dem unsere Gemeinschaft von Kuratoren die Echtheit der Beweise überprüft und überprüft.",
+      "example": "Zum Beispiel kann ein web3-Unternehmen eine Proof-of-Reserven-Zertifizierung beantragen. Menschen aus der Community können dann immer überprüfen, ob dieser Prozess transparent ist.",
       "howItWorks": {
         "title": "So funktioniert's",
         "steps": [
           {
-            "title": "1. Communities stärken",
-            "description": "Zertifizieren Sie ihre realen Informationen auf dezentrale Weise, z. B. kann ein web3-Unternehmen eine Proof-of-Reserven-Zertifizierung beantragen. Menschen aus der Community können dann immer überprüfen, ob dieser Prozess transparent ist."
-          },
-          {
-            "title": "2. Auswahl eines Zertifikats",
+            "title": "1. Auswahl eines Zertifikats",
             "description": "Der Benutzer wählt das Badge aus, das er erhalten möchte. Jeder Badge-Typ erfordert die Vorlage spezifischer Nachweise, um zu bestätigen, dass er das Recht hat, sie zu beanspruchen."
           },
           {
-            "title": "3. Nachweise erbringen",
+            "title": "2. Nachweise erbringen",
             "description": "Jeder Badge-Typ hat spezifische Anforderungen an die Nachweise, die eingereicht werden müssen, um das Badge zu beanspruchen. Ein Beispiel für diese Art von Badges könnte die Überprüfung eines Kursabschlusszertifikats sein."
           },
           {
-            "title": "4. Die Einzahlung vornehmen",
+            "title": "3. Die Einzahlung vornehmen",
             "description": "Eine Anzahlung wird verlangt, um den Prozess einzuleiten. Es ist notwendig, um eine betrügerische Nutzung der Plattform zu vermeiden und sicherzustellen, dass Badge-Antragsteller es ernst meinen mit dem Erhalt des Badges. Die Kaution wird am Ende des Prozesses zurückerstattet, wenn der vorgelegte Nachweis authentisch ist."
           },
           {
-            "title": "5. Kurationsprozess startet",
+            "title": "4. Kurationsprozess startet",
             "description": "Warten Sie, bis unsere Community von Kuratoren die vorgelegten Beweise überprüft. Sie werden es sorgfältig prüfen und könnten Herausforderungen aufwerfen, wenn sie Zweifel oder Bedenken haben."
           },
           {
@@ -109,27 +103,24 @@
     "third-party": {
       "title": "Drittanbieter-Badges",
       "description": "Auch bekannt als \"Blockchain-Zertifizierungen als Service\". Dies sind Badges, die von einer öffentlichen oder privaten Einrichtung generiert und unterstützt werden. Unternehmen, die bereit sind, diese Badges zu generieren, müssen auf der Plattform registriert werden, bevor sie sie ausgeben können.",
+      "example": "Zum Beispiel könnte eine Online-Kursplattform zu einem Drittanbieter von TheBadge werden, auf diese Weise kann sie ihre Zertifizierungen in der Blockchain erteilen, ohne einen eigenen Mechanismus entwickeln zu müssen.",
       "howItWorks": {
         "title": "So funktioniert's",
         "steps": [
           {
-            "title": "1. TheBadge als Werkzeug",
-            "description": "Unternehmen können TheBadge verwenden, um Drittanbieter-Badge-Ersteller zu werden, wodurch sie Zertifizierungen in ihrem eigenen Namen erteilen können."
-          },
-          {
-            "title": "2. Drittanbieter werden",
+            "title": "1. Registrierung als Drittanbieter",
             "description": "Zuerst muss sich das Unternehmen auf der Plattform registrieren und Informationen wie Name, Beschreibung, Logo usw. übermitteln."
           },
           {
-            "title": "3. Beginnen Sie mit der Erstellung",
+            "title": "2. Der Zertifizierungsprozess beginnt",
             "description": "Sobald das Unternehmen registriert ist, kann sie mit der Erstellung eigener Badges beginnen. Diese Badges können dann von den von dem Unternehmen ausgewählten Adressen beansprucht werden."
           },
           {
-            "title": "4. Verifiziert werden",
+            "title": "3. Verifizierungsantrag",
             "description": "Das Unternehmen kann beantragen, ein verifizierter Aussteller auf TheBadge zu werden. Dies ermöglicht eine persönlichere und sicherere Art der Ausgabe von Ausweise."
           },
           {
-            "title": "5. Beginnen Sie mit der Emission",
+            "title": "4. Zertifizieren als verifizierte Entität",
             "description": "Sobald das Unternehmen verifiziert wurde, kann sie Badges direkt an die Adressen der Mitglieder ihrer Community ausgeben."
           }
         ]
@@ -140,23 +131,20 @@
     "title": "Was sind Schöpfer?",
     "sectionName": "Werden Sie ein Schöpfer",
     "description": "Als Badge-Ersteller auf der TheBadge-Plattform können Sie benutzerdefinierte Badges entwerfen und veröffentlichen, die andere Benutzer beantragen können, um reale Informationen zu überprüfen. Legen Sie den Preis für die von Ihnen erstellten Badges fest und erhalten Sie einen Teil der Gebühr, wenn Benutzer sie beantragen und erhalten.",
+    "example": "Zum Beispiel weiß ein Notar aus einem bestimmten Land, wie er notwendige Dokumente in einem Compliance-Prozess aus diesem Land überprüfen kann, indem er TheBadge verwendet, um diese Dokumente auf der Blockchain zu überprüfen und Einnahmen daraus zu generieren.",
     "earn": {
       "title": "Verdienen Sie, indem Sie ein Schöpfer werden",
       "steps": [
         {
-          "title": "1. Bringen Sie Ihr Know-how on-chain",
-          "description": "Benutzer können Badge-Ersteller werden. Zum Beispiel weiß ein Notar, wie man ein Dokument überprüft, das in einem Compliance-Prozess in einem bestimmten Land benötigt wird, indem er TheBadge verwendet, könnte er dieses Wissen auf der Blockchain verwenden."
-        },
-        {
-          "title": "2. Erstellen neuer Badges",
+          "title": "1. Erstellen neuer Badges",
           "description": "Um mit der Erstellung eines Badges Geld zu verdienen, muss der Ersteller die Informationen und Nachweise definieren, die ein Badge-Anforderer bereitstellen muss."
         },
         {
-          "title": "3. Festlegen eines Preises",
+          "title": "2. Festlegen eines Preises",
           "description": "Der Ersteller kann einen Preis für das Badge festlegen. Dies ist der Betrag, der bezahlt werden muss, um den Badge anzufordern."
         },
         {
-          "title": "4. Belohnt werden",
+          "title": "3. Belohnt werden",
           "description": "Wenn Benutzer den Badge-Typ anfordern und den Preis bezahlen, teilt TheBadge diese Gebühr zwischen der Plattform und dem Ersteller für jedes ausgestellte Badge auf, wobei der Ersteller den großen Anteil davon bekommt."
         }
       ]
@@ -207,5 +195,8 @@
   },
   "backedBy": {
     "title": "UNTERSTÜTZT VON"
+  },
+  "footer": {
+    "copyright": "TheBadge. Alle Rechte vorbehalten."
   }
 }

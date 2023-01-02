@@ -82,19 +82,19 @@
             "description": "Nuestra comunidad de curadores revisará cuidadosamente la evidencia proporcionada. En el caso de tener dudas acerca de la autenticidad de las pruebas, podrían plantear la impugnación del certificado."
           },
           {
-            "title": "4a. Aprobación del certificado",
+            "title": "5a. Aprobación del certificado",
             "description": "Si la solicitud del usuario pasa el proceso de curación, se otorgará el certificado directamente a la billetera virtual del mismo."
           },
           {
-            "title": "4b. Solicitud de impugnación",
+            "title": "5b. Solicitud de impugnación",
             "description": "En caso de que un curador solicite la impugnación, un jurado descentralizado analizará el caso y determinará si las pruebas son auténticas o no."
           },
           {
-            "title": "4b-1. Impugnación denegada",
+            "title": "5b-1. Impugnación denegada",
             "description": "Si el jurado determina que la evidencia es verídica. El usuario recupera su depósito de garantía y se le otorga el certificado directamente a su billetera virtual."
           },
           {
-            "title": "4b-2. Impugnación aceptada",
+            "title": "5b-2. Impugnación aceptada",
             "description": "El jurado determina que la evidencia es fraudulenta. El certificado no es otorgado y el usuario que genero la solicitud pierde su depósito de garantía, la cual se entregará al curador como recompensa."
           }
         ]
