@@ -4,8 +4,8 @@ import dynamic from 'next/dynamic';
 import React from 'react';
 import Headroom from 'react-headroom';
 import { BackgroundGradient } from './BackgroundGradient';
+import Header from './Header';
 
-const Header = dynamic(() => import('./Header'));
 const Footer = dynamic(() => import('./Footer'));
 
 const Content = styled(Box)(({ theme }) => ({

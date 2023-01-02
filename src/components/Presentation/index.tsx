@@ -21,7 +21,7 @@ const StyledButton = styled(Button)(() => ({
   height: '48px',
   textTransform: 'none',
   padding: '9px 26px 9px 26px',
-  maxHeight: '48px',
+  maxHeight: 'fit-content',
 }));
 
 export const Presentation = () => {
@@ -44,6 +44,7 @@ export const Presentation = () => {
           <Typography
             variant={useIsMobile() ? 'h2' : 'h1'}
             component="h1"
+            fontSize={48}
             color={colors.white}
           >
             {t('presentation.title')}
