@@ -71,7 +71,7 @@
           },
           {
             "title": "2. Proporcionando la evidencia",
-            "description": "Cada tipo de certificado requerirá la presentación de un comprobante o prueba específica para acreditar que tiene derecho a reclamarlo. Un ejemplo podría ser la verificación de un certificado de finalización de curso."
+            "description": "Cada tipo de certificado requerirá la presentación de un comprobante o prueba específica para acreditar que tiene derecho a reclamarlo. Un ejemplo podría ser un certificado de finalización de curso."
           },
           {
             "title": "3. Realizando el depósito",
@@ -83,7 +83,7 @@
           },
           {
             "title": "5a. Aprobación del certificado",
-            "description": "Si la solicitud del usuario pasa el proceso de curación, se otorgará el certificado directamente a la billetera virtual del mismo."
+            "description": "Si la solicitud pasa el proceso de curación, se otorgará el certificado directamente a la billetera virtual del usuario."
           },
           {
             "title": "5b. Solicitud de impugnación",
@@ -113,7 +113,7 @@
           },
           {
             "title": "2. Comienza el proceso de certificación",
-            "description": "Una vez que la entidad está registrada, puede comenzar a crear sus propias certificaciones. Dichas certificaciones pueden luego ser obtenidos por los usuarios aceptados por la entidad."
+            "description": "Una vez que la entidad está registrada, puede comenzar a crear sus propias certificaciones. Dichas certificaciones pueden luego ser obtenidos por los usuarios elegidos por la entidad."
           },
           {
             "title": "3. Solicitud de verificacion",
@@ -131,7 +131,7 @@
     "title": "Qué son los creadores",
     "sectionName": "Convertirse en creador",
     "description": "Los creadores son miembros de la comunidad de TheBadge, los cuales diseñan y publican certificaciones personalizadas para otros usuarios que desean certificar información especifica. Los creadores pueden establecer el precio de cada certificación y recibir una parte de dicha tarifa cuando los usuarios las utilicen.",
-    "example": "Por ejemplo, un escribano de un país determinado sabe cómo verificar documentos necesarios en un proceso de compliance de dicho país, al usar TheBadge, podría usar esos conocimientos para verificar dichos documentos en la Blockchain y generar ingresos por los mismos.",
+    "example": "Por ejemplo, un escribano de un país determinado sabe cómo verificar documentos necesarios en un proceso de compliance de dicho país. Al usar TheBadge, podría aprovechar esos conocimientos para verificar dichos documentos en la Blockchain y generar ingresos por los mismos.",
     "earn": {
       "title": "Ganar dinero siendo creador",
       "steps": [
@@ -164,12 +164,7 @@
         "description": "TheBadge creará las primeras certificaciones las cuales nos ayudarán a comprender la mejor manera de hacer que la plataforma se adapte a diferentes escenarios."
       },
       {
-        "year": "Q2 2023",
-        "title": "Desarrollo de la Plataforma de certificaciones",
-        "description": "En este período se desarrollará la primera versión de la plataforma.."
-      },
-      {
-        "year": "Q3 2023",
+        "year": "Q2/Q3 2023",
         "title": "Desarrollo de la Plataforma de certificaciones",
         "description": "En este período se desarrollará la primera versión de la plataforma.."
       },
