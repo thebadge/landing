@@ -3,11 +3,11 @@ import dynamic from 'next/dynamic';
 
 import BadgeCategoriesContainer from '../components/BadgeCategories/BadgeCateogriesContainer';
 import { Presentation } from '../components/Presentation';
+import WhatsTheBadge from '../components/WhatsTheBadge';
 import { useSetionReferences } from '../contexts/referencesContex';
 
 const Team = dynamic(() => import('../components/Team'));
 const BackedBy = dynamic(() => import('../components/BackedBy'));
-const WhatsTheBadge = dynamic(() => import('../components/WhatsTheBadge'));
 const WhatAreCurators = dynamic(() => import('../components/WhatAre/Curators'));
 const WhatAreCreators = dynamic(() => import('../components/WhatAre/Creators'));
 
