@@ -12,7 +12,7 @@
   },
   "presentation": {
     "title": "Plataforma de certificación descentralizada",
-    "description": "TheBadge es una plataforma de certificación descentralizada basada en Ethereum. Brinda a los usuarios la oportunidad de tokenizar información del mundo real en forma de certificados (badges). Los badges son verificados y validados por la comunidad, la cual decide qué se debe aceptar y qué no.",
+    "description": "TheBadge es una plataforma de certificación descentralizada basada en Ethereum. Brinda a los usuarios la oportunidad de tokenizar información del mundo real en forma de certificados (badges). Los badges son verificados y validados por la comunidad, la cual decide qué se debe aceptar y qué no, y con qué criterios.",
     "buttons": {
       "whitepaper": "Consulte el WhitePaper",
       "community": "Únete a la comunidad"
@@ -21,7 +21,7 @@
   "whatIsTheBadge": {
     "title": "QUE ES THE BADGE",
     "stepOne": "Una plataforma que certifica información de forma descentralizada.",
-    "stepTwo": "Genera certificaciones (badges) basándose en las evidencias aportadas.",
+    "stepTwo": "Genera certificaciones (badges) basándose en criterios y evidencias aportadas.",
     "stepThree": "Cada badge requerirá evidencia para ser emitido.",
     "stepFour": "Los curadores serán recompensados por auditar e impugnar badges fraudulentos.",
     "why": {

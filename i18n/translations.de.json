@@ -21,7 +21,7 @@
   "whatIsTheBadge": {
     "title": "WAS IST THE BADGE",
     "stepOne": "Eine Plattform, die Informationen dezentral zertifiziert.",
-    "stepTwo": "Generiert Zertifikate (Badges) basierend auf bereitgestellten Nachweisen.",
+    "stepTwo": "Generiert Zertifikate (Badges) basierend auf bereitgestellten Kriterien und Nachweisen.",
     "stepThree": "Für jedes Badge muss ein Nachweis ausgestellt werden.",
     "stepFour": "Kuratoren werden für die Prüfung und Kennzeichnung falscher Badges belohnt.",
     "why": {
