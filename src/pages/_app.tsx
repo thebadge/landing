@@ -33,7 +33,11 @@ const MyApp = ({
   emotionCache = clientSideEmotionCache,
 }: MyAppProps) => {
   const theme = useMemo(
-    () => responsiveFontSizes(createTheme(getTheme()), { disableAlign: true }),
+    () =>
+      responsiveFontSizes(createTheme(getTheme()), {
+        disableAlign: true,
+        factor: 1.5,
+      }),
     [],
   );
   useGoogleAnalytics();
