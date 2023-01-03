@@ -14,8 +14,8 @@
     "title": "Dezentrale Zertifizierungsplattform",
     "description": "TheBadge ist eine dezentrale Zertifizierungsplattform, die von Ethereum betrieben wird. Es bietet Nutzern die Möglichkeit, jede Information aus der realen Welt in Form von Zertifikaten (Badges) zu tokenisieren. Diese Badges werden von der Community verifiziert und validiert, die entscheidet, was akzeptiert werden soll und was nicht.",
     "buttons": {
-      "whitepaper": "Unser Whitepaper lesen",
-      "community": "Unserer Community beitreten"
+      "whitepaper": "Whitepaper lesen",
+      "community": "Community beitreten"
     }
   },
   "whatIsTheBadge": {
