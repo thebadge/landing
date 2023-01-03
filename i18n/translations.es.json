@@ -1,10 +1,10 @@
 {
   "header": {
     "home": "INICIO",
-    "howItWorks": "COMO FUNCIONA",
+    "howItWorks": "CÓMO FUNCIONA",
     "team": "EQUIPO",
     "partnerships": "SOCIOS",
-    "contactUs": "CONTACTANOS",
+    "contactUs": "CONTÁCTANOS",
     "goToAppButton": {
       "label": "Abrir app",
       "tooltip": "Muy pronto"
@@ -19,14 +19,14 @@
     }
   },
   "whatIsTheBadge": {
-    "title": "QUE ES THE BADGE",
+    "title": "QUÉ ES THE BADGE",
     "stepOne": "Una plataforma que certifica información de forma descentralizada.",
     "stepTwo": "Genera certificaciones (badges) basándose en criterios y evidencias aportadas.",
     "stepThree": "Cada badge requerirá evidencia para ser emitido.",
     "stepFour": "Los curadores serán recompensados por auditar e impugnar badges fraudulentos.",
     "why": {
       "title": "Por qué necesitamos certificaciones descentralizadas",
-      "description": "Para garantizar que nuestras iniciativas para atraer a más personas al ecosistema crypto sean fructíferas, necesitamos hacer que el ecosistema sea confiable. Para crear un futuro descentralizado, contar con información precisa es esencial. Si como comunidad descentralizada, confiamos todo el deber de verificación solamente a entidades centralizadas, el ecosistema completo seguirá sufriendo por las malas acciones de dichos actores."
+      "description": "Para garantizar que nuestras iniciativas para atraer a más personas al mundo crypto sean fructíferas, necesitamos hacer que el ecosistema sea confiable. Para crear un futuro descentralizado, contar con información precisa es esencial. Si como comunidad descentralizada, confiamos todo el deber de verificación solamente a entidades centralizadas, el ecosistema completo seguirá sufriendo por las malas acciones de dichos actores."
     }
   },
   "whatAreCurators": {
@@ -50,7 +50,7 @@
           "description": "Si un curador tiene dudas sobre la autenticidad de la evidencia, puede solicitar la impugnación haciendo un depósito de dinero. Esto iniciará un proceso de arbitraje, en el que un jurado revisará la evidencia y determinará quien de los dos (el curador o el solicitante del certificado) está en lo correcto."
         },
         {
-          "title": "4. Obteniendo la recompensa",
+          "title": "4. Obteniendo recompensas",
           "description": "Después de que se complete el proceso de arbitraje, si el jurado rechaza la evidencia del certificado, el curador recibirá parte del depósito del solicitante de dicho certificado y una recompensa en tokens BADGE."
         }
       ]
