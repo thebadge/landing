@@ -3,7 +3,12 @@ import 'node_modules/thebadge-ui-library/dist/index.css';
 
 import createCache from '@emotion/cache';
 import { CacheProvider, EmotionCache } from '@emotion/react';
-import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import {
+  createTheme,
+  CssBaseline,
+  responsiveFontSizes,
+  ThemeProvider,
+} from '@mui/material';
 import { AppProps } from 'next/app';
 import { useMemo } from 'react';
 
@@ -27,7 +32,10 @@ const MyApp = ({
   pageProps,
   emotionCache = clientSideEmotionCache,
 }: MyAppProps) => {
-  const theme = useMemo(() => createTheme(getTheme()), []);
+  const theme = useMemo(
+    () => responsiveFontSizes(createTheme(getTheme()), { disableAlign: true }),
+    [],
+  );
   useGoogleAnalytics();
   return (
     <CacheProvider value={emotionCache}>
