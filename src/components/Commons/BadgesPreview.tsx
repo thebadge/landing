@@ -1,23 +1,30 @@
 import { Box } from '@mui/material';
-import Image from 'next/image';
+import Image, {StaticImageData} from 'next/image';
 import { MultiBadgePreview } from 'thebadge-ui-library';
-import diplomaCert from '../../assets/diploma-cert.webp';
-import howeyTest from '../../assets/howey-test.webp';
-import isoCertif from '../../assets/iso-cert.webp';
+import enDiplomaCert from '../../assets/badges/en/diploma-cert.webp';
+import enIsoCert from '../../assets/badges/en/iso-cert.webp';
+import enHoweyTest from '../../assets/badges/en/howey-test.webp';
+import esDiplomaCert from '../../assets/badges/es/diploma-cert.webp';
+import esIsoCert from '../../assets/badges/es/iso-cert.webp';
+import esHoweyTest from '../../assets/badges/es/howey-test.webp';
+import deDiplomaCert from '../../assets/badges/de/diploma-cert.webp';
+import deIsoCert from '../../assets/badges/de/iso-cert.webp';
+import deHoweyTest from '../../assets/badges/de/howey-test.webp';
 import { useSelectedLanguage } from "next-export-i18n";
 
-
+const BADGES: {[key: string]: Array<StaticImageData>} = {
+  'en': [enDiplomaCert, enIsoCert, enHoweyTest],
+  'es': [esDiplomaCert, esIsoCert, esHoweyTest],
+  'de': [deDiplomaCert, deIsoCert, deHoweyTest],
+}
 
 export const BadgesPreview = () => {
-  // const { lang } = useSelectedLanguage();
-  // console.log('useSelectedLanguage', lang)
-  // // TODO use badge-images depending on lang
+  const { lang } = useSelectedLanguage();
 
-  const BADGES = [diplomaCert, isoCertif, howeyTest];
   return (
     <MultiBadgePreview
       animated={true}
-      badges={BADGES.map((cardSrc, i) => (
+      badges={BADGES[lang]?.map((cardSrc, i) => (
         <Box
           key={'decorative-image-' + i}
           sx={{ filter: 'drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7))' }}
