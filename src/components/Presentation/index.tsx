@@ -48,6 +48,11 @@ export const Presentation = () => {
             variant={useIsMobile() ? 'h2' : 'h1'}
             component="h1"
             color={colors.white}
+            sx={{
+              wordWrap: "break-word",
+              overflowWrap: "break-word",
+              wordBreak: "break-word"
+            }}
           >
             {t('presentation.title')}
           </Typography>
