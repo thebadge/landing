@@ -30,7 +30,7 @@ export default function WhatAreCreators() {
         </Typography>
         <Typography
           variant="body2"
-          component="p"
+          component="div"
           color={colors.white}
           textAlign="left"
         >
@@ -38,7 +38,7 @@ export default function WhatAreCreators() {
         </Typography>
         <Typography
           variant="body2"
-          component="p"
+          component="div"
           color={colors.white}
           textAlign="left"
         >
@@ -47,8 +47,8 @@ export default function WhatAreCreators() {
       </Stack>
       <Box>
         <Stepper
-          color="pink"
-          elements={[0, 1, 2].map((stepNumber, i) => {
+            color="pink"
+            elements={[0, 1, 2].map((stepNumber, i) => {
             return (
               <Stack key={i} sx={{ flex: 1 }}>
                 <StyledTypography
@@ -62,7 +62,7 @@ export default function WhatAreCreators() {
                 <Typography
                   key="0"
                   variant="body4"
-                  component="p"
+                  component="div"
                   color={colors.white}
                   textAlign="left"
                 >
@@ -78,7 +78,7 @@ export default function WhatAreCreators() {
           title={
             <Typography
               variant="title3"
-              component="p"
+              component="div"
               color={colors.pink}
               sx={{ textShadow: '0 0 0 25px', textTransform: 'none', mb: 2 }}
               textAlign="center"
