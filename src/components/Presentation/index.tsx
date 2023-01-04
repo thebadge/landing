@@ -47,7 +47,6 @@ export const Presentation = () => {
           <Typography
             variant={useIsMobile() ? 'h2' : 'h1'}
             component="h1"
-            fontSize={48}
             color={colors.white}
           >
             {t('presentation.title')}
