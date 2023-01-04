@@ -1,9 +1,14 @@
 import { useIsMobile } from '@/src/hooks/useIsMobile';
-import { Box, Stack, Typography } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
-import { colors, Stepper } from 'thebadge-ui-library';
+import dynamic from 'next/dynamic';
+import { colors, StepperProps } from 'thebadge-ui-library';
 import StyledTypography from '../Commons/StyledFirstLetter';
 import WhatAreContainer from './WhatAreContainer';
+
+const Stepper = dynamic<StepperProps>(() =>
+  import('thebadge-ui-library').then((m) => m.Stepper),
+);
 
 export default function WhatAreCurators() {
   const { t } = useTranslation();
@@ -45,49 +50,46 @@ export default function WhatAreCurators() {
           {t('whatAreCurators.example')}
         </Typography>
       </Stack>
-      <Box>
-        <Stepper
-          color="green"
-          elements={[0, 1, 2, 3].map((stepNumber, i) => {
-            return (
-              <Stack key={i}>
-                <StyledTypography
-                  variant="title4"
-                  color={colors.white}
-                  firstLetterColor={colors.green}
-                  textAlign="left"
-                >
-                  {t(`whatAreCurators.earn.steps.${i}.title`)}
-                </StyledTypography>
-                <Typography
-                  key="0"
-                  variant="body4"
-                  component="p"
-                  color={colors.white}
-                  textAlign="left"
-                >
-                  {t(`whatAreCurators.earn.steps.${i}.description`)}
-                </Typography>
-              </Stack>
-            );
-          })}
-          minHeight={isMobile ? 400 : 320}
-          glowTitle={true}
-          border={true}
-          backgroundColor="transparent"
-          title={
-            <Typography
-              variant="title3"
-              component="p"
-              color={colors.green}
-              sx={{ textShadow: '0 0 0 25px', textTransform: 'none', mb: 1 }}
-              textAlign="center"
-            >
-              {t(`whatAreCurators.earn.title`)}
-            </Typography>
-          }
-        />
-      </Box>
+      <Stepper
+        color="green"
+        elements={[0, 1, 2, 3].map((stepNumber, i) => {
+          return (
+            <Stack key={i}>
+              <StyledTypography
+                variant="title4"
+                color={colors.white}
+                firstLetterColor={colors.green}
+                textAlign="left"
+              >
+                {t(`whatAreCurators.earn.steps.${i}.title`)}
+              </StyledTypography>
+              <Typography
+                variant="body4"
+                component="p"
+                color={colors.white}
+                textAlign="left"
+              >
+                {t(`whatAreCurators.earn.steps.${i}.description`)}
+              </Typography>
+            </Stack>
+          );
+        })}
+        minHeight={isMobile ? 400 : 320}
+        glowTitle={true}
+        border={true}
+        backgroundColor="transparent"
+        title={
+          <Typography
+            variant="title3"
+            component="p"
+            color={colors.green}
+            sx={{ textShadow: '0 0 0 25px', textTransform: 'none', mb: 1 }}
+            textAlign="center"
+          >
+            {t(`whatAreCurators.earn.title`)}
+          </Typography>
+        }
+      />
     </WhatAreContainer>
   );
 }

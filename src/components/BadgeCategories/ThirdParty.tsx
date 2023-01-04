@@ -9,13 +9,27 @@ const StyledSectionLayout = styled(SectionLayout)(({}) => ({
   maxWidth: 'fit-content',
 }));
 
+const StyledMiddleComponentContainer = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  flex: 1,
+  flexDirection: 'column',
+  placeContent: 'center',
+  textAlign: 'center',
+  rowGap: theme.spacing(3),
+  marginTop: theme.spacing(2),
+  '& > p': {
+    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(2),
+  },
+}));
+
 export default function ThirdPartyBadge() {
   return (
     <Box>
       <StyledSectionLayout
-        topComponent={<TopComponent />}
-        middleComponent={<MiddleComponent />}
-        bottomComponent={<BottomComponent />}
+        TopComponent={TopComponent}
+        MiddleComponent={MiddleComponent}
+        BottomComponent={BottomComponent}
         borderColor="green"
         backgroundColor="transparent"
       />
@@ -23,7 +37,7 @@ export default function ThirdPartyBadge() {
   );
 }
 
-const TopComponent = () => {
+function TopComponent() {
   return (
     <Box
       style={{
@@ -42,23 +56,9 @@ const TopComponent = () => {
       />
     </Box>
   );
-};
+}
 
-const StyledMiddleComponentContainer = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  flex: 1,
-  flexDirection: 'column',
-  placeContent: 'center',
-  textAlign: 'center',
-  rowGap: theme.spacing(3),
-  marginTop: theme.spacing(2),
-  '& > p': {
-    marginLeft: theme.spacing(2),
-    marginRight: theme.spacing(2),
-  },
-}));
-
-const MiddleComponent = () => {
+function MiddleComponent() {
   const { t } = useTranslation();
 
   return (
@@ -90,9 +90,9 @@ const MiddleComponent = () => {
       </Typography>
     </StyledMiddleComponentContainer>
   );
-};
+}
 
-const BottomComponent = () => {
+function BottomComponent() {
   const { t } = useTranslation();
 
   return (
@@ -138,4 +138,4 @@ const BottomComponent = () => {
       }
     />
   );
-};
+}

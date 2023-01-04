@@ -4,7 +4,7 @@ import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Button, Stack, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
 import { colors, IconDiscord } from 'thebadge-ui-library';
-import { BadgesPreview } from '../Commons/BadgesPreview';
+import BadgesPreview from '../Commons/BadgesPreview';
 
 const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
   display: 'flex',

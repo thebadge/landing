@@ -7,7 +7,7 @@ import isoCertif from '../../assets/iso-cert.webp';
 
 const BADGES = [isoCertif, howeyTest, diplomaCert];
 
-export const BadgesPreview = () => {
+export default function BadgesPreview() {
   return (
     <MultiBadgePreview
       animated={true}
@@ -21,4 +21,4 @@ export const BadgesPreview = () => {
       ))}
     />
   );
-};
+}
