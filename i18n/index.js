@@ -6,7 +6,7 @@ const i18n = {
   translations: {
     en,
     es,
-    de,
+    de
   },
   defaultLang: 'en',
   useBrowserDefault: true,

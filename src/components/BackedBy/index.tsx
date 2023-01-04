@@ -60,6 +60,7 @@ const BackedBy = () => {
         component="h2"
         color={colors.white}
         textAlign="center"
+        fontSize={isMobile ? '42px' : '50px'}
       >
         {t('backedBy.title')}
       </Typography>

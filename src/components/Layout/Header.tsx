@@ -66,8 +66,6 @@ const Header = () => {
           <LanguageSwitchLink locale="en" />
           {'|'}
           <LanguageSwitchLink locale="es" />
-          {'|'}
-          <LanguageSwitchLink locale="de" />
         </Box>
       </Box>
       <NavigationHeader
