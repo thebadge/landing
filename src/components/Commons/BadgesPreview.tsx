@@ -4,10 +4,16 @@ import { MultiBadgePreview } from 'thebadge-ui-library';
 import diplomaCert from '../../assets/diploma-cert.webp';
 import howeyTest from '../../assets/howey-test.webp';
 import isoCertif from '../../assets/iso-cert.webp';
+import { useSelectedLanguage } from "next-export-i18n";
 
-const BADGES = [isoCertif, howeyTest, diplomaCert];
+
 
 export const BadgesPreview = () => {
+  // const { lang } = useSelectedLanguage();
+  // console.log('useSelectedLanguage', lang)
+  // // TODO use badge-images depending on lang
+
+  const BADGES = [diplomaCert, isoCertif, howeyTest];
   return (
     <MultiBadgePreview
       animated={true}

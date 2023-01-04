@@ -57,7 +57,7 @@ export const Presentation = () => {
             {t('presentation.title')}
           </Typography>
         </Box>
-        <Typography variant="body1" component="p" color={colors.white}>
+        <Typography variant="body1" component="div" color={colors.white}>
           {t('presentation.description')}
         </Typography>
         <Box sx={{ display: 'flex', mt: 4, columnGap: 2 }}>

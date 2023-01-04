@@ -30,7 +30,7 @@ export default function WhatAreCurators() {
         </Typography>
         <Typography
           variant="body2"
-          component="p"
+          component="div"
           color={colors.white}
           textAlign="left"
         >
@@ -38,7 +38,7 @@ export default function WhatAreCurators() {
         </Typography>
         <Typography
           variant="body2"
-          component="p"
+          component="div"
           color={colors.white}
           textAlign="left"
         >
@@ -62,7 +62,7 @@ export default function WhatAreCurators() {
                 <Typography
                   key="0"
                   variant="body4"
-                  component="p"
+                  component="div"
                   color={colors.white}
                   textAlign="left"
                 >
@@ -78,7 +78,7 @@ export default function WhatAreCurators() {
           title={
             <Typography
               variant="title3"
-              component="p"
+              component="div"
               color={colors.green}
               sx={{ textShadow: '0 0 0 25px', textTransform: 'none', mb: 1 }}
               textAlign="center"
