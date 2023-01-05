@@ -9,6 +9,30 @@ export default function WhatAreCurators() {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
 
+  const Steps = [0, 1, 2, 3].map((stepNumber, i) => {
+    return (
+      <Stack key={i}>
+        <StyledTypography
+          variant="title4"
+          color={colors.white}
+          firstLetterColor={colors.green}
+          textAlign="left"
+        >
+          {t(`whatAreCurators.earn.steps.${i}.title`)}
+        </StyledTypography>
+        <Typography
+          key="0"
+          variant="body4"
+          component="div"
+          color={colors.white}
+          textAlign="left"
+        >
+          {t(`whatAreCurators.earn.steps.${i}.description`)}
+        </Typography>
+      </Stack>
+    );
+  });
+
   return (
     <WhatAreContainer>
       <Stack rowGap={3}>
@@ -48,29 +72,6 @@ export default function WhatAreCurators() {
       <Box>
         <Stepper
           color="green"
-          elements={[0, 1, 2, 3].map((stepNumber, i) => {
-            return (
-              <Stack key={i}>
-                <StyledTypography
-                  variant="title4"
-                  color={colors.white}
-                  firstLetterColor={colors.green}
-                  textAlign="left"
-                >
-                  {t(`whatAreCurators.earn.steps.${i}.title`)}
-                </StyledTypography>
-                <Typography
-                  key="0"
-                  variant="body4"
-                  component="div"
-                  color={colors.white}
-                  textAlign="left"
-                >
-                  {t(`whatAreCurators.earn.steps.${i}.description`)}
-                </Typography>
-              </Stack>
-            );
-          })}
           minHeight={isMobile ? 400 : 320}
           glowTitle={true}
           border={true}
@@ -86,7 +87,9 @@ export default function WhatAreCurators() {
               {t(`whatAreCurators.earn.title`)}
             </Typography>
           }
-        />
+        >
+          {Steps}
+        </Stepper>
       </Box>
     </WhatAreContainer>
   );
