@@ -12,7 +12,7 @@
   },
   "presentation": {
     "title": "Decentralized certification platform",
-    "description": "TheBadge is a decentralized certification platform powered by Ethereum. It provides users the opportunity to tokenize information from the real world in the form of badges. These badges are verified and validated by the community, which decides what should be accepted and what should not be.",
+    "description": "TheBadge is a decentralized certification platform powered by Ethereum. It provides users the opportunity to tokenize information from the real world in the form of certifications (badges). These badges are verified and validated by the community, which decides what should be accepted and what not.",
     "buttons": {
       "whitepaper": "Check our whitepaper",
       "community": "Join our community"
@@ -21,7 +21,7 @@
   "whatIsTheBadge": {
     "title": "WHAT IS THE BADGE",
     "stepOne": "A platform that certifies information in a decentralized way.",
-    "stepTwo": "Generates certifications (badges) based on evidence provided.",
+    "stepTwo": "Generates certifications (badges) based on the provided criteria and evidence.",
     "stepThree": "Each badge will require evidence to be issued.",
     "stepFour": "Curators will be rewarded for auditing and flagging fraudulent badges.",
     "why": {
@@ -61,7 +61,7 @@
     "community": {
       "title": "Community Badges",
       "description": "Represent real-world information in the form of blockchain-based certifications. To obtain a badge, users must provide evidence and pass through TheBadge's curation process, where our community of curators will review and verify the authenticity of the evidence.",
-      "example": "For example, a web3 company can apply to get a proof of reserve certification. People from the community can then always verify that this process is transparent.",
+      "example": "For example, a web3 company can apply to get a proof of reserves certification. People from the community can then always verify that this process is transparent.",
       "howItWorks": {
         "title": "How it works",
         "steps": [
@@ -71,7 +71,7 @@
           },
           {
             "title": "2. Providing evidence",
-            "description": "Each badge type will have specific requirements for the evidence that must be submitted in order to claim the badge. An example of this type of badge could be the verification of a course completion certificate."
+            "description": "Each badge type will have specific requirements for the evidence that must be submitted in order to claim the badge. An example of this type of badge could be a course completion certificate."
           },
           {
             "title": "3. Making the deposit",
@@ -82,19 +82,19 @@
             "description": "Wait for our community of curators to review the evidence provided. They will carefully review it and could raise challenges if they have any doubts or concerns."
           },
           {
-            "title": "4a. Badge approval",
-            "description": "If the user submission passes the curation process, the badge will be granted to the user's address."
+            "title": "5a. Badge approval",
+            "description": "If the submission passes the curation process, the badge will be granted to the user wallet's address."
           },
           {
-            "title": "4b. Challenge starts",
+            "title": "5b. Challenge starts",
             "description": "In case a curator challenged the submission, a decentralized jury will analyze the case and determine whether the evidence is authentic or not."
           },
           {
-            "title": "4b-1. Challenge denied",
-            "description": "The jury determines that the evidence is veridic. The user recovers his guarantee deposit and the badge is granted to its address."
+            "title": "5b-1. Challenge denied",
+            "description": "The jury determines that the evidence is veridic. The user recovers his guarantee deposit and the badge is granted to its wallet address."
           },
           {
-            "title": "4b-2. Challenge accepted",
+            "title": "5b-2. Challenge accepted",
             "description": "The jury determines that the evidence is fraudulent. The badge is not granted and the user losses it's guarantee deposit, which will be given to the challenger."
           }
         ]
@@ -113,7 +113,7 @@
           },
           {
             "title": "2. The certification process begins",
-            "description": "Once the entity is registered, it can start creating its own badges. Users chosen by the entity can then claim these badges."
+            "description": "Once the entity is registered, it can start creating its own badges. Users chosen by the entity can then receive these badges."
           },
           {
             "title": "3. Verification request",
@@ -130,8 +130,8 @@
   "whatAreCreators": {
     "title": "What are creators",
     "sectionName": "Become a creator",
-    "description": "As a badge creator on TheBadge's platform, you can design and publish custom badges that other users can apply for to verify real-world information. Set the price for the badges you create and receive a share of the fee when users apply for and receive them.",
-    "example": "For example, a notary from a certain country knows how to verify necessary documents in a compliance process from that country, by using TheBadge, they could use that knowledge to verify those documents on the Blockchain and generate income from them.",
+    "description": "As a badge creator on TheBadge's platform, you can design and publish custom badges that other users can apply for to certify real-world information. Set the price for the badges you create and receive a share of the fee when users apply for and receive them.",
+    "example": "For example, a notary from a certain country knows how to verify necessary documents in a compliance process from that country. By using TheBadge, they could use that knowledge to verify those documents on the Blockchain and generate income from them.",
     "earn": {
       "title": "Earn by becoming a creator",
       "steps": [
@@ -164,14 +164,9 @@
         "description": "Creating the first badges that will help us to have a better understanding of the users needs in order to make the platform adaptable to different scenarios."
       },
       {
-        "year": "Q2 2023",
+        "year": "Q2/Q3 2023",
         "title": "Certification Platform development",
-        "description": "This period will be used to build the v1 of the platform."
-      },
-      {
-        "year": "Q3 2023",
-        "title": "Certification Platform development",
-        "description": "This period will be used to build the v1 of the platform."
+        "description": "This period will be used to build the first version of the platform."
       },
       {
         "year": "Q4 2023",

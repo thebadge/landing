@@ -1,4 +1,4 @@
-import { IconDiscord } from 'thebadge-ui-library';
+import { colors, IconDiscord } from 'thebadge-ui-library';
 import EmailIcon from '@/src/components/Icons/Email';
 import GithubIcon from '@/src/components/Icons/Github';
 import MediumIcon from '@/src/components/Icons/Medium';
@@ -12,7 +12,7 @@ import {
 } from '@/src/constants';
 import { useSetionReferences } from '@/src/contexts/referencesContex';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
-import { Box, Link, styled } from '@mui/material';
+import { Box, Link, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
 
 export const FooterContainer = styled(Box)(({ theme }) => ({
@@ -62,9 +62,16 @@ const Footer = () => {
         <IconDiscord color="white" link={DISCORD_URL} />
       </SocialContainer>
       <LegalContainer sx={{ marginTop: 2 }}>
-        <span>
+        <Typography
+          variant={useIsMobile() ? 'h6' : 'h5'}
+          component="div"
+          color={colors.white}
+          sx={{
+            textAlign: 'center'
+          }}
+        >
           ©{new Date().getFullYear()} {t('footer.copyright')}
-        </span>
+        </Typography>
         <Box sx={{ columnGap: 2, display: 'none' }}>
           {!isMobile && <span>|</span>}
           <Link target="_blank">Terms</Link>

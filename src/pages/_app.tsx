@@ -3,14 +3,19 @@ import 'node_modules/thebadge-ui-library/dist/index.css';
 
 import createCache from '@emotion/cache';
 import { CacheProvider, EmotionCache } from '@emotion/react';
-import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import {
+  createTheme,
+  CssBaseline,
+  responsiveFontSizes,
+  ThemeProvider,
+} from '@mui/material';
 import { AppProps } from 'next/app';
 import { useMemo } from 'react';
 
 import { useGoogleAnalytics } from '@/src/hooks/useGoogleAnalytics';
 import { LayoutContainer } from '../components/Layout/LayoutContainer';
 import SectionReferencesProvider from '../contexts/referencesContex';
-import { getTheme } from '../styles/theme';
+import { getTheme, getTypographyVariants } from '../styles/theme';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createCache({
@@ -27,7 +32,16 @@ const MyApp = ({
   pageProps,
   emotionCache = clientSideEmotionCache,
 }: MyAppProps) => {
-  const theme = useMemo(() => createTheme(getTheme()), []);
+  const theme = useMemo(() => {
+    const theme = getTheme();
+    const variants = getTypographyVariants(theme);
+    return responsiveFontSizes(createTheme(theme), {
+      disableAlign: true,
+      factor: 1.4,
+      variants,
+    });
+  }, []);
+
   useGoogleAnalytics();
   return (
     <CacheProvider value={emotionCache}>

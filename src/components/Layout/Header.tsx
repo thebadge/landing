@@ -6,7 +6,7 @@ import { RefObject } from 'react';
 import {
   gradients,
   LogoTheBadgeWithText,
-  NavigationHeader
+  NavigationHeader,
 } from 'thebadge-ui-library';
 import LanguageSwitchLink from '../TranslationUtils/LanguageSwitchLink';
 
@@ -66,6 +66,8 @@ const Header = () => {
           <LanguageSwitchLink locale="en" />
           {'|'}
           <LanguageSwitchLink locale="es" />
+          {'|'}
+          <LanguageSwitchLink locale="de" />
         </Box>
       </Box>
       <NavigationHeader

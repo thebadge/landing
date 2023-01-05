@@ -1,10 +1,10 @@
 {
   "header": {
     "home": "INICIO",
-    "howItWorks": "COMO FUNCIONA",
+    "howItWorks": "CÓMO FUNCIONA",
     "team": "EQUIPO",
     "partnerships": "SOCIOS",
-    "contactUs": "CONTACTANOS",
+    "contactUs": "CONTÁCTANOS",
     "goToAppButton": {
       "label": "Abrir app",
       "tooltip": "Muy pronto"
@@ -12,21 +12,21 @@
   },
   "presentation": {
     "title": "Plataforma de certificación descentralizada",
-    "description": "TheBadge es una plataforma de certificación descentralizada basada en Ethereum. Brinda a los usuarios la oportunidad de tokenizar información del mundo real en forma de certificados (badges). Los badges son verificados y validados por la comunidad, la cual decide qué se debe aceptar y qué no.",
+    "description": "TheBadge es una plataforma de certificación descentralizada basada en Ethereum. Brinda a los usuarios la oportunidad de tokenizar información del mundo real en forma de certificados (badges). Los badges son verificados y validados por la comunidad, la cual decide qué se debe aceptar y qué no, y con qué criterios.",
     "buttons": {
       "whitepaper": "Consulte el WhitePaper",
       "community": "Únete a la comunidad"
     }
   },
   "whatIsTheBadge": {
-    "title": "QUE ES THE BADGE",
+    "title": "QUÉ ES THE BADGE",
     "stepOne": "Una plataforma que certifica información de forma descentralizada.",
-    "stepTwo": "Genera certificaciones (badges) basándose en las evidencias aportadas.",
+    "stepTwo": "Genera certificaciones (badges) basándose en criterios y evidencias aportadas.",
     "stepThree": "Cada badge requerirá evidencia para ser emitido.",
     "stepFour": "Los curadores serán recompensados por auditar e impugnar badges fraudulentos.",
     "why": {
       "title": "Por qué necesitamos certificaciones descentralizadas",
-      "description": "Para garantizar que nuestras iniciativas para atraer a más personas al ecosistema crypto sean fructíferas, necesitamos hacer que el ecosistema sea confiable. Para crear un futuro descentralizado, contar con información precisa es esencial. Si como comunidad descentralizada, confiamos todo el deber de verificación solamente a entidades centralizadas, el ecosistema completo seguirá sufriendo por las malas acciones de dichos actores."
+      "description": "Para garantizar que nuestras iniciativas para atraer a más personas al mundo crypto sean fructíferas, necesitamos hacer que el ecosistema sea confiable. Para crear un futuro descentralizado, contar con información precisa es esencial. Si como comunidad descentralizada, confiamos todo el deber de verificación solamente a entidades centralizadas, el ecosistema completo seguirá sufriendo por las malas acciones de dichos actores."
     }
   },
   "whatAreCurators": {
@@ -50,7 +50,7 @@
           "description": "Si un curador tiene dudas sobre la autenticidad de la evidencia, puede solicitar la impugnación haciendo un depósito de dinero. Esto iniciará un proceso de arbitraje, en el que un jurado revisará la evidencia y determinará quien de los dos (el curador o el solicitante del certificado) está en lo correcto."
         },
         {
-          "title": "4. Obteniendo la recompensa",
+          "title": "4. Obteniendo recompensas",
           "description": "Después de que se complete el proceso de arbitraje, si el jurado rechaza la evidencia del certificado, el curador recibirá parte del depósito del solicitante de dicho certificado y una recompensa en tokens BADGE."
         }
       ]
@@ -71,7 +71,7 @@
           },
           {
             "title": "2. Proporcionando la evidencia",
-            "description": "Cada tipo de certificado requerirá la presentación de un comprobante o prueba específica para acreditar que tiene derecho a reclamarlo. Un ejemplo podría ser la verificación de un certificado de finalización de curso."
+            "description": "Cada tipo de certificado requerirá la presentación de un comprobante o prueba específica para acreditar que tiene derecho a reclamarlo. Un ejemplo podría ser un certificado de finalización de curso."
           },
           {
             "title": "3. Realizando el depósito",
@@ -82,19 +82,19 @@
             "description": "Nuestra comunidad de curadores revisará cuidadosamente la evidencia proporcionada. En el caso de tener dudas acerca de la autenticidad de las pruebas, podrían plantear la impugnación del certificado."
           },
           {
-            "title": "4a. Aprobación del certificado",
-            "description": "Si la solicitud del usuario pasa el proceso de curación, se otorgará el certificado directamente a la billetera virtual del mismo."
+            "title": "5a. Aprobación del certificado",
+            "description": "Si la solicitud pasa el proceso de curación, se otorgará el certificado directamente a la billetera virtual del usuario."
           },
           {
-            "title": "4b. Solicitud de impugnación",
+            "title": "5b. Solicitud de impugnación",
             "description": "En caso de que un curador solicite la impugnación, un jurado descentralizado analizará el caso y determinará si las pruebas son auténticas o no."
           },
           {
-            "title": "4b-1. Impugnación denegada",
+            "title": "5b-1. Impugnación denegada",
             "description": "Si el jurado determina que la evidencia es verídica. El usuario recupera su depósito de garantía y se le otorga el certificado directamente a su billetera virtual."
           },
           {
-            "title": "4b-2. Impugnación aceptada",
+            "title": "5b-2. Impugnación aceptada",
             "description": "El jurado determina que la evidencia es fraudulenta. El certificado no es otorgado y el usuario que genero la solicitud pierde su depósito de garantía, la cual se entregará al curador como recompensa."
           }
         ]
@@ -113,7 +113,7 @@
           },
           {
             "title": "2. Comienza el proceso de certificación",
-            "description": "Una vez que la entidad está registrada, puede comenzar a crear sus propias certificaciones. Dichas certificaciones pueden luego ser obtenidos por los usuarios aceptados por la entidad."
+            "description": "Una vez que la entidad está registrada, puede comenzar a crear sus propias certificaciones. Dichas certificaciones pueden luego ser obtenidos por los usuarios elegidos por la entidad."
           },
           {
             "title": "3. Solicitud de verificacion",
@@ -131,7 +131,7 @@
     "title": "Qué son los creadores",
     "sectionName": "Convertirse en creador",
     "description": "Los creadores son miembros de la comunidad de TheBadge, los cuales diseñan y publican certificaciones personalizadas para otros usuarios que desean certificar información especifica. Los creadores pueden establecer el precio de cada certificación y recibir una parte de dicha tarifa cuando los usuarios las utilicen.",
-    "example": "Por ejemplo, un escribano de un país determinado sabe cómo verificar documentos necesarios en un proceso de compliance de dicho país, al usar TheBadge, podría usar esos conocimientos para verificar dichos documentos en la Blockchain y generar ingresos por los mismos.",
+    "example": "Por ejemplo, un escribano de un país determinado sabe cómo verificar documentos necesarios en un proceso de compliance de dicho país. Al usar TheBadge, podría aprovechar esos conocimientos para verificar dichos documentos en la Blockchain y generar ingresos por los mismos.",
     "earn": {
       "title": "Ganar dinero siendo creador",
       "steps": [
@@ -164,12 +164,7 @@
         "description": "TheBadge creará las primeras certificaciones las cuales nos ayudarán a comprender la mejor manera de hacer que la plataforma se adapte a diferentes escenarios."
       },
       {
-        "year": "Q2 2023",
-        "title": "Desarrollo de la Plataforma de certificaciones",
-        "description": "En este período se desarrollará la primera versión de la plataforma.."
-      },
-      {
-        "year": "Q3 2023",
+        "year": "Q2/Q3 2023",
         "title": "Desarrollo de la Plataforma de certificaciones",
         "description": "En este período se desarrollará la primera versión de la plataforma.."
       },

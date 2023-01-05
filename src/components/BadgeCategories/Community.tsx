@@ -76,7 +76,7 @@ const MiddleComponent = () => {
       <Typography
         color={colors.white}
         variant="body2"
-        component="p"
+        component="div"
         textAlign="left"
       >
         {t('badgeCategories.community.description')}
@@ -84,7 +84,7 @@ const MiddleComponent = () => {
       <Typography
         color={colors.white}
         variant="body2"
-        component="p"
+        component="div"
         textAlign="left"
       >
         {t('badgeCategories.community.example')}
@@ -112,7 +112,7 @@ const BottomComponent = () => {
             </StyledFirstLetter>
             <Typography
               variant="body4"
-              component="p"
+              component="div"
               color={colors.black}
               textAlign="left"
             >
@@ -126,7 +126,7 @@ const BottomComponent = () => {
       title={
         <Typography
           variant="title3"
-          component="p"
+          component="div"
           color={colors.deepPurple}
           sx={{ mb: 1 }}
           fontSize="1.1em"

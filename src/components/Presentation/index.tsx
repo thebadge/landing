@@ -1,6 +1,5 @@
 import { DISCORD_URL, PAPER_URL } from '@/src/constants';
 import { useGoogleAnalyticsBtn } from '@/src/hooks/useGoogleAnalytics';
-import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Button, Stack, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
 import { colors, IconDiscord } from 'thebadge-ui-library';
@@ -17,11 +16,14 @@ const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-const StyledButton = styled(Button)(() => ({
+const StyledButton = styled(Button)(({ theme }) => ({
   height: '48px',
   textTransform: 'none',
   padding: '9px 26px 9px 26px',
   maxHeight: 'fit-content',
+  [theme.breakpoints.down('sm')]: {
+    height: 'fit-content',
+  },
 }));
 
 export const Presentation = () => {
@@ -42,15 +44,19 @@ export const Presentation = () => {
       <Stack justifyContent="center" sx={{ flex: 2 }}>
         <Box mb={2}>
           <Typography
-            variant={useIsMobile() ? 'h2' : 'h1'}
+            variant={'h1'}
             component="h1"
-            fontSize={48}
             color={colors.white}
+            sx={{
+              wordWrap: 'break-word',
+              overflowWrap: 'break-word',
+              wordBreak: 'break-word',
+            }}
           >
             {t('presentation.title')}
           </Typography>
         </Box>
-        <Typography variant="body1" component="p" color={colors.white}>
+        <Typography variant="body1" component="div" color={colors.white}>
           {t('presentation.description')}
         </Typography>
         <Box sx={{ display: 'flex', mt: 4, columnGap: 2 }}>

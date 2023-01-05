@@ -77,7 +77,7 @@ export default function WhatsTheBadge() {
               <Icon color="white" />
               <Typography
                 variant="body3"
-                component="p"
+                component="div"
                 color={colors.white}
                 textAlign="center"
               >
@@ -108,7 +108,7 @@ export default function WhatsTheBadge() {
 
             <Typography
               variant="body2"
-              component="p"
+              component="div"
               paddingX={'10%'}
               color={colors.white}
               textAlign="center"
