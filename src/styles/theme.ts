@@ -1,4 +1,5 @@
-import { PaletteMode } from '@mui/material';
+import { PaletteMode, ThemeOptions, Typography } from '@mui/material';
+import { TypographyOptions } from '@mui/material/styles/createTypography';
 import { Mulish } from '@next/font/google';
 import { defaultTheme } from 'thebadge-ui-library';
 
@@ -7,7 +8,7 @@ const mulishFont = Mulish({
   subsets: ['latin'],
 });
 
-export const getTheme = (mode?: PaletteMode) => ({
+export const getTheme = (mode?: PaletteMode): ThemeOptions => ({
   ...defaultTheme,
   typography: {
     ...defaultTheme.typography,
@@ -28,3 +29,11 @@ export const getTheme = (mode?: PaletteMode) => ({
     },
   },
 });
+
+export const getTypographyVariants = (theme: ThemeOptions) => {
+  // Take all the variants, to ensure MUI made all of them responsive, including our custom ones
+  const variants = Object.keys(theme.typography as TypographyOptions).filter(
+    (keyName) => keyName !== 'fontFamily',
+  ) as (keyof typeof Typography)[];
+  return variants;
+};
