@@ -11,6 +11,7 @@ import WhatsTheBadge from '../components/WhatsTheBadge';
 import { useSetionReferences } from '../contexts/referencesContex';
 
 const Team = dynamic(() => import('../components/Team'));
+
 const BackedBy = dynamic(() => import('../components/BackedBy'));
 
 const MainContainer = styled(Box)(({ theme }) => ({
