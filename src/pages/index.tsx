@@ -2,17 +2,22 @@ import { Box, styled } from '@mui/material';
 import dynamic from 'next/dynamic';
 
 import BadgeCategoriesContainer from '../components/BadgeCategories/BadgeCateogriesContainer';
-import CommunityBadge from '../components/BadgeCategories/Community';
-import ThirdPartyBadge from '../components/BadgeCategories/ThirdParty';
+
 import { Presentation } from '../components/Presentation';
-import WhatAreCreators from '../components/WhatAre/Creators';
-import WhatAreCurators from '../components/WhatAre/Curators';
 import WhatsTheBadge from '../components/WhatsTheBadge';
 import { useSetionReferences } from '../contexts/referencesContex';
 
 const Team = dynamic(() => import('../components/Team'));
-
 const BackedBy = dynamic(() => import('../components/BackedBy'));
+
+const WhatAreCurators = dynamic(() => import('../components/WhatAre/Curators'));
+const WhatAreCreators = dynamic(() => import('../components/WhatAre/Creators'));
+const ThirdPartyBadge = dynamic(
+  () => import('../components/BadgeCategories/Community'),
+);
+const CommunityBadge = dynamic(
+  () => import('../components/BadgeCategories/ThirdParty'),
+);
 
 const MainContainer = styled(Box)(({ theme }) => ({
   position: 'relative',
