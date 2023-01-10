@@ -94,34 +94,32 @@ const MiddleComponent = () => {
 
 const BottomComponent = () => {
   const { t } = useTranslation();
+  const Steps = [0, 1, 2, 3].map((stepNumber, i) => {
+    return (
+      <Stack key={i}>
+        <StyledFirstLetter
+          variant="title4"
+          firstLetterColor={colors.pink}
+          color={colors.black}
+          textAlign="left"
+        >
+          {t(`badgeCategories.third-party.howItWorks.steps.${i}.title`)}
+        </StyledFirstLetter>
+        <Typography
+          variant="body4"
+          component="div"
+          color={colors.black}
+          textAlign="left"
+        >
+          {t(`badgeCategories.third-party.howItWorks.steps.${i}.description`)}
+        </Typography>
+      </Stack>
+    );
+  });
 
   return (
     <Stepper
       color="pink"
-      elements={[0, 1, 2, 3].map((stepNumber, i) => {
-        return (
-          <Stack key={i}>
-            <StyledFirstLetter
-              variant="title4"
-              firstLetterColor={colors.pink}
-              color={colors.black}
-              textAlign="left"
-            >
-              {t(`badgeCategories.third-party.howItWorks.steps.${i}.title`)}
-            </StyledFirstLetter>
-            <Typography
-              variant="body4"
-              component="div"
-              color={colors.black}
-              textAlign="left"
-            >
-              {t(
-                `badgeCategories.third-party.howItWorks.steps.${i}.description`,
-              )}
-            </Typography>
-          </Stack>
-        );
-      })}
       minHeight={320}
       backgroundColor="white"
       title={
@@ -136,6 +134,8 @@ const BottomComponent = () => {
           {t(`badgeCategories.third-party.howItWorks.title`)}
         </Typography>
       }
-    />
+    >
+      {Steps}
+    </Stepper>
   );
 };

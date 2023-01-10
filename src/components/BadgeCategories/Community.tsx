@@ -96,31 +96,32 @@ const MiddleComponent = () => {
 const BottomComponent = () => {
   const { t } = useTranslation();
 
+  const Steps = [0, 1, 2, 3, 4, 5, 6, 7].map((stepNumber, i) => {
+    return (
+      <Stack key={i}>
+        <StyledFirstLetter
+          variant="title4"
+          firstLetterColor={colors.deepPurple}
+          color={colors.black}
+          textAlign="left"
+        >
+          {t(`badgeCategories.community.howItWorks.steps.${i}.title`)}
+        </StyledFirstLetter>
+        <Typography
+          variant="body4"
+          component="div"
+          color={colors.black}
+          textAlign="left"
+        >
+          {t(`badgeCategories.community.howItWorks.steps.${i}.description`)}
+        </Typography>
+      </Stack>
+    );
+  });
+
   return (
     <Stepper
       color="deepPurple"
-      elements={[0, 1, 2, 3, 4, 5, 6, 7].map((stepNumber, i) => {
-        return (
-          <Stack key={i}>
-            <StyledFirstLetter
-              variant="title4"
-              firstLetterColor={colors.deepPurple}
-              color={colors.black}
-              textAlign="left"
-            >
-              {t(`badgeCategories.community.howItWorks.steps.${i}.title`)}
-            </StyledFirstLetter>
-            <Typography
-              variant="body4"
-              component="div"
-              color={colors.black}
-              textAlign="left"
-            >
-              {t(`badgeCategories.community.howItWorks.steps.${i}.description`)}
-            </Typography>
-          </Stack>
-        );
-      })}
       minHeight={320}
       backgroundColor="white"
       title={
@@ -135,6 +136,8 @@ const BottomComponent = () => {
           {t(`badgeCategories.community.howItWorks.title`)}
         </Typography>
       }
-    />
+    >
+      {Steps}
+    </Stepper>
   );
 };
