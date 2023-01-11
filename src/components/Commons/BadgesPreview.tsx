@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, keyframes } from '@mui/material';
 import Image, {StaticImageData} from 'next/image';
 import { MultiBadgePreview } from 'thebadge-ui-library';
 import enDiplomaCert from '../../assets/badges/en/diploma-cert.webp';
@@ -18,6 +18,15 @@ const BADGES: {[key: string]: Array<StaticImageData>} = {
   'de': [deDiplomaCert, deIsoCert, deHoweyTest],
 }
 
+const glow = keyframes`
+  from {
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7))
+  }
+  to {
+    filter: drop-shadow(0px 0px 12px rgba(255, 255, 255, 0.7))
+  }
+`;
+
 export const BadgesPreview = () => {
   const { lang } = useSelectedLanguage();
 
@@ -27,7 +36,7 @@ export const BadgesPreview = () => {
       badges={BADGES[lang]?.map((cardSrc, i) => (
         <Box
           key={'decorative-image-' + i}
-          sx={{ filter: 'drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.7))' }}
+          sx={{ animation: `${glow} 2s infinite alternate cubic-bezier(0.68, -0.6, 0.32, 1.6)`}}
         >
           <Image src={cardSrc} alt={'decorative-image-' + i} />
         </Box>

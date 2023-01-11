@@ -8,16 +8,17 @@ body {
   width: 8px;
 }
 
-::-webkit-scrollbar-track {
-  background-color: rgba(112, 112, 112, 0.212);
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: transparent;
   border-radius: 100px;
 }
 
-::-webkit-scrollbar-thumb {
+*:hover::-webkit-scrollbar-thumb {
   background-color: rgba(29, 29, 29, 0.493);
-  border: 1px solid rgba(255, 255, 255, 0.219);
-  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.319);
 }
+
 
 * {
   box-sizing: border-box;
