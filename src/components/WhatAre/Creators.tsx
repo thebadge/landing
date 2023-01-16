@@ -1,14 +1,9 @@
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Stack, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
-import dynamic from 'next/dynamic';
-import { colors, StepperProps } from 'thebadge-ui-library';
+import { colors, Stepper } from 'thebadge-ui-library';
 import StyledTypography from '../Commons/StyledFirstLetter';
 import WhatAreContainer from './WhatAreContainer';
-
-const Stepper = dynamic<StepperProps>(() =>
-  import('thebadge-ui-library').then((mod) => mod.Stepper),
-);
 
 export default function WhatAreCreators() {
   const { t } = useTranslation();
