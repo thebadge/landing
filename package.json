@@ -35,7 +35,7 @@
     "react-wrap-balancer": "^0.2.3",
     "sharp": "^0.31.2",
     "superjson": "^1.12.0",
-    "thebadge-ui-library": "^1.2.2-beta",
+    "thebadge-ui-library": "^1.2.2-beta3",
     "zod": "^3.20.2"
   },
   "devDependencies": {
