@@ -2,6 +2,7 @@ import CommunityBadge from '@/src/components/BadgeCategories/Community';
 import ThirdPartyBadge from '@/src/components/BadgeCategories/ThirdParty';
 import WhatAreCreators from '@/src/components/WhatAre/Creators';
 import WhatAreCurators from '@/src/components/WhatAre/Curators';
+
 import { Box, styled } from '@mui/material';
 import dynamic from 'next/dynamic';
 
