@@ -1,20 +1,15 @@
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Stack, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
-import dynamic from 'next/dynamic';
-import { colors, StepperProps } from 'thebadge-ui-library';
+import { colors, Stepper } from 'thebadge-ui-library';
 import StyledTypography from '../Commons/StyledFirstLetter';
 import WhatAreContainer from './WhatAreContainer';
-
-const Stepper = dynamic<StepperProps>(() =>
-  import('thebadge-ui-library').then((mod) => mod.Stepper),
-);
 
 export default function WhatAreCreators() {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
 
-  const Steps = [0, 1, 2].map((stepNumber, i) => {
+  const steps = [0, 1, 2].map((stepNumber, i) => {
     return (
       <Stack key={i} sx={{ flex: 1 }}>
         <StyledTypography
@@ -92,9 +87,8 @@ export default function WhatAreCreators() {
               {t(`whatAreCreators.earn.title`)}
             </Typography>
           }
-        >
-          {Steps}
-        </Stepper>
+          steps={steps}
+        />
       </Box>
     </WhatAreContainer>
   );

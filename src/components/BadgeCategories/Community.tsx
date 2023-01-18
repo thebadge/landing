@@ -1,19 +1,9 @@
 import { Box, Stack, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import {
-  colors,
-  fonts,
-  SectionLayout,
-  StepperProps,
-} from 'thebadge-ui-library';
+import { colors, fonts, SectionLayout, Stepper } from 'thebadge-ui-library';
 import communityDecoration from '../../assets/community-decoration.webp';
 import StyledFirstLetter from '../Commons/StyledFirstLetter';
-
-const Stepper = dynamic<StepperProps>(() =>
-  import('thebadge-ui-library').then((mod) => mod.Stepper),
-);
 
 const StyledSectionLayout = styled(SectionLayout)(({}) => ({
   maxWidth: 'fit-content',
@@ -106,7 +96,7 @@ const MiddleComponent = () => {
 const BottomComponent = () => {
   const { t } = useTranslation();
 
-  const Steps = [0, 1, 2, 3, 4, 5, 6, 7].map((stepNumber, i) => {
+  const steps = [0, 1, 2, 3, 4, 5, 6, 7].map((stepNumber, i) => {
     return (
       <Stack key={i}>
         <StyledFirstLetter
@@ -146,8 +136,7 @@ const BottomComponent = () => {
           {t(`badgeCategories.community.howItWorks.title`)}
         </Typography>
       }
-    >
-      {Steps}
-    </Stepper>
+      steps={steps}
+    />
   );
 };
