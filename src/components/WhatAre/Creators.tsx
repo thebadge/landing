@@ -9,7 +9,7 @@ export default function WhatAreCreators() {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
 
-  const Steps = [0, 1, 2].map((stepNumber, i) => {
+  const steps = [0, 1, 2].map((stepNumber, i) => {
     return (
       <Stack key={i} sx={{ flex: 1 }}>
         <StyledTypography
@@ -87,9 +87,8 @@ export default function WhatAreCreators() {
               {t(`whatAreCreators.earn.title`)}
             </Typography>
           }
-        >
-          {Steps}
-        </Stepper>
+          steps={steps}
+        />
       </Box>
     </WhatAreContainer>
   );

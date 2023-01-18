@@ -1,3 +1,7 @@
+import CommunityBadge from '@/src/components/BadgeCategories/Community';
+import ThirdPartyBadge from '@/src/components/BadgeCategories/ThirdParty';
+import WhatAreCreators from '@/src/components/WhatAre/Creators';
+import WhatAreCurators from '@/src/components/WhatAre/Curators';
 import { Box, styled } from '@mui/material';
 import dynamic from 'next/dynamic';
 
@@ -9,15 +13,6 @@ import { useSetionReferences } from '../../contexts/referencesContex';
 
 const Team = dynamic(() => import('../../components/Team'));
 const BackedBy = dynamic(() => import('../../components/BackedBy'));
-
-const WhatAreCurators = dynamic(() => import('../../components/WhatAre/Curators'));
-const WhatAreCreators = dynamic(() => import('../../components/WhatAre/Creators'));
-const ThirdPartyBadge = dynamic(
-  () => import('../../components/BadgeCategories/Community'),
-);
-const CommunityBadge = dynamic(
-  () => import('../../components/BadgeCategories/ThirdParty'),
-);
 
 const MainContainer = styled(Box)(({ theme }) => ({
   position: 'relative',

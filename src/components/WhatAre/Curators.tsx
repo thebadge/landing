@@ -9,7 +9,7 @@ export default function WhatAreCurators() {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
 
-  const Steps = [0, 1, 2, 3].map((stepNumber, i) => {
+  const steps = [0, 1, 2, 3].map((stepNumber, i) => {
     return (
       <Stack key={i}>
         <StyledTypography
@@ -87,9 +87,8 @@ export default function WhatAreCurators() {
               {t(`whatAreCurators.earn.title`)}
             </Typography>
           }
-        >
-          {Steps}
-        </Stepper>
+          steps={steps}
+        />
       </Box>
     </WhatAreContainer>
   );

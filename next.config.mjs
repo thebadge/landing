@@ -25,5 +25,6 @@ export default withBundleAnalyzerWrapper(
     compiler: {
       styledComponents: true,
     },
+    transpilePackages: ['@mui/material', 'thebadge-ui-library'],
   }),
 );

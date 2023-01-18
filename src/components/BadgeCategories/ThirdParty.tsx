@@ -94,7 +94,7 @@ const MiddleComponent = () => {
 
 const BottomComponent = () => {
   const { t } = useTranslation();
-  const Steps = [0, 1, 2, 3].map((stepNumber, i) => {
+  const steps = [0, 1, 2, 3].map((stepNumber, i) => {
     return (
       <Stack key={i}>
         <StyledFirstLetter
@@ -134,8 +134,7 @@ const BottomComponent = () => {
           {t(`badgeCategories.third-party.howItWorks.title`)}
         </Typography>
       }
-    >
-      {Steps}
-    </Stepper>
+      steps={steps}
+    />
   );
 };
