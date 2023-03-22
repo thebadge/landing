@@ -7,6 +7,7 @@ import { Box, styled } from '@mui/material';
 import dynamic from 'next/dynamic';
 
 import BadgeCategoriesContainer from '../../components/BadgeCategories/BadgeCateogriesContainer';
+import { Roadmap } from 'thebadge-ui-library';
 
 import { Presentation } from '../../components/Presentation';
 import WhatsTheBadge from '../../components/WhatsTheBadge';
@@ -49,6 +50,7 @@ export default function Home() {
           </BadgeCategoriesContainer>
         </div>
         <WhatAreCreators />
+        <Roadmap />
         <div ref={teamSection}>
           <Team />
         </div>
