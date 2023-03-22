@@ -7,13 +7,13 @@ import { Box, styled } from '@mui/material';
 import dynamic from 'next/dynamic';
 
 import BadgeCategoriesContainer from '../../components/BadgeCategories/BadgeCateogriesContainer';
-import { Roadmap } from 'thebadge-ui-library';
 
 import { Presentation } from '../../components/Presentation';
 import WhatsTheBadge from '../../components/WhatsTheBadge';
 import { useSetionReferences } from '../../contexts/referencesContex';
 
 const Team = dynamic(() => import('../../components/Team'));
+const RoadmapSection = dynamic(() => import('../../components/Roadmap'));
 const BackedBy = dynamic(() => import('../../components/BackedBy'));
 
 const MainContainer = styled(Box)(({ theme }) => ({
@@ -50,7 +50,7 @@ export default function Home() {
           </BadgeCategoriesContainer>
         </div>
         <WhatAreCreators />
-        <Roadmap />
+        <RoadmapSection />
         <div ref={teamSection}>
           <Team />
         </div>

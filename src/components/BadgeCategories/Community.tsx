@@ -12,13 +12,32 @@ const StyledSectionLayout = styled(SectionLayout)(({}) => ({
 export default function CommunityBadge() {
   return (
     <Box>
-      <StyledSectionLayout
-        topComponent={<TopComponent />}
-        middleComponent={<MiddleComponent />}
-        bottomComponent={<BottomComponent />}
-        borderColor="green"
-        backgroundColor="transparent"
+      <SectionLayout
         sx={{ maxWidth: 'max-content' }}
+        backgroundColor={colors.transparent}
+        borderColor={colors.green}
+        components={[
+          {
+            component: <TopComponent />,
+            options: {
+              fitContent: true,
+            },
+          },
+          {
+            component: <MiddleComponent />,
+            options: {
+              withPadding: true,
+            },
+          },
+          {
+            component: <BottomComponent />,
+            options: {
+              sx: {
+                m: 2,
+              },
+            },
+          },
+        ]}
       />
     </Box>
   );
@@ -108,7 +127,7 @@ const BottomComponent = () => {
           {t(`badgeCategories.community.howItWorks.steps.${i}.title`)}
         </StyledFirstLetter>
         <Typography
-          variant="body4"
+          variant="body2"
           component="div"
           color={colors.black}
           textAlign="left"
