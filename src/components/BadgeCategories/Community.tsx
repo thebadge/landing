@@ -5,10 +5,6 @@ import { colors, fonts, SectionLayout, Stepper } from 'thebadge-ui-library';
 import communityDecoration from '../../assets/community-decoration.webp';
 import StyledFirstLetter from '../Commons/StyledFirstLetter';
 
-const StyledSectionLayout = styled(SectionLayout)(({}) => ({
-  maxWidth: 'fit-content',
-}));
-
 export default function CommunityBadge() {
   return (
     <Box>
