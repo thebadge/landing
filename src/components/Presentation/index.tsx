@@ -112,7 +112,7 @@ export const Presentation = () => {
           >
             <Box sx={style}>
               <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                <CardMedia component="video" src="/public/video/TheBadge.mp4" autoPlay />
+                <CardMedia component="video" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" autoPlay />
               </Typography>
             </Box>
           </Modal>
