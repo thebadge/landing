@@ -32,6 +32,9 @@ const VideoButton = styled(Button)(({ theme }) => ({
   '& span': {
     margin: '0'
   },
+  '& svg': {
+    fontSize: 'xx-large !important'
+  },
 
   [theme.breakpoints.down('sm')]: {},
 }));
