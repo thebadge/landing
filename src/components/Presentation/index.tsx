@@ -103,7 +103,7 @@ export const Presentation = () => {
             onClick={handleOpen}
             endIcon={<PlayCircleOutlineRoundedIcon fontSize="large" color="white" />}
           />
-        
+
           <Modal
             open={open}
             onClose={handleClose}
@@ -111,9 +111,7 @@ export const Presentation = () => {
             aria-describedby="modal-modal-description"
           >
             <Box sx={style}>
-              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                <CardMedia component="video" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" autoPlay />
-              </Typography>
+              <CardMedia component="video" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" autoPlay />
             </Box>
           </Modal>
         </Box>
