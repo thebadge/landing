@@ -6,6 +6,7 @@ import { colors, IconDiscord } from 'thebadge-ui-library';
 import PlayCircleOutlineRoundedIcon from '@mui/icons-material/PlayCircleOutlineRounded';
 import { BadgesPreview } from '../Commons/BadgesPreview';
 import React from 'react';
+import { useIsMobile } from '@/src/hooks/useIsMobile';
 
 const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -52,6 +53,7 @@ const style = {
 };
 
 export const Presentation = () => {
+  const isMobile = useIsMobile();
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -100,13 +102,16 @@ export const Presentation = () => {
             onClick={openDiscordInvite}
             endIcon={<IconDiscord color="white" />}
           >
-            {t('presentation.buttons.community')}
+            {useIsMobile() ? '' : 'Join our community'}
+
+{/* ToDo: Replace the text with this:*/}            
+            {/* {t('presentation.buttons.community')} */}
           </StyledButton>
           <VideoButton
             variant="contained"
             color="info"
             onClick={handleOpen}
-            endIcon={<PlayCircleOutlineRoundedIcon fontSize="large" color="white" />}
+            endIcon={<PlayCircleOutlineRoundedIcon color="white" />}
           />
 
           <Modal
