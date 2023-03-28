@@ -1,9 +1,11 @@
 import { DISCORD_URL, PAPER_URL } from '@/src/constants';
 import { useGoogleAnalyticsBtn } from '@/src/hooks/useGoogleAnalytics';
-import { Box, Button, Stack, styled, Typography } from '@mui/material';
+import { Box, Button, CardMedia, Modal, Stack, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
 import { colors, IconDiscord } from 'thebadge-ui-library';
+import PlayCircleOutlineRoundedIcon from '@mui/icons-material/PlayCircleOutlineRounded';
 import { BadgesPreview } from '../Commons/BadgesPreview';
+import React from 'react';
 
 const TitleAndSwiperContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -26,7 +28,28 @@ const StyledButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+const VideoButton = styled(Button)(({ theme }) => ({
+  /* height: '48px', */
+
+  [theme.breakpoints.down('sm')]: {},
+}));
+
+const style = {
+  position: 'absolute' as 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
+
 export const Presentation = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const { t } = useTranslation();
   const googleAnalyticsBtn = useGoogleAnalyticsBtn();
 
@@ -36,6 +59,9 @@ export const Presentation = () => {
   };
 
   const openDiscordInvite = () => {
+    window.open(DISCORD_URL, '_blank');
+  };
+  const openVideo = () => {
     window.open(DISCORD_URL, '_blank');
   };
 
@@ -71,6 +97,25 @@ export const Presentation = () => {
           >
             {t('presentation.buttons.community')}
           </StyledButton>
+          <VideoButton
+            variant="contained"
+            color="info"
+            onClick={handleOpen}
+            endIcon={<PlayCircleOutlineRoundedIcon fontSize="large" color="white" />}
+          />
+        
+          <Modal
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+          >
+            <Box sx={style}>
+              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                <CardMedia component="video" src="/public/video/TheBadge.mp4" autoPlay />
+              </Typography>
+            </Box>
+          </Modal>
         </Box>
       </Stack>
       <Box sx={{ flex: 1, alignItems: 'center', display: 'flex' }}>
