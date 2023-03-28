@@ -1,6 +1,8 @@
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || '';
 export const PAPER_URL =
   process.env.NEXT_PAPER_URL || '/The_Badge_WhitePaper.pdf';
+  export const VIDEO_URL =
+  process.env.NEXT_VIDEO_URL || '/video/TheBadge.mp4';
 export const TWITTER_URL =
   process.env.NEXT_PUBLIC_TWITTER_URL || 'https://twitter.com/thebadgexyz';
 export const DISCORD_URL =

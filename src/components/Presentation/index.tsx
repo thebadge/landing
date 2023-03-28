@@ -1,4 +1,4 @@
-import { DISCORD_URL, PAPER_URL } from '@/src/constants';
+import { DISCORD_URL, PAPER_URL, VIDEO_URL } from '@/src/constants';
 import { useGoogleAnalyticsBtn } from '@/src/hooks/useGoogleAnalytics';
 import { Box, Button, CardMedia, Modal, Stack, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
@@ -113,7 +113,7 @@ export const Presentation = () => {
             aria-describedby="modal-modal-description"
           >
             <Box sx={style}>
-              <CardMedia component="video" controls src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" autoPlay />
+              <CardMedia component="video" controls src={VIDEO_URL} autoPlay />
             </Box>
           </Modal>
         </Box>
