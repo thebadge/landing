@@ -29,7 +29,9 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }));
 
 const VideoButton = styled(Button)(({ theme }) => ({
-  /* height: '48px', */
+  '& span': {
+    margin: '0'
+  },
 
   [theme.breakpoints.down('sm')]: {},
 }));
