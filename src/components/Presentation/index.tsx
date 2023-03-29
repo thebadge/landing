@@ -29,6 +29,12 @@ const StyledButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+const DiscordButton = styled(Button)(({ theme }) => ({
+  '& span': {
+    margin: '0'
+  },
+}));
+
 const VideoButton = styled(Button)(({ theme }) => ({
   '& span': {
     margin: '0'
@@ -36,8 +42,6 @@ const VideoButton = styled(Button)(({ theme }) => ({
   '& svg': {
     fontSize: 'xx-large !important'
   },
-
-  [theme.breakpoints.down('sm')]: {},
 }));
 
 const style = {
@@ -96,14 +100,14 @@ export const Presentation = () => {
           <StyledButton variant="contained" onClick={openPaperHandler}>
             {t('presentation.buttons.whitepaper')}
           </StyledButton>
-          <StyledButton
+          <DiscordButton
             variant="contained"
             color="secondary"
             onClick={openDiscordInvite}
             endIcon={<IconDiscord color="white" />}
           >
-            {useIsMobile() ? '' : [t('presentation.buttons.community')]}
-          </StyledButton>
+            {useIsMobile() ? '' : (t('presentation.buttons.community'))}
+          </DiscordButton>
           <VideoButton
             variant="contained"
             color="info"
