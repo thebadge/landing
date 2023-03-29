@@ -2,7 +2,7 @@ import { Box, styled } from '@mui/material';
 import { gradients } from 'thebadge-ui-library';
 
 const Background = styled(Box)({
-  background: gradients.gradientBackground,
+  background: gradients.gradientBackgroundDark,
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'center',
   height: '100%',

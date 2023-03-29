@@ -13,6 +13,7 @@ import WhatsTheBadge from '../../components/WhatsTheBadge';
 import { useSetionReferences } from '../../contexts/referencesContext';
 
 const Team = dynamic(() => import('../../components/Team'));
+const RoadmapSection = dynamic(() => import('../../components/Roadmap'));
 const BackedBy = dynamic(() => import('../../components/BackedBy'));
 
 const MainContainer = styled(Box)(({ theme }) => ({
@@ -49,6 +50,7 @@ export default function Home() {
           </BadgeCategoriesContainer>
         </div>
         <WhatAreCreators />
+        <RoadmapSection />
         <div ref={teamSection}>
           <Team />
         </div>
