@@ -1,6 +1,14 @@
 import { DISCORD_URL, PAPER_URL, VIDEO_URL } from '@/src/constants';
 import { useGoogleAnalyticsBtn } from '@/src/hooks/useGoogleAnalytics';
-import { Box, Button, CardMedia, Modal, Stack, styled, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  CardMedia,
+  Modal,
+  Stack,
+  styled,
+  Typography,
+} from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
 import { colors, IconDiscord } from 'thebadge-ui-library';
 import PlayCircleOutlineRoundedIcon from '@mui/icons-material/PlayCircleOutlineRounded';
@@ -29,16 +37,16 @@ const StyledButton = styled(Button)(({ theme }) => ({
 const DiscordButton = styled(Button)(({ theme }) => ({
   textTransform: 'none',
   '& span': {
-    margin: '0'
+    margin: '0',
   },
 }));
 
 const VideoButton = styled(Button)(({ theme }) => ({
   '& span': {
-    margin: '0'
+    margin: '0',
   },
   '& svg': {
-    fontSize: 'xx-large !important'
+    fontSize: 'xx-large !important',
   },
 }));
 
@@ -102,7 +110,7 @@ export const Presentation = () => {
             onClick={openDiscordInvite}
             endIcon={<IconDiscord color="white" />}
           >
-            {useIsMobile() ? '' : (t('presentation.buttons.community'))}
+            {useIsMobile() ? '' : t('presentation.buttons.community')}
           </DiscordButton>
           <VideoButton
             variant="contained"

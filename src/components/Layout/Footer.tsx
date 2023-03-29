@@ -10,7 +10,7 @@ import {
   MEDIUM_URL,
   TWITTER_URL,
 } from '@/src/constants';
-import { useSetionReferences } from '@/src/contexts/referencesContex';
+import { useSetionReferences } from '@/src/contexts/referencesContext';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Link, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
@@ -67,7 +67,7 @@ const Footer = () => {
           component="div"
           color={colors.white}
           sx={{
-            textAlign: 'center'
+            textAlign: 'center',
           }}
         >
           ©{new Date().getFullYear()} {t('footer.copyright')}
