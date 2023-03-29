@@ -31,7 +31,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
   height: '52px',
   textTransform: 'none',
   padding: '9px 26px 9px 26px',
-  maxHeight: 'fit-content',
+  maxHeight: 'fit-content', 
 }));
 
 const DiscordButton = styled(Button)(({ theme }) => ({
@@ -49,16 +49,6 @@ const VideoButton = styled(Button)(({ theme }) => ({
     fontSize: 'xx-large !important',
   },
 }));
-
-const style = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  boxShadow: 24,
-  p: 3,
-};
 
 export const Presentation = () => {
   const isMobile = useIsMobile();
@@ -122,10 +112,10 @@ export const Presentation = () => {
           <Modal
             open={open}
             onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
+            aria-labelledby="TheBadge"
+            aria-describedby="TheBadge video"
           >
-            <Box sx={style}>
+            <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '385px', padding: '16px' }}>
               <CardMedia component="video" controls src={VIDEO_URL} autoPlay />
             </Box>
           </Modal>
