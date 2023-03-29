@@ -5,25 +5,40 @@ import { colors, fonts, SectionLayout, Stepper } from 'thebadge-ui-library';
 import thirdPartyDecoration from '../../assets/thirdparty-decoration.webp';
 import StyledFirstLetter from '../Commons/StyledFirstLetter';
 
-const StyledSectionLayout = styled(SectionLayout)(({}) => ({
-  maxWidth: 'fit-content',
-}));
-
 export default function ThirdPartyBadge() {
   return (
     <Box>
-      <StyledSectionLayout
-        topComponent={<TopComponent />}
-        middleComponent={<MiddleComponent />}
-        bottomComponent={<BottomComponent />}
-        borderColor="green"
-        backgroundColor="transparent"
+      <SectionLayout
+        backgroundColor={colors.transparent}
+        borderColor={colors.green}
+        components={[
+          {
+            component: <TopComponent />,
+            options: {
+              fitContent: true,
+            },
+          },
+          {
+            component: <MiddleComponent />,
+            options: {
+              withPadding: true,
+            },
+          },
+          {
+            component: <BottomComponent />,
+            options: {
+              sx: {
+                m: 2,
+              },
+            },
+          },
+        ]}
       />
     </Box>
   );
 }
 
-const TopComponent = () => {
+function TopComponent() {
   return (
     <Box
       style={{
@@ -42,7 +57,7 @@ const TopComponent = () => {
       />
     </Box>
   );
-};
+}
 
 const StyledMiddleComponentContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -58,7 +73,7 @@ const StyledMiddleComponentContainer = styled(Box)(({ theme }) => ({
   },
 }));
 
-const MiddleComponent = () => {
+function MiddleComponent() {
   const { t } = useTranslation();
 
   return (
@@ -90,9 +105,9 @@ const MiddleComponent = () => {
       </Typography>
     </StyledMiddleComponentContainer>
   );
-};
+}
 
-const BottomComponent = () => {
+function BottomComponent() {
   const { t } = useTranslation();
   const steps = [0, 1, 2, 3].map((stepNumber, i) => {
     return (
@@ -106,7 +121,7 @@ const BottomComponent = () => {
           {t(`badgeCategories.third-party.howItWorks.steps.${i}.title`)}
         </StyledFirstLetter>
         <Typography
-          variant="body4"
+          variant="body2"
           component="div"
           color={colors.black}
           textAlign="left"
@@ -137,4 +152,4 @@ const BottomComponent = () => {
       steps={steps}
     />
   );
-};
+}
