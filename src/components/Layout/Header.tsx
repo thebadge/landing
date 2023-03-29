@@ -1,4 +1,4 @@
-import { useSetionReferences } from '@/src/contexts/referencesContex';
+import { useSetionReferences } from '@/src/contexts/referencesContext';
 import { ConstructionOutlined } from '@mui/icons-material';
 import { Box, styled } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
@@ -9,6 +9,7 @@ import {
   NavigationHeader,
 } from 'thebadge-ui-library';
 import LanguageSwitchLink from '../TranslationUtils/LanguageSwitchLink';
+import Link from 'next/link';
 
 const HeaderContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -42,7 +43,6 @@ const Header = () => {
     partnershipSection,
     contactSection,
   } = useSetionReferences();
-
   const { t } = useTranslation();
 
   const scrollTo = (sectionRef: RefObject<HTMLDivElement> | null) => {
@@ -61,7 +61,12 @@ const Header = () => {
         }}
         id="logo-container"
       >
-        <LogoTheBadgeWithText size={212} />
+        <Link href="/" style={{ cursor: 'pointer' }} legacyBehavior passHref>
+          <a>
+            <LogoTheBadgeWithText size={212} />
+          </a>
+        </Link>
+
         <Box sx={{ color: 'white.light' }}>
           <LanguageSwitchLink locale="en" />
           {'|'}

@@ -10,7 +10,7 @@ import BadgeCategoriesContainer from '../../components/BadgeCategories/BadgeCate
 
 import { Presentation } from '../../components/Presentation';
 import WhatsTheBadge from '../../components/WhatsTheBadge';
-import { useSetionReferences } from '../../contexts/referencesContex';
+import { useSetionReferences } from '../../contexts/referencesContext';
 
 const Team = dynamic(() => import('../../components/Team'));
 const RoadmapSection = dynamic(() => import('../../components/Roadmap'));
