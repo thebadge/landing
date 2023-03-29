@@ -104,8 +104,8 @@ export const Presentation = () => {
           <Modal
             open={open}
             onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
+            aria-labelledby="TheBadge"
+            aria-describedby="TheBadge video"
           >
             <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '385px', padding: '16px' }}>
               <CardMedia component="video" controls src={VIDEO_URL} autoPlay />
