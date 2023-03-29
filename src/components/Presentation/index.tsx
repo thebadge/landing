@@ -102,10 +102,7 @@ export const Presentation = () => {
             onClick={openDiscordInvite}
             endIcon={<IconDiscord color="white" />}
           >
-            {useIsMobile() ? '' : 'Join our community'}
-
-{/* ToDo: Replace the text with this:*/}            
-            {/* {t('presentation.buttons.community')} */}
+            {useIsMobile() ? '' : [t('presentation.buttons.community')]}
           </StyledButton>
           <VideoButton
             variant="contained"
