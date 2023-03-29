@@ -43,7 +43,6 @@ const Header = () => {
     partnershipSection,
     contactSection,
   } = useSetionReferences();
-  // const showMenu = useShowMenu()
   const { t } = useTranslation();
 
   const scrollTo = (sectionRef: RefObject<HTMLDivElement> | null) => {
