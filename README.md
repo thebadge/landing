@@ -1,10 +1,15 @@
-# The Badge Landing Page
+<p align="center">
+  <a href="https://thebadge.xyz">
+    <img alt="TheBadge" src="src/assets/logo.svg" width="128">
+  </a>
+</p>
 
-![license](https://img.shields.io/github/license/thebadge/thebadge-website)
-![release](https://img.shields.io/github/v/release/thebadge/thebadge-website)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f536d6b5-9056-4403-84c7-9cc094554d68/deploy-status)](https://app.netlify.com/sites/jovial-cobbler-9aaef6/deploys)
+<h1 align="center">TheBadge Landing page</h1>
 
-![image](https://user-images.githubusercontent.com/21086218/183603344-7f293d72-654c-4428-be0a-788ba3efbfe3.png)
+<p align="center">
+  <a href="https://discord.com/invite/FTxtkgbAC4"><img src="https://img.shields.io/discord/1006480637512917033?style=plastic" alt="Join to Discord"></a>
+  <a href="https://twitter.com/intent/user?screen_name=thebadgexyz"><img src="https://img.shields.io/twitter/follow/thebadgexyz?style=social" alt="Follow us on Twitter"></a>
+</p>
 
 For questions or request information reach out via [Discord](https://discord.gg/tVP75NqVuC).
 

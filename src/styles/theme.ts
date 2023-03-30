@@ -1,7 +1,7 @@
 import { PaletteMode, ThemeOptions } from '@mui/material';
 import { Typography, TypographyOptions } from '@mui/material/styles/createTypography';
 import { Mulish } from '@next/font/google';
-import { defaultTheme } from 'thebadge-ui-library';
+import { darkTheme, lightTheme } from 'thebadge-ui-library'
 
 const mulishFont = Mulish({
   weight: ['300', '400', '500', '600', '700', '800', '900'],
@@ -9,15 +9,19 @@ const mulishFont = Mulish({
 });
 
 export const getTheme = (mode?: PaletteMode): ThemeOptions => ({
-  ...defaultTheme,
+  ...(mode === 'light' ? lightTheme : darkTheme),
+  palette: {
+    mode,
+    ...(mode === 'light' ? lightTheme.palette : darkTheme.palette),
+  },
   typography: {
-    ...overrideFontFamily(defaultTheme, mulishFont.style.fontFamily)
+    ...overrideFontFamily(mode === 'light' ? lightTheme : darkTheme, mulishFont.style.fontFamily),
   },
   customSizes: {
     avatar: 92,
     icon: 21,
   },
-});
+})
 
 export const getTypographyVariants = (theme: ThemeOptions): (keyof Typography)[]=> {
   // Take all the variants, to ensure MUI made all of them responsive, including our custom ones

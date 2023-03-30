@@ -22,7 +22,7 @@ export default function WhatAreCreators() {
         </StyledTypography>
         <Typography
           key="0"
-          variant="body4"
+          variant="body2"
           component="div"
           color={colors.white}
           textAlign="left"
