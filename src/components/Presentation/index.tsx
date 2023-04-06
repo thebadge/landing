@@ -36,6 +36,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 
 const DiscordButton = styled(Button)(({ theme }) => ({
   textTransform: 'none',
+  gap: '8px',
   '& span': {
     margin: '0',
   },
@@ -94,6 +95,7 @@ export const Presentation = () => {
           <StyledButton variant="contained" onClick={openPaperHandler}>
             {t('presentation.buttons.whitepaper')}
           </StyledButton>
+
           <DiscordButton
             variant="contained"
             color="secondary"
@@ -102,6 +104,7 @@ export const Presentation = () => {
           >
             {useIsMobile() ? '' : t('presentation.buttons.community')}
           </DiscordButton>
+
           <VideoButton
             variant="contained"
             color="info"
