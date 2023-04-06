@@ -15,7 +15,7 @@ class MyDocument extends Document {
   title = 'The Badge: decentralized certifications tokenized as NFTs';
   description =
     'The Badge is a decentralized certification platform powered by Ethereum. It provides users with the opportunity to tokenize any piece of information from the real world in the form of badges. These badges are verified and validated by the community, which decides what should be accepted and what should not be.';
-  twitterHandle = '@';
+  twitterHandle = '@thebadgexyz';
 
   render() {
     return (
@@ -25,6 +25,7 @@ class MyDocument extends Document {
           <meta content="website" property="og:type" />
           <meta name="description" content={this.description} />
           <meta content={this.title} property="og:title" />
+          <meta property="og:url" content="https://thebadge.xyz" />
 
           <meta
             content={`https://thebadge.xyz/the_badge_banner.png`}
@@ -44,7 +45,10 @@ class MyDocument extends Document {
           <meta content={this.title} name="twitter:site" />
           <meta content={this.twitterHandle} name="twitter:creator" />
 
-          <meta itemProp="image" content={`https://thebadge.xyz/the_badge_banner.png`} />
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="twitter:site" content={this.twitterHandle}/>
+          <meta name="twitter:image" content={`https://thebadge.xyz/the_badge_banner.png`}/>
+
           <link rel="icon" href="/favicon.ico" />
           <link rel="canonical" href="https://www.thebadge.xyz/" />
           <link
