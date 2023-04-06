@@ -27,10 +27,10 @@ class MyDocument extends Document {
           <meta content={this.title} property="og:title" />
 
           <meta
-            content={`https://thebadge.xyz/the_badge_banner.webp`}
+            content={`https://thebadge.xyz/the_badge_banner.png`}
             property="og:image"
           />
-          <meta property="og:image:type" content="image/webp" />
+          <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="1404" />
           <meta property="og:image:height" content="459" />
 
@@ -44,7 +44,7 @@ class MyDocument extends Document {
           <meta content={this.title} name="twitter:site" />
           <meta content={this.twitterHandle} name="twitter:creator" />
 
-          <meta itemProp="image" content={`https://thebadge.xyz/the_badge_banner.webp`} />
+          <meta itemProp="image" content={`https://thebadge.xyz/the_badge_banner.png`} />
           <link rel="icon" href="/favicon.ico" />
           <link rel="canonical" href="https://www.thebadge.xyz/" />
           <link
