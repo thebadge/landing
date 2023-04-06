@@ -39,16 +39,18 @@ const Header = () => {
   const {
     homeSection,
     howItWorksSection,
+    roadmapSection,
     teamSection,
     partnershipSection,
     contactSection,
   } = useSetionReferences();
   const { t } = useTranslation();
 
-  const scrollTo = (sectionRef: RefObject<HTMLDivElement> | null) => {
+  const scrollTo = (sectionRef: RefObject<HTMLDivElement> | null, adjustOffset?: boolean) => {
     if (!sectionRef) return;
+    const sectionOffset = sectionRef.current?.offsetTop
     window.scrollTo({
-      top: sectionRef.current?.offsetTop,
+      top: adjustOffset ? (sectionOffset || 0) + 75 : sectionOffset,
       behavior: 'smooth',
     });
   };
@@ -76,7 +78,7 @@ const Header = () => {
         </Box>
       </Box>
       <NavigationHeader
-        mobileViewMaxWidth={1040}
+        mobileViewMaxWidth={1180}
         anchorPosition="left"
         items={[
           {
@@ -88,8 +90,12 @@ const Header = () => {
             onClick: () => scrollTo(howItWorksSection),
           },
           {
+            label: t('header.roadmap'),
+            onClick: () => scrollTo(roadmapSection, true),
+          },
+          {
             label: t('header.team'),
-            onClick: () => scrollTo(teamSection),
+            onClick: () => scrollTo(teamSection, true),
           },
           {
             label: t('header.partnerships'),
