@@ -22,19 +22,29 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <title>{this.title}</title>
+          <meta content="website" property="og:type" />
           <meta name="description" content={this.description} />
           <meta content={this.title} property="og:title" />
+
           <meta
-            content={`https://thebadge.xyz/the_badge_icon_small.png`}
+            content={`https://thebadge.xyz/the_badge_banner.webp`}
             property="og:image"
           />
-          <meta content="website" property="og:type" />
+          <meta property="og:image:type" content="image/webp" />
+          <meta property="og:image:width" content="1404" />
+          <meta property="og:image:height" content="459" />
+
+          <meta property="og:video" content={`https://thebadge.xyz/video/TheBadge.mp4`} />
+          <meta property="og:video:type" content="video/mp4" />
+          <meta property="og:video:width" content="720" />
+          <meta property="og:video:height" content="1280" />
+
           <meta content={this.description} property="og:description" />
           <meta content="summary_large_image" name="twitter:card" />
           <meta content={this.title} name="twitter:site" />
           <meta content={this.twitterHandle} name="twitter:creator" />
 
-          <meta itemProp="image" content="/logo.svg" />
+          <meta itemProp="image" content={`https://thebadge.xyz/the_badge_banner.webp`} />
           <link rel="icon" href="/favicon.ico" />
           <link rel="canonical" href="https://www.thebadge.xyz/" />
           <link
