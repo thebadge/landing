@@ -32,8 +32,7 @@ const MainContainer = styled(Box)(({ theme }) => ({
 }));
 
 export default function Home() {
-  const { homeSection, howItWorksSection, teamSection, partnershipSection } =
-    useSetionReferences();
+  const { homeSection, howItWorksSection, roadmapSection, teamSection, partnershipSection } = useSetionReferences();
 
   return (
     <Box sx={{ overflowX: 'hidden' }}>
@@ -50,7 +49,9 @@ export default function Home() {
           </BadgeCategoriesContainer>
         </div>
         <WhatAreCreators />
-        <RoadmapSection />
+        <div ref={roadmapSection}>
+          <RoadmapSection />
+        </div>
         <div ref={teamSection}>
           <Team />
         </div>
