@@ -15,26 +15,40 @@ class MyDocument extends Document {
   title = 'The Badge: decentralized certifications tokenized as NFTs';
   description =
     'The Badge is a decentralized certification platform powered by Ethereum. It provides users with the opportunity to tokenize any piece of information from the real world in the form of badges. These badges are verified and validated by the community, which decides what should be accepted and what should not be.';
-  twitterHandle = '@';
+  twitterHandle = '@thebadgexyz';
 
   render() {
     return (
       <Html>
         <Head>
           <title>{this.title}</title>
+          <meta content="website" property="og:type" />
           <meta name="description" content={this.description} />
           <meta content={this.title} property="og:title" />
+          <meta property="og:url" content="https://thebadge.xyz" />
+
           <meta
-            content={`https://thebadge.xyz/the_badge_icon_small.png`}
+            content={`https://thebadge.xyz/the_badge_banner.webp`}
             property="og:image"
           />
-          <meta content="website" property="og:type" />
+          <meta property="og:image:type" content="image/webp" />
+          <meta property="og:image:width" content="1404" />
+          <meta property="og:image:height" content="459" />
+
+          <meta property="og:video" content={`https://thebadge.xyz/video/TheBadge.mp4`} />
+          <meta property="og:video:type" content="video/mp4" />
+          <meta property="og:video:width" content="720" />
+          <meta property="og:video:height" content="1280" />
+
           <meta content={this.description} property="og:description" />
           <meta content="summary_large_image" name="twitter:card" />
           <meta content={this.title} name="twitter:site" />
           <meta content={this.twitterHandle} name="twitter:creator" />
 
-          <meta itemProp="image" content="/logo.svg" />
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="twitter:site" content={this.twitterHandle}/>
+          <meta name="twitter:image" content={`https://thebadge.xyz/the_badge_banner.webp`}/>
+
           <link rel="icon" href="/favicon.ico" />
           <link rel="canonical" href="https://www.thebadge.xyz/" />
           <link
