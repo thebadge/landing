@@ -28,10 +28,10 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://thebadge.xyz" />
 
           <meta
-            content={`https://thebadge.xyz/the_badge_banner.png`}
+            content={`https://thebadge.xyz/the_badge_banner.webp`}
             property="og:image"
           />
-          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:type" content="image/webp" />
           <meta property="og:image:width" content="1404" />
           <meta property="og:image:height" content="459" />
 
@@ -47,7 +47,7 @@ class MyDocument extends Document {
 
           <meta name="twitter:card" content="summary_large_image"/>
           <meta name="twitter:site" content={this.twitterHandle}/>
-          <meta name="twitter:image" content={`https://thebadge.xyz/the_badge_banner.png`}/>
+          <meta name="twitter:image" content={`https://thebadge.xyz/the_badge_banner.webp`}/>
 
           <link rel="icon" href="/favicon.ico" />
           <link rel="canonical" href="https://www.thebadge.xyz/" />
