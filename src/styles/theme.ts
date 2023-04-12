@@ -1,6 +1,6 @@
 import { PaletteMode, ThemeOptions } from '@mui/material';
 import { Typography, TypographyOptions } from '@mui/material/styles/createTypography';
-import { Mulish } from '@next/font/google';
+import { Mulish } from 'next/font/google';
 import { darkTheme, lightTheme } from 'thebadge-ui-library'
 
 const mulishFont = Mulish({
