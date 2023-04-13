@@ -24,10 +24,10 @@ const withMDX = mdx({
     },
 })
 
-export default withBundleAnalyzerWrapper(withMDX(
+export default withMDX(withBundleAnalyzerWrapper(
   defineNextConfig({
     reactStrictMode: true,
-    swcMinify: false,
+    swcMinify: true,
     compiler: {
       styledComponents: true,
     },

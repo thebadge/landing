@@ -1,11 +1,11 @@
-import React from "react";
-import { BackgroundGradient } from "@/src/components/Layout/BackgroundGradient";
 import Footer from "@/src/components/Layout/Footer";
+import React from "react";
 import { MDXProvider } from '@mdx-js/react'
 import { Container, ListItem, MenuList, Typography } from '@mui/material'
 import { MDXComponents } from 'mdx/types'
 
 import PrivacyPolicyMd from '@/markdown/en/privacy.md'
+import { BackgroundGradient } from "@/src/components/Layout/BackgroundGradient";
 
 const components: MDXComponents = {
   h1: (props: any) => <Typography {...props} component="h1" variant="h2" />,
@@ -34,7 +34,7 @@ const components: MDXComponents = {
 const PrivacyPolicy = () => {
   return (
     <Container fixed sx={{mb: 4}}>
-      <MDXProvider components={components}>
+      <MDXProvider>
         <PrivacyPolicyMd />
       </MDXProvider>
     </Container>
