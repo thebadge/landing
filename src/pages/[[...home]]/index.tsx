@@ -13,7 +13,7 @@ import WhatsTheBadge from '../../components/WhatsTheBadge';
 import { useSetionReferences } from '../../contexts/referencesContext';
 
 const Team = dynamic(() => import('../../components/Team'));
-const RoadmapSection = dynamic(() => import('../../components/Roadmap'));
+const RoadmapSection = dynamic(() => import('../../components/Roadmap'),{ssr: false});
 const BackedBy = dynamic(() => import('../../components/BackedBy'));
 
 const MainContainer = styled(Box)(({ theme }) => ({
