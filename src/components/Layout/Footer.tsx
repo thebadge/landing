@@ -12,7 +12,7 @@ import {
 } from '@/src/constants';
 import { useSetionReferences } from '@/src/contexts/referencesContext';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
-import { Box, Link, styled, Typography } from '@mui/material';
+import { Box, Link, Stack, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
 
 export const FooterContainer = styled(Box)(({ theme }) => ({
@@ -32,7 +32,7 @@ export const SocialContainer = styled(Box)(({ theme }) => ({
   columnGap: theme.spacing(2),
 }));
 
-export const LegalContainer = styled(Box)(({ theme }) => ({
+export const LegalContainer = styled(Stack)(({ theme }) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -40,6 +40,7 @@ export const LegalContainer = styled(Box)(({ theme }) => ({
   color: '#FFF',
   '& a': {
     color: '#FFF',
+    cursor: 'pointer'
   },
   [theme.breakpoints.down('sm')]: {
     flexDirection: 'column',
@@ -72,15 +73,8 @@ const Footer = () => {
         >
           ©{new Date().getFullYear()} {t('footer.copyright')}
         </Typography>
-        <Box sx={{ columnGap: 2, display: 'none' }}>
-          {!isMobile && <span>|</span>}
-          <Link target="_blank">Terms</Link>
-          <span>|</span>
-          <Link target="_blank">Privacy</Link>
-          <span>|</span>
-          <Link target="_blank">Licenses</Link>
-          <span>|</span>
-          <Link target="_blank">Cookie Policy</Link>
+        <Box sx={{ columnGap: 2, display: 'flex' }}>
+          <Link href="/legal/privacy-policy" target="_blank">Privacy Policy</Link>
         </Box>
       </LegalContainer>
     </FooterContainer>
