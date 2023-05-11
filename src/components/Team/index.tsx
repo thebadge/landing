@@ -1,8 +1,5 @@
 import { CustomDivider } from '@/src/components/Commons/Divider';
-import TwitterMUIIcon from '@mui/icons-material/Twitter';
-import LinkedinMUIIcon from '@mui/icons-material/Linkedin';
-import MailMuiIcon from '@mui/icons-material/Mail';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import { LinkedIn, Mail, Twitter, GitHub } from '@mui/icons-material';
 import { Avatar, Box, styled, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
 import { colors } from 'thebadge-ui-library';
@@ -189,7 +186,7 @@ const Team = () => {
     switch (contactType) {
       case ContactType.Twitter:
         return (
-          <TwitterMUIIcon
+          <Twitter
             sx={{
               width: theme.customSizes.icon,
               height: theme.customSizes.icon,
@@ -200,7 +197,7 @@ const Team = () => {
         );
       case ContactType.Github:
         return (
-          <GitHubIcon
+          <GitHub
             sx={{
               width: theme.customSizes.icon,
               height: theme.customSizes.icon,
@@ -213,7 +210,7 @@ const Team = () => {
         return <BehanceIcon sx={{ mr: 0.5 }} />;
       case ContactType.Linkedin:
         return (
-          <LinkedinMUIIcon
+          <LinkedIn
             sx={{
               width: theme.customSizes.icon,
               height: theme.customSizes.icon,
@@ -224,7 +221,7 @@ const Team = () => {
         );
       case ContactType.Email:
         return (
-          <MailMuiIcon
+          <Mail
             sx={{
               width: theme.customSizes.icon,
               height: theme.customSizes.icon,
