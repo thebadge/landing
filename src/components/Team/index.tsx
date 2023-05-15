@@ -14,7 +14,7 @@ const MemberBox = styled(Box)(({ theme }) => ({
   rowGap: theme.spacing(0),
   flex: '1 1 30%',
   ':nth-of-type(n+4)': {
-    flex: '1 1 20%',
+    flex: '1 1 10%',
   },
   [theme.breakpoints.down('sm')]: {
     flex: '1 1 20%',
