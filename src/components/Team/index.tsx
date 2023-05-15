@@ -1,10 +1,9 @@
 import { CustomDivider } from '@/src/components/Commons/Divider';
-import TwitterMUIIcon from '@mui/icons-material/Twitter';
+import { LinkedIn, Mail, Twitter, GitHub } from '@mui/icons-material';
 import { Avatar, Box, styled, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
 import { colors } from 'thebadge-ui-library';
 import { BehanceIcon } from '../Commons/SVGs/BehanceIcon';
-import { GithubCatIcon } from '../Commons/SVGs/GithubCat';
 import { useTranslation } from 'next-export-i18n';
 
 const MemberBox = styled(Box)(({ theme }) => ({
@@ -12,10 +11,10 @@ const MemberBox = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   display: 'flex',
   flexDirection: 'column',
-  rowGap: theme.spacing(1),
-  flex: '1 1 20%',
+  rowGap: theme.spacing(0),
+  flex: '1 1 30%',
   ':nth-of-type(n+4)': {
-    flex: '1 1 18%',
+    flex: '1 1 10%',
   },
   [theme.breakpoints.down('sm')]: {
     flex: '1 1 20%',
@@ -58,82 +57,109 @@ const MemberDescription = styled(Typography)(({ theme }) => ({
   },
 }));
 
+const MemberContact = styled(Box)(({ theme }) => ({
+  display: 'flex',
+}));
+
 const BoxTeam = styled(Box)(({ theme }) => ({
   marginTop: theme.spacing(12),
   marginBottom: theme.spacing(10),
 }));
 
+enum ContactType {
+  Github = 'Github',
+  Twitter = 'Twitter',
+  Behance = 'Behance',
+  Linkedin = 'Linkedin',
+  Email = 'Email',
+}
+
 type TeamMember = {
   avatar: string;
   name: string;
   description: string;
-  contact?: string;
-  contactType?: string; // TODO Enum
+  contact: string;
+  contactSecondary?: string;
+  contactTypeMain: ContactType;
+  contactTypeSecondary?: ContactType;
 };
 
 const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar: '/avatars/agu.webp',
     name: 'Agustín Pane',
-    description: 'Co-founder \n COO',
-    contact: 'agupane',
-    contactType: 'Github',
+    description: 'Co-founder COO',
+    contact: 'agustin@thebadge.xyz',
+    contactSecondary: 'agustin-pane',
+    contactTypeMain: ContactType.Email,
+    contactTypeSecondary: ContactType.Linkedin,
   },
   {
     avatar: '/avatars/nico.webp',
     name: 'Nicolás Domínguez',
-    description: 'Co-founder \n CTO',
+    description: 'Co-founder CTO',
     contact: 'nicosampler',
-    contactType: 'Github',
+    contactSecondary: 'nicoo',
+    contactTypeMain: ContactType.Github,
+    contactTypeSecondary: ContactType.Linkedin,
   },
   {
     avatar: '/avatars/fede.webp',
     name: 'Federico Madoery',
     description: 'Co-founder \n Frontend Tech Lead',
     contact: 'FedeMadoery',
-    contactType: 'Github',
+    contactSecondary: 'federico-madoery',
+    contactTypeMain: ContactType.Github,
+    contactTypeSecondary: ContactType.Linkedin,
   },
   {
     avatar: '/avatars/javi.webp',
     name: 'Javier Alba, CFA',
-    description: 'Co-founder \n CFO',
-    contact: 'JaviAlba00',
-    contactType: 'Twitter',
-  },
-  {
-    avatar: '/avatars/fer.webp',
-    name: 'Fernando Ramirez',
-    description: 'Frontend Developer',
-    contact: 'ramabit',
-    contactType: 'Github',
-  },
-  {
-    avatar: '/avatars/agulon.webp',
-    name: 'Agustín Longoni',
-    description: 'Web Developer',
-    contact: 'alongoni',
-    contactType: 'Github',
-  },
-  {
-    avatar: '/avatars/agulom.webp',
-    name: 'Agustín Lombardi',
-    description: 'Community Manager',
-    contact: 'lombarcrypto',
-    contactType: 'Twitter',
+    description: 'Financial Advisor',
+    contact: 'javier-alba-cfa',
+    contactTypeMain: ContactType.Linkedin,
   },
   {
     avatar: '/avatars/nicom.webp',
     name: 'Nicolás Magri',
-    description: 'CCO',
-    contact: 'monito313',
-    contactType: 'Twitter',
+    description: 'Legal Advisor',
+    contact: 'nicolas-magri-2aa0ba15a',
+    contactTypeMain: ContactType.Linkedin,
+  },
+  {
+    avatar: '/avatars/agulom.webp',
+    name: 'Agustín Lombardi',
+    description: 'Marketing Advisor',
+    contact: 'agustin-lombardi-485627207',
+    contactTypeMain: ContactType.Linkedin,
+  },
+  {
+    avatar: '/avatars/agulon.webp',
+    name: 'Agustín Longoni',
+    description: 'UX Advisor',
+    contact: 'alongoni',
+    contactTypeMain: ContactType.Github,
   },
   {
     avatar: '/avatars/luciaf.webp',
     name: 'Lucía Fenoglio',
     description: 'Graphics Designer',
     contact: 'luciafenoglio',
-    contactType: 'Behance',
+    contactTypeMain: ContactType.Behance,
+  },
+  {
+    avatar: '/avatars/fer.webp',
+    name: 'Fernando Ramirez',
+    description: 'Frontend Developer',
+    contact: 'ramabit',
+    contactTypeMain: ContactType.Github,
+  },
+  {
+    avatar: '/avatars/lore.webp',
+    name: 'Lorenzo Vignolo',
+    description: 'Solidity Developer',
+    contact: 'lolo-vignolo',
+    contactTypeMain: ContactType.Github,
   },
 ];
 
@@ -141,22 +167,26 @@ const Team = () => {
   const theme = useTheme();
   const { t } = useTranslation();
 
-  function getContactUrl(member: TeamMember) {
-    switch (member.contactType) {
-      case 'Twitter':
-        return `https://twitter.com/${member.contact}`;
-      case 'Github':
-        return `https://github.com/${member.contact}`;
-      case 'Behance':
-        return `https://www.behance.net/${member.contact}`;
+  function getContactUrl(contactType: ContactType, contact: string) {
+    switch (contactType) {
+      case ContactType.Twitter:
+        return `https://twitter.com/${contact}`;
+      case ContactType.Github:
+        return `https://github.com/${contact}`;
+      case ContactType.Behance:
+        return `https://www.behance.net/${contact}`;
+      case ContactType.Linkedin:
+        return `https://www.linkedin.com/in/${contact}`;
+      case ContactType.Email:
+        return `mailto:${contact}`;
     }
   }
 
-  function getContactIcon(member: TeamMember) {
-    switch (member.contactType) {
-      case 'Twitter':
+  function getContactIcon(contactType: ContactType) {
+    switch (contactType) {
+      case ContactType.Twitter:
         return (
-          <TwitterMUIIcon
+          <Twitter
             sx={{
               width: theme.customSizes.icon,
               height: theme.customSizes.icon,
@@ -165,10 +195,41 @@ const Team = () => {
             }}
           />
         );
-      case 'Github':
-        return <GithubCatIcon sx={{ marginTop: '8px', mr: 0.5 }} />;
-      case 'Behance':
+      case ContactType.Github:
+        return (
+          <GitHub
+            sx={{
+              width: theme.customSizes.icon,
+              height: theme.customSizes.icon,
+              fill: '#FFFF',
+              mr: 0.5,
+            }}
+          />
+        );
+      case ContactType.Behance:
         return <BehanceIcon sx={{ mr: 0.5 }} />;
+      case ContactType.Linkedin:
+        return (
+          <LinkedIn
+            sx={{
+              width: theme.customSizes.icon,
+              height: theme.customSizes.icon,
+              fill: '#FFFF',
+              mr: 0.5,
+            }}
+          />
+        );
+      case ContactType.Email:
+        return (
+          <Mail
+            sx={{
+              width: theme.customSizes.icon,
+              height: theme.customSizes.icon,
+              fill: '#FFFF',
+              mr: 0.5,
+            }}
+          />
+        );
     }
   }
 
@@ -211,12 +272,27 @@ const Team = () => {
               </Avatar>
               <MemberName>{member.name}</MemberName>
               <MemberDescription>{member.description}</MemberDescription>
-              {member.contact && (
-                <StyledLink target="_blank" href={getContactUrl(member)}>
-                  {getContactIcon(member)}
-                  <MemberDescription>@{member.contact}</MemberDescription>
-                </StyledLink>
-              )}
+              <MemberContact>
+                {member.contact && (
+                  <StyledLink
+                    target="_blank"
+                    href={getContactUrl(member.contactTypeMain, member.contact)}
+                  >
+                    {getContactIcon(member.contactTypeMain)}
+                  </StyledLink>
+                )}
+                {member.contactTypeSecondary && member.contactSecondary && (
+                  <StyledLink
+                    target="_blank"
+                    href={getContactUrl(
+                      member.contactTypeSecondary,
+                      member.contactSecondary,
+                    )}
+                  >
+                    {getContactIcon(member.contactTypeSecondary)}
+                  </StyledLink>
+                )}
+              </MemberContact>
             </MemberBox>
           );
         })}
