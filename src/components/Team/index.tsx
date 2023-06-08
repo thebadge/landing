@@ -127,7 +127,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar: '/avatars/agulom.webp',
     name: 'Agustín Lombardi',
-    description: 'Business developer',
+    description: 'Business Developer',
     contact: 'agustin-lombardi-485627207',
     contactTypeMain: ContactType.Linkedin,
   },
