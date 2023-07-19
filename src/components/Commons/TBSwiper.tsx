@@ -10,6 +10,7 @@ import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import {useEffect} from "react";
 
 const growEffect = keyframes`
   0% {
@@ -40,7 +41,11 @@ export default function TBSwiper({
   spaceBetween,
   ...props
 }: TBSwiperProps) {
-  const swiperId = 'id' + Date.now().toString(36)
+  let swiperId = 'id1'
+  useEffect(() => {
+    swiperId = 'id' + Date.now().toString(16)
+  })
+
   const theme = useTheme()
   const sm = useSizeSM()
   const md = useSizeMD()
