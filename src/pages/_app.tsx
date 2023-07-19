@@ -1,5 +1,5 @@
 // TheBadge UI Library
-import 'node_modules/thebadge-ui-library/dist/index.css';
+import 'node_modules/@thebadge/ui-library/dist/index.css';
 
 import createCache from '@emotion/cache';
 import { CacheProvider, EmotionCache } from '@emotion/react';

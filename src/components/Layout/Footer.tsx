@@ -1,4 +1,4 @@
-import { colors, IconDiscord } from 'thebadge-ui-library';
+import { colors, IconDiscord } from '@thebadge/ui-library';
 import EmailIcon from '@/src/components/Icons/Email';
 import GithubIcon from '@/src/components/Icons/Github';
 import MediumIcon from '@/src/components/Icons/Medium';

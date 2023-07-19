@@ -1,6 +1,9 @@
 import { SvgIcon, SvgIconProps } from '@mui/material';
 
-export const BehanceIcon = ({ color, ...props }: SvgIconProps) => {
+export const BehanceIcon = ({
+  color,
+  ...props
+}: Omit<SvgIconProps, 'color'> & { color: string }) => {
   return (
     <SvgIcon
       width="256"
@@ -34,7 +37,7 @@ export const BehanceIcon = ({ color, ...props }: SvgIconProps) => {
             strokeLinecap: 'butt',
             strokeLinejoin: 'miter',
             strokeMiterlimit: 10,
-            fill: 'white',
+            fill: color,
             fillRule: 'nonzero',
             opacity: 1,
           }}
@@ -50,7 +53,7 @@ export const BehanceIcon = ({ color, ...props }: SvgIconProps) => {
             strokeLinecap: 'butt',
             strokeLinejoin: 'miter',
             strokeMiterlimit: 10,
-            fill: 'white',
+            fill: color,
             fillRule: 'nonzero',
             opacity: 1,
           }}
@@ -66,7 +69,7 @@ export const BehanceIcon = ({ color, ...props }: SvgIconProps) => {
             strokeLinecap: 'butt',
             strokeLinejoin: 'miter',
             strokeMiterlimit: 10,
-            fill: 'white',
+            fill: color,
             fillRule: 'nonzero',
             opacity: 1,
           }}
@@ -82,7 +85,7 @@ export const BehanceIcon = ({ color, ...props }: SvgIconProps) => {
             strokeLinecap: 'butt',
             strokeLinejoin: 'miter',
             strokeMiterlimit: 10,
-            fill: 'white',
+            fill: color,
             fillRule: 'nonzero',
             opacity: 1,
           }}

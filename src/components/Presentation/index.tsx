@@ -10,7 +10,7 @@ import {
   Typography,
 } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
-import { colors, IconDiscord } from 'thebadge-ui-library';
+import { colors, IconDiscord } from '@thebadge/ui-library';
 import PlayCircleOutlineRoundedIcon from '@mui/icons-material/PlayCircleOutlineRounded';
 import { BadgesPreview } from '../Commons/BadgesPreview';
 import React from 'react';
@@ -31,7 +31,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
   height: '52px',
   textTransform: 'none',
   padding: '9px 26px 9px 26px',
-  maxHeight: 'fit-content', 
+  maxHeight: 'fit-content',
 }));
 
 const DiscordButton = styled(Button)(({ theme }) => ({

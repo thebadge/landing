@@ -26,7 +26,7 @@ const withMDX = mdx({
 
 export default withMDX(withBundleAnalyzerWrapper(
   defineNextConfig({
-    reactStrictMode: true,
+    reactStrictMode: false,
     swcMinify: true,
     compiler: {
       styledComponents: true,
@@ -34,6 +34,6 @@ export default withMDX(withBundleAnalyzerWrapper(
     images: {
       unoptimized: true,
     },
-    transpilePackages: ['@mui/material', 'thebadge-ui-library'],
+    transpilePackages: ['@mui/material', '@thebadge/ui-library'],
   }),
 ));
