@@ -10,6 +10,7 @@ import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import {useEffect} from "react";
 
 const growEffect = keyframes`
   0% {
@@ -40,7 +41,11 @@ export default function TBSwiper({
   spaceBetween,
   ...props
 }: TBSwiperProps) {
-  const swiperId = 'id' + Math.random().toString(16).slice(2)
+  let swiperId = 'id1'
+  useEffect(() => {
+    swiperId = 'id' + Date.now().toString(16)
+  })
+
   const theme = useTheme()
   const sm = useSizeSM()
   const md = useSizeMD()
@@ -75,6 +80,7 @@ export default function TBSwiper({
         <ArrowBackIosIcon
           className={'tb-swiper-button-prev-' + swiperId}
           sx={{
+            cursor: 'pointer',
             mr: leftPadding || '0.5rem',
             height: '35px',
             width: '35px',
@@ -105,6 +111,7 @@ export default function TBSwiper({
         <ArrowForwardIosIcon
           className={'tb-swiper-button-next-' + swiperId}
           sx={{
+            cursor: 'pointer',
             ml: rightPadding || '0.5rem',
             height: '35px',
             width: '35px',
