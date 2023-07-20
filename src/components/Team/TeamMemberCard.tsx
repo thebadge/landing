@@ -84,7 +84,7 @@ export default function TeamMemberCard({ user }: { user: TeamMember }) {
       <>
         {role}
         <Box display="flex" gap={1} mt={1.5}>
-          {socials.map((contact) => (
+          {socials?.map((contact) => (
             <StyledLink
               key={contact.name}
               target="_blank"
@@ -99,15 +99,17 @@ export default function TeamMemberCard({ user }: { user: TeamMember }) {
   }
 
   function getBackground() {
-    if(user.team === 'Advisor') {
-      return "/assets/advisor-background.png"
-    } else {
-      return "/assets/team-background.png"
-    }
+    return '/assets/team-background.png';
   }
 
   return (
-    <Stack sx={{ alignItems: 'center', justifyContent: 'center', width: 'fit-content' }}>
+    <Stack
+      sx={{
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 'fit-content',
+      }}
+    >
       <BadgePreview
         animationEffects={[]}
         badgeBackgroundUrl={getBackground()}

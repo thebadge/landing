@@ -1,7 +1,8 @@
 import { CustomDivider } from '@/src/components/Commons/Divider';
 import TBSwiper from '@/src/components/Commons/TBSwiper';
 import TeamMemberCard from '@/src/components/Team/TeamMemberCard';
-import { Box, Typography, styled, useTheme } from '@mui/material';
+import TeamMemberCardDivider from '@/src/components/Team/TeamMemberCardDivider';
+import { Box, Typography, styled } from '@mui/material';
 import { colors } from '@thebadge/ui-library';
 import { useTranslation } from 'next-export-i18n';
 
@@ -19,14 +20,16 @@ export enum ContactType {
 }
 
 export type TeamMember = {
-  avatar: string;
-  name: string;
-  role: string;
+  avatar?: string;
+  name?: string;
+  role?: string;
   team?: string;
-  socials: { type: ContactType; name: string; color: string }[];
+  isDivider?: boolean;
+  socials?: { type: ContactType; name: string; color: string }[];
 };
 
 const TEAM_MEMBERS: TeamMember[] = [
+  { isDivider: true, team: 'founder' },
   {
     avatar: '/avatars/agu.webp',
     name: 'Agustín Pane',
@@ -63,6 +66,7 @@ const TEAM_MEMBERS: TeamMember[] = [
       },
     ],
   },
+  { isDivider: true, team: 'core-team' },
   {
     avatar: '/avatars/luciaf.webp',
     name: 'Lucía Fenoglio',
@@ -115,6 +119,7 @@ const TEAM_MEMBERS: TeamMember[] = [
       },
     ],
   },
+  { isDivider: true, team: 'advisor' },
   {
     avatar: '/avatars/javi.webp',
     name: 'Javier Alba, CFA',
@@ -157,7 +162,6 @@ const TEAM_MEMBERS: TeamMember[] = [
 ];
 
 const Team = () => {
-  const theme = useTheme();
   const { t } = useTranslation();
 
   return (
@@ -173,8 +177,14 @@ const Team = () => {
       </Typography>
 
       <Box mt={5}>
-        <TBSwiper maxSlidesPerView={5} loop={false}
+        <TBSwiper
+          maxSlidesPerView={6}
+          loop={false}
           items={TEAM_MEMBERS.map((member) => {
+            if (member.isDivider)
+              return (
+                <TeamMemberCardDivider key={member.team} type={member?.team} />
+              );
             return <TeamMemberCard key={member.name} user={member} />;
           })}
         />

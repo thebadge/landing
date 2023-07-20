@@ -1,16 +1,20 @@
-import { useSizeLG, useSizeMD, useSizeSM, useSizeXL } from '@/src/hooks/useSize';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
-import { Box, keyframes, useTheme } from '@mui/material'
-import { A11y, Navigation } from 'swiper'
-import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react'
-
+import {
+  useSizeLG,
+  useSizeMD,
+  useSizeSM,
+  useSizeXL,
+} from '@/src/hooks/useSize';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { Box, keyframes, useTheme } from '@mui/material';
+import { A11y, Navigation } from 'swiper';
+import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import {useEffect} from "react";
+import { useEffect } from 'react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const growEffect = keyframes`
   0% {
@@ -19,17 +23,17 @@ const growEffect = keyframes`
   100% {
     transform: scale(1);
   }
-`
+`;
 
 type TBSwiperProps = {
-  items: React.ReactNode[]
-  maxSlidesPerView?: number
-  spaceBetween?: number
-  itemsScale?: string
-  leftPadding?: string
-  rightPadding?: string
-  noArrows?: boolean
-} & SwiperProps
+  items: React.ReactNode[];
+  maxSlidesPerView?: number;
+  spaceBetween?: number;
+  itemsScale?: string;
+  leftPadding?: string;
+  rightPadding?: string;
+  noArrows?: boolean;
+} & SwiperProps;
 
 export default function TBSwiper({
   items,
@@ -41,31 +45,31 @@ export default function TBSwiper({
   spaceBetween,
   ...props
 }: TBSwiperProps) {
-  let swiperId = 'id1'
+  let swiperId = 'id1';
   useEffect(() => {
-    swiperId = 'id' + Date.now().toString(16)
-  })
+    swiperId = 'id' + Date.now().toString(16);
+  });
 
-  const theme = useTheme()
-  const sm = useSizeSM()
-  const md = useSizeMD()
-  const lg = useSizeLG()
+  const theme = useTheme();
+  const sm = useSizeSM();
+  const md = useSizeMD();
+  const lg = useSizeLG();
   const xl = useSizeXL();
 
   const amountItems = () => {
-    const maxItems = maxSlidesPerView || 4
+    const maxItems = maxSlidesPerView || 4;
     if (sm) {
-      return 1
+      return 1;
     } else if (md) {
-      return maxItems < 2 ? maxItems : 2
+      return maxItems < 2 ? maxItems : 2;
     } else if (lg) {
-      return maxItems < 3 ? maxItems : 3
-    } else if(xl) {
-      return maxItems < 4 ? maxItems : 4
-    }else {
-      return maxItems
+      return maxItems < 3 ? maxItems : 4;
+    } else if (xl) {
+      return maxItems < 4 ? maxItems : 5;
+    } else {
+      return maxItems;
     }
-  }
+  };
 
   return (
     <Box
@@ -91,7 +95,11 @@ export default function TBSwiper({
 
       <Swiper
         loop={true}
-        modules={props.modules ? [Navigation, A11y, ...props.modules] : [Navigation, A11y]}
+        modules={
+          props.modules
+            ? [Navigation, A11y, ...props.modules]
+            : [Navigation, A11y]
+        }
         navigation={{
           nextEl: '.tb-swiper-button-next-' + swiperId,
           prevEl: '.tb-swiper-button-prev-' + swiperId,
@@ -120,5 +128,5 @@ export default function TBSwiper({
         />
       )}
     </Box>
-  )
+  );
 }
