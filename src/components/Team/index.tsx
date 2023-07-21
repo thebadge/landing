@@ -29,9 +29,9 @@ export type TeamMember = {
 };
 
 export enum TeamGroup {
-  FOUNDER = 'founder',
-  CORE_TEAM = 'core team',
-  ADVISOR = 'advisor'
+  FOUNDER = 'Founder',
+  CORE_TEAM = 'Team',
+  ADVISOR = 'Advisor'
 }
 
 const TEAM_MEMBERS: TeamMember[] = [
