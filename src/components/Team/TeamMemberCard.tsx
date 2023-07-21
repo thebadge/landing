@@ -1,6 +1,6 @@
 import { BehanceIcon } from '@/src/components/Commons/SVGs/BehanceIcon';
 import { GitHub, LinkedIn, Mail, Twitter } from '@mui/icons-material';
-import { Box, Stack, styled, useTheme } from '@mui/material';
+import { Box, Stack, styled, Typography, useTheme } from '@mui/material';
 import { BadgePreview } from '@thebadge/ui-library';
 import { ContactType, TeamMember } from '.';
 
@@ -12,6 +12,25 @@ const StyledLink = styled('a')(() => ({
   cursor: 'pointer',
   textDecoration: 'none',
 }));
+
+const Flap = styled(Box)(() => ({
+  position: "absolute",
+  display: "flex",
+  top: 3,
+  right: 8,
+  width: 90,
+  height: 30,
+  borderRadius: "0px 0px 5px 5px"
+}))
+
+const Team = styled(Typography)(() => ({
+  margin: "auto",
+  textAlign: 'center',
+  fontSize: "14px !important",
+  fontWeight: 700,
+  lineHeight: "22px",
+  color: "#FFF"
+}))
 
 export default function TeamMemberCard({ user }: { user: TeamMember }) {
   const theme = useTheme();
@@ -98,6 +117,17 @@ export default function TeamMemberCard({ user }: { user: TeamMember }) {
     );
   }
 
+  function getFlapColor(team?: string) {
+    switch (team) {
+      case 'Founders':
+        return'#AF20AF'
+      case 'Advisor':
+        return'#62CBA5'
+      case 'Team':
+        return'#3919BB'
+    }
+  }
+
   function getBackground() {
     return '/assets/team-background.png';
   }
@@ -108,6 +138,7 @@ export default function TeamMemberCard({ user }: { user: TeamMember }) {
         alignItems: 'center',
         justifyContent: 'center',
         width: 'fit-content',
+        position:'relative'
       }}
     >
       <BadgePreview
@@ -121,6 +152,11 @@ export default function TeamMemberCard({ user }: { user: TeamMember }) {
         textContrast="light"
         title={user.team || ' '}
       />
+      <Flap sx={{backgroundColor: getFlapColor(user.team)}}>
+        <Team >
+          {user.team}
+        </Team>
+      </Flap>
     </Stack>
   );
 }

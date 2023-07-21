@@ -34,7 +34,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/avatars/agu.webp',
     name: 'Agustín Pane',
     role: 'Co-founder, COO',
-    team: 'Core Team',
+    team: 'Founders',
     socials: [
       {
         color: '#333333',
@@ -51,7 +51,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar: '/avatars/fede.webp',
     name: 'Federico Madoery',
-    team: 'Core Team',
+    team: 'Founders',
     role: 'Co-founder, Product Lead',
     socials: [
       {
@@ -66,12 +66,12 @@ const TEAM_MEMBERS: TeamMember[] = [
       },
     ],
   },
-  { isDivider: true, team: 'core-team' },
+  { isDivider: true, team: 'team' },
   {
     avatar: '/avatars/luciaf.webp',
     name: 'Lucía Fenoglio',
     role: 'Graphics Designer',
-    team: 'Core Team',
+    team: 'Team',
     socials: [
       {
         color: '#333333',
@@ -84,7 +84,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/avatars/fer.webp',
     name: 'Fernando Ramirez',
     role: 'Frontend Developer',
-    team: 'Core Team',
+    team: 'Team',
     socials: [
       {
         color: '#333333',
@@ -97,7 +97,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/avatars/lore.webp',
     name: 'Lorenzo Vignolo',
     role: 'Solidity Developer',
-    team: 'Core Team',
+    team: 'Team',
     socials: [
       {
         color: '#333333',
@@ -110,7 +110,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/avatars/agulom.webp',
     name: 'Agustín Lombardi',
     role: 'Business Developer',
-    team: 'Core Team',
+    team: 'Team',
     socials: [
       {
         color: '#333333',

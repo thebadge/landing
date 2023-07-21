@@ -47,7 +47,7 @@ export default function TeamMemberCardDivider({ type }: { type?: string }) {
           </Container>
         </>
       )}
-      {type === 'core-team' && (
+      {type === 'team' && (
         <>
           <Image
             src={coreTeamDecoration}
