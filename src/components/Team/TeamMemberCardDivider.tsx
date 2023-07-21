@@ -1,10 +1,11 @@
-import { LogoTheBadgeWithText } from '@thebadge/ui-library';
+import {LogoTheBadgeWithText} from '@thebadge/ui-library';
 import advisorDecoration from '/public/assets/advisor-background.png';
 import coreTeamDecoration from '/public/assets/core-team-background.png';
 import founderDecoration from '/public/assets/founder-background.png';
 
-import { Divider, Stack, Typography, styled } from '@mui/material';
+import {Divider, Stack, styled, Typography} from '@mui/material';
 import Image from 'next/image';
+import {TeamGroup} from "@/src/components/Team/index";
 
 const StyledTypography = styled(Typography)(() => ({
   textShadow: '0 0 6px #ffffff',
@@ -23,7 +24,7 @@ const Container = styled(Stack)(() => ({
   gap: '12px',
 }));
 
-export default function TeamMemberCardDivider({ type }: { type?: string }) {
+export default function TeamMemberCardDivider({ type }: { type?: TeamGroup }) {
   return (
     <Stack
       sx={{
@@ -33,7 +34,7 @@ export default function TeamMemberCardDivider({ type }: { type?: string }) {
         width: 'fit-content',
       }}
     >
-      {type === 'advisor' && (
+      {type === TeamGroup.ADVISOR && (
         <>
           <Image
             src={advisorDecoration}
@@ -47,7 +48,7 @@ export default function TeamMemberCardDivider({ type }: { type?: string }) {
           </Container>
         </>
       )}
-      {type === 'team' && (
+      {type === TeamGroup.CORE_TEAM && (
         <>
           <Image
             src={coreTeamDecoration}
@@ -61,7 +62,7 @@ export default function TeamMemberCardDivider({ type }: { type?: string }) {
           </Container>
         </>
       )}
-      {type === 'founder' && (
+      {type === TeamGroup.FOUNDER && (
         <>
           <Image
             src={founderDecoration}

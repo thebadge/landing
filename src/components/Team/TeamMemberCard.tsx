@@ -2,7 +2,7 @@ import { BehanceIcon } from '@/src/components/Commons/SVGs/BehanceIcon';
 import { GitHub, LinkedIn, Mail, Twitter } from '@mui/icons-material';
 import { Box, Stack, styled, Typography, useTheme } from '@mui/material';
 import { BadgePreview } from '@thebadge/ui-library';
-import { ContactType, TeamMember } from '.';
+import {ContactType, TeamGroup, TeamMember} from '.';
 
 const StyledLink = styled('a')(() => ({
   flexDirection: 'row',
@@ -32,7 +32,7 @@ const Team = styled(Typography)(() => ({
   color: "#FFF"
 }))
 
-export default function TeamMemberCard({ user }: { user: TeamMember }) {
+export default function TeamMemberCard({ user, team }: { user: TeamMember, team?: TeamGroup  }) {
   const theme = useTheme();
   const { name, role, socials, avatar } = user;
 
@@ -117,19 +117,20 @@ export default function TeamMemberCard({ user }: { user: TeamMember }) {
     );
   }
 
-  function getFlapColor(team?: string) {
-    switch (team) {
-      case 'Founders':
-        return'#AF20AF'
-      case 'Advisor':
-        return'#62CBA5'
-      case 'Team':
-        return'#3919BB'
-    }
-  }
-
   function getBackground() {
     return '/assets/team-background.png';
+  }
+
+  function getFlapColor() {
+      switch (team) {
+          case TeamGroup.ADVISOR:
+              return '#62CBA5'
+          case TeamGroup.CORE_TEAM:
+              return '#3919BB'
+          case TeamGroup.FOUNDER:
+              return '#AF20AF'
+          default: return '#ffffff'
+      }
   }
 
   return (

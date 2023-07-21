@@ -6,7 +6,7 @@ import {
 } from '@/src/hooks/useSize';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import { Box, keyframes, useTheme } from '@mui/material';
+import {Box, keyframes, useMediaQuery, useTheme} from '@mui/material';
 import { A11y, Navigation } from 'swiper';
 import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';
 
@@ -51,21 +51,24 @@ export default function TBSwiper({
   });
 
   const theme = useTheme();
-  const sm = useSizeSM();
-  const md = useSizeMD();
-  const lg = useSizeLG();
-  const xl = useSizeXL();
+  const xs = useMediaQuery(theme.breakpoints.down(560))
+  const sm = useMediaQuery(theme.breakpoints.down(790))
+  const md = useMediaQuery(theme.breakpoints.down(1024))
+  const lg = useMediaQuery(theme.breakpoints.down(1300))
+  const xl = useMediaQuery(theme.breakpoints.down(1680))
 
   const amountItems = () => {
     const maxItems = maxSlidesPerView || 4;
-    if (sm) {
+    if (xs) {
       return 1;
-    } else if (md) {
+    } else if (sm) {
       return maxItems < 2 ? maxItems : 2;
+    } else if (md) {
+      return maxItems < 3 ? maxItems : 3;
     } else if (lg) {
-      return maxItems < 3 ? maxItems : 4;
+      return maxItems < 4 ? maxItems : 4;
     } else if (xl) {
-      return maxItems < 4 ? maxItems : 5;
+      return maxItems < 5 ? maxItems : 5;
     } else {
       return maxItems;
     }
@@ -94,6 +97,7 @@ export default function TBSwiper({
       )}
 
       <Swiper
+        grabCursor={true}
         loop={true}
         modules={
           props.modules
@@ -111,7 +115,7 @@ export default function TBSwiper({
       >
         {items.map((item, index) => (
           <SwiperSlide key={'swiper-slide-' + swiperId + '-' + index}>
-            <Box sx={{ scale: itemsScale || '1' }}>{item}</Box>
+            <Box sx={{ scale: itemsScale || '1', justifyContent: 'center', display: 'flex' }}>{item}</Box>
           </SwiperSlide>
         ))}
       </Swiper>

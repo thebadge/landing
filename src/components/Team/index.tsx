@@ -2,7 +2,7 @@ import { CustomDivider } from '@/src/components/Commons/Divider';
 import TBSwiper from '@/src/components/Commons/TBSwiper';
 import TeamMemberCard from '@/src/components/Team/TeamMemberCard';
 import TeamMemberCardDivider from '@/src/components/Team/TeamMemberCardDivider';
-import { Box, Typography, styled } from '@mui/material';
+import {Box, Typography, styled, useMediaQuery} from '@mui/material';
 import { colors } from '@thebadge/ui-library';
 import { useTranslation } from 'next-export-i18n';
 
@@ -23,18 +23,24 @@ export type TeamMember = {
   avatar?: string;
   name?: string;
   role?: string;
-  team?: string;
+  team?: TeamGroup;
   isDivider?: boolean;
   socials?: { type: ContactType; name: string; color: string }[];
 };
 
+export enum TeamGroup {
+  FOUNDER = 'founder',
+  CORE_TEAM = 'core team',
+  ADVISOR = 'advisor'
+}
+
 const TEAM_MEMBERS: TeamMember[] = [
-  { isDivider: true, team: 'founder' },
+  { isDivider: true, team: TeamGroup.FOUNDER },
   {
     avatar: '/avatars/agu.webp',
     name: 'Agustín Pane',
     role: 'Co-founder, COO',
-    team: 'Founders',
+    team: TeamGroup.FOUNDER,
     socials: [
       {
         color: '#333333',
@@ -51,7 +57,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar: '/avatars/fede.webp',
     name: 'Federico Madoery',
-    team: 'Founders',
+    team: TeamGroup.FOUNDER,
     role: 'Co-founder, Product Lead',
     socials: [
       {
@@ -66,12 +72,12 @@ const TEAM_MEMBERS: TeamMember[] = [
       },
     ],
   },
-  { isDivider: true, team: 'team' },
+  { isDivider: true, team: TeamGroup.CORE_TEAM },
   {
     avatar: '/avatars/luciaf.webp',
     name: 'Lucía Fenoglio',
     role: 'Graphics Designer',
-    team: 'Team',
+    team: TeamGroup.CORE_TEAM,
     socials: [
       {
         color: '#333333',
@@ -84,7 +90,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/avatars/fer.webp',
     name: 'Fernando Ramirez',
     role: 'Frontend Developer',
-    team: 'Team',
+    team: TeamGroup.CORE_TEAM,
     socials: [
       {
         color: '#333333',
@@ -97,7 +103,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/avatars/lore.webp',
     name: 'Lorenzo Vignolo',
     role: 'Solidity Developer',
-    team: 'Team',
+    team: TeamGroup.CORE_TEAM,
     socials: [
       {
         color: '#333333',
@@ -110,7 +116,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/avatars/agulom.webp',
     name: 'Agustín Lombardi',
     role: 'Business Developer',
-    team: 'Team',
+    team: TeamGroup.CORE_TEAM,
     socials: [
       {
         color: '#333333',
@@ -119,11 +125,11 @@ const TEAM_MEMBERS: TeamMember[] = [
       },
     ],
   },
-  { isDivider: true, team: 'advisor' },
+  { isDivider: true, team: TeamGroup.ADVISOR },
   {
     avatar: '/avatars/javi.webp',
     name: 'Javier Alba, CFA',
-    team: 'Advisor',
+    team: TeamGroup.ADVISOR,
     role: 'Financial Advisor',
     socials: [
       {
@@ -137,7 +143,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/avatars/nicom.webp',
     name: 'Nicolás Magri',
     role: 'Legal Advisor',
-    team: 'Advisor',
+    team: TeamGroup.ADVISOR,
     socials: [
       {
         color: '#333333',
@@ -150,7 +156,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/avatars/agulon.webp',
     name: 'Agustín Longoni',
     role: 'UX Advisor',
-    team: 'Advisor',
+    team: TeamGroup.ADVISOR,
     socials: [
       {
         color: '#333333',
@@ -163,7 +169,6 @@ const TEAM_MEMBERS: TeamMember[] = [
 
 const Team = () => {
   const { t } = useTranslation();
-
   return (
     <BoxTeam>
       <CustomDivider />
@@ -179,13 +184,14 @@ const Team = () => {
       <Box mt={5}>
         <TBSwiper
           maxSlidesPerView={6}
+          spaceBetween={8}
           loop={false}
           items={TEAM_MEMBERS.map((member) => {
             if (member.isDivider)
               return (
                 <TeamMemberCardDivider key={member.team} type={member?.team} />
               );
-            return <TeamMemberCard key={member.name} user={member} />;
+            return <TeamMemberCard key={member.name} user={member} team={member?.team} />;
           })}
         />
       </Box>
