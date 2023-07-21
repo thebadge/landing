@@ -2,7 +2,7 @@ import { BehanceIcon } from '@/src/components/Commons/SVGs/BehanceIcon';
 import { GitHub, LinkedIn, Mail, Twitter } from '@mui/icons-material';
 import { Box, Stack, styled, useTheme } from '@mui/material';
 import { BadgePreview } from '@thebadge/ui-library';
-import { ContactType, TeamMember } from '.';
+import {ContactType, TeamGroup, TeamMember} from '.';
 
 const StyledLink = styled('a')(() => ({
   flexDirection: 'row',
@@ -13,7 +13,7 @@ const StyledLink = styled('a')(() => ({
   textDecoration: 'none',
 }));
 
-export default function TeamMemberCard({ user }: { user: TeamMember }) {
+export default function TeamMemberCard({ user, team }: { user: TeamMember, team?: TeamGroup }) {
   const theme = useTheme();
   const { name, role, socials, avatar } = user;
 
@@ -102,12 +102,27 @@ export default function TeamMemberCard({ user }: { user: TeamMember }) {
     return '/assets/team-background.png';
   }
 
+  function getBorderColor() {
+      switch (team) {
+          case TeamGroup.ADVISOR:
+              return '#62CBA5'
+          case TeamGroup.CORE_TEAM:
+              return '#3919BB'
+          case TeamGroup.FOUNDER:
+              return '#AF20AF'
+          default: return '#ffffff'
+      }
+  }
+
   return (
     <Stack
       sx={{
         alignItems: 'center',
         justifyContent: 'center',
         width: 'fit-content',
+        padding: '0 1px',
+        border: `2px solid ${getBorderColor()}EA`,
+        borderRadius: '12px'
       }}
     >
       <BadgePreview
