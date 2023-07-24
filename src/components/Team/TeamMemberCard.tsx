@@ -17,9 +17,9 @@ const Flap = styled(Box)(() => ({
   position: "absolute",
   display: "flex",
   top: 3,
-  right: 8,
-  width: 75,
-  height: 30,
+  right: 12,
+  width: 80,
+  height: 37,
   borderRadius: "0px 0px 5px 5px"
 }))
 
