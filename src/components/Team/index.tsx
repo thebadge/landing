@@ -74,6 +74,15 @@ const TEAM_MEMBERS: TeamMember[] = [
   },
   { isDivider: true, team: TeamGroup.CORE_TEAM },
   {
+    avatar: '/avatars/cristian.webp',
+    name: 'Cristian Malfesi',
+    role: 'Business Development Lead',
+    team: TeamGroup.CORE_TEAM,
+    socials: [
+
+    ],
+  },
+  {
     avatar: '/avatars/luciaf.webp',
     name: 'Lucía Fenoglio',
     role: 'Graphics Designer',
