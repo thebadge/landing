@@ -1,7 +1,7 @@
 import { Box, Stack, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
 import Image from 'next/image';
-import { colors, fonts, SectionLayout, Stepper } from 'thebadge-ui-library';
+import { colors, fonts, SectionLayout, Stepper } from '@thebadge/ui-library';
 import thirdPartyDecoration from '../../assets/thirdparty-decoration.webp';
 import StyledFirstLetter from '../Commons/StyledFirstLetter';
 

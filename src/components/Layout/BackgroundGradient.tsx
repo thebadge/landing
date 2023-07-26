@@ -1,5 +1,5 @@
 import { Box, styled } from '@mui/material';
-import { gradients } from 'thebadge-ui-library';
+import { gradients } from '@thebadge/ui-library';
 
 const Background = styled(Box)({
   background: gradients.gradientBackgroundDark,

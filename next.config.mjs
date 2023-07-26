@@ -34,6 +34,6 @@ export default withMDX(withBundleAnalyzerWrapper(
     images: {
       unoptimized: true,
     },
-    transpilePackages: ['@mui/material', 'thebadge-ui-library'],
+    transpilePackages: ['@mui/material', '@thebadge/ui-library'],
   }),
 ));

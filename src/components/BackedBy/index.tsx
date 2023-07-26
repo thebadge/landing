@@ -2,7 +2,7 @@ import { CustomDivider } from '@/src/components/Commons/Divider';
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, styled, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
-import { colors } from 'thebadge-ui-library';
+import { colors } from '@thebadge/ui-library';
 
 const ContainerBox = styled(Box)(({ theme }) => ({
   flex: '1 1 20%',
