@@ -79,7 +79,11 @@ const TEAM_MEMBERS: TeamMember[] = [
     role: 'Business Development Lead',
     team: TeamGroup.CORE_TEAM,
     socials: [
-
+      {
+        color: '#333333',
+        type: ContactType.Email,
+        name: 'cristian@thebadge.xyz',
+      },
     ],
   },
   {
