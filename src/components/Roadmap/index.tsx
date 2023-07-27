@@ -1,4 +1,4 @@
-import { colors, Roadmap, RoadmapItem } from 'thebadge-ui-library';
+import { colors, Roadmap, RoadmapItem } from '@thebadge/ui-library';
 import { CustomDivider } from '@/src/components/Commons/Divider';
 import { Box, styled, Typography } from '@mui/material';
 

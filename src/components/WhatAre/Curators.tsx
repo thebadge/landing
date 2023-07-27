@@ -1,7 +1,7 @@
 import { useIsMobile } from '@/src/hooks/useIsMobile';
 import { Box, Stack, Typography } from '@mui/material';
 import { useTranslation } from 'next-export-i18n';
-import { colors, Stepper } from 'thebadge-ui-library';
+import { colors, Stepper } from '@thebadge/ui-library';
 import StyledTypography from '../Commons/StyledFirstLetter';
 import WhatAreContainer from './WhatAreContainer';
 

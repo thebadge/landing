@@ -7,7 +7,7 @@ import {
   gradients,
   LogoTheBadgeWithText,
   NavigationHeader,
-} from 'thebadge-ui-library';
+} from '@thebadge/ui-library';
 import LanguageSwitchLink from '../TranslationUtils/LanguageSwitchLink';
 import Link from 'next/link';
 
