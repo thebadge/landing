@@ -107,7 +107,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar: '/avatars/fer.webp',
     name: 'Fernando Ramirez',
-    role: 'Business Developer, Web3 Developer',
+    role: 'Business & Web3 Developer',
     team: TeamGroup.CORE_TEAM,
     socials: [
       {
