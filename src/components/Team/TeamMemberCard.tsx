@@ -19,7 +19,7 @@ const Flap = styled(Box)(() => ({
   top: 3,
   right: 12,
   width: 80,
-  height: 37,
+  height: 47,
   borderRadius: "0px 0px 5px 5px"
 }))
 
