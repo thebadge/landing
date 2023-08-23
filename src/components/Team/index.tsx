@@ -70,6 +70,11 @@ const TEAM_MEMBERS: TeamMember[] = [
         type: ContactType.Linkedin,
         name: 'federico-madoery',
       },
+      {
+        color: '#333333',
+        type: ContactType.Email,
+        name: 'federico@thebadge.xyz',
+      },
     ],
   },
   { isDivider: true, team: TeamGroup.CORE_TEAM },
@@ -102,13 +107,18 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar: '/avatars/fer.webp',
     name: 'Fernando Ramirez',
-    role: 'Business Relations, Web3 Developer',
+    role: 'Business Developer, Web3 Developer',
     team: TeamGroup.CORE_TEAM,
     socials: [
       {
         color: '#333333',
         type: ContactType.Github,
         name: 'ramabit',
+      },
+      {
+        color: '#333333',
+        type: ContactType.Email,
+        name: 'fernando@thebadge.xyz',
       },
     ],
   },
