@@ -2,7 +2,7 @@ import { CustomDivider } from '@/src/components/Commons/Divider';
 import TBSwiper from '@/src/components/Commons/TBSwiper';
 import TeamMemberCard from '@/src/components/Team/TeamMemberCard';
 import TeamMemberCardDivider from '@/src/components/Team/TeamMemberCardDivider';
-import {Box, Typography, styled, useMediaQuery} from '@mui/material';
+import {Box, Typography, styled } from '@mui/material';
 import { colors } from '@thebadge/ui-library';
 import { useTranslation } from 'next-export-i18n';
 
@@ -70,6 +70,11 @@ const TEAM_MEMBERS: TeamMember[] = [
         type: ContactType.Linkedin,
         name: 'federico-madoery',
       },
+      {
+        color: '#333333',
+        type: ContactType.Email,
+        name: 'federico@thebadge.xyz',
+      },
     ],
   },
   { isDivider: true, team: TeamGroup.CORE_TEAM },
@@ -102,7 +107,7 @@ const TEAM_MEMBERS: TeamMember[] = [
   {
     avatar: '/avatars/fer.webp',
     name: 'Fernando Ramirez',
-    role: 'Frontend Developer',
+    role: 'Business Developer, Web3 Developer',
     team: TeamGroup.CORE_TEAM,
     socials: [
       {
@@ -110,18 +115,10 @@ const TEAM_MEMBERS: TeamMember[] = [
         type: ContactType.Github,
         name: 'ramabit',
       },
-    ],
-  },
-  {
-    avatar: '/avatars/lore.webp',
-    name: 'Lorenzo Vignolo',
-    role: 'Solidity Developer',
-    team: TeamGroup.CORE_TEAM,
-    socials: [
       {
         color: '#333333',
-        type: ContactType.Github,
-        name: 'lolo-vignolo',
+        type: ContactType.Email,
+        name: 'fernando@thebadge.xyz',
       },
     ],
   },
