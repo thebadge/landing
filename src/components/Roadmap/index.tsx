@@ -10,37 +10,37 @@ const BoxRoadmap = styled(Box)(({ theme }) => ({
 const roadmapElements: RoadmapItem[] = [
   {
     numberTitle: '01',
-    quarterNumber: 'Q1 2023',
-    quarterTitle: 'Certification Platform Development',
+    quarterNumber: 'Q3 2023',
+    quarterTitle: 'Developing strategic partnerships',
     quarterDescription:
-      'Develop core functionalities of the platform, including creation, minting, and curation processes.',
+      'Start the beta testing program and marketing pre-launch campaign, with incentives for early adopters. Audit of contracts and testing of the platform.',
     quarterDone: true,
   },
   {
     numberTitle: '02',
-    quarterNumber: 'Q2 2023',
+    quarterNumber: 'Q4 2023',
     quarterTitle: 'Beta Launch and Marketing Campaign',
     quarterDescription:
-      'Start the beta testing program and marketing pre-launch campaign, with incentives for early adopters.',
+      'We will be releasing our platform.',
   },
   {
     numberTitle: '03',
-    quarterNumber: 'Q3 2023',
+    quarterNumber: 'Q1 2024',
     quarterTitle: 'Going Live',
-    quarterDescription: 'We will be releasing our platform.',
+    quarterDescription: 'Platform deployment on Mainnet.',
   },
   {
     numberTitle: '04',
-    quarterNumber: 'Q4 2023',
-    quarterTitle: 'Third-Party',
+    quarterNumber: 'Q2 2024',
+    quarterTitle: 'Third-Party badges launch',
     quarterDescription:
-      'Develop and release the third-party creators functionality for B2B partners.',
+      'Third-party feature deployment to allow Web2 and Web3 to issue their certifications on chain.',
   },
   {
     numberTitle: '05',
     quarterNumber: '2024',
-    quarterTitle: 'Security Layer and More',
-    quarterDescription: 'Integrate private evidence and ZKBadges.',
+    quarterTitle: 'ZK badges integration',
+    quarterDescription: 'Zero Knowledge feature integration to preserve user\'s privacy.',
   },
 ];
 
@@ -64,6 +64,9 @@ const RoadmapSection = () => {
           rowGap: 8,
           marginBottom: 4,
           marginTop: 4,
+          '.roadmap__year:first-child': {
+            marginLeft: '-30px'
+          },
         }}
       >
         <Roadmap elements={roadmapElements} />
