@@ -59,11 +59,6 @@ const ORGS: Organizations[] = [
     alt: 'TalentLayer',
   },
   {
-    image: '/assets/request-network.png',
-    url: 'https://request.network/',
-    alt: 'Request Network',
-  },
-  {
     image: '/assets/idriss.png',
     url: 'https://www.idriss.xyz/',
     alt: 'Idriss',
