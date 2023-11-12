@@ -46,9 +46,12 @@ const Header = () => {
   } = useSetionReferences();
   const { t } = useTranslation();
 
-  const scrollTo = (sectionRef: RefObject<HTMLDivElement> | null, adjustOffset?: boolean) => {
+  const scrollTo = (
+    sectionRef: RefObject<HTMLDivElement> | null,
+    adjustOffset?: boolean,
+  ) => {
     if (!sectionRef) return;
-    const sectionOffset = sectionRef.current?.offsetTop
+    const sectionOffset = sectionRef.current?.offsetTop;
     window.scrollTo({
       top: adjustOffset ? (sectionOffset || 0) + 75 : sectionOffset,
       behavior: 'smooth',
@@ -65,7 +68,7 @@ const Header = () => {
       >
         <Link href="/" style={{ cursor: 'pointer' }} legacyBehavior passHref>
           <a>
-            <LogoTheBadgeWithText size={212} />
+            <LogoTheBadgeWithText size={166} />
           </a>
         </Link>
 
