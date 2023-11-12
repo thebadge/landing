@@ -151,6 +151,7 @@ export default function TeamMemberCard({ user, team }: { user: TeamMember, team?
         imageUrl={avatar}
         size="small"
         textContrast="light"
+        sx={{ boxSizing: 'border-box' }}
       />
       <Flap sx={{backgroundColor: getFlapColor()}}>
         <Team >

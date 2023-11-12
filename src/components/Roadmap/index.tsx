@@ -64,7 +64,7 @@ const RoadmapSection = () => {
           rowGap: 8,
           marginBottom: 4,
           marginTop: 4,
-          '.roadmap__year:first-child': {
+          '.roadmap__year:first-of-type': {
             marginLeft: '-30px'
           },
         }}

@@ -541,10 +541,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@thebadge/ui-library@1.8.5":
-  version "1.8.5"
-  resolved "https://registry.yarnpkg.com/@thebadge/ui-library/-/ui-library-1.8.5.tgz#50b61c1e1584287a93d793dd256093fadb4b77f5"
-  integrity sha512-JblTGFQM3wsLmCpeXwosUFM9YDRlFH+xikvQbU1g8tc7zMq2qI2rYGteD36D9Rig0s+vP+ACLQNkWm84dGlkZw==
+"@thebadge/ui-library@1.9.2":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@thebadge/ui-library/-/ui-library-1.9.2.tgz#c91f66ff97f0e7b56822e11f3c117dff09856189"
+  integrity sha512-4yTkgRU1sPSf4TcuY2Vdjzw/fGSNaa/KRwbYs2hsh0BSkjqzFMYOrXk5m9T5OWQvHp4jF5MvxE47EL53gkf4rw==
   dependencies:
     "@emotion/react" "^11.10.5"
     "@emotion/server" "^11.10.0"

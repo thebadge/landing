@@ -39,7 +39,7 @@ export default function TeamMemberCardDivider({ type }: { type?: TeamGroup }) {
           <Image
             src={advisorDecoration}
             alt="Decoration, Advisors team divider"
-            style={{ width: '200px', height: '320px' }}
+            style={{ width: '200px', height: '328px' }}
           />
           <Container>
             <LogoTheBadgeWithText fill="#3C3C3B" size={75} />
@@ -53,7 +53,7 @@ export default function TeamMemberCardDivider({ type }: { type?: TeamGroup }) {
           <Image
             src={coreTeamDecoration}
             alt="Decoration, Core team divider"
-            style={{ width: '200px', height: '320px' }}
+            style={{ width: '200px', height: '328px' }}
           />
           <Container>
             <LogoTheBadgeWithText fill="#3C3C3B" size={75} />
@@ -67,7 +67,7 @@ export default function TeamMemberCardDivider({ type }: { type?: TeamGroup }) {
           <Image
             src={founderDecoration}
             alt="Decoration, Founders team divider"
-            style={{ width: '200px', height: '320px' }}
+            style={{ width: '200px', height: '328px' }}
           />
           <Container>
             <LogoTheBadgeWithText fill="#3C3C3B" size={75} />

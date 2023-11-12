@@ -44,6 +44,11 @@ const TEAM_MEMBERS: TeamMember[] = [
     socials: [
       {
         color: '#333333',
+        type: ContactType.Github,
+        name: 'Agupane',
+      },
+      {
+        color: '#333333',
         type: ContactType.Email,
         name: 'agustin@thebadge.xyz',
       },
@@ -67,13 +72,13 @@ const TEAM_MEMBERS: TeamMember[] = [
       },
       {
         color: '#333333',
-        type: ContactType.Linkedin,
-        name: 'federico-madoery',
+        type: ContactType.Email,
+        name: 'federico@thebadge.xyz',
       },
       {
         color: '#333333',
-        type: ContactType.Email,
-        name: 'federico@thebadge.xyz',
+        type: ContactType.Linkedin,
+        name: 'federico-madoery',
       },
     ],
   },

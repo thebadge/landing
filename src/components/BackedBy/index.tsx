@@ -5,12 +5,11 @@ import { useTranslation } from 'next-export-i18n';
 import { colors } from '@thebadge/ui-library';
 
 const ContainerBox = styled(Box)(({ theme }) => ({
-  flex: '1 1 20%',
   alignItems: 'center',
   justifyContent: 'center',
   display: 'flex',
-  [theme.breakpoints.down('sm')]: {
-    flex: '1 1 100%',
+  [theme.breakpoints.up('lg')]: {
+    flex: '0 1 17%',
   },
 }));
 
@@ -18,9 +17,9 @@ const BoxBackedBy = styled(Box)(({ theme }) => ({
   marginTop: theme.spacing(12),
 }));
 
-const CustomOrgLink = styled('a')<{ backcolor: string }>(
+const CustomOrgLink = styled('a')<{ backcolor?: string }>(
   ({ theme, backcolor }) => ({
-    background: `${backcolor}`,
+    background: `${backcolor || 'transparent'}`,
     padding: '12px 16px 0 16px',
     borderRadius: '12px',
   }),
@@ -30,7 +29,7 @@ type Organizations = {
   image: string;
   url: string;
   alt: string;
-  backColor: string;
+  backColor?: string;
 };
 
 const ORGS: Organizations[] = [
@@ -38,13 +37,41 @@ const ORGS: Organizations[] = [
     image: '/assets/klerosLogo.png',
     url: 'https://kleros.io/',
     alt: 'Kleros',
-    backColor: '#4d00b4',
   },
   {
-    image: '/assets/qf_ethlatam.svg',
-    url: 'https://qf.ethlatam.org/#/?option=3',
-    alt: 'Quadratic Founding ETH Latam',
-    backColor: '#121212',
+    image: '/assets/ethlatam.png',
+    url: 'https://ethlatam.org/',
+    alt: 'ETH Latam',
+  },
+  {
+    image: '/assets/openvino.png',
+    url: 'https://openvino.org/',
+    alt: 'OpenVino',
+  },
+  {
+    image: '/assets/austral.png',
+    url: 'https://www.austral.edu.ar/',
+    alt: 'Universidad Austral',
+  },
+  {
+    image: '/assets/talentlayer.png',
+    url: 'https://www.talentlayer.org/',
+    alt: 'TalentLayer',
+  },
+  {
+    image: '/assets/idriss.png',
+    url: 'https://www.idriss.xyz/',
+    alt: 'Idriss',
+  },
+  {
+    image: '/assets/metavisa.png',
+    url: 'https://www.metavisa.com/',
+    alt: 'Metavisa',
+  },
+  {
+    image: '/assets/3vo.png',
+    url: 'https://3vo.me/',
+    alt: '3vo',
   },
 ];
 
@@ -66,6 +93,7 @@ const BackedBy = () => {
       <Box
         sx={{
           display: 'flex',
+          justifyContent: 'center',
           flexFlow: 'row wrap',
           marginTop: 6,
           columnGap: 2,
@@ -80,8 +108,7 @@ const BackedBy = () => {
                 <img
                   src={org.image}
                   alt={org.alt}
-                  width={isMobile ? 250 : 350}
-                  height={isMobile ? 100 : 150}
+                  style={{ maxWidth: '150px', maxHeight: '100px' }}
                 />
               </CustomOrgLink>
             </ContainerBox>
