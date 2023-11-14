@@ -58,11 +58,11 @@ const ORGS: Organizations[] = [
     url: 'https://www.talentlayer.org/',
     alt: 'TalentLayer',
   },
-  {
+  /*{
     image: '/assets/idriss.png',
     url: 'https://www.idriss.xyz/',
     alt: 'Idriss',
-  },
+  },*/
   {
     image: '/assets/metavisa.png',
     url: 'https://www.metavisa.com/',
@@ -72,6 +72,11 @@ const ORGS: Organizations[] = [
     image: '/assets/3vo.png',
     url: 'https://3vo.me/',
     alt: '3vo',
+  },
+  {
+    image: '/assets/accountant-logo.png',
+    url: 'https://www.theaccountantquits.com/',
+    alt: 'Accountant quits',
   },
 ];
 
