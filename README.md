@@ -1,18 +1,18 @@
-<p align="center">
+<div style="text-align: center;">
   <a href="https://thebadge.xyz">
-    <img alt="TheBadge" src="src/assets/logo.svg" width="128">
+    <img alt="TheBadge" src="https://www.thebadge.xyz/the_badge_github_logo.png">
   </a>
-</p>
+</div>
 
 <h1 align="center">TheBadge Landing page</h1>
 
 <p align="center">
   <a href="https://discord.com/invite/FTxtkgbAC4"><img src="https://img.shields.io/discord/1006480637512917033?style=plastic" alt="Join to Discord"></a>
   <a href="https://twitter.com/intent/user?screen_name=thebadgexyz"><img src="https://img.shields.io/twitter/follow/thebadgexyz?style=social" alt="Follow us on Twitter"></a>
+  <a href="https://github.com/thebadge/thebadge-website/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT Licensed"></a>
 </p>
 
 For questions or request information reach out via [Discord](https://discord.gg/tVP75NqVuC).
-
 
 # Deployed environments
 
