@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { colors, fonts, SectionLayout, Stepper } from '@thebadge/ui-library';
 import thirdPartyDecoration from '../../assets/thirdparty-decoration.webp';
 import StyledFirstLetter from '../Commons/StyledFirstLetter';
+import categoriesBackground from '../../assets/categories-background.webp';
 
 export default function ThirdPartyBadge() {
   return (
@@ -46,10 +47,19 @@ function TopComponent() {
         flex: 1,
         placeContent: 'center',
         alignItems: 'center',
-        background:
-          'url(https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80)',
+        position: 'relative',
       }}
     >
+      <Image
+        style={{
+          position: 'absolute',
+          zIndex: '-1',
+          height: ' 100%',
+          width: '100%',
+        }}
+        src={categoriesBackground}
+        alt="Background decoration"
+      />
       <Image
         src={thirdPartyDecoration}
         alt="ThirdParty Badges decoration"
