@@ -125,7 +125,7 @@ export default function TeamMemberCard({ user, team }: { user: TeamMember, team?
       switch (team) {
           case TeamGroup.ADVISOR:
               return '#62CBA5'
-          case TeamGroup.CORE_TEAM:
+          case TeamGroup.FELLOW:
               return '#3919BB'
           case TeamGroup.FOUNDER:
               return '#AF20AF'

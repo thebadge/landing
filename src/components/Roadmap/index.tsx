@@ -10,36 +10,36 @@ const BoxRoadmap = styled(Box)(({ theme }) => ({
 const roadmapElements: RoadmapItem[] = [
   {
     numberTitle: '01',
-    quarterNumber: 'Q3 2023',
-    quarterTitle: 'Developing strategic partnerships',
+    quarterNumber: 'Q1 2024',
+    quarterTitle: 'Beta launch on mainnet and support for existing partners',
     quarterDescription:
-      'Start the beta testing program and marketing pre-launch campaign, with incentives for early adopters. Audit of contracts and testing of the platform.',
-    quarterDone: true,
+      'Platform release on mainnet.',
+    quarterDone: false,
   },
   {
     numberTitle: '02',
-    quarterNumber: 'Q4 2023',
-    quarterTitle: 'Beta Launch and Marketing Campaign',
+    quarterNumber: 'Q2 2024',
+    quarterTitle: 'Developing additional partnerships and sdk',
     quarterDescription:
-      'We will be releasing our platform.',
+      'Reach out to potential partners and development of SDK for easy integration with customers.',
   },
   {
     numberTitle: '03',
-    quarterNumber: 'Q1 2024',
-    quarterTitle: 'Going Live',
-    quarterDescription: 'Platform deployment on Mainnet.',
+    quarterNumber: 'Q3 2024',
+    quarterTitle: 'Multichain Badges',
+    quarterDescription: 'Supporting badge minting on multiple chains.',
   },
   {
     numberTitle: '04',
-    quarterNumber: 'Q2 2024',
-    quarterTitle: 'Third-Party badges launch',
+    quarterNumber: 'Q4 2024',
+    quarterTitle: 'AI Integration',
     quarterDescription:
-      'Third-party feature deployment to allow Web2 and Web3 to issue their certifications on chain.',
+      'Badge curation with AI assistance.',
   },
   {
     numberTitle: '05',
-    quarterNumber: '2024',
-    quarterTitle: 'ZK badges integration',
+    quarterNumber: 'Q1 2025',
+    quarterTitle: 'ZK badges',
     quarterDescription: 'Zero Knowledge feature integration to preserve user\'s privacy.',
   },
 ];
