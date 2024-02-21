@@ -30,16 +30,16 @@ export type TeamMember = {
 
 export enum TeamGroup {
   FOUNDER = 'Founder',
-  CORE_TEAM = 'Team',
+  FELLOW = 'Fellow',
   ADVISOR = 'Advisor'
 }
 
 const TEAM_MEMBERS: TeamMember[] = [
-  { isDivider: true, team: TeamGroup.FOUNDER },
+  // { isDivider: true, team: TeamGroup.FOUNDER },
   {
     avatar: '/avatars/agu.webp',
     name: 'Agustín Pane',
-    role: 'Co-founder, COO',
+    role: 'Co-founder, CEO',
     team: TeamGroup.FOUNDER,
     socials: [
       {
@@ -82,38 +82,11 @@ const TEAM_MEMBERS: TeamMember[] = [
       },
     ],
   },
-  { isDivider: true, team: TeamGroup.CORE_TEAM },
-  {
-    avatar: '/avatars/cristian.webp',
-    name: 'Cristian Malfesi',
-    role: 'Business Development Lead',
-    team: TeamGroup.CORE_TEAM,
-    socials: [
-      {
-        color: '#333333',
-        type: ContactType.Email,
-        name: 'cristian@thebadge.xyz',
-      },
-    ],
-  },
-  {
-    avatar: '/avatars/luciaf.webp',
-    name: 'Lucía Fenoglio',
-    role: 'Graphics Designer',
-    team: TeamGroup.CORE_TEAM,
-    socials: [
-      {
-        color: '#333333',
-        type: ContactType.Behance,
-        name: 'luciafenoglio',
-      },
-    ],
-  },
   {
     avatar: '/avatars/fer.webp',
     name: 'Fernando Ramirez',
     role: 'Business & Web3 Developer',
-    team: TeamGroup.CORE_TEAM,
+    team: TeamGroup.FELLOW,
     socials: [
       {
         color: '#333333',
@@ -131,7 +104,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     avatar: '/avatars/agulom.webp',
     name: 'Agustín Lombardi',
     role: 'Business Developer',
-    team: TeamGroup.CORE_TEAM,
+    team: TeamGroup.FELLOW,
     socials: [
       {
         color: '#333333',
@@ -140,46 +113,87 @@ const TEAM_MEMBERS: TeamMember[] = [
       },
     ],
   },
-  { isDivider: true, team: TeamGroup.ADVISOR },
   {
-    avatar: '/avatars/javi.webp',
-    name: 'Javier Alba, CFA',
-    team: TeamGroup.ADVISOR,
-    role: 'Financial Advisor',
+    avatar: '/avatars/luciaf.webp',
+    name: 'Lucía Fenoglio',
+    role: 'Graphics Designer',
+    team: TeamGroup.FELLOW,
     socials: [
       {
         color: '#333333',
-        type: ContactType.Linkedin,
-        name: 'javier-alba-cfa',
+        type: ContactType.Behance,
+        name: 'luciafenoglio',
       },
     ],
   },
-  {
-    avatar: '/avatars/nicom.webp',
-    name: 'Nicolás Magri',
-    role: 'Legal Advisor',
-    team: TeamGroup.ADVISOR,
-    socials: [
-      {
-        color: '#333333',
-        type: ContactType.Linkedin,
-        name: 'nicolas-magri-2aa0ba15a',
-      },
-    ],
-  },
-  {
-    avatar: '/avatars/agulon.webp',
-    name: 'Agustín Longoni',
-    role: 'UX Advisor',
-    team: TeamGroup.ADVISOR,
-    socials: [
-      {
-        color: '#333333',
-        type: ContactType.Github,
-        name: 'alongoni',
-      },
-    ],
-  },
+  // { isDivider: true, team: TeamGroup.CORE_TEAM },
+  // {
+  //   avatar: '/avatars/cristian.webp',
+  //   name: 'Cristian Malfesi',
+  //   role: 'Business Development Lead',
+  //   team: TeamGroup.CORE_TEAM,
+  //   socials: [
+  //     {
+  //       color: '#333333',
+  //       type: ContactType.Email,
+  //       name: 'cristian@thebadge.xyz',
+  //     },
+  //   ],
+  // },
+  // {
+  //   avatar: '/avatars/luciaf.webp',
+  //   name: 'Lucía Fenoglio',
+  //   role: 'Graphics Designer',
+  //   team: TeamGroup.CORE_TEAM,
+  //   socials: [
+  //     {
+  //       color: '#333333',
+  //       type: ContactType.Behance,
+  //       name: 'luciafenoglio',
+  //     },
+  //   ],
+  // },
+
+  // { isDivider: true, team: TeamGroup.ADVISOR },
+  // {
+  //   avatar: '/avatars/javi.webp',
+  //   name: 'Javier Alba, CFA',
+  //   team: TeamGroup.ADVISOR,
+  //   role: 'Financial Advisor',
+  //   socials: [
+  //     {
+  //       color: '#333333',
+  //       type: ContactType.Linkedin,
+  //       name: 'javier-alba-cfa',
+  //     },
+  //   ],
+  // },
+  // {
+  //   avatar: '/avatars/nicom.webp',
+  //   name: 'Nicolás Magri',
+  //   role: 'Legal Advisor',
+  //   team: TeamGroup.ADVISOR,
+  //   socials: [
+  //     {
+  //       color: '#333333',
+  //       type: ContactType.Linkedin,
+  //       name: 'nicolas-magri-2aa0ba15a',
+  //     },
+  //   ],
+  // },
+  // {
+  //   avatar: '/avatars/agulon.webp',
+  //   name: 'Agustín Longoni',
+  //   role: 'UX Advisor',
+  //   team: TeamGroup.ADVISOR,
+  //   socials: [
+  //     {
+  //       color: '#333333',
+  //       type: ContactType.Github,
+  //       name: 'alongoni',
+  //     },
+  //   ],
+  // },
 ];
 
 const Team = () => {
