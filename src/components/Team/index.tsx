@@ -126,74 +126,6 @@ const TEAM_MEMBERS: TeamMember[] = [
       },
     ],
   },
-  // { isDivider: true, team: TeamGroup.CORE_TEAM },
-  // {
-  //   avatar: '/avatars/cristian.webp',
-  //   name: 'Cristian Malfesi',
-  //   role: 'Business Development Lead',
-  //   team: TeamGroup.CORE_TEAM,
-  //   socials: [
-  //     {
-  //       color: '#333333',
-  //       type: ContactType.Email,
-  //       name: 'cristian@thebadge.xyz',
-  //     },
-  //   ],
-  // },
-  // {
-  //   avatar: '/avatars/luciaf.webp',
-  //   name: 'Lucía Fenoglio',
-  //   role: 'Graphics Designer',
-  //   team: TeamGroup.CORE_TEAM,
-  //   socials: [
-  //     {
-  //       color: '#333333',
-  //       type: ContactType.Behance,
-  //       name: 'luciafenoglio',
-  //     },
-  //   ],
-  // },
-
-  // { isDivider: true, team: TeamGroup.ADVISOR },
-  // {
-  //   avatar: '/avatars/javi.webp',
-  //   name: 'Javier Alba, CFA',
-  //   team: TeamGroup.ADVISOR,
-  //   role: 'Financial Advisor',
-  //   socials: [
-  //     {
-  //       color: '#333333',
-  //       type: ContactType.Linkedin,
-  //       name: 'javier-alba-cfa',
-  //     },
-  //   ],
-  // },
-  // {
-  //   avatar: '/avatars/nicom.webp',
-  //   name: 'Nicolás Magri',
-  //   role: 'Legal Advisor',
-  //   team: TeamGroup.ADVISOR,
-  //   socials: [
-  //     {
-  //       color: '#333333',
-  //       type: ContactType.Linkedin,
-  //       name: 'nicolas-magri-2aa0ba15a',
-  //     },
-  //   ],
-  // },
-  // {
-  //   avatar: '/avatars/agulon.webp',
-  //   name: 'Agustín Longoni',
-  //   role: 'UX Advisor',
-  //   team: TeamGroup.ADVISOR,
-  //   socials: [
-  //     {
-  //       color: '#333333',
-  //       type: ContactType.Github,
-  //       name: 'alongoni',
-  //     },
-  //   ],
-  // },
 ];
 
 const Team = () => {
@@ -212,7 +144,7 @@ const Team = () => {
 
       <Box mt={5}>
         <TBSwiper
-          maxSlidesPerView={6}
+          maxSlidesPerView={5}
           spaceBetween={8}
           loop={false}
           items={TEAM_MEMBERS.map((member) => {
