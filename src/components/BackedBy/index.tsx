@@ -34,6 +34,11 @@ type Organizations = {
 
 const ORGS: Organizations[] = [
   {
+    image: '/assets/avalanche_Red.png',
+    url: 'https://www.avax.network/',
+    alt: 'Avalanche',
+  },
+  {
     image: '/assets/klerosLogo.png',
     url: 'https://kleros.io/',
     alt: 'Kleros',
