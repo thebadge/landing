@@ -13,7 +13,7 @@
   },
   "presentation": {
     "title": "Decentralized certification platform",
-    "description": "TheBadge is a decentralized certification platform powered by Ethereum. It provides users the opportunity to tokenize information from the real world in the form of certifications (badges). These badges are verified and validated by the community, which decides what should be accepted and what not.",
+    "description": "TheBadge is a decentralized certification platform. It provides users the opportunity to tokenize information from the real world in the form of certifications (badges). These badges are verified and validated by the community, which decides what should be accepted and what not.",
     "buttons": {
       "whitepaper": "Check our whitepaper",
       "community": "Join our community"
