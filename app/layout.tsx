@@ -5,6 +5,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { Metadata, ResolvingMetadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Mulish, Roboto_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const mulishFont = Mulish({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -46,6 +47,7 @@ export async function generateMetadata(
     description: t("description"),
     applicationName: "TheBadge",
     keywords: ["Crypto", "RWA", "Real word assets", "certificates"],
+    metadataBase: new URL("https://thebadge.xyz/"),
     openGraph: {
       title: t("title"),
       description: t("description"),
@@ -54,7 +56,7 @@ export async function generateMetadata(
       locale: params.locale,
       images: [
         {
-          url: "https://thebadge.xyz/the_badge_banner.webp",
+          url: "/the_badge_banner.jpg",
           width: 1404,
           height: 459,
         },
@@ -74,7 +76,7 @@ export async function generateMetadata(
       description: t("description"),
       creator: t("xHandler"),
       site: t("xHandler"),
-      images: ["https://thebadge.xyz/the_badge_banner.webp"], // Must be an absolute URL
+      images: ["https://thebadge.xyz/the_badge_banner.jpg"], // Must be an absolute URL
     },
     icons: {
       icon: "/favicon.ico",
@@ -97,12 +99,8 @@ export default function LocaleLayout({
       lang={locale || "en"}
       className={`${mulishFont.variable} ${roboto_mono.variable}`}
     >
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
       <body>
+        <Analytics />
         <Providers>
           <div className="fixed w-full h-full -z-10 dark:bg-radial-gradient-dark bg-radial-gradient-light"></div>
           <Header />
