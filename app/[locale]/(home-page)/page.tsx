@@ -28,7 +28,17 @@ export default async function Home({ params: { locale } }) {
       <Testimonials />
       <Roadmap />
       <Team />
+      {/* @ts-expect-error Server Component */}
       <Blog />
     </>
   );
+}
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  return ["en", "de", "es"].map((locale) => ({
+    params: {
+      locale,
+    },
+  }));
 }
