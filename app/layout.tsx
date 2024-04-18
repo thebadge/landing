@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Metadata, ResolvingMetadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Mulish, Roboto_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -93,6 +93,8 @@ export default function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  unstable_setRequestLocale(locale || "en");
+
   return (
     <html
       suppressHydrationWarning

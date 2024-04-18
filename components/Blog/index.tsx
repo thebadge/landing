@@ -1,31 +1,19 @@
-import { getAllPosts } from "@/lib/blogPost";
+import { getAllPosts, getBlog } from "@/lib/blogPost";
 import { Blog } from "@/types/blog";
 import SectionTitle from "../Common/SectionTitle";
 import SingleBlog from "./SingleBlog";
 
-async function getBlogsData(): Promise<Blog[]> {
+function getBlogsData(showAll: boolean): Blog[] {
   const allPosts = getAllPosts();
-  return allPosts.map(
-    ({ data }) =>
-      ({
-        id: data.slug,
-        title: data.title,
-        paragraph: data.summary,
-        publishDate: data.date.toISOString(),
-        author: {
-          name: data.author,
-          image: data.avatar,
-          designation: data.designation,
-        },
-        image: data.frontImage,
-        url: `/blog/${data.slug}`,
-        tags: data.tags,
-      } as Blog)
-  );
+  return allPosts
+    .map((slug) => {
+      return getBlog(slug);
+    })
+    .slice(0, showAll ? allPosts.length : 3);
 }
 
-const Blog = async () => {
-  const blogsData = await getBlogsData();
+const Blog = ({ showAll }: { showAll?: boolean }) => {
+  const blogsData = getBlogsData(showAll);
   return (
     <section id="blog" className="bg-primary-500/5 py-16 md:py-20 lg:py-28">
       <div className="container flex flex-col gap-6">

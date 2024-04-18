@@ -12,7 +12,7 @@ import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { unstable_setRequestLocale } from "next-intl/server";
 
-export default async function Home({ params: { locale } }) {
+export default function Home({ params: { locale } }) {
   unstable_setRequestLocale(locale);
 
   return (
@@ -28,7 +28,6 @@ export default async function Home({ params: { locale } }) {
       <Testimonials />
       <Roadmap />
       <Team />
-      {/* @ts-expect-error Server Component */}
       <Blog />
     </>
   );
@@ -37,8 +36,6 @@ export const dynamicParams = false;
 
 export async function generateStaticParams() {
   return ["en", "de", "es"].map((locale) => ({
-    params: {
-      locale,
-    },
+    locale,
   }));
 }

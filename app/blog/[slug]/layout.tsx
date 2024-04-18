@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/lib/blogPost";
+import { getBlog } from "@/lib/blogPost";
 import { Metadata, ResolvingMetadata } from "next";
 import { unstable_setRequestLocale } from "next-intl/server";
 
@@ -11,25 +11,26 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   // read route params
-  const allPosts = getAllPosts();
-  const blog = allPosts.find((item) => item.slug === params.slug);
-  if (!blog) return undefined;
-  const { data } = blog;
+  const blog = getBlog(params.slug);
+  const { title, paragraph, author, image } = blog;
   // optionally access and extend (rather than replace) parent metadata
   const previousImages = (await parent).openGraph?.images || [];
 
   return {
-    title: `${data.title} by ${data.author}`,
-    description: `${data.summary}`,
+    title: `${title} by ${author}`,
+    description: `${paragraph}`,
     applicationName: "TheBadge",
     keywords: ["Crypto", "RWA", "Real word assets", "certificates", "Blog"],
     openGraph: {
-      title: `${data.title} by ${data.author}`,
-      description: `${data.summary}`,
+      title: `${title} by ${author}`,
+      description: `${paragraph}`,
       type: "website",
       siteName: "TheBadge",
       locale: "en",
       images: [
+        {
+          url: image,
+        },
         {
           url: "/the_badge_banner.png",
           width: 1280,
