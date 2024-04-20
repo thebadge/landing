@@ -14,7 +14,7 @@ const SingleFeature = ({
   return (
     <div className="w-full">
       <div className="wow fadeInUp" data-wow-delay=".15s">
-        <div className="mb-10 mx-auto flex h-[70px] w-[70px] items-center justify-center fill-dark dark:fill-white">
+        <div className="mb-10 mx-auto flex h-[70px] w-[70px] items-center justify-center glow:text-glow/[.5]">
           {icon}
         </div>
         <h3 className="mb-5 text-base text-center text-black font-normal dark:text-white dark:opacity-80 sm:text-xl md:text-l xl:text-xl">

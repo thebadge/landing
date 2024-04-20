@@ -1,4 +1,6 @@
+import GlowMouseTracing from "@/components/ui/glow";
 import { unstable_setRequestLocale } from "next-intl/server";
+import React from "react";
 
 export default function RootLayout({
   children,
@@ -9,5 +11,10 @@ export default function RootLayout({
 }) {
   unstable_setRequestLocale(locale);
 
-  return children;
+  return (
+    <>
+      <GlowMouseTracing />
+      {children}
+    </>
+  );
 }

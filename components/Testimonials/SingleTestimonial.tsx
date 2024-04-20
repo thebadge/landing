@@ -1,3 +1,4 @@
+import { MouseTracingCapture, MouseTracingOverlay } from "@/components/ui/glow";
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,34 +21,39 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   }
 
   return (
-    <div className="w-full h-full flex">
-      <div
-        className="wow flex fadeInUp rounded-md bg-[#f6f6f6] p-8 shadow-one dark:bg-[#1D2144] hover:shadow-two lg:px-5 xl:px-8"
-        data-wow-delay=".1s"
-      >
-        <Link
-          href={testimonial.url || "/"}
-          target="_blank"
-          className="flex flex-col"
+    <MouseTracingCapture>
+      <div className="w-full h-full flex">
+        <div
+          className="wow flex fadeInUp border-2 border-white/5 rounded-md bg-[#f6f6f6]/[.5] p-8 shadow-one dark:bg-[#1D2144] hover:shadow-two lg:px-5 xl:px-8 backdrop-blur-sm glow glow:ring-1 glow:border-glow glow:ring-glow glow:bg-glow/[.5]"
+          data-wow-delay=".1s"
         >
-          <div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
-          <p className="mb-8 text-base m-auto whitespace-pre-line leading-relaxed text-gray-600 dark:text-body-color dark:border-white dark:border-opacity-10 dark:text-white">
-            “{content}“
-          </p>
-          <div className="flex items-center border-t border-body-color border-opacity-10 pt-8 mt-auto">
-            <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
-              <Image width={50} height={50} src={image} alt={name} />
+          <Link
+            href={testimonial.url || "/"}
+            target="_blank"
+            className="flex flex-col"
+          >
+            <div className="mb-5 flex items-center space-x-1">
+              {ratingIcons}
             </div>
-            <div className="w-full">
-              <h5 className="mb-1 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
-                {name}
-              </h5>
-              <p className="text-sm text-body-color">{designation}</p>
+            <p className="mb-8 text-base m-auto whitespace-pre-line leading-relaxed text-gray-600 dark:text-body-color dark:border-white dark:border-opacity-10">
+              “{content}“
+            </p>
+            <div className="flex items-center border-t border-body-color border-opacity-10 pt-8 mt-auto glow  glow:border-glow">
+              <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
+                <Image width={50} height={50} src={image} alt={name} />
+              </div>
+              <div className="w-full">
+                <h5 className="mb-1 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
+                  {name}
+                </h5>
+                <p className="text-sm text-body-color">{designation}</p>
+              </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
+        <MouseTracingOverlay glowColor="#105542" />
       </div>
-    </div>
+    </MouseTracingCapture>
   );
 };
 
