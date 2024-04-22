@@ -1,7 +1,6 @@
 import DiscordIcon from "@/components/ui/icons/discord";
 import { DISCORD_URL, PAPER_URL } from "@/lib/contants";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Presentation() {

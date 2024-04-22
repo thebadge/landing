@@ -1,6 +1,5 @@
 import { MailIcon, TangentIcon } from "lucide-react";
 import Image from "next/image";
-import TeamMemberDecoration from "./Decoration";
 import { ContactType, TeamMemberData } from "@/components/Team/teamMemberData";
 import GithubIcon from "@/components/ui/icons/github";
 import LinkedinIcon from "@/components/ui/icons/linkedin";

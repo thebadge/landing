@@ -14,7 +14,7 @@ const buttonVariants = cva(
         destructive:
           "bg-red-500 text-primary-50 hover:bg-red-500/90 dark:bg-red-900 dark:text-primary-50 dark:hover:bg-red-900/90",
         outline:
-          "border border-primary-200 bg-white hover:bg-primary-100 hover:text-primary-900 dark:border-primary-800 dark:bg-primary-950 dark:hover:bg-primary-800 dark:hover:text-primary-50",
+          "border border-primary-200 bg-transparent hover:bg-primary-100 hover:text-primary-900 dark:border-primary-800 dark:bg-transparent dark:hover:bg-primary-800 dark:hover:text-primary-50  glow:ring-1 glow:border-glow glow:ring-glow",
         secondary:
           "bg-primary-100 text-primary-900 hover:bg-primary-100/80 dark:bg-primary-800 dark:text-primary-50 dark:hover:bg-primary-800/80",
         ghost:
@@ -45,7 +45,7 @@ const buttonVariants = cva(
         variant: "outline",
         color: "secondary",
         class:
-          "border-secondary-200 bg-white hover:bg-secondary-100 hover:text-secondary-900 dark:border-secondary-800 dark:bg-secondary-950 dark:hover:bg-secondary-800 dark:hover:text-secondary-50",
+          "border-secondary-200 bg-transparent hover:bg-secondary-100 hover:text-secondary-900 dark:border-secondary-800 dark:bg-transparent dark:hover:bg-secondary-800 dark:hover:text-secondary-50 glow:text-glow/[.15]  glow:ring-1 glow:border-glow glow:ring-glow",
       },
       {
         variant: "ghost",

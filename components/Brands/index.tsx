@@ -1,6 +1,5 @@
 import { Brand } from "@/types/brand";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 const brandsData: Brand[] = [
   {

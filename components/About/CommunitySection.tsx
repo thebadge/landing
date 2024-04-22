@@ -1,6 +1,5 @@
 import SectionCarousel from "@/components/About/SectionCarousel";
 import CarouselSmallText from "@/components/Common/CarouselSmallText";
-import CursorAnimation from "@/components/Common/CursorAnimation";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   CarouselContent,
@@ -8,11 +7,9 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Cursor from "@/components/ui/cursor";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
-import { useSpring, animated } from "@react-spring/web";
 
 const CommunitySection = () => {
   const t = useTranslations("badgeCategories.community");
