@@ -27,7 +27,7 @@ const Video = () => {
             >
               <div className="relative aspect-[77/40] items-center justify-center">
                 <Image
-                  src="/images/video/video.jpeg"
+                  src="/images/video/video.webp"
                   alt="video image"
                   width={770}
                   height={400}

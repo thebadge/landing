@@ -6,6 +6,7 @@ import { Metadata, ResolvingMetadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Mulish, Roboto_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import React from "react";
 
 const mulishFont = Mulish({
   weight: ["300", "400", "500", "600", "700", "800", "900"],

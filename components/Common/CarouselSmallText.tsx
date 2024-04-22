@@ -27,7 +27,7 @@ const CarouselSmallText = ({
             invertedColor
               ? "dark:text-black text-white"
               : "text-black dark:text-white"
-          } md:text-[25px]`}
+          } md:text-[25px] glow:text-glow/[.15]`}
         >
           {title}
         </h2>
