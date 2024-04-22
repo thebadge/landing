@@ -16,7 +16,6 @@ const GlowMouseTracing = () => {
       overlay.appendChild(clonedChild);
     });
 
-    console.log("finished");
     return () => {};
     // empty dependency array ensures the effect runs only once after mount
   }, []);
