@@ -144,6 +144,15 @@ const Footer = () => {
                       About{" "}
                     </a>
                   </li>
+                </ul>
+              </div>
+            </div>
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+              <div className="mb-8 lg:mb-16">
+                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+                  Other
+                </h2>
+                <ul>
                   <li>
                     <a
                       href="https://doc.thebadge.xyz/"
@@ -153,6 +162,15 @@ const Footer = () => {
                     >
                       {" "}
                       Docs{" "}
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="/blog"
+                      className="mb-4 inline-block text-base font-medium text-gray-600 dark:text-body-color hover:text-primary-500 dark:hover:text-primary-500"
+                    >
+                      {" "}
+                      Blogs{" "}
                     </a>
                   </li>
                 </ul>
