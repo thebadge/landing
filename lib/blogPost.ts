@@ -20,7 +20,7 @@ export const getAllPosts = cache(() => {
         "utf8"
       );
       const { data } = matter(fileContents);
-      // console.log(data, content);
+
       return { data, slug };
     })
     .sort((a, b) => compareDesc(a.data.date, b.data.date))
@@ -40,7 +40,7 @@ export const getBlog = cache((slug: string) => {
     id: data.slug,
     title: data.title,
     paragraph: data.summary,
-    publishDate: data.date.toISOString(),
+    publishDate: data.date?.toISOString(),
     author: {
       name: data.author,
       image: data.avatar,
