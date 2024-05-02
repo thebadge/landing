@@ -11,9 +11,12 @@ import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { unstable_setRequestLocale } from "next-intl/server";
+import {useTranslations} from "next-intl";
 
 export default function Home({ params: { locale } }) {
   unstable_setRequestLocale(locale);
+
+  const t = useTranslations();
 
   return (
     <>
@@ -21,7 +24,7 @@ export default function Home({ params: { locale } }) {
       <Hero />
       <Features />
       <CuratorsSection />
-      <Video />
+      <Video title={t("video.title")} paragraph={t("video.paragraph")} />
       <Brands />
       <BadgesSection />
       <CreatorsSection />

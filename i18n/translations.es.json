@@ -62,6 +62,10 @@
       ]
     }
   },
+  "video": {
+    "title": "Estamos listos para crecer",
+    "paragraph": "Echa un vistazo a este vídeo para obtener más información sobre lo que estamos construyendo y por qué cambiará para siempre la tokenización de activos en el mundo real."
+  },
   "badgeCategories": {
     "title": "CATEGORÍAS DE BADGES",
     "community": {
@@ -157,8 +161,8 @@
     }
   },
   "testimonials": {
-    "title": "What Our Users Say",
-    "description": "There are many beta testers that have used our app and here we have some of they testimonials\n\n"
+    "title": "Qué opinan nuestros usuarios",
+    "description": "Muchos beta testers han probado nuestra app, aquí algunos de sus testimonios\n\n"
   },
   "roadmap": {
     "headline": "Roadmap",
