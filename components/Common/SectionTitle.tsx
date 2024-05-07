@@ -16,7 +16,7 @@ const SectionTitle = ({
   return (
     <>
       <div
-        className={`wow fadeInUp w-full ${center ? "mx-auto text-center" : ""}`}
+        className={`flex-1 wow fadeInUp w-full ${center ? "mx-auto text-center" : ""}`}
         data-wow-delay=".1s"
         style={{ maxWidth: width, marginBottom: mb }}
       >

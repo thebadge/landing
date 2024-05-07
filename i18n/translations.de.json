@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "The Badge - Decentralized Certifications Platform",
-    "description": "TheBadge ist eine dezentralisierte Zertifizierungsplattform, die es Unternehmen, Institutionen und Einzelpersonen ermöglicht, verifizierte Zertifizierungen von realen Vermögenswerten (RWAs) auf die Blockchain zu bringen.",
+    "description": "TheBadge ist eine dezentralisierte Zertifizierungsplattform, die es Unternehmen, Institutionen und Einzelpersonen ermöglicht, verifizierte Zertifizierungen von Real-World-Assets (RWAs) in die Blockchain zu bringen.",
     "xHandler": "'@thebadgexyz'"
   },
   "header": {
@@ -18,7 +18,7 @@
   },
   "presentation": {
     "title": "Dezentrale Zertifizierungsplattform",
-    "description": "TheBadge ist ein dezentrales Protokoll, das die Einführung von RWAs beschleunigt. Es stellt die Infrastruktur für traditionelle und Web-3-Unternehmen, Institutionen und Endbenutzer bereit, um RWA-Zertifizierungen in die Kette zu bringen. Als dezentrale Zertifizierungsplattform werden diese Web3-Zertifizierungen von der Community verifiziert und validiert, bevor sie in der Kette ausgestellt werden. Die Community erhält einen finanziellen Anreiz, Daten zu kuratieren, die zertifiziert werden sollen.",
+    "description": "TheBadge ist ein dezentrales Protokoll, das die Einführung von Real-World-Assets (RWAs) beschleunigt. Es stellt die Infrastruktur für traditionelle und Web-3-Unternehmen, Institutionen und Endbenutzer bereit, um RWA-Zertifizierungen in die Blockchain zu bringen. Als dezentrale Zertifizierungsplattform werden diese Web3-Zertifizierungen von der Community verifiziert und validiert, bevor sie in der Blockchain ausgestellt werden. Die Community erhält einen finanziellen Anreiz, Daten zu kuratieren, die zertifiziert werden sollen.",
     "buttons": {
       "whitepaper": "Whitepaper lesen",
       "community": "Community beitreten"
@@ -61,6 +61,10 @@
         }
       ]
     }
+  },
+  "video": {
+    "title": "Wir sind bereit zu wachsen",
+    "paragraph": "Sehen Sie sich dieses Video an, um mehr darüber zu erfahren, was wir entwickeln und warum es die Tokenisierung von Real-World-Assets für immer verändern wird."
   },
   "badgeCategories": {
     "title": "BADGE-KATEGORIEN",
@@ -157,13 +161,13 @@
     }
   },
   "testimonials": {
-    "title": "What Our Users Say",
-    "description": "There are many beta testers that have used our app and here we have some of they testimonials\n\n"
+    "title": "Was unsere Nutzer sagen",
+    "description": "Viele Beta-Testers haben unsere App schon ausprobiert, hier haben wir ein paar ihrer Meinungen\n\n"
   },
   "roadmap": {
     "headline": "Roadmap",
-    "title": "Working Process of TheBadge",
-    "description": "We're revolutionizing RWA verification via decentralization. Our roadmap shows crucial milestones, from defining project basics to building strong certification platforms. With a user-centric approach and community validation, we're bringing RWAs seamlessly into blockchain, fostering trust at every turn.",
+    "title": "Arbeitsprozess von TheBadge",
+    "description": "Wir revolutionieren die RWA-Verifizierung durch Dezentralisierung. Unsere Roadmap zeigt entscheidende Meilensteine, von der Definition der Projektgrundlagen bis hin zum Aufbau starker Zertifizierungsplattformen. Mit einem nutzerzentrierten Ansatz und einer Community-Validierung bringen wir RWAs nahtlos in die Blockchain und fördern das Vertrauen auf Schritt und Tritt.",
     "steps": [
       {
         "year": "2022",
