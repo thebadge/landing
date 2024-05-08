@@ -143,7 +143,7 @@ const ErrorPage = () => {
                   deleted or does not exist.
                 </p>
                 <Link
-                  href="/"
+                  href="/public"
                   className="rounded-md bg-primary-500 py-3 px-8 text-base font-bold text-white shadow-signUp duration-300 hover:bg-white hover:text-primary-500 md:px-9 lg:px-8 xl:px-9"
                 >
                   Back to Homepage
