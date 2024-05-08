@@ -11,15 +11,15 @@ export default function MainLanding() {
 
   return (
     <>
-      <div className="container flex lg:hidden bg-radial-gradient-dark min-h-[100svh]">
+      <div className="container block lg:hidden bg-radial-gradient-dark min-h-[100svh]">
         <Image
           width={150}
           height={150}
           src={"/logo.svg"}
           alt="The Badge Icon"
-          className="absolute top-10 left-1/2 transform -translate-x-1/2 transform -translate-x-1/2"
+          className="mx-auto py-6"
         />
-        <div className="flex flex-col items-center justify-center gap-2 p-0">
+        <div className="flex flex-col items-center justify-center gap-2 p-0 min-h-[calc(100svh-100px)]">
           {/* Oracle */}
 
           <div className="flex flex-1 justify-center z-10">
