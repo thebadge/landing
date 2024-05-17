@@ -3,21 +3,21 @@
 .splitview {
     position: relative;
     width: 100%;
-    min-height: 100svh;
+    min-height: calc(100svh - 125px);
     overflow: hidden;
 }
 
 .panel {
     position: absolute;
     width: 100vw;
-    min-height: 100svh;
+    min-height: calc(100svh - 125px);
     overflow: hidden;
 }
 
 .panel .content {
     position: absolute;
     width: 100vw;
-    min-height: 100svh;
+    min-height: calc(100svh - 125px);
     color: #FFF;
 }
 
@@ -49,8 +49,8 @@
     height: 100%;
     position: absolute;
     display: block;
-    background-color: rgb(253, 171, 0);
-    width: 5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 2px;
     top: 0;
     left: 50%;
     z-index: 3;
