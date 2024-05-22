@@ -20,16 +20,16 @@ export default function HomeDesktop() {
               src="/images/home/tb_agro.png"
               width={904}
               height={522}
-              className="m-auto max-h-[75%]"
+              className="m-auto -ml-44"
               alt="Original"
             />
 
             <div className="m-auto p-4 flex flex-col gap-8 text-center">
               <ChoicePresentation
                 title={"Agro-Commodities tokenization"}
-                description={`TheBadge Labs is tokenizing agro-assets, for easier, faster and more distributed 
-                investment opportunities. We developed the infrastructure for tokenizing agro-assets using a 
-                decentralized proof of reserve protocol.`}
+                description={`TheBadge Labs is an infrastructure provider for investing in agro-commodities. 
+                We help connecting farmers with web3 investors, allowing easier, 
+                faster and more distributed investment opportunities.`}
               />
 
               <Link id="the-badge-tokenization-link" href="#">
@@ -52,7 +52,7 @@ export default function HomeDesktop() {
                 title={t("title")}
                 description={`TheBadge Oracle is a decentralized protocol that accelerates
                   the adoption of real-world assets (RWAs). It provides the
-                  infrastructure for traditional & web 3 companies,
+                  infrastructure for traditional & web3 companies,
                   institutions, and final users to bring RWA certifications
                   on-chain.`}
               />
@@ -71,7 +71,7 @@ export default function HomeDesktop() {
               src="/images/home/tb_oracle.png"
               width={904}
               height={522}
-              className="m-auto max-h-[75%]"
+              className="m-auto -mr-44"
               alt="Original"
             />
 
