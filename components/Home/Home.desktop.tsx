@@ -20,14 +20,14 @@ export default function HomeDesktop() {
               src="/images/home/tb_agro.png"
               width={904}
               height={522}
-              className="m-auto max-h-[50%]"
+              className="m-auto max-h-[75%]"
               alt="Original"
             />
 
             <div className="m-auto p-4 flex flex-col gap-8 text-center">
               <ChoicePresentation
                 title={"Agro-Commodities tokenization"}
-                description={`The Badge Labs is tokenizing agro-assets, for easier, faster and more distributed 
+                description={`TheBadge Labs is tokenizing agro-assets, for easier, faster and more distributed 
                 investment opportunities. We developed the infrastructure for tokenizing agro-assets using a 
                 decentralized proof of reserve protocol.`}
               />
@@ -35,11 +35,10 @@ export default function HomeDesktop() {
               <Link id="the-badge-tokenization-link" href="#">
                 <Button
                   variant="outline"
-                  color="secondary"
                   disabled={true}
                   className="py-4 px-8 rounded-3xl"
                 >
-                  Coming soon
+                  Read more
                 </Button>
               </Link>
             </div>
@@ -58,8 +57,12 @@ export default function HomeDesktop() {
                   on-chain.`}
               />
               <Link id="the-badge-oracle-link" href="/en/oracle">
-                <Button variant="outline" className="py-4 px-8 rounded-3xl">
-                  Read more <ArrowRight className="ml-2" />
+                <Button
+                  variant="outline"
+                  color="secondary"
+                  className="py-4 px-8 rounded-3xl"
+                >
+                  Go to website <ArrowRight className="ml-2" />
                 </Button>
               </Link>
             </div>
@@ -68,7 +71,7 @@ export default function HomeDesktop() {
               src="/images/home/tb_oracle.png"
               width={904}
               height={522}
-              className="m-auto max-h-[50%]"
+              className="m-auto max-h-[75%]"
               alt="Original"
             />
 
