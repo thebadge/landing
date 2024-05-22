@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import SplitView from "@/components/ui/split-view";
 import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function HomeDesktop() {
@@ -11,22 +12,24 @@ export default function HomeDesktop() {
     <div className="m-auto hidden lg:block">
       <SplitView>
         {/* Oracle */}
-        <div className="panel bottom bg-home-agro">
+        <div className="panel bottom bg-home-agro bg-cover bg-center">
           <div className="content grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-10 rever">
             <div className="m-auto p-4" />
 
-            <img
-              className="m-auto"
-              src="https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=2148&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            <Image
+              src="/images/home/tb_agro.png"
+              width={904}
+              height={522}
+              className="m-auto max-h-[50%]"
               alt="Original"
             />
 
             <div className="m-auto p-4 flex flex-col gap-8 text-center">
               <ChoicePresentation
-                title={"Agro-Commodities & Specialties tokenization"}
-                description={`The Badge Labs provide a tokenization solution, for
-                  commodities & specialties, making it easier and faster than
-                  ever before to invest in those assets using blockchain.`}
+                title={"Agro-Commodities tokenization"}
+                description={`The Badge Labs is tokenizing agro-assets, for easier, faster and more distributed 
+                investment opportunities. We developed the infrastructure for tokenizing agro-assets using a 
+                decentralized proof of reserve protocol.`}
               />
 
               <Link id="the-badge-tokenization-link" href="#">
@@ -43,7 +46,7 @@ export default function HomeDesktop() {
           </div>
         </div>
         {/* Agro-Commodities & Specialties */}
-        <div className="panel top bg-home-tb">
+        <div className="panel top bg-home-tb bg-cover bg-center">
           <div className="content grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-10">
             <div className="m-auto p-4 flex flex-col gap-8 text-center">
               <ChoicePresentation
@@ -61,10 +64,12 @@ export default function HomeDesktop() {
               </Link>
             </div>
 
-            <img
+            <Image
+              src="/images/home/tb_oracle.png"
+              width={904}
+              height={522}
               className="m-auto max-h-[50%]"
-              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/original-image.jpg"
-              alt="Duotone"
+              alt="Original"
             />
 
             <div className="m-auto p-4" />
