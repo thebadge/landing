@@ -17,7 +17,7 @@ const ThirdPartySection = () => {
   return (
     <div className="flex flex-col flex-wrap items-center h-full">
       <Card className="w-full h-full rounded-2xl border-2 bg-transparent dark:bg-transparent p-0 border-secondary-200 shadow-sm dark:border-secondary-800">
-        <CardContent className="flex flex-col items-center justify-center gap-2 p-0">
+        <CardContent className="h-full flex flex-col items-center justify-center gap-2 p-0">
           <div className="w-full rounded-t-xl bg-badges-section bg-cover bg-center bg-origin-padding">
             <div
               className="wow fadeInUp relative m-auto h-[350px] w-[300px] text-center"
@@ -30,8 +30,8 @@ const ThirdPartySection = () => {
               />
             </div>
           </div>
-          <div className="w-full p-4">
-            <div className="wow fadeInUp" data-wow-delay=".2s">
+          <div className="flex-1 w-full p-4">
+            <div className="flex flex-col h-full wow fadeInUp" data-wow-delay=".2s">
               <SectionTitle
                 center
                 title={t("title")}

@@ -99,6 +99,8 @@ module.exports = {
       backgroundImage: {
         "badges-section":
           "url('/assets/decorations/categories-background.webp')",
+        "home-tb": "url('/images/home/tb_background.svg')",
+        "home-agro": "url('/images/home/agro_background.svg')",
         "radial-gradient-dark":
           "radial-gradient(circle at 15% 15%, #420756 0%, #190321 35%, #000000 100%)",
         "radial-gradient-light":
