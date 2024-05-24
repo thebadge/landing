@@ -12,7 +12,7 @@ export default function LanguageToggler() {
             ? "text-black dark:text-white underline underline-offset-2 decoration-primary-500"
             : "text-body-color dark:text-gray-500"
         }`}
-        href="/en"
+        href="/en/oracle"
       >
         en
       </Link>
@@ -23,7 +23,7 @@ export default function LanguageToggler() {
             ? "text-black dark:text-white underline underline-offset-2 decoration-primary-500"
             : "text-body-color dark:text-gray-500"
         }`}
-        href="/de"
+        href="/de/oracle"
       >
         de
       </Link>
@@ -34,7 +34,7 @@ export default function LanguageToggler() {
             ? "text-black dark:text-white underline underline-offset-2 decoration-primary-500"
             : "text-body-color dark:text-gray-500"
         }`}
-        href="/es"
+        href="/es/oracle"
       >
         es
       </Link>

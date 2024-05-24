@@ -32,13 +32,13 @@ Please install yarn globally if you haven't already.
 Install dependencies for the project:
 
 ```
-yarn install
+pnpm install
 ```
 
 To launch the dev version of the app locally:
 
 ```
-yarn dev
+pnpm dev
 ```
 
 ### Building
@@ -46,7 +46,7 @@ yarn dev
 To get a complete bundle use:
 
 ```
-yarn build
+pnpm build
 ```
 
 ## Contributing

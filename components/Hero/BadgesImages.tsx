@@ -22,7 +22,7 @@ const BADGES: { [key: string]: Array<any> } = {
 export default function BadgesImages() {
   const locale = useLocale() || "en";
   return (
-    <div className="-mx-4 flex flex-1 relative justify-center content-center multiBadgePreview">
+    <div className="-mx-4 m-auto flex flex-1 relative justify-center content-center multiBadgePreview">
       {BADGES[locale].map((badgeSrc, i) => (
         <Image
           key={i}

@@ -1,11 +1,7 @@
 import { Providers } from "@/app/providers";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import ScrollToTop from "@/components/ScrollToTop";
 import { Metadata, ResolvingMetadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Mulish, Roboto_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 
 const mulishFont = Mulish({
@@ -103,14 +99,7 @@ export default function LocaleLayout({
       className={`${mulishFont.variable} ${roboto_mono.variable}`}
     >
       <body>
-        <Analytics />
-        <Providers>
-          <div className="fixed w-full h-full -z-10 dark:bg-radial-gradient-dark bg-radial-gradient-light"></div>
-          <Header />
-          {children}
-          <Footer />
-          <ScrollToTop />
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
