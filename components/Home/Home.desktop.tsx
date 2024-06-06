@@ -32,12 +32,8 @@ export default function HomeDesktop() {
                 faster and more distributed investment opportunities.`}
               />
 
-              <Link id="the-badge-tokenization-link" href="#">
-                <Button
-                  variant="outline"
-                  disabled={true}
-                  className="py-4 px-8 rounded-3xl"
-                >
+              <Link id="the-badge-tokenization-link" href="/blog/thebadge-agro">
+                <Button variant="outline" className="py-4 px-8 rounded-3xl">
                   Read more
                 </Button>
               </Link>
