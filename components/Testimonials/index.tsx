@@ -27,11 +27,13 @@ const testimonialData: Testimonial[] = [
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Emin Gün Sirer",
+    designation: "Founder and CEO @avalabs",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "",
+      "Learning about Tokenizing Aggro Commodities from two founders with a strong connection to underserved agricultural communities.   #codebase",
+    image:
+      "https://pbs.twimg.com/profile_images/1766585228330430464/V2QayKPG_400x400.jpg",
+    url: "https://twitter.com/el33th4xor/status/1796258028708147686",
     star: 5,
   },
 ];

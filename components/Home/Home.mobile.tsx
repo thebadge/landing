@@ -24,7 +24,7 @@ export default function HomeMobile() {
 
             <Link id="the-badge-oracle-link" href="/en/oracle">
               <Button variant="outline" className="py-4 px-8 rounded-3xl">
-                Read more <ArrowRight className="ml-2" />
+                Go to website <ArrowRight className="ml-2" />
               </Button>
             </Link>
           </div>
@@ -40,14 +40,13 @@ export default function HomeMobile() {
                   ever before to invest in those assets using blockchain.`}
             />
 
-            <Link id="the-badge-tokenization-link" href="#">
+            <Link id="the-badge-tokenization-link" href="/blog/thebadge-agro">
               <Button
                 variant="outline"
                 color="secondary"
-                disabled={true}
                 className="py-4 px-8 rounded-3xl"
               >
-                <ArrowLeft className="mr-2" /> Coming soon
+                <ArrowLeft className="mr-2" /> Learn more
               </Button>
             </Link>
           </div>
