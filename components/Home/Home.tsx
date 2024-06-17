@@ -76,8 +76,10 @@ const ChoicePresentation = ({
         <div className="flex flex-row gap-4 mt-4">
           <Button
             asChild
-            className="py-4 px-8 shadow-2xl"
-            disabled={!!links.getStarted}
+            className={`py-4 px-8 shadow-2xl ${
+              !links.getStarted ? "cursor-not-allowed" : ""
+            }`}
+            disabled={!links.getStarted}
             color={!inverted ? "primary" : "secondary"}
           >
             <Link href={links.getStarted}>Get started</Link>
@@ -85,9 +87,11 @@ const ChoicePresentation = ({
           <Button
             asChild
             variant="secondary"
-            disabled={!!links.learnMore}
+            disabled={!links.learnMore}
             color={!inverted ? "primary" : "secondary"}
-            className="py-4 px-8"
+            className={`py-4 px-8 ${
+              !links.learnMore ? "cursor-not-allowed" : ""
+            }`}
           >
             <Link href={links.learnMore}>Learn more</Link>
           </Button>
