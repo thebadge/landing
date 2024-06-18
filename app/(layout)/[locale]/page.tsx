@@ -1,16 +1,20 @@
 import MainLanding from "@/components/Home";
 import { unstable_setRequestLocale } from "next-intl/server";
 import React from "react";
+import { LightModeWrapper } from "@/components/ui/themes/LightModeWrapper";
 
-export default function SplitPage({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
+const SplitPage = ({ params: { locale } }: { params: { locale: string } }) => {
   unstable_setRequestLocale(locale || "en");
 
-  return <MainLanding />;
-}
+  return (
+    <LightModeWrapper>
+      <MainLanding />
+    </LightModeWrapper>
+  );
+};
+
+SplitPage.theme = "light";
+export default SplitPage;
 
 export const dynamicParams = false;
 

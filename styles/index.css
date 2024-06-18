@@ -4,6 +4,7 @@
 
 @import "multi-badge-preview.css";
 @import "split-screen.css";
+@import "animated-background.css";
 
 @layer components {
   input[type="checkbox"]:checked ~ label span svg {

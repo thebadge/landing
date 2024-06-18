@@ -11,7 +11,7 @@ import { MailIcon } from "lucide-react";
 
 export default function HomeFooter() {
   return (
-    <div className="flex justify-center h-[50px] py-4 shadow-two shadow-glow">
+    <div className="flex justify-center h-[50px] mt-auto py-4 shadow-two shadow-glow">
       <div className="flex items-center">
         <a
           href={TWITTER_URL}
