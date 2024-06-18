@@ -1,4 +1,22 @@
 {
+  "home": {
+    "oracle": {
+      "title": "Decentralized certification platform",
+      "description": "TheBadge Oracle is a decentralized protocol that accelerates the adoption of real-world assets (RWAs). It provides the infrastructure for traditional & web3 companies, institutions, and final users to bring RWA certifications on-chain.",
+      "buttons": {
+        "getStarted": "Get started",
+        "learnMore": "Learn more"
+      }
+    },
+    "agro": {
+      "title": "Agro-Commodities tokenization",
+      "description": "TheBadge Labs is an infrastructure provider for investing in agro-commodities. We help connecting farmers with web3 investors, allowing easier, faster and more distributed investment opportunities.",
+      "buttons": {
+        "getStarted": "Get started",
+        "learnMore": "Learn more"
+      }
+    }
+  },
   "metadata": {
     "title": "The Badge - Decentralized Certifications Platform",
     "description": "TheBadge ist eine dezentralisierte Zertifizierungsplattform, die es Unternehmen, Institutionen und Einzelpersonen ermöglicht, verifizierte Zertifizierungen von Real-World-Assets (RWAs) in die Blockchain zu bringen.",
