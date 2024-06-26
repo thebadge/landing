@@ -1,10 +1,10 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/Footer/Oracle";
+import Header from "@/components/Header/Oracle";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 
-export default function RootLayout({
+export default function OracleRootLayout({
   children,
 }: {
   children: React.ReactNode;

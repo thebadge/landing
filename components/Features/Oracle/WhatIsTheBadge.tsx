@@ -1,5 +1,5 @@
 import SectionTitle from "@/components/Common/SectionTitle";
-import featuresData from "@/components/Features/featuresData";
+import featuresData from "./featuresData";
 import SingleFeature from "@/components/Common/SingleFeature";
 import { useTranslations } from "next-intl";
 

@@ -1,6 +1,6 @@
 import ParticlesDeco from "@/components/Features/ParticlesDeco";
 import { useTranslations } from "next-intl";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../../Common/SectionTitle";
 
 const Features = () => {
   const t = useTranslations("whatIsTheBadge");

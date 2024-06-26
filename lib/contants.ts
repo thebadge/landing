@@ -12,3 +12,9 @@ export const GITHUB_URL =
   process.env.NEXT_PUBLIC_GITHUB_URL || "https://github.com/thebadge";
 export const EMAIL_URL =
   process.env.NEXT_PUBLIC_EMAIL_URL || "mailto:hello@thebadge.xyz";
+
+export const PRESENTATION_VIDEO_URL =
+  process.env.AGRO_VIDEO_URL || "https://youtu.be/TRPJmIuzJVg";
+export const LITE_PATER_URL =
+  process.env.AGRO_LITE_PATER_URL ||
+  "https://docs.google.com/document/d/1W1TuUwKUsRXMZh9DnmAyfYraAPtW3jVm5sOFAxnbfhM/edit?usp=sharing";

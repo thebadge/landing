@@ -1,4 +1,4 @@
-import RootLayout from "@/components/Layout/RootLayout";
+import OracleRootLayout from "@/components/Layout/OracleRootLayout";
 import { unstable_setRequestLocale } from "next-intl/server";
 import React from "react";
 
@@ -11,5 +11,5 @@ export default function LocaleLayout({
 }) {
   unstable_setRequestLocale(locale || "en");
 
-  return <RootLayout>{children}</RootLayout>;
+  return <OracleRootLayout>{children}</OracleRootLayout>;
 }

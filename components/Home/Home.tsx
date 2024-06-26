@@ -4,12 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-
-const presentationVideoUrl =
-  process.env.AGRO_VIDEO_URL || "https://youtu.be/TRPJmIuzJVg";
-const litePaterUrl =
-  process.env.AGRO_LITE_PATER_URL ||
-  "https://docs.google.com/document/d/1W1TuUwKUsRXMZh9DnmAyfYraAPtW3jVm5sOFAxnbfhM/edit?usp=sharing";
+import { LITE_PATER_URL, PRESENTATION_VIDEO_URL } from "@/lib/contants";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -25,11 +20,11 @@ export default function Home() {
         links={{
           primary: {
             label: "Watch Presentation",
-            href: presentationVideoUrl,
+            href: PRESENTATION_VIDEO_URL,
           },
           secondary: {
             label: "Learn more",
-            href: litePaterUrl,
+            href: LITE_PATER_URL,
           },
         }}
       />
