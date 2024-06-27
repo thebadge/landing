@@ -22,7 +22,7 @@ const Faq = () => {
           <h3 className="font-bold text-center text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-dark">
             FAQ
           </h3>
-          <div className="bg-lightGreen rounded-2xl text-dark overflow-hidden p-2 md:p-6 lg:p-8">
+          <div className="bg-lightGreen rounded-2xl text-dark overflow-hidden p-4 md:p-6 lg:p-8">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1" className="border-dark">
                 <AccordionTrigger>Where I can learn more?</AccordionTrigger>
