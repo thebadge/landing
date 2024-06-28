@@ -5,7 +5,7 @@ export const VIDEO_URL = process.env.NEXT_VIDEO_URL || "/video/TheBadge.mp4";
 export const TWITTER_URL =
   process.env.NEXT_PUBLIC_TWITTER_URL || "https://twitter.com/thebadgexyz";
 export const DISCORD_URL =
-  process.env.NEXT_PUBLIC_DISCORD_URL || "https://discord.gg/m643n8T4";
+  process.env.NEXT_PUBLIC_DISCORD_URL || "https://discord.gg/FTxtkgbAC4";
 export const MEDIUM_URL =
   process.env.NEXT_PUBLIC_MEDIUM_URL || "https://medium.com/@TheBadge";
 export const GITHUB_URL =
