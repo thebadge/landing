@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <section
-        id="why"
+        id="about"
         className="container relative bg-clip-content bg-offWhite"
       >
         <div className="container flex flex-col gap-12 py-20">

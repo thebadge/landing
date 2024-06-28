@@ -5,7 +5,7 @@ import {
   DISCORD_URL,
   EMAIL_URL,
   GITHUB_URL,
-  LITE_PATER_URL,
+  LITE_PAPER_URL,
   PRESENTATION_VIDEO_URL,
   TWITTER_URL,
 } from "@/lib/contants";
@@ -20,6 +20,7 @@ const Footer = () => {
     <>
       <MouseTracingCapture>
         <footer
+          id="#footer"
           className="container bg-primary-800 wow fadeInUp relative z-10 pt-16 md:pt-20 lg:pt-24"
           data-wow-delay=".1s"
         >
@@ -107,7 +108,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href={LITE_PATER_URL}
+                        href={LITE_PAPER_URL}
                         target="_blank"
                         className="mb-4 inline-block text-base font-medium text-gray-600 dark:text-body-color hover:text-primary-500 dark:hover:text-primary-500"
                         rel="noreferrer"

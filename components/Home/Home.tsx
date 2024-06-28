@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import { LITE_PATER_URL, PRESENTATION_VIDEO_URL } from "@/lib/contants";
+import { PRESENTATION_VIDEO_URL } from "@/lib/contants";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -23,8 +23,8 @@ export default function Home() {
             href: PRESENTATION_VIDEO_URL,
           },
           secondary: {
-            label: "Learn more",
-            href: LITE_PATER_URL,
+            label: "Go website",
+            href: "/en/agro",
           },
         }}
       />

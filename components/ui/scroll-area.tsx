@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef } from "react";
 import * as ScrollAreaPrimitive from "@radix-ui/react-scroll-area";
 
 import { cn } from "@/lib/utils";
+import { useWheelHack } from "@/lib/hooks/useWheelHack";
 
 const ScrollArea = React.forwardRef<
   React.ElementRef<typeof ScrollAreaPrimitive.Root>,
@@ -13,6 +14,7 @@ const ScrollArea = React.forwardRef<
   }
 >(({ className, children, orientation = "vertical", ...props }, ref) => {
   const viewportRef = useRef<HTMLDivElement | null>(null);
+  const blockNativeScroll = useWheelHack(500);
   const wheelTimeout = useRef<NodeJS.Timeout | undefined>();
 
   // block the body from scrolling (or any other element)
@@ -51,14 +53,9 @@ const ScrollArea = React.forwardRef<
       );
 
       // while wheel is moving, do not release the lock
-      clearTimeout(wheelTimeout.current);
-
-      // flag indicating to lock page scrolling (setTimeout returns a number)
-      wheelTimeout.current = setTimeout(() => {
-        wheelTimeout.current = undefined;
-      }, 500);
+      blockNativeScroll();
     },
-    [orientation]
+    [blockNativeScroll, orientation]
   );
 
   return (

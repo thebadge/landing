@@ -15,6 +15,6 @@ export const EMAIL_URL =
 
 export const PRESENTATION_VIDEO_URL =
   process.env.AGRO_VIDEO_URL || "https://youtu.be/TRPJmIuzJVg";
-export const LITE_PATER_URL =
+export const LITE_PAPER_URL =
   process.env.AGRO_LITE_PATER_URL ||
-  "https://docs.google.com/document/d/1W1TuUwKUsRXMZh9DnmAyfYraAPtW3jVm5sOFAxnbfhM/edit?usp=sharing";
+  "https://drive.google.com/file/d/1rhaDvlLrCgeMlxAs8bEtGNKsotHnVOCF/view?usp=sharing";

@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { LITE_PATER_URL, PRESENTATION_VIDEO_URL } from "@/lib/contants";
+import { LITE_PAPER_URL, PRESENTATION_VIDEO_URL } from "@/lib/contants";
 import Link from "next/link";
 import React from "react";
 
@@ -44,7 +44,7 @@ const Faq = () => {
                   <Link
                     target="_blank"
                     className="underline"
-                    href={LITE_PATER_URL}
+                    href={LITE_PAPER_URL}
                   >
                     HERE
                   </Link>
