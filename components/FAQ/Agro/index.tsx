@@ -5,7 +5,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { LITE_PAPER_URL, PRESENTATION_VIDEO_URL } from "@/lib/contants";
+import {
+  EMAIL_URL,
+  LITE_PAPER_URL,
+  PRESENTATION_VIDEO_URL,
+} from "@/lib/contants";
 import Link from "next/link";
 import React from "react";
 
@@ -51,10 +55,13 @@ const Faq = () => {
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3" className="border-dark">
-                <AccordionTrigger>How can I help?</AccordionTrigger>
+                <AccordionTrigger>Are you doing fundraise?</AccordionTrigger>
                 <AccordionContent>
-                  Yes. It&apos;s animated by default, but you can disable it if
-                  you prefer.
+                  r Yes. Pre-seed round opening on mid 2024. Please reach
+                  us&nbsp;
+                  <Link target="_blank" className="underline" href={EMAIL_URL}>
+                    HERE
+                  </Link>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
