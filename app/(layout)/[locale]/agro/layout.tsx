@@ -1,6 +1,6 @@
-import OracleRootLayout from "@/components/Layout/OracleRootLayout";
 import { unstable_setRequestLocale } from "next-intl/server";
 import React from "react";
+import AgroRootLayout from "@/components/Layout/AgroRootLayout";
 
 export default function LocaleLayout({
   children,
@@ -11,5 +11,5 @@ export default function LocaleLayout({
 }) {
   unstable_setRequestLocale(locale || "en");
 
-  return <OracleRootLayout>{children}</OracleRootLayout>;
+  return <AgroRootLayout>{children}</AgroRootLayout>;
 }
