@@ -14,7 +14,7 @@ const ScrollArea = React.forwardRef<
   }
 >(({ className, children, orientation = "vertical", ...props }, ref) => {
   const viewportRef = useRef<HTMLDivElement | null>(null);
-  const blockNativeScroll = useWheelHack(500);
+  const blockNativeScroll = useWheelHack(200);
   const wheelTimeout = useRef<NodeJS.Timeout | undefined>();
 
   // block the body from scrolling (or any other element)
@@ -38,7 +38,6 @@ const ScrollArea = React.forwardRef<
         return;
       }
 
-      e.preventDefault();
       e.stopPropagation();
 
       // Capture up/down wheel events and scroll the viewport horizontally
@@ -65,6 +64,7 @@ const ScrollArea = React.forwardRef<
       {...props}
     >
       <ScrollAreaPrimitive.Viewport
+        onMouseMove={blockNativeScroll}
         ref={viewportRef}
         onWheel={onWheel}
         className="h-full w-full rounded-[inherit]"

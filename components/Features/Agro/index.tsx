@@ -19,7 +19,7 @@ const Features = () => {
                   key={benefits.id}
                   className="w-[300px] flex flex-col gap-4 p-2 md:p-4 rounded-md border bg-offWhite"
                 >
-                  <h4 className="text-lg mb:text-xl lg:text-2xl text-primary-800">
+                  <h4 className="h-[2lh] text-lg mb:text-xl lg:text-2xl text-primary-800">
                     {benefits.title}
                   </h4>
                   <figure className="shrink-0">
@@ -33,9 +33,7 @@ const Features = () => {
                       />
                     </div>
                   </figure>
-                  <p className="text-justify text-primary-800">
-                    {benefits.paragraph}
-                  </p>
+                  <p className="text-primary-800">{benefits.paragraph}</p>
                 </div>
               ))}
             </div>
