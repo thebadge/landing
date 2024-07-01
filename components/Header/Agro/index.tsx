@@ -2,8 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import ThemeToggler from "./ThemeToggler";
-import LanguageToggler from "./LanguageToggler";
 import menuData from "./menuData";
 
 const Header = () => {
@@ -39,7 +37,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header top-0 left-0 z-40 flex w-full items-center bg-transparent ${
+        className={`header top-0 left-0 z-40 flex w-full items-center bg-primary-800 ${
           sticky
             ? "!fixed !z-[9999] !bg-white !bg-opacity-30 shadow-sticky backdrop-blur-sm !transition dark:!bg-primary-500 dark:!bg-opacity-20"
             : "absolute"
@@ -49,28 +47,28 @@ const Header = () => {
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4 xl:mr-12">
               <Link
-                href="/"
+                href="/public"
                 className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
+                  sticky ? "py-5 lg:py-2" : "py-4"
                 } `}
               >
                 <Image
-                  src="/logo.svg"
+                  src="/agro-logo.png"
                   alt="logo"
-                  width={140}
+                  width={30}
                   height={30}
-                  className="hidden w-full dark:block"
+                  className="hidden dark:block"
                 />
                 <Image
-                  src="/logo-light.svg"
+                  src="/agro-logo-light.png"
                   alt="logo"
-                  width={140}
+                  width={30}
                   height={30}
-                  className="block w-full dark:hidden"
+                  className="block dark:hidden"
                 />
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between px-4">
+            <div className="flex w-fit items-center justify-between px-4">
               <div>
                 <button
                   onClick={navbarToggleHandler}
@@ -149,20 +147,6 @@ const Header = () => {
                     ))}
                   </ul>
                 </nav>
-              </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link
-                  href="https://app.thebadge.xyz"
-                  className="ease-in-up hidden rounded-md bg-opacity-40 bg-secondary-700 py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Open App
-                </Link>
-                <div>
-                  <ThemeToggler />
-                </div>
-                <div className="hidden md:block">
-                  <LanguageToggler />
-                </div>
               </div>
             </div>
           </div>

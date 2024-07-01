@@ -1,7 +1,7 @@
-import WhatIsTheBadge from "@/components/Features/WhatIsTheBadge";
-import BadgesImages from "./BadgesImages";
-import Circles from "./Circles";
-import Presentation from "./Presentation";
+import WhatIsTheBadge from "@/components/Features/Oracle/WhatIsTheBadge";
+import BadgesImages from "../BadgesImages";
+import Circles from "../Circles";
+import Presentation from "../Presentation";
 
 export default function Hero() {
   return (

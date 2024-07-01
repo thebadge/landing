@@ -4,14 +4,14 @@ import CuratorsSection from "@/components/About/CuratorsSection";
 import Blog from "@/components/Blog";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
-import Features from "@/components/Features";
-import Hero from "@/components/Hero";
+import Features from "@/components/Features/Oracle";
+import Hero from "@/components/Hero/Oracle";
 import Roadmap from "@/components/Roadmap";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { unstable_setRequestLocale } from "next-intl/server";
-import {useTranslations} from "next-intl";
+import { useTranslations } from "next-intl";
 
 export default function Home({ params: { locale } }) {
   unstable_setRequestLocale(locale);

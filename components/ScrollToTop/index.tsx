@@ -16,7 +16,7 @@ export default function ScrollToTop() {
   useEffect(() => {
     // Button is displayed after scrolling for 500 pixels
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
+      if (window.scrollY > 300) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -34,7 +34,7 @@ export default function ScrollToTop() {
         <div
           onClick={scrollToTop}
           aria-label="scroll to top"
-          className="animate-bounce flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-primary-800 text-white shadow-md transition ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+          className="animate-bounce flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-primary-900 text-white shadow-md transition ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
         >
           <span className="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"></span>
         </div>
