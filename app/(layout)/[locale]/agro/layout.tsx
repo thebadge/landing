@@ -34,7 +34,7 @@ export async function generateMetadata(
       locale: params.locale,
       images: [
         {
-          url: "/the_badge_banner.jpg",
+          url: "/the_badge_agro_banner.jpg",
           width: 1404,
           height: 459,
         },
@@ -47,7 +47,7 @@ export async function generateMetadata(
       description: t("agro.description"),
       creator: t("agro.xHandler"),
       site: t("agro.xHandler"),
-      images: ["https://thebadge.xyz/the_badge_banner.jpg"], // Must be an absolute URL
+      images: ["https://thebadge.xyz/the_badge_agro_banner.jpg"], // Must be an absolute URL
     },
     icons: {
       icon: "/favicon.ico",
