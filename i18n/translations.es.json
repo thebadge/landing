@@ -19,8 +19,18 @@
   },
   "metadata": {
     "title": "The Badge - Decentralized Certifications Platform",
-    "description": "TheBadge es una plataforma de certificación descentralizada que permite a empresas, instituciones y personas llevar las certificaciónes de activos del mundo real (RWAs) a la blockchain.",
-    "xHandler": "'@thebadgexyz'"
+    "description": "TheBadge Labs hace foco en desarollar plataformas de certificación descentralizada que permite a empresas, instituciones y personas llevar las certificaciónes de activos del mundo real (RWAs) a la blockchain.",
+    "xHandler": "'@thebadgexyz'",
+    "agro": {
+      "title": "TheBadge Labs - Agro-Commodities tokenization",
+      "description": "TheBadge Labs provides infrastructure for investing in agro-commodities. We help connecting farmers with web3 investors, allowing easier, faster and more distributed investment opportunities.",
+      "xHandler": "'@thebadgexyz'"
+    },
+    "oracle": {
+      "title": "TheBadge - Decentralized Certifications Platform",
+      "description": "TheBadge is a decentralized certification platform that allows companies, institutions, and individuals to bring verified real-world assets (RWAs) certification's to the blockchain.",
+      "xHandler": "'@thebadgexyz'"
+    }
   },
   "header": {
     "home": "INICIO",
