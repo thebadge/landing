@@ -5,6 +5,7 @@ import Slideshow from "@/components/Slideshow/Agro";
 import About from "@/components/About/Agro";
 import Faq from "@/components/FAQ/Agro";
 import Features from "@/components/Features/Agro";
+import Waitlist from "@/components/Waitlist/agro";
 
 export default function Home({ params: { locale } }) {
   unstable_setRequestLocale(locale);
@@ -15,6 +16,7 @@ export default function Home({ params: { locale } }) {
       <Slideshow />
       <About />
       <Features />
+      <Waitlist />
       <Faq />
       <ScrollUp />
     </>

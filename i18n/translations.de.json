@@ -229,6 +229,46 @@
       }
     ]
   },
+  "faq": {
+    "agro": [
+      {
+        "title": "Where can I learn more about the project? Do you have a lite paper?",
+        "description": "You can check out lite paper [here]({lite_paper_url}). Alternatively, if you want to jump on a call you can always reach out at [hello@thebadge.xyz](mailto:hello@thebadge.xyz)"
+      },
+      {
+        "title": "I’m interested in joining the waitlist as a farmer, how can I do it?",
+        "description": "You can just send us an email to the following email address: [hello@thebadge.xyz](mailto:hello@thebadge.xyz) and we will get back to you."
+      },
+      {
+        "title": "What kind of investors are you looking for?",
+        "description": "We are looking for both liquidity investors and product investors."
+      },
+      {
+        "title": "I’m interested in investing, how can I contact you?",
+        "description": "Feel free to reach us at [hello@thebadge.xyz](mailto:hello@thebadge.xyz) and we can schedule a call. "
+      },
+      {
+        "title": "How does the platform work?",
+        "description": "Getting credits in countries like Argentina is complicated, the inflation makes the credits impossible to take because of the high interest rates or in a lot of cases, there are no credits available for people. We solve this problem by allowing farmers to sell part of their future production by tokenizing their harvest. Blockchain investors from all around the world can buy shares of farmers' production giving them liquidity to afford the next harvest season and earn a yield by investing in the real economy."
+      },
+      {
+        "title": "How do the investors earn money?",
+        "description": "Investors earn money by being part of the business of commodities. They buy tokens representing a share of farmer’s future production, once the season is over and the harvest period ends, they receive **stable coins** of in-silo stored grains that they can sell on the marketplace as if it they were trading commodities if the price of the commodity goes up from one season to another, they will profit. Also, because of them being the initial liquidity providers for farmers, they buy the grains with an initial **discount rate**. This means that if the initial price of the commodities is for example, 100 USD, if they buy them with a discount rate of 20%, they will be earning at least that and In the case that the reason goes wrong, they could still profit."
+      },
+      {
+        "title": "If I'm a farmer, which is my benefit of being part of the platform.",
+        "description": "As a farmer, you will be able to get FIAT to finance your next season by selling part of your **future** production using a platform with less bureaucracy and better interest rates than traditional banks."
+      },
+      {
+        "title": "How do you know the farmers' estimated production?",
+        "description": "Before accepting a farmer to be part of the platform, we required they for different documentation specially historical production records, with this information and with the historical information of the zone we can estimate the future production reliability."
+      },
+      {
+        "title": "Who are the founders? Which background do you guys have?",
+        "description": "We are two software engineers from Argentina who have worked on top web3 projects like Gnosis Safe and 0x. We also come from a region in Argentina (Santa Fe) that is very well known for its commodities production. Our families have been part of the industry, so we decided to use our tech knowledge to find solutions for the agro-industry."
+      }
+    ]
+  },
   "team": {
     "title": "UNSER TEAM"
   },
