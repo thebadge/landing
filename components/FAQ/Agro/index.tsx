@@ -5,17 +5,16 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-  EMAIL_URL,
-  LITE_PAPER_URL,
-  PRESENTATION_VIDEO_URL,
-} from "@/lib/contants";
+import { LITE_PAPER_URL } from "@/lib/contants";
 import Link from "next/link";
 import React from "react";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const Faq = () => {
-  const t = useTranslations("whatIsTheBadge");
-
+  const t = useTranslations("faq.agro");
+  const translationVariables = { lite_paper_url: LITE_PAPER_URL };
+  const numberOfQuestions = 9;
   return (
     <>
       <section
@@ -28,42 +27,31 @@ const Faq = () => {
           </h3>
           <div className="bg-lightGreen rounded-2xl text-dark overflow-hidden p-4 md:p-6 lg:p-8">
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="item-1" className="border-dark">
-                <AccordionTrigger>Where I can learn more?</AccordionTrigger>
-                <AccordionContent>
-                  You can check out our pitch&nbsp;
-                  <Link
-                    target="_blank"
-                    className="underline"
-                    href={PRESENTATION_VIDEO_URL}
-                  >
-                    HERE
-                  </Link>
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-2" className="border-dark">
-                <AccordionTrigger>Do you have a lite-paper?</AccordionTrigger>
-                <AccordionContent>
-                  Yes! We have one and you can read it&nbsp;
-                  <Link
-                    target="_blank"
-                    className="underline"
-                    href={LITE_PAPER_URL}
-                  >
-                    HERE
-                  </Link>
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3" className="border-dark">
-                <AccordionTrigger>Are you doing fundraise?</AccordionTrigger>
-                <AccordionContent>
-                  r Yes. Pre-seed round opening on mid 2024. Please reach
-                  us&nbsp;
-                  <Link target="_blank" className="underline" href={EMAIL_URL}>
-                    HERE
-                  </Link>
-                </AccordionContent>
-              </AccordionItem>
+              {Array.from({ length: numberOfQuestions }).map((_, i) => (
+                <AccordionItem
+                  key={i}
+                  value={`item-${i}`}
+                  className="border-dark"
+                >
+                  <AccordionTrigger>{t(`${i}.title`)}</AccordionTrigger>
+                  <AccordionContent>
+                    <Markdown
+                      remarkPlugins={[remarkGfm]}
+                      components={{
+                        a(props) {
+                          const { node, href, ...rest } = props;
+                          return (
+                            // @ts-ignore
+                            <Link className="underline" href={href} {...rest} />
+                          );
+                        },
+                      }}
+                    >
+                      {t(`${i}.description`, translationVariables)}
+                    </Markdown>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
             </Accordion>
           </div>
         </div>

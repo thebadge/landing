@@ -12,7 +12,7 @@ function getBlogsData(showAll: boolean): Blog[] {
     .slice(0, showAll ? allPosts.length : 3);
 }
 
-const Blog = ({ showAll }: { showAll?: boolean }) => {
+const BlogComponent = ({ showAll }: { showAll?: boolean }) => {
   const blogsData = getBlogsData(showAll);
   return (
     <section id="blog" className="bg-primary-500/5 py-16 md:py-20 lg:py-28">
@@ -35,4 +35,4 @@ const Blog = ({ showAll }: { showAll?: boolean }) => {
   );
 };
 
-export default Blog;
+export default BlogComponent;
