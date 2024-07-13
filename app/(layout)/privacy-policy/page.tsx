@@ -6,6 +6,5 @@ export default async function PrivacyPage() {
   unstable_setRequestLocale("en");
   const { content } = getPrivacyPolicy();
 
-  /* @ts-expect-error Server Component */
   return <MDXRemote source={content} />;
 }
