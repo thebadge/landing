@@ -6,7 +6,12 @@ export default async function WaitList() {
   if (process.env.SITE_URL) {
     waitListCount = await fetch(`${process.env.SITE_URL}/api/waitlist`, {
       next: { tags: ["waitlist"] },
-    }).then((r) => r.json());
+    })
+      .then((r) => r.json())
+      .catch((e) => {
+        console.error("[WaitList] Error fetching waitlist data - ", e.message);
+        return { count: 0 };
+      });
   }
 
   return (
