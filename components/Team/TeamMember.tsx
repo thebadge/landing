@@ -82,7 +82,7 @@ function Social({
           />
         </a>
       );
-    case ContactType.Github:
+    case ContactType.Twitter:
       return (
         <a
           href={`https://twitter.com/${data.name}`}
@@ -91,7 +91,7 @@ function Social({
           aria-label="Github Link"
           rel="noreferrer"
         >
-          <GithubIcon className="h-4 w-4" />
+          <TwitterIcon className="h-4 w-4 fill-primary dark:fill-primary-400" />
         </a>
       );
     case ContactType.Linkedin:
@@ -106,7 +106,7 @@ function Social({
           <LinkedinIcon className="h-4 w-4" />
         </a>
       );
-    case ContactType.Twitter:
+    case ContactType.Github:
       return (
         <a
           href={`https://github.com/${data.name}`}
@@ -115,7 +115,7 @@ function Social({
           aria-label="Twitter Link"
           rel="noreferrer"
         >
-          <TwitterIcon className="h-4 w-4" />
+          <GithubIcon className="h-4 w-4" />
         </a>
       );
   }
