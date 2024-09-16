@@ -31,7 +31,7 @@ export const TEAM_MEMBERS: TeamMemberData[] = [
     socials: [
       {
         color: "#333333",
-        type: ContactType.Github,
+        type: ContactType.Twitter,
         name: "Agupane",
       },
       {
