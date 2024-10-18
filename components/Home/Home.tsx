@@ -24,7 +24,7 @@ export default function Home() {
           },
           secondary: {
             label: "Go website",
-            href: "/en/agro",
+            href: "https://opengrano.com/",
           },
         }}
       />
